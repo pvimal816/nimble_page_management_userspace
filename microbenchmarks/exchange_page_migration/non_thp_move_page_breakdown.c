@@ -231,7 +231,7 @@ int main(int argc, char **argv)
 		move_page_flag |= (1<<7);
 
 	  /*rc = numa_move_pages(0, page_count, addr, nodes, status, move_page_flag);*/
-	rc = syscall(333,0, page_count, from_addr, to_addr, status, move_page_flag);
+	rc = syscall(439,0, page_count, from_addr, to_addr, status, move_page_flag);
 
       if (rc < 0 && errno != ENOENT) {
 		  printf("errno: %d\n", rc);
