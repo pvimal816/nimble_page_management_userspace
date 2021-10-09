@@ -288,14 +288,14 @@ int main(int argc, char **argv)
 			  }
       }
 
-      if (!errors)
-            printf("Test successful.\n");
-      else
-            fprintf(stderr, "%d errors.\n", errors);
-
 	/*close(stats_fd);*/
 	close(pagemap_fd);
 	close(kpageflags_fd);
+
+	if (!errors)
+            printf("Test Successful.\n");
+    else
+            fprintf(stderr, "%d errors.\n", errors);
 
 	return errors > 0 ? 1 : 0;
 }

@@ -15,6 +15,7 @@ fi
 sudo sysctl vm.sysctl_enable_thp_migration=0
 
 for I in `seq 1 5`; do
+	echo "[7]=========starting measurement number $I.=========="
 	for MT in ${MULTI}; do
 		sudo sysctl vm.limit_mt_num=${MT}
 		for METHOD in ${COPY_METHOD}; do
@@ -25,6 +26,8 @@ for I in `seq 1 5`; do
 			fi
 			for N in ${PAGE_LIST}; do
 				NUM_PAGES=$((1<<N))
+
+				echo "[7]NUM_PAGES: "${NUM_PAGES}", METHOD: "${PARAM}", BATCH: "${BATCH}", MT: "${MT}
 
 				if [[ "x${I}" == "x1" ]]; then
 					numactl -N 0 -m 0 ./thp_move_pages ${NUM_PAGES} ${PARAM} 2>./thp_verify/${METHOD}_${MT}_2mb_page_order_${N} | grep -A 3 "\(Total_cycles\|Test successful\)" > ./stats_split_thp/${METHOD}_${MT}_split_thp_2mb_page_order_${N}

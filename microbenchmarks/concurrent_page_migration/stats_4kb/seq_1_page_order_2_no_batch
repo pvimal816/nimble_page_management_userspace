@@ -1,18 +1,30 @@
 Total_cycles	Begin_timestamp	End_timestamp
-139590	11336086913426	11336087053016
+330570	8426246928587590	8426246928918160
 syscall_timestamp	check_rights_cycles	migrate_prep_cycles	form_page_node_info_cycles	form_physical_page_list_cycles	enter_unmap_and_move_cycles	split_thp_page_cycles	get_new_page_cycles	lock_page_cycles	unmap_page_cycles	change_page_mapping_cycles	copy_page_cycles	remove_migration_ptes_cycles	putback_old_page_cycles	putback_new_page_cycles	migrate_pages_cleanup_cycles	store_page_status_cycles	return_to_syscall_cycles	last_timestamp	
-11336086914380	1152	101070	649	2645	666	0	72	16524	6714	2142	2628	2016	1674	0	36	162	36	11336087052566	
+8426246928590400	2622	242816	2524	8536	436	0	374	21840	16978	2616	10274	7458	7318	0	286	908	210	8426246928915596	
 --
 Test successful.
 Total_cycles	Begin_timestamp	End_timestamp
-176058	12243896004248	12243896180306
+376560	8427647345886696	8427647346263256
 syscall_timestamp	check_rights_cycles	migrate_prep_cycles	form_page_node_info_cycles	form_physical_page_list_cycles	enter_unmap_and_move_cycles	split_thp_page_cycles	get_new_page_cycles	lock_page_cycles	unmap_page_cycles	change_page_mapping_cycles	copy_page_cycles	remove_migration_ptes_cycles	putback_old_page_cycles	putback_new_page_cycles	migrate_pages_cleanup_cycles	store_page_status_cycles	return_to_syscall_cycles	last_timestamp	
-12243896005418	2052	137358	738	3870	522	0	72	5544	7002	2016	2988	9216	2934	0	36	126	36	12243896179928	
+8427647345889132	2534	294930	2004	8342	606	0	360	20590	16860	2226	9534	6602	6722	0	270	666	206	8427647346261584	
 --
 Test successful.
 Total_cycles	Begin_timestamp	End_timestamp
-2077524	13152103875098	13152105952622
+309292	8429047611510882	8429047611820174
 syscall_timestamp	check_rights_cycles	migrate_prep_cycles	form_page_node_info_cycles	form_physical_page_list_cycles	enter_unmap_and_move_cycles	split_thp_page_cycles	get_new_page_cycles	lock_page_cycles	unmap_page_cycles	change_page_mapping_cycles	copy_page_cycles	remove_migration_ptes_cycles	putback_old_page_cycles	putback_new_page_cycles	migrate_pages_cleanup_cycles	store_page_status_cycles	return_to_syscall_cycles	last_timestamp	
-13152103890956	3114	1985832	1458	9918	756	0	216	20502	14868	2466	7236	4644	6894	0	126	324	468	13152105949778	
+8429047611512840	1850	233342	1978	8670	434	0	354	11616	17360	2018	10464	7630	7370	0	258	864	224	8429047611817272	
+--
+Test successful.
+Total_cycles	Begin_timestamp	End_timestamp
+316640	8430447790101502	8430447790418142
+syscall_timestamp	check_rights_cycles	migrate_prep_cycles	form_page_node_info_cycles	form_physical_page_list_cycles	enter_unmap_and_move_cycles	split_thp_page_cycles	get_new_page_cycles	lock_page_cycles	unmap_page_cycles	change_page_mapping_cycles	copy_page_cycles	remove_migration_ptes_cycles	putback_old_page_cycles	putback_new_page_cycles	migrate_pages_cleanup_cycles	store_page_status_cycles	return_to_syscall_cycles	last_timestamp	
+8430447790103524	1918	239562	2158	8554	450	0	342	18250	15428	1902	9100	6868	7202	0	256	764	202	8430447790416480	
+--
+Test successful.
+Total_cycles	Begin_timestamp	End_timestamp
+320200	8431847937178642	8431847937498842
+syscall_timestamp	check_rights_cycles	migrate_prep_cycles	form_page_node_info_cycles	form_physical_page_list_cycles	enter_unmap_and_move_cycles	split_thp_page_cycles	get_new_page_cycles	lock_page_cycles	unmap_page_cycles	change_page_mapping_cycles	copy_page_cycles	remove_migration_ptes_cycles	putback_old_page_cycles	putback_new_page_cycles	migrate_pages_cleanup_cycles	store_page_status_cycles	return_to_syscall_cycles	last_timestamp	
+8431847937180714	2054	246112	2228	8636	510	0	344	13804	16302	1866	8862	7148	7308	0	238	826	210	8431847937497162	
 --
 Test successful.
