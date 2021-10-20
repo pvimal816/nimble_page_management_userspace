@@ -1,3 +1,4 @@
+sudo sysctl kernel.numa_balancing=0
 # run concurrent page migration benchmarks
 cd concurrent_page_migration;
 make non_thp_move_pages;

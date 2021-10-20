@@ -1,3 +1,4 @@
+kernel.numa_balancing = 0
 make: 'non_thp_move_pages' is up to date.
 make: 'thp_move_pages' is up to date.
 ============executing concurrent_page_migration/run_non_thp_test.sh================
