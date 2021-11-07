@@ -1,30 +1,30 @@
 Total_cycles	Begin_timestamp	End_timestamp
-345818	4848511121791340	4848511122137158
+352322	4948362860248928	4948362860601250
 syscall_timestamp	check_rights_cycles	migrate_prep_cycles	form_page_node_info_cycles	form_physical_page_list_cycles	enter_unmap_and_move_cycles	split_thp_page_cycles	get_new_page_cycles	lock_page_cycles	unmap_page_cycles	change_page_mapping_cycles	copy_page_cycles	remove_migration_ptes_cycles	putback_old_page_cycles	putback_new_page_cycles	migrate_pages_cleanup_cycles	store_page_status_cycles	return_to_syscall_cycles	last_timestamp	
-4848511121793630	2286	259000	2730	7900	896	0	394	20518	20748	1974	9514	6390	6910	0	318	604	224	4848511122134036	
+4948362860251214	1610	228150	4256	12402	588	0	370	39388	20478	1714	14368	6462	8650	0	494	978	208	4948362860591330	
 --
 Test successful.
 Total_cycles	Begin_timestamp	End_timestamp
-378372	4848627968013922	4848627968392294
+282414	4948479576658206	4948479576940620
 syscall_timestamp	check_rights_cycles	migrate_prep_cycles	form_page_node_info_cycles	form_physical_page_list_cycles	enter_unmap_and_move_cycles	split_thp_page_cycles	get_new_page_cycles	lock_page_cycles	unmap_page_cycles	change_page_mapping_cycles	copy_page_cycles	remove_migration_ptes_cycles	putback_old_page_cycles	putback_new_page_cycles	migrate_pages_cleanup_cycles	store_page_status_cycles	return_to_syscall_cycles	last_timestamp	
-4848627968016134	1634	294818	2034	7478	812	0	384	20052	20446	1788	9462	6452	6426	0	290	772	220	4848627968389202	
+4948479576660400	1432	203308	2476	8222	514	0	428	16226	20216	1716	8288	6332	6724	0	262	850	208	4948479576937602	
 --
 Test successful.
 Total_cycles	Begin_timestamp	End_timestamp
-315408	4848744778990074	4848744779305482
+265288	4948596286299568	4948596286564856
 syscall_timestamp	check_rights_cycles	migrate_prep_cycles	form_page_node_info_cycles	form_physical_page_list_cycles	enter_unmap_and_move_cycles	split_thp_page_cycles	get_new_page_cycles	lock_page_cycles	unmap_page_cycles	change_page_mapping_cycles	copy_page_cycles	remove_migration_ptes_cycles	putback_old_page_cycles	putback_new_page_cycles	migrate_pages_cleanup_cycles	store_page_status_cycles	return_to_syscall_cycles	last_timestamp	
-4848744778992460	1822	232306	2008	7678	940	0	404	18890	19654	1826	9662	6508	6872	0	288	784	220	4848744779302322	
+4948596286301894	1542	186828	2116	8090	762	0	428	15154	20674	1854	8348	6442	6628	0	128	740	208	4948596286561836	
 --
 Test successful.
 Total_cycles	Begin_timestamp	End_timestamp
-314064	4848861607994842	4848861608308906
+238190	4948713003740928	4948713003979118
 syscall_timestamp	check_rights_cycles	migrate_prep_cycles	form_page_node_info_cycles	form_physical_page_list_cycles	enter_unmap_and_move_cycles	split_thp_page_cycles	get_new_page_cycles	lock_page_cycles	unmap_page_cycles	change_page_mapping_cycles	copy_page_cycles	remove_migration_ptes_cycles	putback_old_page_cycles	putback_new_page_cycles	migrate_pages_cleanup_cycles	store_page_status_cycles	return_to_syscall_cycles	last_timestamp	
-4848861607997142	1646	229502	2152	8126	1060	0	400	19174	20338	2008	9850	6372	6836	0	274	728	224	4848861608305832	
+4948713003743292	1432	158838	1898	7748	672	0	394	16398	20546	1660	8304	6824	6634	0	222	782	226	4948713003975870	
 --
 Test successful.
 Total_cycles	Begin_timestamp	End_timestamp
-324778	4848978377944000	4848978378268778
+280632	4948829753702584	4948829753983216
 syscall_timestamp	check_rights_cycles	migrate_prep_cycles	form_page_node_info_cycles	form_physical_page_list_cycles	enter_unmap_and_move_cycles	split_thp_page_cycles	get_new_page_cycles	lock_page_cycles	unmap_page_cycles	change_page_mapping_cycles	copy_page_cycles	remove_migration_ptes_cycles	putback_old_page_cycles	putback_new_page_cycles	migrate_pages_cleanup_cycles	store_page_status_cycles	return_to_syscall_cycles	last_timestamp	
-4848978377946442	1624	242254	2098	7066	1200	0	392	18616	20208	1800	9486	6040	6906	0	280	1054	220	4848978378265686	
+4948829753704824	1464	204380	2034	7446	656	0	470	13830	20920	1766	7980	6672	6478	0	240	774	214	4948829753980148	
 --
 Test successful.
