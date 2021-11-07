@@ -1,30 +1,30 @@
 Total_cycles	Begin_timestamp	End_timestamp
-585252	4837371620390980	4837371620976232
+665440	15495273036637846	15495273037303286
 syscall_timestamp	check_rights_cycles	migrate_prep_cycles	form_page_node_info_cycles	form_physical_page_list_cycles	enter_unmap_and_move_cycles	split_thp_page_cycles	get_new_page_cycles	lock_page_cycles	unmap_page_cycles	change_page_mapping_cycles	copy_page_cycles	remove_migration_ptes_cycles	putback_old_page_cycles	putback_new_page_cycles	migrate_pages_cleanup_cycles	store_page_status_cycles	return_to_syscall_cycles	last_timestamp	
-4837371620392728	1296	267568	10846	0	890	0	0	1230	21562	1848	263874	7802	1628	466	0	1326	432	4837371620973496	
+15495273036639200	1344	307318	9848	0	1522	0	0	1232	17346	1696	311236	6618	1722	518	0	1358	434	15495273037301392	
 --
 Test successful.
 Total_cycles	Begin_timestamp	End_timestamp
-613810	4838525781524322	4838525782138132
+606778	15496673100405728	15496673101012506
 syscall_timestamp	check_rights_cycles	migrate_prep_cycles	form_page_node_info_cycles	form_physical_page_list_cycles	enter_unmap_and_move_cycles	split_thp_page_cycles	get_new_page_cycles	lock_page_cycles	unmap_page_cycles	change_page_mapping_cycles	copy_page_cycles	remove_migration_ptes_cycles	putback_old_page_cycles	putback_new_page_cycles	migrate_pages_cleanup_cycles	store_page_status_cycles	return_to_syscall_cycles	last_timestamp	
-4838525781526084	1302	298244	10822	0	974	0	0	1226	21686	1592	262074	7494	1684	482	0	1166	436	4838525782135266	
+15496673100407726	1050	248402	9724	0	1372	0	0	1102	16998	1780	312010	6430	2156	522	0	1490	438	15496673101011200	
 --
 Test successful.
 Total_cycles	Begin_timestamp	End_timestamp
-564222	4839679996014560	4839679996578782
+596130	15498073101737678	15498073102333808
 syscall_timestamp	check_rights_cycles	migrate_prep_cycles	form_page_node_info_cycles	form_physical_page_list_cycles	enter_unmap_and_move_cycles	split_thp_page_cycles	get_new_page_cycles	lock_page_cycles	unmap_page_cycles	change_page_mapping_cycles	copy_page_cycles	remove_migration_ptes_cycles	putback_old_page_cycles	putback_new_page_cycles	migrate_pages_cleanup_cycles	store_page_status_cycles	return_to_syscall_cycles	last_timestamp	
-4839679996016184	1872	242420	11418	0	1062	0	0	1476	22040	2114	264910	8586	1718	482	0	1304	446	4839679996576032	
+15498073101739088	1242	277812	9030	0	1444	0	0	1342	17802	1634	271116	7026	1564	612	0	1554	490	15498073102331756	
 --
 Test successful.
 Total_cycles	Begin_timestamp	End_timestamp
-582636	4840834268485616	4840834269068252
+683006	15499473197765596	15499473198448602
 syscall_timestamp	check_rights_cycles	migrate_prep_cycles	form_page_node_info_cycles	form_physical_page_list_cycles	enter_unmap_and_move_cycles	split_thp_page_cycles	get_new_page_cycles	lock_page_cycles	unmap_page_cycles	change_page_mapping_cycles	copy_page_cycles	remove_migration_ptes_cycles	putback_old_page_cycles	putback_new_page_cycles	migrate_pages_cleanup_cycles	store_page_status_cycles	return_to_syscall_cycles	last_timestamp	
-4840834268487366	1338	263926	10750	0	996	0	0	1250	21042	1942	265526	7460	1666	474	0	1270	454	4840834269065460	
+15499473197766970	1118	306376	10416	0	1626	0	0	1062	17626	1658	329584	6854	1676	582	0	1336	444	15499473198447328	
 --
 Test successful.
 Total_cycles	Begin_timestamp	End_timestamp
-541088	4841988400556336	4841988401097424
+708248	15500873258324822	15500873259033070
 syscall_timestamp	check_rights_cycles	migrate_prep_cycles	form_page_node_info_cycles	form_physical_page_list_cycles	enter_unmap_and_move_cycles	split_thp_page_cycles	get_new_page_cycles	lock_page_cycles	unmap_page_cycles	change_page_mapping_cycles	copy_page_cycles	remove_migration_ptes_cycles	putback_old_page_cycles	putback_new_page_cycles	migrate_pages_cleanup_cycles	store_page_status_cycles	return_to_syscall_cycles	last_timestamp	
-4841988400558074	1160	221534	9736	0	1134	0	0	1246	22552	2330	264478	8326	1660	502	0	1274	428	4841988401094434	
+15500873258326236	1302	326948	9542	0	1318	0	0	1118	17136	1668	335242	6578	2164	602	0	1456	434	15500873259031744	
 --
 Test successful.
