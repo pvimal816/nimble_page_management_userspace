@@ -1,30 +1,30 @@
 Total_cycles	Begin_timestamp	End_timestamp
-4652742	4798372334871766	4798372339524508
+4256778	4848567105445828	4848567109702606
 syscall_timestamp	check_rights_cycles	migrate_prep_cycles	form_page_node_info_cycles	form_physical_page_list_cycles	enter_unmap_and_move_cycles	split_thp_page_cycles	get_new_page_cycles	lock_page_cycles	unmap_page_cycles	change_page_mapping_cycles	copy_page_cycles	remove_migration_ptes_cycles	putback_old_page_cycles	putback_new_page_cycles	migrate_pages_cleanup_cycles	store_page_status_cycles	return_to_syscall_cycles	last_timestamp	
-4798372334874198	2130	243948	18456	67900	4194	0	3850	214952	231978	11648	3632556	96034	109800	0	198	8434	228	4798372339520504	
+4848567105448582	1762	227676	18526	67794	4184	0	3908	218502	236844	11156	3233512	104996	113122	0	198	7722	222	4848567109698706	
 --
 Test successful.
 Total_cycles	Begin_timestamp	End_timestamp
-4675798	4798489428067054	4798489432742852
+4253348	4848683927170690	4848683931424038
 syscall_timestamp	check_rights_cycles	migrate_prep_cycles	form_page_node_info_cycles	form_physical_page_list_cycles	enter_unmap_and_move_cycles	split_thp_page_cycles	get_new_page_cycles	lock_page_cycles	unmap_page_cycles	change_page_mapping_cycles	copy_page_cycles	remove_migration_ptes_cycles	putback_old_page_cycles	putback_new_page_cycles	migrate_pages_cleanup_cycles	store_page_status_cycles	return_to_syscall_cycles	last_timestamp	
-4798489428069470	1910	306506	18522	67116	4242	0	3860	204558	231836	11282	3607966	94170	109684	0	194	7370	222	4798489432738908	
+4848683927173040	1834	244582	19186	69430	4456	0	3864	211988	241604	11064	3192762	125398	112318	0	290	8078	228	4848683931420122	
 --
 Test successful.
 Total_cycles	Begin_timestamp	End_timestamp
-4604430	4798606495188954	4798606499793384
+4224028	4848800756709820	4848800760933848
 syscall_timestamp	check_rights_cycles	migrate_prep_cycles	form_page_node_info_cycles	form_physical_page_list_cycles	enter_unmap_and_move_cycles	split_thp_page_cycles	get_new_page_cycles	lock_page_cycles	unmap_page_cycles	change_page_mapping_cycles	copy_page_cycles	remove_migration_ptes_cycles	putback_old_page_cycles	putback_new_page_cycles	migrate_pages_cleanup_cycles	store_page_status_cycles	return_to_syscall_cycles	last_timestamp	
-4798606495191208	2346	258998	18768	67988	4218	0	3828	236558	231768	11276	3550732	91730	112324	0	192	7466	224	4798606499789624	
+4848800756712244	1588	182724	19000	69294	4036	0	3848	211100	248662	10982	3227664	115766	114056	0	290	8338	222	4848800760929814	
 --
 Test successful.
 Total_cycles	Begin_timestamp	End_timestamp
-4594180	4798723570958546	4798723575552726
+4243744	4848917547784712	4848917552028456
 syscall_timestamp	check_rights_cycles	migrate_prep_cycles	form_page_node_info_cycles	form_physical_page_list_cycles	enter_unmap_and_move_cycles	split_thp_page_cycles	get_new_page_cycles	lock_page_cycles	unmap_page_cycles	change_page_mapping_cycles	copy_page_cycles	remove_migration_ptes_cycles	putback_old_page_cycles	putback_new_page_cycles	migrate_pages_cleanup_cycles	store_page_status_cycles	return_to_syscall_cycles	last_timestamp	
-4798723570961048	1946	261478	18384	69798	4132	0	3804	218670	230200	11268	3557322	94134	109668	0	192	7284	220	4798723575549548	
+4848917547787112	1624	275680	18718	69390	4524	0	3868	204254	236138	10974	3184256	107018	112232	0	290	8042	224	4848917552024344	
 --
 Test successful.
 Total_cycles	Begin_timestamp	End_timestamp
-3709732	4798840552699572	4798840556409304
+4210396	4849034364812548	4849034369022944
 syscall_timestamp	check_rights_cycles	migrate_prep_cycles	form_page_node_info_cycles	form_physical_page_list_cycles	enter_unmap_and_move_cycles	split_thp_page_cycles	get_new_page_cycles	lock_page_cycles	unmap_page_cycles	change_page_mapping_cycles	copy_page_cycles	remove_migration_ptes_cycles	putback_old_page_cycles	putback_new_page_cycles	migrate_pages_cleanup_cycles	store_page_status_cycles	return_to_syscall_cycles	last_timestamp	
-4798840552701818	2084	218422	18582	66504	4146	0	3780	163966	228906	11030	2783592	88702	106514	0	194	7368	222	4798840556405830	
+4849034364814870	1788	230622	18474	68242	4608	0	3892	214142	235146	10988	3173694	122702	111808	0	322	7508	228	4849034369019034	
 --
 Test successful.

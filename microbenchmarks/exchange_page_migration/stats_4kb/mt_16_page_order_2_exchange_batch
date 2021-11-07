@@ -1,30 +1,30 @@
 Total_cycles	Begin_timestamp	End_timestamp
-628580	4787530759356938	4787530759985518
+655708	4837729439677404	4837729440333112
 syscall_timestamp	check_rights_cycles	migrate_prep_cycles	form_page_node_info_cycles	form_physical_page_list_cycles	enter_unmap_and_move_cycles	split_thp_page_cycles	get_new_page_cycles	lock_page_cycles	unmap_page_cycles	change_page_mapping_cycles	copy_page_cycles	remove_migration_ptes_cycles	putback_old_page_cycles	putback_new_page_cycles	migrate_pages_cleanup_cycles	store_page_status_cycles	return_to_syscall_cycles	last_timestamp	
-4787530759358632	2320	253968	16512	0	2022	0	0	28976	6352	3380	294370	10766	2034	892	0	2116	210	4787530759982550	
+4837729439678992	1402	296626	14680	0	2020	0	0	29426	6802	3120	280522	11584	1768	862	0	2018	438	4837729440330260	
 --
 Test successful.
 Total_cycles	Begin_timestamp	End_timestamp
-640710	4788685019392424	4788685020033134
+656282	4838883611024228	4838883611680510
 syscall_timestamp	check_rights_cycles	migrate_prep_cycles	form_page_node_info_cycles	form_physical_page_list_cycles	enter_unmap_and_move_cycles	split_thp_page_cycles	get_new_page_cycles	lock_page_cycles	unmap_page_cycles	change_page_mapping_cycles	copy_page_cycles	remove_migration_ptes_cycles	putback_old_page_cycles	putback_new_page_cycles	migrate_pages_cleanup_cycles	store_page_status_cycles	return_to_syscall_cycles	last_timestamp	
-4788685019394384	2076	260564	15568	0	3168	0	0	30320	6390	4232	296130	11222	2280	866	0	2548	204	4788685020029952	
+4838883611025706	1468	282120	21518	0	3024	0	0	27566	5282	3350	287462	11242	1390	856	0	2370	452	4838883611673806	
 --
 Test successful.
 Total_cycles	Begin_timestamp	End_timestamp
-677850	4789838880574018	4789838881251868
+628424	4840037886178900	4840037886807324
 syscall_timestamp	check_rights_cycles	migrate_prep_cycles	form_page_node_info_cycles	form_physical_page_list_cycles	enter_unmap_and_move_cycles	split_thp_page_cycles	get_new_page_cycles	lock_page_cycles	unmap_page_cycles	change_page_mapping_cycles	copy_page_cycles	remove_migration_ptes_cycles	putback_old_page_cycles	putback_new_page_cycles	migrate_pages_cleanup_cycles	store_page_status_cycles	return_to_syscall_cycles	last_timestamp	
-4789838880575622	1878	319180	16584	0	2360	0	0	28860	6394	3078	279220	10842	1632	866	0	2152	202	4789838881248870	
+4840037886180822	1344	214718	15194	0	1880	0	0	30618	6482	3104	333614	11588	1628	862	0	1968	430	4840037886804252	
 --
 Test successful.
 Total_cycles	Begin_timestamp	End_timestamp
-644788	4790993128406588	4790993129051376
+603598	4841192064133582	4841192064737180
 syscall_timestamp	check_rights_cycles	migrate_prep_cycles	form_page_node_info_cycles	form_physical_page_list_cycles	enter_unmap_and_move_cycles	split_thp_page_cycles	get_new_page_cycles	lock_page_cycles	unmap_page_cycles	change_page_mapping_cycles	copy_page_cycles	remove_migration_ptes_cycles	putback_old_page_cycles	putback_new_page_cycles	migrate_pages_cleanup_cycles	store_page_status_cycles	return_to_syscall_cycles	last_timestamp	
-4790993128408256	2062	247218	15018	0	1976	0	0	28866	6360	3576	318862	11280	1750	884	0	2088	196	4790993129048392	
+4841192064135128	1260	240580	15682	0	2326	0	0	30128	6478	3004	282710	11540	1944	894	0	2172	436	4841192064734282	
 --
 Test successful.
 Total_cycles	Begin_timestamp	End_timestamp
-639444	4792147410880416	4792147411519860
+721518	4842346247789916	4842346248511434
 syscall_timestamp	check_rights_cycles	migrate_prep_cycles	form_page_node_info_cycles	form_physical_page_list_cycles	enter_unmap_and_move_cycles	split_thp_page_cycles	get_new_page_cycles	lock_page_cycles	unmap_page_cycles	change_page_mapping_cycles	copy_page_cycles	remove_migration_ptes_cycles	putback_old_page_cycles	putback_new_page_cycles	migrate_pages_cleanup_cycles	store_page_status_cycles	return_to_syscall_cycles	last_timestamp	
-4792147410882198	2126	250752	17680	0	2076	0	0	29554	6440	3114	306926	11146	1726	868	0	2116	190	4792147411516912	
+4842346247791562	1258	305072	14666	0	1790	0	0	29310	6472	3128	338262	12028	1702	876	0	1890	424	4842346248508440	
 --
 Test successful.

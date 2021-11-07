@@ -1,30 +1,30 @@
 Total_cycles	Begin_timestamp	End_timestamp
-16558136	4801943905500772	4801943922058908
+24275860	4851998940725072	4851998965000932
 syscall_timestamp	check_rights_cycles	migrate_prep_cycles	form_page_node_info_cycles	form_physical_page_list_cycles	enter_unmap_and_move_cycles	split_thp_page_cycles	get_new_page_cycles	lock_page_cycles	unmap_page_cycles	change_page_mapping_cycles	copy_page_cycles	remove_migration_ptes_cycles	putback_old_page_cycles	putback_new_page_cycles	migrate_pages_cleanup_cycles	store_page_status_cycles	return_to_syscall_cycles	last_timestamp	
-4801943905503366	1974	269956	3242	17706	898	0	904	12249536	52970	23462	3868276	11514	51600	0	200	966	110	4801943922056680	
+4851998940727648	1880	267188	3756	18240	1360	0	1118	18372028	67764	27092	5426180	18850	63822	0	100	1074	110	4851998964998210	
 --
 Test successful.
 Total_cycles	Begin_timestamp	End_timestamp
-24282364	4802089171591484	4802089195873848
+23319548	4852144150137388	4852144173456936
 syscall_timestamp	check_rights_cycles	migrate_prep_cycles	form_page_node_info_cycles	form_physical_page_list_cycles	enter_unmap_and_move_cycles	split_thp_page_cycles	get_new_page_cycles	lock_page_cycles	unmap_page_cycles	change_page_mapping_cycles	copy_page_cycles	remove_migration_ptes_cycles	putback_old_page_cycles	putback_new_page_cycles	migrate_pages_cleanup_cycles	store_page_status_cycles	return_to_syscall_cycles	last_timestamp	
-4802089171594654	1916	269978	2546	16112	796	0	1006	18505216	65724	25940	5301940	16294	67118	0	200	1262	110	4802089195870812	
+4852144150140292	2468	246612	3210	18830	1230	0	1312	17476324	64444	25312	5393066	17968	61432	0	226	1156	104	4852144173453986	
 --
 Test successful.
 Total_cycles	Begin_timestamp	End_timestamp
-24376946	4802234531032384	4802234555409330
+24654418	4852289084698076	4852289109352494
 syscall_timestamp	check_rights_cycles	migrate_prep_cycles	form_page_node_info_cycles	form_physical_page_list_cycles	enter_unmap_and_move_cycles	split_thp_page_cycles	get_new_page_cycles	lock_page_cycles	unmap_page_cycles	change_page_mapping_cycles	copy_page_cycles	remove_migration_ptes_cycles	putback_old_page_cycles	putback_new_page_cycles	migrate_pages_cleanup_cycles	store_page_status_cycles	return_to_syscall_cycles	last_timestamp	
-4802234531034708	2498	237014	3360	21168	796	0	1210	18637466	51832	17398	5315292	14542	64028	0	368	2208	268	4802234555404156	
+4852289084700982	2140	239072	3044	19560	1448	0	1078	18584230	77772	33892	5581418	23458	79858	0	308	1286	216	4852289109349762	
 --
 Test successful.
 Total_cycles	Begin_timestamp	End_timestamp
-24008310	4802379682107174	4802379706115484
+19563276	4852434294172304	4852434313735580
 syscall_timestamp	check_rights_cycles	migrate_prep_cycles	form_page_node_info_cycles	form_physical_page_list_cycles	enter_unmap_and_move_cycles	split_thp_page_cycles	get_new_page_cycles	lock_page_cycles	unmap_page_cycles	change_page_mapping_cycles	copy_page_cycles	remove_migration_ptes_cycles	putback_old_page_cycles	putback_new_page_cycles	migrate_pages_cleanup_cycles	store_page_status_cycles	return_to_syscall_cycles	last_timestamp	
-4802379682109890	1914	269300	2466	15608	772	0	1304	18187556	62102	24218	5357524	13974	63960	0	474	1116	110	4802379706112288	
+4852434294174880	1670	254338	3378	18026	1536	0	1162	14525818	38370	12608	4620458	15862	64850	0	174	700	62	4852434313733892	
 --
 Test successful.
 Total_cycles	Begin_timestamp	End_timestamp
-24265180	4802525567140010	4802525591405190
+25222090	4852579320960360	4852579346182450
 syscall_timestamp	check_rights_cycles	migrate_prep_cycles	form_page_node_info_cycles	form_physical_page_list_cycles	enter_unmap_and_move_cycles	split_thp_page_cycles	get_new_page_cycles	lock_page_cycles	unmap_page_cycles	change_page_mapping_cycles	copy_page_cycles	remove_migration_ptes_cycles	putback_old_page_cycles	putback_new_page_cycles	migrate_pages_cleanup_cycles	store_page_status_cycles	return_to_syscall_cycles	last_timestamp	
-4802525567142502	3170	239844	2908	17972	1196	0	1376	18294660	62458	25456	5513566	16356	79074	0	306	1190	108	4802525591402142	
+4852579320962788	1628	237360	3200	18448	1392	0	1632	19167998	75218	33016	5545360	18584	80536	0	286	1156	112	4852579346148714	
 --
 Test successful.
