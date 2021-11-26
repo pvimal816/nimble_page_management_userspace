@@ -6,5 +6,5 @@ thp_move_pages: move_page_breakdown.c
 	sudo setcap "all=ep" $@
 
 non_thp_move_pages: non_thp_move_page_breakdown.c 
-	$(CC) -o $@ $^ -lnuma
+	$(CC) -o $@ $^ -fsanitize=address -lnuma
 	sudo setcap "all=ep" $@

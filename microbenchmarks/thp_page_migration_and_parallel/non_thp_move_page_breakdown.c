@@ -19,6 +19,8 @@
 #include <fcntl.h>
 #include <sys/mman.h>
 
+#define SOURCE_NUMA_NODE (7)
+#define DESTINATION_NUMA_NODE (9)
 
 unsigned int pagesize;
 unsigned int page_count = 32;
@@ -102,8 +104,8 @@ int main(int argc, char **argv)
 
       old_nodes = numa_bitmask_alloc(nr_nodes);
         new_nodes = numa_bitmask_alloc(nr_nodes);
-        numa_bitmask_setbit(old_nodes, 1);
-        numa_bitmask_setbit(new_nodes, 0);
+        numa_bitmask_setbit(old_nodes, DESTINATION_NUMA_NODE);
+        numa_bitmask_setbit(new_nodes, SOURCE_NUMA_NODE);
 
       if (nr_nodes < 2) {
             printf("A minimum of 2 nodes is required for this test.\n");
@@ -142,7 +144,7 @@ int main(int argc, char **argv)
       for (i = 0; i < page_count; i++) {
             pages[ i * pagesize] = (char) i;
             addr[i] = pages + i * pagesize;
-            nodes[i] = 1;
+            nodes[i] = DESTINATION_NUMA_NODE;
             status[i] = -123;
       }
 
@@ -233,7 +235,7 @@ int main(int argc, char **argv)
       numa_move_pages(0, page_count, addr, NULL, status, 0);
 	  for (i = 0; i < page_count; i++) {
 			/*printf("Page %d vaddr=%p node=%d\n", i, pages + i * pagesize, status[i]);*/
-			if (status[i] != 1) {
+			if (status[i] != DESTINATION_NUMA_NODE) {
 				  fprintf(stderr, "Bad page state before migrate_pages. Page %d status %d\n",i, status[i]);
 				  exit(1);
 			}
@@ -267,7 +269,7 @@ int main(int argc, char **argv)
 			  if (pages[ i* pagesize ] != (char) i) {
 					fprintf(stderr, "*** Page contents corrupted.\n");
 					errors++;
-			  } else if (status[i]) {
+			  } else if (status[i]!=SOURCE_NUMA_NODE) {
 					fprintf(stderr, "*** Page on the wrong node\n");
 					errors++;
 			  }

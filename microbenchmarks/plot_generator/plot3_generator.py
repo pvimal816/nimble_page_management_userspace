@@ -27,7 +27,7 @@ def main():
     four_thread_concurrent_base_page = [
         (1<<i)*1e9/((1<<18)*stats("../concurrent_page_migration"
             + "/stats_4kb"
-            + "/mt_4_page_order_{0}_batch".format(i)).
+            + "/mt_4_page_order_{0}_no_batch".format(i)).
         average_stats["Total_cycles"]) for i in page_count
     ]
     
@@ -52,7 +52,7 @@ def main():
     four_thread_concurrent_thp_page = [
         (1<<i)*1e9/((1<<9)*stats("../concurrent_page_migration"
             + "/stats_2mb"
-            + "/mt_4_page_order_{0}_batch".format(i)).
+            + "/mt_4_page_order_{0}_no_batch".format(i)).
         average_stats["Total_cycles"]) for i in page_count
     ]
 

@@ -28,8 +28,8 @@ def main():
     fig, axs = plt.subplots(nrows=2)
     axs[0].grid(True)
     axs[1].grid(True)
-    sns.lineplot(x=x, y=thp_stat, ax=axs[0]).set(title="THP (2MB)", xlabel="No. of threads", ylabel="GB/Cycles")
-    sns.lineplot(x=x, y=base_page_stats, ax=axs[1]).set(title="Base Page (4KB)", xlabel="No. of threads", ylabel="GB/Cycles")
+    sns.lineplot(x=x, y=thp_stat, ax=axs[0]).set(title="THP (2MB)", xlabel="No. of threads", ylabel="GB/GCycles")
+    sns.lineplot(x=x, y=base_page_stats, ax=axs[1]).set(title="Base Page (4KB)", xlabel="No. of threads", ylabel="GB/GCycles")
     plt.tight_layout()
     plt.savefig('Plot_2.png')
     

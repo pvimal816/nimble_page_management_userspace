@@ -20,6 +20,8 @@
 #include <sys/mman.h>
 #include <numaif.h>
 
+#define SOURCE_NUMA_NODE (7)
+#define DESTINATION_NUMA_NODE (9)
 
 unsigned int pagesize;
 unsigned int page_count = 32;
@@ -100,8 +102,8 @@ int main(int argc, char **argv)
 	int pagemap_fd;
 	int kpageflags_fd;
 	int move_page_flag = 0;
-	unsigned long node0 = 1<<0;
-	unsigned long node1 = 1<<1;
+	unsigned long node0 = 1<<SOURCE_NUMA_NODE;
+	unsigned long node1 = 1<<DESTINATION_NUMA_NODE;
 
       /*pagesize = getpagesize();*/
 	  pagesize = PAGE_4K;
@@ -110,8 +112,8 @@ int main(int argc, char **argv)
 
       old_nodes = numa_bitmask_alloc(nr_nodes);
         new_nodes = numa_bitmask_alloc(nr_nodes);
-        numa_bitmask_setbit(old_nodes, 1);
-        numa_bitmask_setbit(new_nodes, 0);
+        numa_bitmask_setbit(old_nodes, DESTINATION_NUMA_NODE);
+        numa_bitmask_setbit(new_nodes, SOURCE_NUMA_NODE);
 
       if (nr_nodes < 2) {
             printf("A minimum of 2 nodes is required for this test.\n");
