@@ -1,30 +1,30 @@
 Total_cycles	Begin_timestamp	End_timestamp
-331958	17650067089326690	17650067089658648
+331222	31664345692391066	31664345692722288
 syscall_timestamp	check_rights_cycles	migrate_prep_cycles	form_page_node_info_cycles	form_physical_page_list_cycles	enter_unmap_and_move_cycles	split_thp_page_cycles	get_new_page_cycles	lock_page_cycles	unmap_page_cycles	change_page_mapping_cycles	copy_page_cycles	remove_migration_ptes_cycles	putback_old_page_cycles	putback_new_page_cycles	migrate_pages_cleanup_cycles	store_page_status_cycles	return_to_syscall_cycles	last_timestamp	
-17650067089328188	956	269936	9066	0	1274	0	0	1266	18666	1592	14914	6336	1518	538	0	1692	434	17650067089656376	
+31664345692392608	1216	259440	12902	0	1638	0	0	1350	22196	1808	16366	6472	2220	496	0	1270	436	31664345692720418	
 --
 Test successful.
 Total_cycles	Begin_timestamp	End_timestamp
-292074	17651466917024168	17651466917316242
+319584	31665745959315304	31665745959634888
 syscall_timestamp	check_rights_cycles	migrate_prep_cycles	form_page_node_info_cycles	form_physical_page_list_cycles	enter_unmap_and_move_cycles	split_thp_page_cycles	get_new_page_cycles	lock_page_cycles	unmap_page_cycles	change_page_mapping_cycles	copy_page_cycles	remove_migration_ptes_cycles	putback_old_page_cycles	putback_new_page_cycles	migrate_pages_cleanup_cycles	store_page_status_cycles	return_to_syscall_cycles	last_timestamp	
-17651466917025554	1302	228640	9404	0	1400	0	0	1124	18952	1646	14536	6872	2042	538	0	1390	500	17651466917313900	
+31665745959316696	1030	255852	10570	0	1264	0	0	1442	18574	1664	14006	6424	2132	1308	0	1326	486	31665745959632774	
 --
 Test successful.
 Total_cycles	Begin_timestamp	End_timestamp
-317434	17652866725846652	17652866726164086
+364662	31667146231882690	31667146232247352
 syscall_timestamp	check_rights_cycles	migrate_prep_cycles	form_page_node_info_cycles	form_physical_page_list_cycles	enter_unmap_and_move_cycles	split_thp_page_cycles	get_new_page_cycles	lock_page_cycles	unmap_page_cycles	change_page_mapping_cycles	copy_page_cycles	remove_migration_ptes_cycles	putback_old_page_cycles	putback_new_page_cycles	migrate_pages_cleanup_cycles	store_page_status_cycles	return_to_syscall_cycles	last_timestamp	
-17652866725848078	1322	258706	8676	0	1446	0	0	1186	17528	1660	14240	5776	1714	498	0	1352	426	17652866726162608	
+31667146231884092	1628	300584	9744	0	1266	0	0	1386	19334	1558	14662	6622	2098	526	0	1348	428	31667146232245276	
 --
 Test successful.
 Total_cycles	Begin_timestamp	End_timestamp
-317666	17654266559308064	17654266559625730
+346056	31668546501231324	31668546501577380
 syscall_timestamp	check_rights_cycles	migrate_prep_cycles	form_page_node_info_cycles	form_physical_page_list_cycles	enter_unmap_and_move_cycles	split_thp_page_cycles	get_new_page_cycles	lock_page_cycles	unmap_page_cycles	change_page_mapping_cycles	copy_page_cycles	remove_migration_ptes_cycles	putback_old_page_cycles	putback_new_page_cycles	migrate_pages_cleanup_cycles	store_page_status_cycles	return_to_syscall_cycles	last_timestamp	
-17654266559309572	1004	257856	9500	0	1388	0	0	1196	17058	1820	14154	6020	2122	510	0	1218	426	17654266559623844	
+31668546501233344	2590	284984	9096	0	1412	0	0	1170	17064	1818	14166	6242	1634	580	0	1260	400	31668546501575760	
 --
 Test successful.
 Total_cycles	Begin_timestamp	End_timestamp
-322766	17655666371826784	17655666372149550
+364604	31669946467805440	31669946468170044
 syscall_timestamp	check_rights_cycles	migrate_prep_cycles	form_page_node_info_cycles	form_physical_page_list_cycles	enter_unmap_and_move_cycles	split_thp_page_cycles	get_new_page_cycles	lock_page_cycles	unmap_page_cycles	change_page_mapping_cycles	copy_page_cycles	remove_migration_ptes_cycles	putback_old_page_cycles	putback_new_page_cycles	migrate_pages_cleanup_cycles	store_page_status_cycles	return_to_syscall_cycles	last_timestamp	
-17655666371828188	1080	258986	9636	0	1278	0	0	1330	18728	1798	14526	7234	1968	510	0	1402	448	17655666372147112	
+31669946467807022	1084	305396	9136	0	1442	0	0	1082	17100	1820	13850	6536	2082	496	0	1078	406	31669946468168530	
 --
 Test successful.
