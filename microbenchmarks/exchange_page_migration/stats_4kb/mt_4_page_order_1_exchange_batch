@@ -1,30 +1,30 @@
 Total_cycles	Begin_timestamp	End_timestamp
-311362	31663645585854300	31663645586165662
+609628	31806019499098228	31806019499707856
 syscall_timestamp	check_rights_cycles	migrate_prep_cycles	form_page_node_info_cycles	form_physical_page_list_cycles	enter_unmap_and_move_cycles	split_thp_page_cycles	get_new_page_cycles	lock_page_cycles	unmap_page_cycles	change_page_mapping_cycles	copy_page_cycles	remove_migration_ptes_cycles	putback_old_page_cycles	putback_new_page_cycles	migrate_pages_cleanup_cycles	store_page_status_cycles	return_to_syscall_cycles	last_timestamp	
-31663645585855408	1408	249176	9578	0	1212	0	0	15564	4604	2456	14536	6618	768	418	0	1382	420	31663645586163548	
+31806019499099388	994	294146	10682	0	1276	0	0	13222	4760	2464	268422	7732	790	424	0	1722	406	31806019499706428	
 --
 Test successful.
 Total_cycles	Begin_timestamp	End_timestamp
-313442	31665045849608538	31665045849921980
+602642	31807419624260734	31807419624863376
 syscall_timestamp	check_rights_cycles	migrate_prep_cycles	form_page_node_info_cycles	form_physical_page_list_cycles	enter_unmap_and_move_cycles	split_thp_page_cycles	get_new_page_cycles	lock_page_cycles	unmap_page_cycles	change_page_mapping_cycles	copy_page_cycles	remove_migration_ptes_cycles	putback_old_page_cycles	putback_new_page_cycles	migrate_pages_cleanup_cycles	store_page_status_cycles	return_to_syscall_cycles	last_timestamp	
-31665045849609672	1282	253434	10398	0	1322	0	0	13740	4722	2104	14436	6614	782	420	0	1234	418	31665045849920578	
+31807419624261922	952	289428	9562	0	1212	0	0	15782	4920	2296	263928	7820	764	422	0	1736	420	31807419624861164	
 --
 Test successful.
 Total_cycles	Begin_timestamp	End_timestamp
-310790	31666446106850162	31666446107160952
+545366	31808819747291328	31808819747836694
 syscall_timestamp	check_rights_cycles	migrate_prep_cycles	form_page_node_info_cycles	form_physical_page_list_cycles	enter_unmap_and_move_cycles	split_thp_page_cycles	get_new_page_cycles	lock_page_cycles	unmap_page_cycles	change_page_mapping_cycles	copy_page_cycles	remove_migration_ptes_cycles	putback_old_page_cycles	putback_new_page_cycles	migrate_pages_cleanup_cycles	store_page_status_cycles	return_to_syscall_cycles	last_timestamp	
-31666446106851338	1656	250426	11020	0	1184	0	0	13174	4572	2344	14252	6698	768	420	0	1292	418	31666446107159562	
+31808819747292500	1086	239252	8562	0	1176	0	0	12618	4824	2252	261396	8150	774	416	0	1658	602	31808819747835266	
 --
 Test successful.
 Total_cycles	Begin_timestamp	End_timestamp
-420448	31667846381809172	31667846382229620
+604688	31810219867812952	31810219868417640
 syscall_timestamp	check_rights_cycles	migrate_prep_cycles	form_page_node_info_cycles	form_physical_page_list_cycles	enter_unmap_and_move_cycles	split_thp_page_cycles	get_new_page_cycles	lock_page_cycles	unmap_page_cycles	change_page_mapping_cycles	copy_page_cycles	remove_migration_ptes_cycles	putback_old_page_cycles	putback_new_page_cycles	migrate_pages_cleanup_cycles	store_page_status_cycles	return_to_syscall_cycles	last_timestamp	
-31667846381810278	1060	359482	11798	0	1238	0	0	13606	4458	2248	14350	6538	762	428	0	1324	440	31667846382228010	
+31810219867814440	976	296238	9642	0	1302	0	0	14174	4704	2254	261370	7688	776	422	0	1806	400	31810219868416192	
 --
 Test successful.
 Total_cycles	Begin_timestamp	End_timestamp
-358934	31669246504303958	31669246504662892
+618046	31811619986619078	31811619987237124
 syscall_timestamp	check_rights_cycles	migrate_prep_cycles	form_page_node_info_cycles	form_physical_page_list_cycles	enter_unmap_and_move_cycles	split_thp_page_cycles	get_new_page_cycles	lock_page_cycles	unmap_page_cycles	change_page_mapping_cycles	copy_page_cycles	remove_migration_ptes_cycles	putback_old_page_cycles	putback_new_page_cycles	migrate_pages_cleanup_cycles	store_page_status_cycles	return_to_syscall_cycles	last_timestamp	
-31669246504305150	1040	299524	10138	0	1258	0	0	13224	4548	2284	14656	6710	774	412	0	1246	404	31669246504661368	
+31811619986620208	956	301958	10748	0	1216	0	0	14098	4508	2240	269768	6952	756	426	0	1414	420	31811619987235668	
 --
 Test successful.

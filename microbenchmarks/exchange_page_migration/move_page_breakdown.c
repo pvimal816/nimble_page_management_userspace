@@ -20,8 +20,8 @@
 #include <sys/mman.h>
 #include <numaif.h>
 
-#define SOURCE_NUMA_NODE (2)
-#define DESTINATION_NUMA_NODE (9)
+#define SOURCE_NUMA_NODE (7)
+#define DESTINATION_NUMA_NODE (3)
 
 unsigned int pagesize;
 unsigned int page_count = 32;

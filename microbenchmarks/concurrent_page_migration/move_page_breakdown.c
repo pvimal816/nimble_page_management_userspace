@@ -19,8 +19,8 @@
 #include <fcntl.h>
 #include <sys/mman.h>
 
-#define SOURCE_NUMA_NODE (2)
-#define DESTINATION_NUMA_NODE (9)
+#define SOURCE_NUMA_NODE (7)
+#define DESTINATION_NUMA_NODE (3)
 
 unsigned int pagesize;
 unsigned long page_count = 32;

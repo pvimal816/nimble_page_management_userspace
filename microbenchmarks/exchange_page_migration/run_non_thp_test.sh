@@ -33,9 +33,9 @@ for I in `seq 1 5`; do
 					echo "[3]NUM_PAGES: "${NUM_PAGES}", METHOD: "${PARAM}", BATCH: "${BATCH}", MT: "${MT}
 
 					if [[ "x${I}" == "x1" ]]; then
-						numactl -N 2 -m 2 ./non_thp_move_pages ${NUM_PAGES} ${PARAM} ${BATCH} 2>./thp_verify/${METHOD}_${MT}_4kb_page_order_${N}_${BATCH} | grep -A 3 "\(Total_cycles\|Test successful\)" > ./stats_4kb/${METHOD}_${MT}_page_order_${N}_exchange_${BATCH}
+						numactl -N 2 -m 7 ./non_thp_move_pages ${NUM_PAGES} ${PARAM} ${BATCH} 2>./thp_verify/${METHOD}_${MT}_4kb_page_order_${N}_${BATCH} | grep -A 3 "\(Total_cycles\|Test successful\)" > ./stats_4kb/${METHOD}_${MT}_page_order_${N}_exchange_${BATCH}
 					else
-						numactl -N 2 -m 2 ./non_thp_move_pages ${NUM_PAGES} ${PARAM} ${BATCH} 2>./thp_verify/${METHOD}_${MT}_4kb_page_order_${N}_${BATCH} | grep -A 3 "\(Total_cycles\|Test successful\)" >> ./stats_4kb/${METHOD}_${MT}_page_order_${N}_exchange_${BATCH}
+						numactl -N 2 -m 7 ./non_thp_move_pages ${NUM_PAGES} ${PARAM} ${BATCH} 2>./thp_verify/${METHOD}_${MT}_4kb_page_order_${N}_${BATCH} | grep -A 3 "\(Total_cycles\|Test successful\)" >> ./stats_4kb/${METHOD}_${MT}_page_order_${N}_exchange_${BATCH}
 					fi
 
 					sleep 5

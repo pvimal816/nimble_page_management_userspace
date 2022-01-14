@@ -1,2 +1,285 @@
 sudo: unable to read password: Input/output error
+’:
+non_thp_move_page_breakdown.c:235:9: warning: format ‘%llu’ expects argument of type ‘long long unsigned int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  235 |  printf("Total_cycles\tBegin_timestamp\tEnd_timestamp\n"
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  236 |      "%llu\t%llu\t%llu\n",
+  237 |      (end-begin), begin, end);
+      |      ~~~~~~~~~~~
+      |          |
+      |          long unsigned int
+non_thp_move_page_breakdown.c:236:10: note: format string is defined here
+  236 |      "%llu\t%llu\t%llu\n",
+      |       ~~~^
+      |          |
+      |          long long unsigned int
+      |       %lu
+non_thp_move_page_breakdown.c:235:9: warning: format ‘%llu’ expects argument of type ‘long long unsigned int’, but argument 3 has type ‘long unsigned int’ [-Wformat=]
+  235 |  printf("Total_cycles\tBegin_timestamp\tEnd_timestamp\n"
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  236 |      "%llu\t%llu\t%llu\n",
+  237 |      (end-begin), begin, end);
+      |                   ~~~~~
+      |                   |
+      |                   long unsigned int
+non_thp_move_page_breakdown.c:236:16: note: format string is defined here
+  236 |      "%llu\t%llu\t%llu\n",
+      |             ~~~^
+      |                |
+      |                long long unsigned int
+      |             %lu
+non_thp_move_page_breakdown.c:235:9: warning: format ‘%llu’ expects argument of type ‘long long unsigned int’, but argument 4 has type ‘long unsigned int’ [-Wformat=]
+  235 |  printf("Total_cycles\tBegin_timestamp\tEnd_timestamp\n"
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  236 |      "%llu\t%llu\t%llu\n",
+  237 |      (end-begin), begin, end);
+      |                          ~~~
+      |                          |
+      |                          long unsigned int
+non_thp_move_page_breakdown.c:236:22: note: format string is defined here
+  236 |      "%llu\t%llu\t%llu\n",
+      |                   ~~~^
+      |                      |
+      |                      long long unsigned int
+      |                   %lu
+move_page_breakdown.c: In function ‘main’:
+move_page_breakdown.c:120:31: warning: format ‘%d’ expects argument of type ‘int *’, but argument 3 has type ‘long unsigned int *’ [-Wformat=]
+  120 |             sscanf(argv[1], "%d", &page_count);
+      |                              ~^   ~~~~~~~~~~~
+      |                               |   |
+      |                               |   long unsigned int *
+      |                               int *
+      |                              %ld
+move_page_breakdown.c:237:9: warning: format ‘%llu’ expects argument of type ‘long long unsigned int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  237 |  printf("Total_cycles\tBegin_timestamp\tEnd_timestamp\n"
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  238 |      "%llu\t%llu\t%llu\n",
+  239 |      (end-begin), begin, end);
+      |      ~~~~~~~~~~~
+      |          |
+      |          long unsigned int
+move_page_breakdown.c:238:10: note: format string is defined here
+  238 |      "%llu\t%llu\t%llu\n",
+      |       ~~~^
+      |          |
+      |          long long unsigned int
+      |       %lu
+move_page_breakdown.c:237:9: warning: format ‘%llu’ expects argument of type ‘long long unsigned int’, but argument 3 has type ‘long unsigned int’ [-Wformat=]
+  237 |  printf("Total_cycles\tBegin_timestamp\tEnd_timestamp\n"
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  238 |      "%llu\t%llu\t%llu\n",
+  239 |      (end-begin), begin, end);
+      |                   ~~~~~
+      |                   |
+      |                   long unsigned int
+move_page_breakdown.c:238:16: note: format string is defined here
+  238 |      "%llu\t%llu\t%llu\n",
+      |             ~~~^
+      |                |
+      |                long long unsigned int
+      |             %lu
+move_page_breakdown.c:237:9: warning: format ‘%llu’ expects argument of type ‘long long unsigned int’, but argument 4 has type ‘long unsigned int’ [-Wformat=]
+  237 |  printf("Total_cycles\tBegin_timestamp\tEnd_timestamp\n"
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  238 |      "%llu\t%llu\t%llu\n",
+  239 |      (end-begin), begin, end);
+      |                          ~~~
+      |                          |
+      |                          long unsigned int
+move_page_breakdown.c:238:22: note: format string is defined here
+  238 |      "%llu\t%llu\t%llu\n",
+      |                   ~~~^
+      |                      |
+      |                      long long unsigned int
+      |                   %lu
+move_page_breakdown.c:251:67: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘long unsigned int’ [-Wformat=]
+  251 |       fprintf(stderr, "Bad page state before migrate_pages. Page %d status %d\n",i, status[i]);
+      |                                                                  ~^              ~
+      |                                                                   |              |
+      |                                                                   int            long unsigned int
+      |                                                                  %ld
+move_page_breakdown.c:284:34: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘long unsigned int’ [-Wformat=]
+  284 |       fprintf(stderr, "*** Page %d contents corrupted.\n", i);
+      |                                 ~^                         ~
+      |                                  |                         |
+      |                                  int                       long unsigned int
+      |                                 %ld
+move_page_breakdown.c:288:33: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘long unsigned int’ [-Wformat=]
+  288 |      fprintf(stderr, "*** Page %d on the wrong node\n", i);
+      |                                ~^                       ~
+      |                                 |                       |
+      |                                 int                     long unsigned int
+      |                                %ld
 ./run_all.sh: 14: run: not found
+non_thp_move_page_breakdown.c: In function ‘main’:
+non_thp_move_page_breakdown.c:261:9: warning: format ‘%llu’ expects argument of type ‘long long unsigned int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  261 |  printf("Total_cycles\tBegin_timestamp\tEnd_timestamp\n"
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  262 |      "%llu\t%llu\t%llu\n",
+  263 |      (end-begin), begin, end);
+      |      ~~~~~~~~~~~
+      |          |
+      |          long unsigned int
+non_thp_move_page_breakdown.c:262:10: note: format string is defined here
+  262 |      "%llu\t%llu\t%llu\n",
+      |       ~~~^
+      |          |
+      |          long long unsigned int
+      |       %lu
+non_thp_move_page_breakdown.c:261:9: warning: format ‘%llu’ expects argument of type ‘long long unsigned int’, but argument 3 has type ‘long unsigned int’ [-Wformat=]
+  261 |  printf("Total_cycles\tBegin_timestamp\tEnd_timestamp\n"
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  262 |      "%llu\t%llu\t%llu\n",
+  263 |      (end-begin), begin, end);
+      |                   ~~~~~
+      |                   |
+      |                   long unsigned int
+non_thp_move_page_breakdown.c:262:16: note: format string is defined here
+  262 |      "%llu\t%llu\t%llu\n",
+      |             ~~~^
+      |                |
+      |                long long unsigned int
+      |             %lu
+non_thp_move_page_breakdown.c:261:9: warning: format ‘%llu’ expects argument of type ‘long long unsigned int’, but argument 4 has type ‘long unsigned int’ [-Wformat=]
+  261 |  printf("Total_cycles\tBegin_timestamp\tEnd_timestamp\n"
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  262 |      "%llu\t%llu\t%llu\n",
+  263 |      (end-begin), begin, end);
+      |                          ~~~
+      |                          |
+      |                          long unsigned int
+non_thp_move_page_breakdown.c:262:22: note: format string is defined here
+  262 |      "%llu\t%llu\t%llu\n",
+      |                   ~~~^
+      |                      |
+      |                      long long unsigned int
+      |                   %lu
+move_page_breakdown.c: In function ‘main’:
+move_page_breakdown.c:264:9: warning: format ‘%llu’ expects argument of type ‘long long unsigned int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  264 |  printf("Total_cycles\tBegin_timestamp\tEnd_timestamp\n"
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  265 |      "%llu\t%llu\t%llu\n",
+  266 |      (end-begin), begin, end);
+      |      ~~~~~~~~~~~
+      |          |
+      |          long unsigned int
+move_page_breakdown.c:265:10: note: format string is defined here
+  265 |      "%llu\t%llu\t%llu\n",
+      |       ~~~^
+      |          |
+      |          long long unsigned int
+      |       %lu
+move_page_breakdown.c:264:9: warning: format ‘%llu’ expects argument of type ‘long long unsigned int’, but argument 3 has type ‘long unsigned int’ [-Wformat=]
+  264 |  printf("Total_cycles\tBegin_timestamp\tEnd_timestamp\n"
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  265 |      "%llu\t%llu\t%llu\n",
+  266 |      (end-begin), begin, end);
+      |                   ~~~~~
+      |                   |
+      |                   long unsigned int
+move_page_breakdown.c:265:16: note: format string is defined here
+  265 |      "%llu\t%llu\t%llu\n",
+      |             ~~~^
+      |                |
+      |                long long unsigned int
+      |             %lu
+move_page_breakdown.c:264:9: warning: format ‘%llu’ expects argument of type ‘long long unsigned int’, but argument 4 has type ‘long unsigned int’ [-Wformat=]
+  264 |  printf("Total_cycles\tBegin_timestamp\tEnd_timestamp\n"
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  265 |      "%llu\t%llu\t%llu\n",
+  266 |      (end-begin), begin, end);
+      |                          ~~~
+      |                          |
+      |                          long unsigned int
+move_page_breakdown.c:265:22: note: format string is defined here
+  265 |      "%llu\t%llu\t%llu\n",
+      |                   ~~~^
+      |                      |
+      |                      long long unsigned int
+      |                   %lu
+non_thp_move_page_breakdown.c: In function ‘main’:
+non_thp_move_page_breakdown.c:225:9: warning: format ‘%llu’ expects argument of type ‘long long unsigned int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  225 |  printf("Total_cycles\tBegin_timestamp\tEnd_timestamp\n"
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  226 |      "%llu\t%llu\t%llu\n",
+  227 |      (end-begin), begin, end);
+      |      ~~~~~~~~~~~
+      |          |
+      |          long unsigned int
+non_thp_move_page_breakdown.c:226:10: note: format string is defined here
+  226 |      "%llu\t%llu\t%llu\n",
+      |       ~~~^
+      |          |
+      |          long long unsigned int
+      |       %lu
+non_thp_move_page_breakdown.c:225:9: warning: format ‘%llu’ expects argument of type ‘long long unsigned int’, but argument 3 has type ‘long unsigned int’ [-Wformat=]
+  225 |  printf("Total_cycles\tBegin_timestamp\tEnd_timestamp\n"
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  226 |      "%llu\t%llu\t%llu\n",
+  227 |      (end-begin), begin, end);
+      |                   ~~~~~
+      |                   |
+      |                   long unsigned int
+non_thp_move_page_breakdown.c:226:16: note: format string is defined here
+  226 |      "%llu\t%llu\t%llu\n",
+      |             ~~~^
+      |                |
+      |                long long unsigned int
+      |             %lu
+non_thp_move_page_breakdown.c:225:9: warning: format ‘%llu’ expects argument of type ‘long long unsigned int’, but argument 4 has type ‘long unsigned int’ [-Wformat=]
+  225 |  printf("Total_cycles\tBegin_timestamp\tEnd_timestamp\n"
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  226 |      "%llu\t%llu\t%llu\n",
+  227 |      (end-begin), begin, end);
+      |                          ~~~
+      |                          |
+      |                          long unsigned int
+non_thp_move_page_breakdown.c:226:22: note: format string is defined here
+  226 |      "%llu\t%llu\t%llu\n",
+      |                   ~~~^
+      |                      |
+      |                      long long unsigned int
+      |                   %lu
+move_page_breakdown.c: In function ‘main’:
+move_page_breakdown.c:226:9: warning: format ‘%llu’ expects argument of type ‘long long unsigned int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  226 |  printf("Total_cycles\tBegin_timestamp\tEnd_timestamp\n"
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  227 |      "%llu\t%llu\t%llu\n",
+  228 |      (end-begin), begin, end);
+      |      ~~~~~~~~~~~
+      |          |
+      |          long unsigned int
+move_page_breakdown.c:227:10: note: format string is defined here
+  227 |      "%llu\t%llu\t%llu\n",
+      |       ~~~^
+      |          |
+      |          long long unsigned int
+      |       %lu
+move_page_breakdown.c:226:9: warning: format ‘%llu’ expects argument of type ‘long long unsigned int’, but argument 3 has type ‘long unsigned int’ [-Wformat=]
+  226 |  printf("Total_cycles\tBegin_timestamp\tEnd_timestamp\n"
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  227 |      "%llu\t%llu\t%llu\n",
+  228 |      (end-begin), begin, end);
+      |                   ~~~~~
+      |                   |
+      |                   long unsigned int
+move_page_breakdown.c:227:16: note: format string is defined here
+  227 |      "%llu\t%llu\t%llu\n",
+      |             ~~~^
+      |                |
+      |                long long unsigned int
+      |             %lu
+move_page_breakdown.c:226:9: warning: format ‘%llu’ expects argument of type ‘long long unsigned int’, but argument 4 has type ‘long unsigned int’ [-Wformat=]
+  226 |  printf("Total_cycles\tBegin_timestamp\tEnd_timestamp\n"
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  227 |      "%llu\t%llu\t%llu\n",
+  228 |      (end-begin), begin, end);
+      |                          ~~~
+      |                          |
+      |                          long unsigned int
+move_page_breakdown.c:227:22: note: format string is defined here
+  227 |      "%llu\t%llu\t%llu\n",
+      |                   ~~~^
+      |                      |
+      |                      long long unsigned int
+      |                   %lu
