@@ -4,15 +4,15 @@ import matplotlib.pyplot as plt
 def main():
     base_pages_stats = stats("../thp_page_migration_and_parallel"
                             + "/stats_non_thp"
-                            + "/mt_1_non_thp_2mb_page_order_0")
+                            + "/mt_1_non_thp_2mb_page_order_4")
     
     split_thp_stats = stats("../thp_page_migration_and_parallel"
                             + "/stats_split_thp"
-                            + "/mt_1_split_thp_2mb_page_order_0")
+                            + "/mt_1_split_thp_2mb_page_order_4")
     
     native_thp_stats = stats("../thp_page_migration_and_parallel"
                             + "/stats_thp"
-                            + "/mt_1_2mb_page_order_0")
+                            + "/mt_1_2mb_page_order_4")
     
     base_page_copy_time = base_pages_stats.average_stats["copy_page_cycles"]
     base_page_total_time = base_pages_stats.average_stats["Total_cycles"]

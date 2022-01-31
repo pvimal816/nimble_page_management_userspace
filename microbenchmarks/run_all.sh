@@ -1,6 +1,11 @@
 # turnoff autonuma
 sudo sysctl kernel.numa_balancing=0
 
+# dram to dram
+export SOURCE_NODE=2
+export SOURCE_CPU_NODE=2
+export DESTINATION_NODE=3
+
 # run concurrent page migration benchmarks
 cd concurrent_page_migration;
 make non_thp_move_pages;
@@ -11,7 +16,7 @@ echo "============executing concurrent_page_migration/run_thp_test.sh===========
 ./run_thp_test.sh
 cd ..
 
-run exchange page migration benchmark
+# run exchange page migration benchmark
 cd exchange_page_migration
 make non_thp_move_pages;
 make thp_move_pages;
@@ -34,5 +39,5 @@ echo "============executing thp_page_migration_and_parallel/run_split_thp_test.s
 echo "============executing thp_page_migration_and_parallel/run_thp_test.sh================"
 ./run_thp_test.sh
 cd ..
-
+ 
 sudo sysctl kernel.numa_balancing=1

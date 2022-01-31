@@ -24,6 +24,8 @@ class stats:
                 header = None
             else:
                 header = str.split()
+                if str.startswith("ocperf"):
+                    continue
                 if len(header)==0 or header[0] not in ["Total_cycles", "syscall_timestamp"]:
                     break
         

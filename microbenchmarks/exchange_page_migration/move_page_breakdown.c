@@ -20,8 +20,8 @@
 #include <sys/mman.h>
 #include <numaif.h>
 
-#define SOURCE_NUMA_NODE (7)
-#define DESTINATION_NUMA_NODE (3)
+int SOURCE_NUMA_NODE = 2;
+int DESTINATION_NUMA_NODE = 3;
 
 unsigned int pagesize;
 unsigned int page_count = 32;
@@ -128,6 +128,10 @@ int main(int argc, char **argv)
 			sscanf(argv[2], "%s", transfer_method);
 	  if (argc > 3)
 			sscanf(argv[3], "%s", batch_mode);
+	  if (argc > 4)
+	  		sscanf(argv[4], "%d", &SOURCE_NUMA_NODE);
+	  if (argc > 5)
+	  		sscanf(argv[5], "%d", &DESTINATION_NUMA_NODE);
 
 	if (strncmp(transfer_method, "dma", 3) == 0) {
 		printf("-----Using DMA-----\n");

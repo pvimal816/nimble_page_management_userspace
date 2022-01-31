@@ -19,8 +19,8 @@
 #include <fcntl.h>
 #include <sys/mman.h>
 
-#define SOURCE_NUMA_NODE (7)
-#define DESTINATION_NUMA_NODE (3)
+int SOURCE_NUMA_NODE = 2;
+int DESTINATION_NUMA_NODE = 3;
 
 unsigned int pagesize;
 unsigned int page_count = 32;
@@ -111,6 +111,7 @@ int main(int argc, char **argv)
             printf("A minimum of 2 nodes is required for this test.\n");
             exit(1);
       }
+	  
 
       setbuf(stdout, NULL);
       printf("migrate_pages() test ......\n");
@@ -118,6 +119,10 @@ int main(int argc, char **argv)
             sscanf(argv[1], "%d", &page_count);
 	  if (argc > 2)
 			sscanf(argv[2], "%s", transfer_method);
+	  if(argc>3)
+	  		sscanf(argv[3], "%d", &SOURCE_NUMA_NODE);
+	  if(argc>4)
+	  		sscanf(argv[4], "%d", &DESTINATION_NUMA_NODE);
 
 	if (strncmp(transfer_method, "dma", 3) == 0) {
 		printf("-----Using DMA-----\n");
