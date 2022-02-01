@@ -110,6 +110,18 @@ int main(int argc, char **argv)
 
       nr_nodes = numa_max_node()+1;
 
+      if (argc > 1)
+            sscanf(argv[1], "%d", &page_count);
+	  if (argc > 2)
+			sscanf(argv[2], "%s", transfer_method);
+	  if (argc > 3)
+			sscanf(argv[3], "%s", batch_mode);
+      if(argc>4)
+	  		sscanf(argv[4], "%d", &SOURCE_NUMA_NODE);
+	  if(argc>5)
+	  		sscanf(argv[5], "%d", &DESTINATION_NUMA_NODE);
+
+
       old_nodes = numa_bitmask_alloc(nr_nodes);
         new_nodes = numa_bitmask_alloc(nr_nodes);
         numa_bitmask_setbit(old_nodes, DESTINATION_NUMA_NODE);
@@ -122,16 +134,6 @@ int main(int argc, char **argv)
 
       setbuf(stdout, NULL);
       printf("migrate_pages() test ......\n");
-      if (argc > 1)
-            sscanf(argv[1], "%d", &page_count);
-	  if (argc > 2)
-			sscanf(argv[2], "%s", transfer_method);
-	  if (argc > 3)
-			sscanf(argv[3], "%s", batch_mode);
-      if(argc>4)
-	  		sscanf(argv[4], "%d", &SOURCE_NUMA_NODE);
-	  if(argc>5)
-	  		sscanf(argv[5], "%d", &DESTINATION_NUMA_NODE);
 
 	if (strncmp(transfer_method, "dma", 3) == 0) {
 		printf("-----Using DMA-----\n");

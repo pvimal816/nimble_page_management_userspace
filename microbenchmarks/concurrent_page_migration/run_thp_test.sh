@@ -53,10 +53,10 @@ for I in `seq 1 5`; do
 					echo "[2]NUM_PAGES: "${NUM_PAGES}", METHOD: "${PARAM}", BATCH: "${BATCH}", MT: "${MT}
 
 					if [[ "x${I}" == "x1" ]]; then
-						ocperf stat -x, -o ocperf_temp_output.txt -e UNC_M_PMM_RPQ_OCCUPANCY.ALL,UNC_M_PMM_WPQ_OCCUPANCY.ALL,UNC_M_PMM_RPQ_INSERTS,UNC_M_PMM_WPQ_INSERTS numactl -N ${SOURCE_CPU_NODE} -m ${SOURCE_NODE} numactl -N 2 -m 7 ./thp_move_pages ${NUM_PAGES} ${PARAM} ${BATCH} ${SOURCE_NODE} ${DESTINATION_NODE} 2>./thp_verify/${METHOD}_${MT}_2mb_page_order_${N}_${BATCH} | grep -A 3 "\(Total_cycles\|Test successful\)" > ./stats_2mb/${METHOD}_${MT}_page_order_${N}_${BATCH}
+						ocperf stat -x, -o ocperf_temp_output.txt -e UNC_M_PMM_RPQ_OCCUPANCY.ALL,UNC_M_PMM_WPQ_OCCUPANCY.ALL,UNC_M_PMM_RPQ_INSERTS,UNC_M_PMM_WPQ_INSERTS numactl -N ${SOURCE_CPU_NODE} -m ${SOURCE_NODE} ./thp_move_pages ${NUM_PAGES} ${PARAM} ${BATCH} ${SOURCE_NODE} ${DESTINATION_NODE} 2>./thp_verify/${METHOD}_${MT}_2mb_page_order_${N}_${BATCH} | grep -A 3 "\(Total_cycles\|Test successful\)" > ./stats_2mb/${METHOD}_${MT}_page_order_${N}_${BATCH}
 						echo $PERF_EVENT_LIST_STR > ./stats_2mb/${METHOD}_${MT}_page_order_${N}_${BATCH}_perf_stats
 					else
-						ocperf stat -x, -o ocperf_temp_output.txt -e UNC_M_PMM_RPQ_OCCUPANCY.ALL,UNC_M_PMM_WPQ_OCCUPANCY.ALL,UNC_M_PMM_RPQ_INSERTS,UNC_M_PMM_WPQ_INSERTS numactl -N ${SOURCE_CPU_NODE} -m ${SOURCE_NODE} numactl -N 2 -m 7 ./thp_move_pages ${NUM_PAGES} ${PARAM} ${BATCH} ${SOURCE_NODE} ${DESTINATION_NODE} 2>./thp_verify/${METHOD}_${MT}_2mb_page_order_${N}_${BATCH} | grep -A 3 "\(Total_cycles\|Test successful\)" >> ./stats_2mb/${METHOD}_${MT}_page_order_${N}_${BATCH}
+						ocperf stat -x, -o ocperf_temp_output.txt -e UNC_M_PMM_RPQ_OCCUPANCY.ALL,UNC_M_PMM_WPQ_OCCUPANCY.ALL,UNC_M_PMM_RPQ_INSERTS,UNC_M_PMM_WPQ_INSERTS numactl -N ${SOURCE_CPU_NODE} -m ${SOURCE_NODE} ./thp_move_pages ${NUM_PAGES} ${PARAM} ${BATCH} ${SOURCE_NODE} ${DESTINATION_NODE} 2>./thp_verify/${METHOD}_${MT}_2mb_page_order_${N}_${BATCH} | grep -A 3 "\(Total_cycles\|Test successful\)" >> ./stats_2mb/${METHOD}_${MT}_page_order_${N}_${BATCH}
 						echo "" >> ./stats_2mb/${METHOD}_${MT}_page_order_${N}_${BATCH}_perf_stats
 					fi
 
