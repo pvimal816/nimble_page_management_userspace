@@ -7,9 +7,14 @@ sudo sysctl kernel.numa_balancing=0
 # export DESTINATION_NODE=3
 
 # dram to pmem
-export SOURCE_NODE=2
+# export SOURCE_NODE=2
+# export SOURCE_CPU_NODE=2
+# export DESTINATION_NODE=9
+
+# pmem to dram
+export SOURCE_NODE=7
 export SOURCE_CPU_NODE=2
-export DESTINATION_NODE=9
+export DESTINATION_NODE=3
 
 # run concurrent page migration benchmarks
 cd concurrent_page_migration;
