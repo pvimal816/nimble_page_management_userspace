@@ -267,6 +267,8 @@ int main(int argc, char **argv)
 		print_paddr_and_flags(pages+PAGE_2M*i, pagemap_fd, kpageflags_fd);
 	}
 
+	return 0;
+
       printf("\nMigrating the current processes pages ...");
       rc = numa_migrate_pages(0, old_nodes, new_nodes);
 
