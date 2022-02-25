@@ -63,9 +63,9 @@ for I in `seq 1 5`; do
 					# sums[$i]=$((${sums[$i]}+$currentValue))
 					# echo ${sums[$i]}
 				done
-
+				
 				rm ocperf_temp_output.txt
-
+				
 				sleep 1
 			done
 		done

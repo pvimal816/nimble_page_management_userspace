@@ -1,0 +1,1145 @@
+====================DRAM to DRAM page migration======================
+kernel.numa_balancing = 0
+make: 'non_thp_move_pages' is up to date.
+gcc -o thp_move_pages move_page_breakdown.c -lnuma
+sudo setcap "all=ep" thp_move_pages
+============executing exchange_page_migration/run_thp_test.sh====================
+[4]=========starting measurement number 1.==========
+vm.limit_mt_num = 1
+[4]NUM_PAGES: 1, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 2, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 4, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 8, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 16, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 32, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 64, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 128, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 256, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 512, METHOD: seq, BATCH: no_batch, MT: 1
+vm.limit_mt_num = 2
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 2
+vm.limit_mt_num = 4
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 4
+vm.limit_mt_num = 8
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 8
+vm.limit_mt_num = 16
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 16
+[4]=========starting measurement number 2.==========
+vm.limit_mt_num = 1
+[4]NUM_PAGES: 1, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 2, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 4, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 8, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 16, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 32, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 64, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 128, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 256, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 512, METHOD: seq, BATCH: no_batch, MT: 1
+vm.limit_mt_num = 2
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 2
+vm.limit_mt_num = 4
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 4
+vm.limit_mt_num = 8
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 8
+vm.limit_mt_num = 16
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 16
+[4]=========starting measurement number 3.==========
+vm.limit_mt_num = 1
+[4]NUM_PAGES: 1, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 2, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 4, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 8, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 16, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 32, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 64, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 128, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 256, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 512, METHOD: seq, BATCH: no_batch, MT: 1
+vm.limit_mt_num = 2
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 2
+vm.limit_mt_num = 4
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 4
+vm.limit_mt_num = 8
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 8
+vm.limit_mt_num = 16
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 16
+[4]=========starting measurement number 4.==========
+vm.limit_mt_num = 1
+[4]NUM_PAGES: 1, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 2, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 4, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 8, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 16, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 32, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 64, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 128, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 256, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 512, METHOD: seq, BATCH: no_batch, MT: 1
+vm.limit_mt_num = 2
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 2
+vm.limit_mt_num = 4
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 4
+vm.limit_mt_num = 8
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 8
+vm.limit_mt_num = 16
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 16
+[4]=========starting measurement number 5.==========
+vm.limit_mt_num = 1
+[4]NUM_PAGES: 1, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 2, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 4, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 8, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 16, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 32, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 64, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 128, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 256, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 512, METHOD: seq, BATCH: no_batch, MT: 1
+vm.limit_mt_num = 2
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 2
+vm.limit_mt_num = 4
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 4
+vm.limit_mt_num = 8
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 8
+vm.limit_mt_num = 16
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 16
+kernel.numa_balancing = 1
+====================DRAM to PMEM page migration======================
+kernel.numa_balancing = 0
+make: 'non_thp_move_pages' is up to date.
+make: 'thp_move_pages' is up to date.
+============executing exchange_page_migration/run_thp_test.sh====================
+[4]=========starting measurement number 1.==========
+vm.limit_mt_num = 1
+[4]NUM_PAGES: 1, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 2, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 4, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 8, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 16, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 32, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 64, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 128, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 256, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 512, METHOD: seq, BATCH: no_batch, MT: 1
+vm.limit_mt_num = 2
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 2
+vm.limit_mt_num = 4
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 4
+vm.limit_mt_num = 8
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 8
+vm.limit_mt_num = 16
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 16
+[4]=========starting measurement number 2.==========
+vm.limit_mt_num = 1
+[4]NUM_PAGES: 1, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 2, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 4, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 8, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 16, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 32, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 64, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 128, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 256, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 512, METHOD: seq, BATCH: no_batch, MT: 1
+vm.limit_mt_num = 2
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 2
+vm.limit_mt_num = 4
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 4
+vm.limit_mt_num = 8
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 8
+vm.limit_mt_num = 16
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 16
+[4]=========starting measurement number 3.==========
+vm.limit_mt_num = 1
+[4]NUM_PAGES: 1, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 2, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 4, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 8, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 16, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 32, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 64, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 128, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 256, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 512, METHOD: seq, BATCH: no_batch, MT: 1
+vm.limit_mt_num = 2
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 2
+vm.limit_mt_num = 4
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 4
+vm.limit_mt_num = 8
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 8
+vm.limit_mt_num = 16
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 16
+[4]=========starting measurement number 4.==========
+vm.limit_mt_num = 1
+[4]NUM_PAGES: 1, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 2, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 4, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 8, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 16, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 32, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 64, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 128, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 256, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 512, METHOD: seq, BATCH: no_batch, MT: 1
+vm.limit_mt_num = 2
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 2
+vm.limit_mt_num = 4
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 4
+vm.limit_mt_num = 8
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 8
+vm.limit_mt_num = 16
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 16
+[4]=========starting measurement number 5.==========
+vm.limit_mt_num = 1
+[4]NUM_PAGES: 1, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 2, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 4, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 8, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 16, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 32, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 64, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 128, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 256, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 512, METHOD: seq, BATCH: no_batch, MT: 1
+vm.limit_mt_num = 2
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 2
+vm.limit_mt_num = 4
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 4
+vm.limit_mt_num = 8
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 8
+vm.limit_mt_num = 16
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 16
+kernel.numa_balancing = 1
+====================PMEM to DRAM page migration======================
+kernel.numa_balancing = 0
+make: 'non_thp_move_pages' is up to date.
+make: 'thp_move_pages' is up to date.
+============executing exchange_page_migration/run_thp_test.sh====================
+[4]=========starting measurement number 1.==========
+vm.limit_mt_num = 1
+[4]NUM_PAGES: 1, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 2, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 4, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 8, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 16, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 32, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 64, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 128, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 256, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 512, METHOD: seq, BATCH: no_batch, MT: 1
+vm.limit_mt_num = 2
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 2
+vm.limit_mt_num = 4
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 4
+vm.limit_mt_num = 8
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 8
+vm.limit_mt_num = 16
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 16
+[4]=========starting measurement number 2.==========
+vm.limit_mt_num = 1
+[4]NUM_PAGES: 1, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 2, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 4, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 8, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 16, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 32, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 64, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 128, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 256, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 512, METHOD: seq, BATCH: no_batch, MT: 1
+vm.limit_mt_num = 2
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 2
+vm.limit_mt_num = 4
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 4
+vm.limit_mt_num = 8
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 8
+vm.limit_mt_num = 16
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 16
+[4]=========starting measurement number 3.==========
+vm.limit_mt_num = 1
+[4]NUM_PAGES: 1, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 2, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 4, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 8, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 16, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 32, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 64, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 128, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 256, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 512, METHOD: seq, BATCH: no_batch, MT: 1
+vm.limit_mt_num = 2
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 2
+vm.limit_mt_num = 4
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 4
+vm.limit_mt_num = 8
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 8
+vm.limit_mt_num = 16
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 16
+[4]=========starting measurement number 4.==========
+vm.limit_mt_num = 1
+[4]NUM_PAGES: 1, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 2, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 4, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 8, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 16, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 32, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 64, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 128, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 256, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 512, METHOD: seq, BATCH: no_batch, MT: 1
+vm.limit_mt_num = 2
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 2
+vm.limit_mt_num = 4
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 4
+vm.limit_mt_num = 8
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 8
+vm.limit_mt_num = 16
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 16
+[4]=========starting measurement number 5.==========
+vm.limit_mt_num = 1
+[4]NUM_PAGES: 1, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 2, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 4, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 8, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 16, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 32, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 64, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 128, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 256, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 512, METHOD: seq, BATCH: no_batch, MT: 1
+vm.limit_mt_num = 2
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 2
+vm.limit_mt_num = 4
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 4
+vm.limit_mt_num = 8
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 8
+vm.limit_mt_num = 16
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 16
+kernel.numa_balancing = 1
+====================PMEM to PMEM page migration======================
+kernel.numa_balancing = 0
+make: 'non_thp_move_pages' is up to date.
+make: 'thp_move_pages' is up to date.
+============executing exchange_page_migration/run_thp_test.sh====================
+[4]=========starting measurement number 1.==========
+vm.limit_mt_num = 1
+[4]NUM_PAGES: 1, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 2, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 4, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 8, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 16, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 32, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 64, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 128, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 256, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 512, METHOD: seq, BATCH: no_batch, MT: 1
+vm.limit_mt_num = 2
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 2
+vm.limit_mt_num = 4
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 4
+vm.limit_mt_num = 8
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 8
+vm.limit_mt_num = 16
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 16
+[4]=========starting measurement number 2.==========
+vm.limit_mt_num = 1
+[4]NUM_PAGES: 1, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 2, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 4, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 8, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 16, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 32, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 64, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 128, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 256, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 512, METHOD: seq, BATCH: no_batch, MT: 1
+vm.limit_mt_num = 2
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 2
+vm.limit_mt_num = 4
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 4
+vm.limit_mt_num = 8
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 8
+vm.limit_mt_num = 16
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 16
+[4]=========starting measurement number 3.==========
+vm.limit_mt_num = 1
+[4]NUM_PAGES: 1, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 2, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 4, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 8, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 16, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 32, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 64, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 128, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 256, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 512, METHOD: seq, BATCH: no_batch, MT: 1
+vm.limit_mt_num = 2
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 2
+vm.limit_mt_num = 4
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 4
+vm.limit_mt_num = 8
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 8
+vm.limit_mt_num = 16
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 16
+[4]=========starting measurement number 4.==========
+vm.limit_mt_num = 1
+[4]NUM_PAGES: 1, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 2, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 4, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 8, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 16, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 32, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 64, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 128, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 256, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 512, METHOD: seq, BATCH: no_batch, MT: 1
+vm.limit_mt_num = 2
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 2
+vm.limit_mt_num = 4
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 4
+vm.limit_mt_num = 8
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 8
+vm.limit_mt_num = 16
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 16
+[4]=========starting measurement number 5.==========
+vm.limit_mt_num = 1
+[4]NUM_PAGES: 1, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 2, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 4, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 8, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 16, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 32, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 64, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 128, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 256, METHOD: seq, BATCH: no_batch, MT: 1
+[4]NUM_PAGES: 512, METHOD: seq, BATCH: no_batch, MT: 1
+vm.limit_mt_num = 2
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 2
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 2
+vm.limit_mt_num = 4
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 4
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 4
+vm.limit_mt_num = 8
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 8
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 8
+vm.limit_mt_num = 16
+[4]NUM_PAGES: 1, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 2, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 4, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 8, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 16, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 32, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 64, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 128, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 16
+[4]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 16
+kernel.numa_balancing = 1

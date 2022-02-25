@@ -1,0 +1,47 @@
+./run_all.sh: 34: run: not found
+move_page_breakdown.c: In function ‘main’:
+move_page_breakdown.c:272:9: warning: format ‘%llu’ expects argument of type ‘long long unsigned int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  272 |  printf("Total_cycles\tBegin_timestamp\tEnd_timestamp\n"
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  273 |      "%llu\t%llu\t%llu\n",
+  274 |      (end-begin), begin, end);
+      |      ~~~~~~~~~~~
+      |          |
+      |          long unsigned int
+move_page_breakdown.c:273:10: note: format string is defined here
+  273 |      "%llu\t%llu\t%llu\n",
+      |       ~~~^
+      |          |
+      |          long long unsigned int
+      |       %lu
+move_page_breakdown.c:272:9: warning: format ‘%llu’ expects argument of type ‘long long unsigned int’, but argument 3 has type ‘long unsigned int’ [-Wformat=]
+  272 |  printf("Total_cycles\tBegin_timestamp\tEnd_timestamp\n"
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  273 |      "%llu\t%llu\t%llu\n",
+  274 |      (end-begin), begin, end);
+      |                   ~~~~~
+      |                   |
+      |                   long unsigned int
+move_page_breakdown.c:273:16: note: format string is defined here
+  273 |      "%llu\t%llu\t%llu\n",
+      |             ~~~^
+      |                |
+      |                long long unsigned int
+      |             %lu
+move_page_breakdown.c:272:9: warning: format ‘%llu’ expects argument of type ‘long long unsigned int’, but argument 4 has type ‘long unsigned int’ [-Wformat=]
+  272 |  printf("Total_cycles\tBegin_timestamp\tEnd_timestamp\n"
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  273 |      "%llu\t%llu\t%llu\n",
+  274 |      (end-begin), begin, end);
+      |                          ~~~
+      |                          |
+      |                          long unsigned int
+move_page_breakdown.c:273:22: note: format string is defined here
+  273 |      "%llu\t%llu\t%llu\n",
+      |                   ~~~^
+      |                      |
+      |                      long long unsigned int
+      |                   %lu
+./run_all.sh: 34: run: not found
+./run_all.sh: 34: run: not found
+./run_all.sh: 34: run: not found

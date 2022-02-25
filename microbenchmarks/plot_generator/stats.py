@@ -10,8 +10,7 @@ class stats:
         detail = None
 
         # just parse the file first
-        while True:
-            str = self.file.readline()
+        for str in self.file:
             if header is not None:
                 detail = str.split()
                 ht = dict()
@@ -24,10 +23,8 @@ class stats:
                 header = None
             else:
                 header = str.split()
-                if str.startswith("ocperf"):
-                    continue
-                if len(header)==0 or header[0] not in ["Total_cycles", "syscall_timestamp"]:
-                    break
+                if str.startswith("perf") or len(header)==0 or header[0] not in ["Total_nanoseconds", "syscall_timestamp"]:
+                    header=None
         
         # now compute average stats
         total_stats = {}

@@ -1,6 +1,8 @@
 kernel.numa_balancing = 0
-make: 'non_thp_move_pages' is up to date.
-make: 'thp_move_pages' is up to date.
+g++ -o non_thp_move_pages non_thp_move_page_breakdown.cpp -fsanitize=address -lnuma
+sudo setcap "all=ep" non_thp_move_pages
+g++ -o thp_move_pages move_page_breakdown.cpp -lnuma
+sudo setcap "all=ep" thp_move_pages
 ============executing concurrent_page_migration/run_non_thp_test.sh================
 vm.accel_page_copy = 0
 [1]=========starting measurement number 1.==========
@@ -1067,10 +1069,8 @@ vm.limit_mt_num = 16
 [2]NUM_PAGES: 256, METHOD: mt, BATCH: no_batch, MT: 16
 [2]NUM_PAGES: 512, METHOD: mt, BATCH: no_batch, MT: 16
 vm.accel_page_copy = 1
-gcc -o non_thp_move_pages non_thp_move_page_breakdown.c -lnuma
-sudo setcap "all=ep" non_thp_move_pages
-gcc -o thp_move_pages move_page_breakdown.c -lnuma
-sudo setcap "all=ep" thp_move_pages
+make: 'non_thp_move_pages' is up to date.
+make: 'thp_move_pages' is up to date.
 ============executing exchange_page_migration/run_non_thp_test.sh================
 [3]=========starting measurement number 1.==========
 vm.limit_mt_num = 1

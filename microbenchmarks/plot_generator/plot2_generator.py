@@ -10,7 +10,7 @@ def main():
     base_page_stats = [
             (1e9)/((1<<18)*stats("../thp_page_migration_and_parallel"
                 + "/stats_4kb"
-                + "/mt_{0}_4kb_page_order_0".format(i))
+                + "/mt_{0}_4kb_page_order_2".format(i))
             .average_stats["Total_cycles"]) for i in x
     ]   
     
@@ -18,7 +18,7 @@ def main():
     thp_stat = [
             (1e9)/((1<<9)*stats("../thp_page_migration_and_parallel"
                 + "/stats_thp"
-                + "/mt_{0}_2mb_page_order_0".format(i))
+                + "/mt_{0}_2mb_page_order_2".format(i))
             .average_stats["Total_cycles"]) for i in x
     ]
 

@@ -18,7 +18,7 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <sys/mman.h>
-#include <numaif.h>
+#include <chrono>
 
 int SOURCE_NUMA_NODE = 2;
 int DESTINATION_NUMA_NODE = 3;
@@ -26,13 +26,10 @@ int DESTINATION_NUMA_NODE = 3;
 unsigned int pagesize;
 unsigned int page_count = 32;
 
-char *from_page_base;
-char *to_page_base;
-char *from_pages;
-char *to_pages;
+char *page_base;
+char *pages;
 
-void **from_addr;
-void **to_addr;
+void **addr;
 int *status;
 int *nodes;
 int errors;
@@ -97,13 +94,9 @@ int main(int argc, char **argv)
 	char pagemap_proc[255];
 	char stats_buffer[1024] = {0};
 	char transfer_method[255] = {0};
-	char batch_mode[255] = {0};
 	int stats_fd;
 	int pagemap_fd;
 	int kpageflags_fd;
-	int move_page_flag = 0;
-	unsigned long node0 = 1<<SOURCE_NUMA_NODE;
-	unsigned long node1 = 1<<DESTINATION_NUMA_NODE;
 
       /*pagesize = getpagesize();*/
 	  pagesize = PAGE_4K;
@@ -114,13 +107,10 @@ int main(int argc, char **argv)
             sscanf(argv[1], "%d", &page_count);
 	  if (argc > 2)
 			sscanf(argv[2], "%s", transfer_method);
-	  if (argc > 3)
-			sscanf(argv[3], "%s", batch_mode);
-      if(argc>4)
-	  		sscanf(argv[4], "%d", &SOURCE_NUMA_NODE);
-	  if(argc>5)
-	  		sscanf(argv[5], "%d", &DESTINATION_NUMA_NODE);
-
+	  if(argc>3)
+	  		sscanf(argv[3], "%d", &SOURCE_NUMA_NODE);
+	  if(argc>4)
+	  		sscanf(argv[4], "%d", &DESTINATION_NUMA_NODE);
 
       old_nodes = numa_bitmask_alloc(nr_nodes);
         new_nodes = numa_bitmask_alloc(nr_nodes);
@@ -135,53 +125,34 @@ int main(int argc, char **argv)
       setbuf(stdout, NULL);
       printf("migrate_pages() test ......\n");
 
+
 	if (strncmp(transfer_method, "dma", 3) == 0) {
 		printf("-----Using DMA-----\n");
 	}
 	if (strncmp(transfer_method, "mt", 2) == 0) {
 		printf("-----Using Multi Threads-----\n");
 	}
-	if (strncmp(batch_mode, "batch", 5) == 0) {
-		printf("-----Using Batch Mode-----\n");
-	}
 
-	/* from pages  */
-	  from_page_base = aligned_alloc(pagesize, pagesize*page_count);
-      from_addr = malloc(sizeof(char *) * page_count);
-      status = malloc(sizeof(int *) * page_count);
-      if (!from_page_base || !from_addr || !status) {
+      /*page_base = malloc((pagesize ) * page_count);*/
+	  page_base =  (char*) aligned_alloc(pagesize, pagesize*page_count);
+      addr = (void**) malloc(sizeof(char *) * page_count);
+      status = (int*) malloc(sizeof(int *) * page_count);
+      nodes = (int*) malloc(sizeof(int *) * page_count);
+      if (!page_base || !addr || !status || !nodes) {
             printf("Unable to allocate memory\n");
             exit(1);
       }
 
-	  madvise(from_page_base, pagesize*page_count, MADV_NOHUGEPAGE);
-	  mbind(from_page_base, pagesize*page_count, MPOL_BIND, &node0, sizeof(node0)*8, 0);
-
-	  from_pages = from_page_base;
-
-      for (i = 0; i < page_count; i++) {
-            from_pages[ i * pagesize] = (char) i;
-            from_addr[i] = from_pages + i * pagesize;
-            status[i] = -123;
-      }
-
-	  /* to pages  */
-	  to_page_base = aligned_alloc(pagesize, pagesize*page_count);
-      to_addr = malloc(sizeof(char *) * page_count);
-      if (!to_page_base || !to_addr) {
-            printf("Unable to allocate memory\n");
-            exit(1);
-      }
-
-	  madvise(to_page_base, pagesize*page_count, MADV_NOHUGEPAGE);
-	  mbind(to_page_base, pagesize*page_count, MPOL_BIND, &node1, sizeof(node1)*8, 0);
+	  madvise(page_base, pagesize*page_count, MADV_NOHUGEPAGE);
       /*pages = (void *) ((((long)page_base) & ~((long)(pagesize - 1))) + pagesize);*/
 
-	  to_pages = to_page_base;
+	  pages = page_base;
 
       for (i = 0; i < page_count; i++) {
-            to_pages[ i * pagesize] = (char) (i+1);
-            to_addr[i] = to_pages + i * pagesize;
+            pages[ i * pagesize] = (char) i;
+            addr[i] = pages + i * pagesize;
+            nodes[i] = DESTINATION_NUMA_NODE;
+            status[i] = -123;
       }
 
 	sprintf(pagemap_proc, pagemap_template, getpid());
@@ -201,15 +172,9 @@ int main(int argc, char **argv)
 		exit(-1);
 	}
 
-	printf("----------From Pages------------\n");
 	for (i = 0; i < page_count; ++i) {
-		print_paddr_and_flags(from_pages+pagesize*i, pagemap_fd, kpageflags_fd);
+		print_paddr_and_flags(pages+pagesize*i, pagemap_fd, kpageflags_fd);
 	}
-	printf("----------To Pages------------\n");
-	for (i = 0; i < page_count; ++i) {
-		print_paddr_and_flags(to_pages+pagesize*i, pagemap_fd, kpageflags_fd);
-	}
-
 	sprintf(move_pages_stats_proc, move_pages_stats, getpid());
 	stats_fd = open(move_pages_stats_proc, O_RDONLY);
 
@@ -230,19 +195,17 @@ int main(int argc, char **argv)
 	  "rax", "rbx", "rcx", "rdx"
 	);
 	begin = ((uint64_t)cycles_high <<32 | cycles_low);
+	auto start_time = std::chrono::system_clock::now();
 
       /* Move to starting node */
-	if (strncmp(transfer_method, "mt", 2) == 0)
-		move_page_flag |= (1<<6);
-
-	if (strncmp(batch_mode, "batch", 5) == 0)
-		move_page_flag |= (1<<7);
-
-	  /*rc = numa_move_pages(0, page_count, addr, nodes, status, move_page_flag);*/
-	rc = syscall(439,0, page_count, from_addr, to_addr, status, move_page_flag);
+	if (strncmp(transfer_method, "dma", 3) == 0)
+	  rc = numa_move_pages(0, page_count, addr, nodes, status, (1<<5));
+	else if (strncmp(transfer_method, "mt", 2) == 0)
+	  rc = numa_move_pages(0, page_count, addr, nodes, status, (1<<6));
+	else
+	  rc = numa_move_pages(0, page_count, addr, nodes, status, 0);
 
       if (rc < 0 && errno != ENOENT) {
-		  printf("errno: %d\n", rc);
             perror("move_pages");
             exit(1);
       }
@@ -258,47 +221,82 @@ int main(int argc, char **argv)
 	);
 
 	end = ((uint64_t)cycles_high1 <<32 | cycles_low1);
+	auto end_time = std::chrono::system_clock::now();
 
-	printf("+++++After Exchange+++++\n");
+	printf("+++++After moved to node 1+++++\n");
+	for (i = 0; i < page_count; ++i) {
+		print_paddr_and_flags(pages+pagesize*i, pagemap_fd, kpageflags_fd);
+	}
 
 	pread(stats_fd, stats_buffer, sizeof(stats_buffer), 0);
 
 
-	printf("Total_cycles\tBegin_timestamp\tEnd_timestamp\n"
-		   "%llu\t%llu\t%llu\n",
+	printf("Total_nanoseconds\tTotal_cycles\tBegin_timestamp\tEnd_timestamp\n"
+		   "%llu\t%llu\t%llu\t%llu\n",
+		   	std::chrono::duration_cast<std::chrono::nanoseconds>(end_time-start_time).count(),
 		   (end-begin), begin, end);
 	printf("%s", stats_buffer);
 
 
       /* Verify correct startup locations */
-	printf("----------From Pages2------------\n");
+      printf("Page location at the beginning of the test\n");
+      printf("------------------------------------------\n");
+
+      numa_move_pages(0, page_count, addr, NULL, status, 0);
+	  for (i = 0; i < page_count; i++) {
+			/*printf("Page %d vaddr=%p node=%d\n", i, pages + i * pagesize, status[i]);*/
+			if (status[i] != DESTINATION_NUMA_NODE) {
+				  fprintf(stderr, "Bad page state before migrate_pages. Page %d status %d\n",i, status[i]);
+				  exit(1);
+			}
+	  }
+
+// ============= temprorarily avoid further read/write to pmem to verify performance counters
+	// return 0;
+// ==========================================================================================
+
+      /* Move to node zero */
+      numa_move_pages(0, page_count, addr, nodes, status, 0);
+
 	for (i = 0; i < page_count; ++i) {
-		print_paddr_and_flags(from_pages+pagesize*i, pagemap_fd, kpageflags_fd);
-	}
-	printf("----------To Pages2------------\n");
-	for (i = 0; i < page_count; ++i) {
-		print_paddr_and_flags(to_pages+pagesize*i, pagemap_fd, kpageflags_fd);
+		print_paddr_and_flags(pages+pagesize*i, pagemap_fd, kpageflags_fd);
 	}
 
+      printf("\nMigrating the current processes pages ...\n");
+      rc = numa_migrate_pages(0, old_nodes, new_nodes);
+
+      if (rc < 0) {
+            perror("numa_migrate_pages failed");
+            errors++;
+      }
+
+	for (i = 0; i < page_count; ++i) {
+		print_paddr_and_flags(pages+pagesize*i, pagemap_fd, kpageflags_fd);
+	}
+
+      /* Get page state after migration */
+      numa_move_pages(0, page_count, addr, NULL, status, 0);
       for (i = 0; i < page_count; i++) {
-			  if (from_pages[ i* pagesize ] != (char) i) {
-					fprintf(stderr, "*** From Page contents corrupted. expected: %d, got: %d\n", (char)i,from_pages[i*pagesize]);
+            /*printf("Page %d vaddr=%lx node=%d\n", i,*/
+                  /*(unsigned long)(pages + i * pagesize), status[i]);*/
+
+			  if (pages[ i* pagesize ] != (char) i) {
+					fprintf(stderr, "*** Page contents corrupted.\n");
 					errors++;
-			  } 
-	  }
-      for (i = 0; i < page_count; i++) {
-			  if (to_pages[ i* pagesize ] != (char) (i+1)) {
-					fprintf(stderr, "*** To Page contents corrupted. expected: %d, got: %d\n", (char)(i+1), to_pages[i*pagesize]);
+			  } else if (status[i]!=SOURCE_NUMA_NODE) {
+					fprintf(stderr, "*** Page on the wrong node\n");
 					errors++;
-			  } 
-	  }
+			  }
+      }
 
       if (!errors)
             printf("Test successful.\n");
       else
             fprintf(stderr, "%d errors.\n", errors);
 
-	close(stats_fd);
+	/*close(stats_fd);*/
+	close(pagemap_fd);
+	close(kpageflags_fd);
 
 	return errors > 0 ? 1 : 0;
 }
