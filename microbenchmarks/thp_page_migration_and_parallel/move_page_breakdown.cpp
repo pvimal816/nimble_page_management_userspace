@@ -97,7 +97,7 @@ int main(int argc, char **argv)
 	int stats_fd;
 	int pagemap_fd;
 	int kpageflags_fd;
-
+	int pmemOptimized=0;
       /*pagesize = getpagesize();*/
 	  pagesize = PAGE_2M;
 
@@ -111,7 +111,8 @@ int main(int argc, char **argv)
 	  		sscanf(argv[3], "%d", &SOURCE_NUMA_NODE);
 	  if(argc>4)
 	  		sscanf(argv[4], "%d", &DESTINATION_NUMA_NODE);
-
+	  if(argc>5)
+	  		sscanf(argv[5], "%d", &pmemOptimized);
 
       old_nodes = numa_bitmask_alloc(nr_nodes);
         new_nodes = numa_bitmask_alloc(nr_nodes);
@@ -185,6 +186,12 @@ int main(int argc, char **argv)
 		exit(-1);
 	}
 
+	// initialize kernel pmem info table
+	// int data1[] = {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1};
+	// int data2[] = {-1, -1, -1, -1, -1, -1, -1, 32, 32, 48, 48};
+	// int ret = syscall(441, ((pmemOptimized==1) ? data2 : data1), 11);
+	// printf("syscall 441 returned %d\n", ret);
+
 	asm volatile
 	( "CPUID\n\t"
 	  "RDTSC\n\t"
@@ -240,6 +247,10 @@ int main(int argc, char **argv)
 	printf("%s", stats_buffer);
 
 
+	// disable pmem optimization
+	// ret = syscall(441, data1, 11);
+	// printf("syscall 441 returned %d\n", ret);
+
       /* Verify correct startup locations */
       printf("Page location at the beginning of the test\n");
       printf("------------------------------------------\n");
@@ -254,7 +265,7 @@ int main(int argc, char **argv)
 	  }
 
 // ============= temprorarily avoid further read/write to pmem to verify performance counters
-	// return 0;
+	return 0;
 // ==========================================================================================
 
       /* Move to node zero */
