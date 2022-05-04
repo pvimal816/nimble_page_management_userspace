@@ -41,7 +41,7 @@ class stats:
 
         self.average_stats = total_stats
 
-        print(self.average_stats)
+        # print(self.average_stats)
 
     def __del__(self):
         self.file.close()

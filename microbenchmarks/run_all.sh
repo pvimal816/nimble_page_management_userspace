@@ -10,7 +10,7 @@ SOURCE_CPU_NODES=(2 2 2 2)
 DESTINATION_NODES=(3 9 3 9)
 CONFIGURATION_NAMES=("dram to dram" "dram to pmem" "pmem to dram" "pmem to pmem")
 
-for i in `seq 0 3`; do
+for i in `seq 3 3`; do
     export SOURCE_NODE=${SOURCE_NODES[$i]}
     export SOURCE_CPU_NODE=${SOURCE_CPU_NODES[$i]}
     export DESTINATION_NODE=${DESTINATION_NODES[$i]}
@@ -52,7 +52,9 @@ for i in `seq 0 3`; do
     # push this configuration data to repository
     echo "user" | sudo -S su -c 'git add .' vimal
     echo "user" | sudo -S su -c "git commit -m 'microbenchmark performance data for ${CONFIGURATION_NAMES[$i]}'" vimal
+    echo "user" | sudo -S su -c 'ssh-add ~/.ssh/passless_github_key' vimal
     echo "user" | sudo -S su -c "git push" vimal
+
 done
 
 sudo sysctl kernel.numa_balancing=1

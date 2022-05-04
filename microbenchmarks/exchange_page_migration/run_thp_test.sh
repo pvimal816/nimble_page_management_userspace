@@ -18,7 +18,8 @@ fi
 
 PAGE_LIST=`seq 0 9`
 COPY_METHOD="seq mt"
-BATCH_MODE="batch no_batch"
+# BATCH_MODE="batch no_batch"
+BATCH_MODE="no_batch"
 MULTI="1 2 4 8 16"
 
 PERF_EVENT_LIST=("bandwidth(GB/s)" unc_m_pmm_rpq_occupancy_all_0 unc_m_pmm_wpq_occupancy_all_0 unc_m_pmm_rpq_inserts_0 unc_m_pmm_wpq_inserts_0)

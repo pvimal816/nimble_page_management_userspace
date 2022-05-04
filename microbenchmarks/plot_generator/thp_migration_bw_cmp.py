@@ -1,5 +1,10 @@
 from stats import stats
 import matplotlib.pyplot as plt
+import seaborn as sns
+from matplotlib.pyplot import figure
+import math
+
+figure(figsize=(24, 18), dpi=80)
 
 def main():
     # X-axis is the number of pages
@@ -36,17 +41,26 @@ def main():
             thread_count = thread_counts[i][j]
             migration_type = migration_type_name_templates[i].format(thread_count)
             for page_order in page_orders:
-                total_migrated_GBytes = (1<<page_order)*(1<<21)/(1<<30); # 2MB pages
+                total_migrated_MBytes = (1<<page_order)*(1<<21)/(1<<20); # 2MB pages
                 file_name = file_name_template.format(thread_count, page_order)
                 if i<2:
                     file_name = file_name.replace("mt_1", "seq_1")
                 total_seconds = stats(file_name).average_stats["Total_nanoseconds"]/(1e9)
-                bandwidth = total_migrated_GBytes/total_seconds
+                bandwidth = (total_migrated_MBytes/total_seconds)
                 migration_type_name = migration_type_name_templates[i].format(thread_count)
                 thp_data["page_count"].append(1<<page_order)
                 thp_data["bandwidth"].append(bandwidth)
                 thp_data["migration_type"].append(migration_type_name)
 
-    print(thp_data)
+    # print(thp_data)
+    sns.set(rc={'figure.figsize':(11.7,8.27)})
+    sns.color_palette("cubehelix", as_cmap=True)
+    fig, axs = plt.subplots(nrows=2)
+    axs[0].grid(True)
+    axs[1].grid(True)
+    sns.lineplot(data=thp_data, x="page_count", y="bandwidth", hue="migration_type", style="migration_type", ax=axs[0]).set(title="Figure 10: Throughput comparison", xlabel="Number of Pages", ylabel="Throughput(MB/Sec)")
+    sns.lineplot(data=thp_data, x="page_count", y="bandwidth", hue="migration_type", style="migration_type", ax=axs[1]).set(title="Figure 10: Throughput comparison", xlabel="Number of Pages", ylabel="Throughput(MB/Sec)")
+    plt.tight_layout()
+    plt.savefig('thp_migration_bw_comparison.png')
 
 main()
