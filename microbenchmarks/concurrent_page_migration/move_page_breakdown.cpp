@@ -263,6 +263,10 @@ int main(int argc, char **argv)
 				  exit(1);
 			}
 	  }
+	  
+// ============= temprorarily avoid further read/write to pmem to verify performance counters
+	return 0;
+// ==========================================================================================
 
       /* Move to node zero */
       numa_move_pages(0, page_count, addr, nodes, status, 0);
