@@ -52,9 +52,9 @@ for i in `seq 0 3`; do
     # push this configuration data to repository
     echo "user" | sudo -S su -c 'echo user:$USER' vimal
     echo "user" | sudo -S su -c 'git add .' vimal
-    echo "user" | sudo -S su -c 'git commit -m "microbenchmark performance data for ${CONFIGURATION_NAMES[$i]}"' vimal
+    echo "user" | sudo -S su -c "git commit -m 'microbenchmark performance data for ${CONFIGURATION_NAMES[$i]}'" vimal
     # git add .
-    git commit -m "microbenchmark performance data for ${CONFIGURATION_NAMES[$i]}"
+    echo "microbenchmark performance data for ${CONFIGURATION_NAMES[$i]}"
     git push
 done
 
