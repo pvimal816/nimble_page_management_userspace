@@ -9,7 +9,7 @@ SOURCE_NODES=(2 2 7 7)
 SOURCE_CPU_NODES=(2 2 2 2)
 DESTINATION_NODES=(3 9 3 9)
 CONFIGURATION_NAMES=("dram to dram" "dram to pmem" "pmem to dram" "pmem to pmem")
-ACTIVE_CONFIGS=(0 2)
+ACTIVE_CONFIGS=(2)
 for i in ${ACTIVE_CONFIGS[@]}; do
     echo "========================= >>> Executing Configuration: ${CONFIGURATION_NAMES[$i]} <<< ======================"
     export SOURCE_NODE=${SOURCE_NODES[$i]}
