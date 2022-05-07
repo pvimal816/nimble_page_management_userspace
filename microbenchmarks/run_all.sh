@@ -52,7 +52,7 @@ for i in ${ACTIVE_CONFIGS[@]}; do
     
     # generate plots
     cd plot_generator
-    python python thp_migration_bw_cmp.py
+    python thp_migration_bw_cmp.py
     cd ..
 
     # push this configuration data to repository
