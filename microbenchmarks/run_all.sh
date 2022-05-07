@@ -50,11 +50,16 @@ for i in ${ACTIVE_CONFIGS[@]}; do
     ./run_thp_test.sh
     cd ..
     
+    # generate plots
+    cd plot_generator
+    python python thp_migration_bw_cmp.py
+    cd ..
+
     # push this configuration data to repository
-    echo "user" | sudo -S su -c 'git add .' vimal
-    echo "user" | sudo -S su -c "git commit -m 'microbenchmark performance data for ${CONFIGURATION_NAMES[$i]}'" vimal
-    echo "user" | sudo -S su -c 'ssh-add ~/.ssh/passless_github_key' vimal
-    echo "user" | sudo -S su -c "git push" vimal
+    echo "user" | sudo -S su -c ./push_to_github.sh vimal
+    # echo "user" | sudo -S su -c "git commit -m 'microbenchmark performance data for ${CONFIGURATION_NAMES[$i]}'" vimal
+    # echo "user" | sudo -S su -c 'ssh-add ~/.ssh/passless_github_key' vimal
+    # echo "user" | sudo -S su -c "git push" vimal
 
 done
 
