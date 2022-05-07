@@ -9,7 +9,7 @@ SOURCE_NODES=(2 2 7 7)
 SOURCE_CPU_NODES=(2 2 2 2)
 DESTINATION_NODES=(3 9 3 9)
 CONFIGURATION_NAMES=("dram to dram" "dram to pmem" "pmem to dram" "pmem to pmem")
-ACTIVE_CONFIGS=(2)
+ACTIVE_CONFIGS=(0 1 2 3)
 for i in ${ACTIVE_CONFIGS[@]}; do
     echo "========================= >>> Executing Configuration: ${CONFIGURATION_NAMES[$i]} <<< ======================"
     export SOURCE_NODE=${SOURCE_NODES[$i]}
@@ -56,10 +56,7 @@ for i in ${ACTIVE_CONFIGS[@]}; do
     cd ..
 
     # push this configuration data to repository
-    echo "user" | sudo -S su -c ./push_to_github.sh vimal
-    # echo "user" | sudo -S su -c "git commit -m 'microbenchmark performance data for ${CONFIGURATION_NAMES[$i]}'" vimal
-    # echo "user" | sudo -S su -c 'ssh-add ~/.ssh/passless_github_key' vimal
-    # echo "user" | sudo -S su -c "git push" vimal
+    echo "user" | sudo -S su -c "./push_to_github.sh 'microbenchmark performance data for ${CONFIGURATION_NAMES[$i]}'" vimal
 
 done
 

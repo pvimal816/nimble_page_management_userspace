@@ -35,7 +35,7 @@ kernel.numa_balancing = 0
     "movable":false
   }
 ]
-========================= >>> Executing Configuration: pmem to dram <<< ======================
+========================= >>> Executing Configuration: dram to dram <<< ======================
 make: 'non_thp_move_pages' is up to date.
 make: 'thp_move_pages' is up to date.
 ============executing concurrent_page_migration/run_non_thp_test.sh================
@@ -1171,7 +1171,7 @@ vm.limit_mt_num = 16
 make: 'non_thp_move_pages' is up to date.
 make: 'thp_move_pages' is up to date.
 ============executing thp_page_migration_and_parallel/run_non_thp_test.sh================
-SOURCE_NODE: 7
+SOURCE_NODE: 2
 SOURCE_CPU_NODE: 2
 DESTINATION_NODE: 3
 [6]=========starting measurement number 1.==========
@@ -2705,7 +2705,7 @@ kernel.enable_page_migration_optimization_avoid_remote_pmem_write = 1
 [6]NUM_PAGES: 512, METHOD: mt, BATCH: , MT: 16, pmemOptimized: 1
 kernel.enable_page_migration_optimization_avoid_remote_pmem_write = 0
 ============executing thp_page_migration_and_parallel/run_non_thp_2mb_page_test.sh================
-SOURCE_NODE: 7
+SOURCE_NODE: 2
 SOURCE_CPU_NODE: 2
 DESTINATION_NODE: 3
 [5]=========starting measurement number 1.==========
@@ -4239,7 +4239,7 @@ kernel.enable_page_migration_optimization_avoid_remote_pmem_write = 1
 [5]NUM_PAGES: 262144, METHOD: mt, BATCH: , MT: 16, pmemOptimized: 1
 kernel.enable_page_migration_optimization_avoid_remote_pmem_write = 0
 ============executing thp_page_migration_and_parallel/run_split_thp_test.sh================
-SOURCE_NODE: 7
+SOURCE_NODE: 2
 SOURCE_CPU_NODE: 2
 DESTINATION_NODE: 3
 vm.sysctl_enable_thp_migration = 0
@@ -5025,7 +5025,7 @@ kernel.enable_page_migration_optimization_avoid_remote_pmem_write = 0
 kernel.enable_page_migration_optimization_avoid_remote_pmem_write = 0
 vm.sysctl_enable_thp_migration = 1
 ============executing thp_page_migration_and_parallel/run_thp_test.sh================
-SOURCE_NODE: 7
+SOURCE_NODE: 2
 SOURCE_CPU_NODE: 2
 DESTINATION_NODE: 3
 [8]=========starting measurement number 1.==========
@@ -6558,4 +6558,3 @@ kernel.enable_page_migration_optimization_avoid_remote_pmem_write = 0
 kernel.enable_page_migration_optimization_avoid_remote_pmem_write = 1
 [8]NUM_PAGES: 512, METHOD: mt, BATCH: , MT: 16, pmemOptimized: 1
 kernel.enable_page_migration_optimization_avoid_remote_pmem_write = 0
-kernel.numa_balancing = 1
