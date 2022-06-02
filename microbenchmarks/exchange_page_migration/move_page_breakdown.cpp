@@ -36,6 +36,7 @@ void **from_addr;
 void **to_addr;
 int *status;
 int *nodes;
+int *src_nodes;
 int errors;
 int nr_nodes;
 

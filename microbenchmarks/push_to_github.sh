@@ -4,6 +4,6 @@
 
 git add .
 git commit -m "$1"
-eval `ssh-agent -s`
-ssh-add ~/.ssh/passless_github_key
-git push
+# eval `ssh-agent -s`
+# ssh-add ~/.ssh/passless_github_key
+# git push
