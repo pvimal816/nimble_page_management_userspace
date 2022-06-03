@@ -3,6 +3,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from matplotlib.pyplot import figure
 import math
+import csv
+import pandas as pd
 
 figure(figsize=(24, 18), dpi=80)
 
@@ -51,6 +53,10 @@ def main():
                 thp_data["page_count"].append(1<<page_order)
                 thp_data["bandwidth"].append(bandwidth)
                 thp_data["migration_type"].append(migration_type_name)
+
+    df = pd.DataFrame.from_dict(thp_data)
+    print(df)
+    df.to_csv("microbenchmark_summary.csv")
 
     # print(thp_data)
     sns.set(rc={'figure.figsize':(11.7,8.27)})

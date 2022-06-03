@@ -50,7 +50,7 @@ for I in `seq 1 5`; do
 			fi
 			for N in ${PAGE_LIST}; do
 				NUM_PAGES=$((1<<N))
-				for pmemOptimized in `seq 0 1`; do
+				for pmemOptimized in `seq 0 0`; do
 					sudo sysctl kernel.enable_page_migration_optimization_avoid_remote_pmem_write=$pmemOptimized
 					echo "[6]NUM_PAGES: "${NUM_PAGES}", METHOD: "${PARAM}", BATCH: "${BATCH}", MT: "${MT}", pmemOptimized: "${pmemOptimized}
 

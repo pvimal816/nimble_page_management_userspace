@@ -21,8 +21,10 @@ echo "SOURCE_CPU_NODE: $SOURCE_CPU_NODE"
 echo "DESTINATION_NODE: $DESTINATION_NODE"
 
 PAGE_LIST=`seq 0 9`
+# PAGE_LIST=`seq 9 9`
 COPY_METHOD="mt"
 MULTI="1 2 4 8 16"
+# MULTI="1 2"
 
 PERF_EVENT_LIST=("bandwidth(GB/s)" unc_m_pmm_rpq_occupancy_all_0 unc_m_pmm_wpq_occupancy_all_0 unc_m_pmm_rpq_inserts_0 unc_m_pmm_wpq_inserts_0)
 PERF_EVENT_LIST_STR="bandwidth(GB/s),unc_m_pmm_rpq_occupancy_all_0,unc_m_pmm_wpq_occupancy_all_0,unc_m_pmm_rpq_inserts_0,unc_m_pmm_wpq_inserts_0"

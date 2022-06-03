@@ -20,11 +20,12 @@ echo "SOURCE_NODE: $SOURCE_NODE"
 echo "SOURCE_CPU_NODE: $SOURCE_CPU_NODE"
 echo "DESTINATION_NODE: $DESTINATION_NODE"
 
-PAGE_LIST=`seq 1 9`
+# PAGE_LIST=`seq 9 9`
+PAGE_LIST=`seq 0 9`
 COPY_METHOD="seq mt"
 BATCH_MODE="batch no_batch"
 MULTI="1 2 4 8 16"
-# MULTI="1 2 4"
+# MULTI="1 2"
 
 PERF_EVENT_LIST=("bandwidth(GB/s)" unc_m_pmm_rpq_occupancy_all_0 unc_m_pmm_wpq_occupancy_all_0 unc_m_pmm_rpq_inserts_0 unc_m_pmm_wpq_inserts_0)
 PERF_EVENT_LIST_STR="bandwidth(GB/s),unc_m_pmm_rpq_occupancy_all_0,unc_m_pmm_wpq_occupancy_all_0,unc_m_pmm_rpq_inserts_0,unc_m_pmm_wpq_inserts_0"
@@ -62,6 +63,7 @@ for I in `seq 1 5`; do
 						if [[ "x${BATCH}" == "xno_batch" && "x${pmemOptimized}" == "x1" ]]; then
 							continue
 						fi
+						sudo sysctl kernel.reset_bandwidth_counters=1
 						sudo sysctl kernel.enable_page_migration_optimization_avoid_remote_pmem_write=$pmemOptimized
 						echo "[4]NUM_PAGES: "${NUM_PAGES}", METHOD: "${PARAM}", BATCH: "${BATCH}", MT: "${MT}", pmemOptimized: "${pmemOptimized}
 
