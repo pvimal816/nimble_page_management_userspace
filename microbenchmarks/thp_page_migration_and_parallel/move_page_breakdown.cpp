@@ -154,34 +154,34 @@ int main(int argc, char **argv)
 	  madvise(page_base, pagesize*page_count, MADV_HUGEPAGE);
 	  pages = page_base;
 	  
-	  remote_page_base = (char*) aligned_alloc(PAGE_2M, pagesize*page_count);
-      remote_addr = (void**) malloc(sizeof(char *) * page_count);
-      remote_status = (int*) malloc(sizeof(int *) * page_count);
-      remote_nodes = (int*) malloc(sizeof(int *) * page_count);
-	  if (!remote_page_base || !remote_addr || !remote_status || !remote_nodes) {
-            printf("Unable to allocate memory\n");
-            exit(1);
-	  }
+	//   remote_page_base = (char*) aligned_alloc(PAGE_2M, pagesize*page_count);
+    //   remote_addr = (void**) malloc(sizeof(char *) * page_count);
+    //   remote_status = (int*) malloc(sizeof(int *) * page_count);
+    //   remote_nodes = (int*) malloc(sizeof(int *) * page_count);
+	//   if (!remote_page_base || !remote_addr || !remote_status || !remote_nodes) {
+    //         printf("Unable to allocate memory\n");
+    //         exit(1);
+	//   }
 	  
-	  madvise(remote_page_base, pagesize*page_count, MADV_HUGEPAGE);
-      remote_pages = remote_page_base;
-	unsigned long remote_node_mask = 1<<DESTINATION_NUMA_NODE;
-	  /*pages = (void *) ((((long)page_base) & ~((long)(pagesize - 1))) + pagesize);*/
+	//   madvise(remote_page_base, pagesize*page_count, MADV_HUGEPAGE);
+    //   remote_pages = remote_page_base;
+	// unsigned long remote_node_mask = 1<<DESTINATION_NUMA_NODE;
+	//   /*pages = (void *) ((((long)page_base) & ~((long)(pagesize - 1))) + pagesize);*/
 
-	mbind(remote_page_base, pagesize*page_count, MPOL_BIND, &remote_node_mask, sizeof(remote_node_mask)*8, 0);
+	// mbind(remote_page_base, pagesize*page_count, MPOL_BIND, &remote_node_mask, sizeof(remote_node_mask)*8, 0);
 
       for (i = 0; i < page_count; i++) {
             pages[ i * pagesize] = (char) i;
-			remote_pages[i*pagesize] = (char) i;
+			// remote_pages[i*pagesize] = (char) i;
             
 			addr[i] = pages + i * pagesize;
-			remote_addr[i] = remote_pages + i * pagesize;
+			// remote_addr[i] = remote_pages + i * pagesize;
             
 			nodes[i] = DESTINATION_NUMA_NODE;
-			remote_nodes[i] = SOURCE_NUMA_NODE;
+			// remote_nodes[i] = SOURCE_NUMA_NODE;
             
 			status[i] = -123;
-			remote_status[i] = -123;
+			// remote_status[i] = -123;
       }
 
 	sprintf(pagemap_proc, pagemap_template, getpid());
@@ -245,18 +245,18 @@ int main(int argc, char **argv)
             exit(1);
       }
 
-	// copy remote pages to local node
-	if (strncmp(transfer_method, "dma", 3) == 0)
-	  rc = numa_move_pages(0, page_count, remote_addr, remote_nodes, remote_status, (1<<5));
-	else if (strncmp(transfer_method, "mt", 2) == 0)
-	  rc = numa_move_pages(0, page_count, remote_addr, remote_nodes, remote_status, (1<<6));
-	else
-	  rc = numa_move_pages(0, page_count, remote_addr, remote_nodes, remote_status, 0);
+	// // copy remote pages to local node
+	// if (strncmp(transfer_method, "dma", 3) == 0)
+	//   rc = numa_move_pages(0, page_count, remote_addr, remote_nodes, remote_status, (1<<5));
+	// else if (strncmp(transfer_method, "mt", 2) == 0)
+	//   rc = numa_move_pages(0, page_count, remote_addr, remote_nodes, remote_status, (1<<6));
+	// else
+	//   rc = numa_move_pages(0, page_count, remote_addr, remote_nodes, remote_status, 0);
 
-      if (rc < 0 && errno != ENOENT) {
-            perror("move_pages");
-            exit(1);
-      }
+    //   if (rc < 0 && errno != ENOENT) {
+    //         perror("move_pages");
+    //         exit(1);
+    //   }
 	asm volatile
 	( "RDTSCP\n\t"
 	  "mov %%edx, %0\n\t"
@@ -302,14 +302,14 @@ int main(int argc, char **argv)
 				  exit(1);
 			}
 	  }
-	  numa_move_pages(0, page_count, remote_addr, NULL, remote_status, 0);
-	  for (i = 0; i < page_count; i++) {
-			/*printf("Page %d vaddr=%p node=%d\n", i, pages + i * pagesize, status[i]);*/
-			if (remote_status[i] != SOURCE_NUMA_NODE) {
-				  fprintf(stderr, "Bad page state before migrate_pages. Page %d status %d\n",i, remote_status[i]);
-				  exit(1);
-			}
-	  }
+	//   numa_move_pages(0, page_count, remote_addr, NULL, remote_status, 0);
+	//   for (i = 0; i < page_count; i++) {
+	// 		/*printf("Page %d vaddr=%p node=%d\n", i, pages + i * pagesize, status[i]);*/
+	// 		if (remote_status[i] != SOURCE_NUMA_NODE) {
+	// 			  fprintf(stderr, "Bad page state before migrate_pages. Page %d status %d\n",i, remote_status[i]);
+	// 			  exit(1);
+	// 		}
+	//   }
 
 // ============= temprorarily avoid further read/write to pmem to verify performance counters
 	return 0;

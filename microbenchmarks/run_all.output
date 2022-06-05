@@ -9112,17 +9112,17 @@ kernel.enable_page_migration_optimization_avoid_remote_pmem_write = 1
 [8]NUM_PAGES: 512, METHOD: mt, BATCH: , MT: 16, pmemOptimized: 1
 kernel.enable_page_migration_optimization_avoid_remote_pmem_write = 0
      page_count    bandwidth          migration_type
-0             1  1560.750496         mt-1-concurrent
-1             2  1500.916572         mt-1-concurrent
-2             4   677.400272         mt-1-concurrent
-3             8   437.617971         mt-1-concurrent
-4            16   406.467098         mt-1-concurrent
+0             1  1478.549463         mt-1-concurrent
+1             2  2884.788195         mt-1-concurrent
+2             4  2734.727190         mt-1-concurrent
+3             8  1562.568072         mt-1-concurrent
+4            16  1305.218742         mt-1-concurrent
 ..          ...          ...                     ...
-125          32  2665.254160  mt-2-pmem_optimization
-126          64  2792.607597  mt-2-pmem_optimization
-127         128  2821.754450  mt-2-pmem_optimization
-128         256  2824.290042  mt-2-pmem_optimization
-129         512  2913.065100  mt-2-pmem_optimization
+125          32  2659.111323  mt-2-pmem_optimization
+126          64  2772.078179  mt-2-pmem_optimization
+127         128  2814.882449  mt-2-pmem_optimization
+128         256  2835.318104  mt-2-pmem_optimization
+129         512  2917.015670  mt-2-pmem_optimization
 
 [130 rows x 3 columns]
-kernel.numa_balancing = 1
+Staging /home/vimal/nimble_experiment/nimble_page_management_userspace/microbenchmarks for commit...
