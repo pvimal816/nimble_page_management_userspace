@@ -1,0 +1,20 @@
+[  555.665742] perf: interrupt took too long (3266 > 2500), lowering kernel.perf_event_max_sample_rate to 61000
+[  579.725539] perf: interrupt took too long (4566 > 4082), lowering kernel.perf_event_max_sample_rate to 43750
+[  603.790066] perf: interrupt took too long (7121 > 5707), lowering kernel.perf_event_max_sample_rate to 28000
+[  620.023897] perf: interrupt took too long (9352 > 8901), lowering kernel.perf_event_max_sample_rate to 21250
+[  620.100189] INFO: NMI handler (perf_event_nmi_handler) took too long to run: 0.000 msecs
+[  620.100232] INFO: NMI handler (ghes_notify_nmi) took too long to run: 0.000 msecs
+[  620.100454] perf: interrupt took too long (26670 > 11690), lowering kernel.perf_event_max_sample_rate to 7250
+[  621.062759] INFO: NMI handler (ghes_notify_nmi) took too long to run: 1.128 msecs
+[  629.711294] INFO: NMI handler (ghes_notify_nmi) took too long to run: 1.188 msecs
+[  660.049434] perf: interrupt took too long (35223 > 33337), lowering kernel.perf_event_max_sample_rate to 5500
+[  708.268376] INFO: NMI handler (ghes_notify_nmi) took too long to run: 1.212 msecs
+[  716.372483] INFO: NMI handler (ghes_notify_nmi) took too long to run: 1.827 msecs
+[  724.451908] perf: interrupt took too long (45506 > 44028), lowering kernel.perf_event_max_sample_rate to 4250
+[  859.476349] INFO: NMI handler (ghes_notify_nmi) took too long to run: 1.924 msecs
+[  869.139850] INFO: NMI handler (perf_event_nmi_handler) took too long to run: 2.422 msecs
+[  869.139973] perf: interrupt took too long (63032 > 56882), lowering kernel.perf_event_max_sample_rate to 3000
+[  975.995888] perf: interrupt took too long (79120 > 78790), lowering kernel.perf_event_max_sample_rate to 2500
+[ 1069.419976] INFO: NMI handler (ghes_notify_nmi) took too long to run: 2.263 msecs
+[ 1330.087983] INFO: NMI handler (nmi_cpu_backtrace_handler) took too long to run: 0.000 msecs
+[ 1355.092297] INFO: NMI handler (ghes_notify_nmi) took too long to run: 2.321 msecs

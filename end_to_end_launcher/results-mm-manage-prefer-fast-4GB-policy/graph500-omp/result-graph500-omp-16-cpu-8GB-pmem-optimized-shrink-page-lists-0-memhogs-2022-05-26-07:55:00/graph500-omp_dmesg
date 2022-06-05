@@ -1,0 +1,61 @@
+[   87.768503] [init_closest_cpu_node_for_pmem_list_kernel] node having CPUs are: 0, 1, 2, 3, 
+[   87.768509] [init_closest_cpu_node_for_pmem_list_kernel] CLOSEST_CPU_NODE_FOR_PMEM: [-1, -1, -1, -1, -1, -1, -1, -1, -1, 127, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1]
+[   94.354555] perf: interrupt took too long (2565 > 2500), lowering kernel.perf_event_max_sample_rate to 77750
+[  137.655171] perf: interrupt took too long (4355 > 3206), lowering kernel.perf_event_max_sample_rate to 45750
+[  138.380865] -61 free pages at to node: 2
+[  143.932936] -7115 free pages at to node: 2
+[  148.884450] INFO: NMI handler (perf_event_nmi_handler) took too long to run: 0.000 msecs
+[  148.884500] INFO: NMI handler (ghes_notify_nmi) took too long to run: 0.000 msecs
+[  149.183974] INFO: NMI handler (perf_event_nmi_handler) took too long to run: 1.175 msecs
+[  149.184014] perf: interrupt took too long (9165 > 5443), lowering kernel.perf_event_max_sample_rate to 21750
+[  149.323964] INFO: NMI handler (perf_event_nmi_handler) took too long to run: 1.242 msecs
+[  149.323967] perf: interrupt took too long (19977 > 11456), lowering kernel.perf_event_max_sample_rate to 10000
+[  149.571864] INFO: NMI handler (ghes_notify_nmi) took too long to run: 2.248 msecs
+[  152.548145] -8629 free pages at to node: 2
+[  173.491801] INFO: NMI handler (ghes_notify_nmi) took too long to run: 2.663 msecs
+[  207.205768] INFO: NMI handler (ghes_notify_nmi) took too long to run: 2.807 msecs
+[  207.808213] INFO: NMI handler (perf_event_nmi_handler) took too long to run: 2.764 msecs
+[  207.808220] INFO: NMI handler (ghes_notify_nmi) took too long to run: 3.499 msecs
+[  207.808264] perf: interrupt took too long (34694 > 24971), lowering kernel.perf_event_max_sample_rate to 5750
+[  210.129807] INFO: NMI handler (perf_event_nmi_handler) took too long to run: 3.945 msecs
+[  210.131112] perf: interrupt took too long (43695 > 43367), lowering kernel.perf_event_max_sample_rate to 4500
+[  218.547929] INFO: NMI handler (ghes_notify_nmi) took too long to run: 3.832 msecs
+[  218.547972] perf: interrupt took too long (71581 > 54618), lowering kernel.perf_event_max_sample_rate to 2750
+[  228.965764] -4222 free pages at to node: 2
+[  234.205713] INFO: NMI handler (ghes_notify_nmi) took too long to run: 4.072 msecs
+[  245.920322] -14740 free pages at to node: 2
+[  268.331070] -12069 free pages at to node: 2
+[  281.007899] INFO: NMI handler (perf_event_nmi_handler) took too long to run: 4.156 msecs
+[  281.007901] INFO: NMI handler (ghes_notify_nmi) took too long to run: 5.683 msecs
+[  283.401173] INFO: NMI handler (nmi_cpu_backtrace_handler) took too long to run: 0.000 msecs
+[  307.911198] -7 free pages at to node: 2
+[  323.471035] -4028 free pages at to node: 2
+[  335.054245] -3 free pages at to node: 2
+[  342.902946] INFO: NMI handler (nmi_cpu_backtrace_handler) took too long to run: 1.551 msecs
+[  346.279583] -15506 free pages at to node: 2
+[  357.385316] perf: interrupt took too long (93762 > 89476), lowering kernel.perf_event_max_sample_rate to 2000
+[  380.864894] INFO: NMI handler (nmi_cpu_backtrace_handler) took too long to run: 1.942 msecs
+[  389.458636] -13 free pages at to node: 2
+[  436.911421] INFO: NMI handler (perf_event_nmi_handler) took too long to run: 5.216 msecs
+[  452.110878] perf: interrupt took too long (117421 > 117202), lowering kernel.perf_event_max_sample_rate to 1500
+[  452.258007] -3289 free pages at to node: 2
+[  473.117029] INFO: NMI handler (nmi_cpu_backtrace_handler) took too long to run: 2.840 msecs
+[  528.760819] -19 free pages at to node: 2
+[  543.953346] -12 free pages at to node: 2
+[  578.056680] -6 free pages at to node: 2
+[  605.989135] -15521 free pages at to node: 2
+[  628.009585] -248 free pages at to node: 2
+[  655.263345] -15259 free pages at to node: 2
+[  681.439306] -18 free pages at to node: 2
+[  702.335179] perf: interrupt took too long (150090 > 146776), lowering kernel.perf_event_max_sample_rate to 1250
+[  704.148981] -15354 free pages at to node: 2
+[  718.976739] perf: interrupt took too long (189361 > 187612), lowering kernel.perf_event_max_sample_rate to 1000
+[  722.601900] -15252 free pages at to node: 2
+[  762.615445] -6342 free pages at to node: 2
+[  776.277300] -8087 free pages at to node: 2
+[  789.891161] -6804 free pages at to node: 2
+[  807.843571] -657 free pages at to node: 2
+[  850.430953] -15848 free pages at to node: 2
+[  867.092104] -4 free pages at to node: 2
+[  945.905470] -3643 free pages at to node: 2
+[  957.879541] -11 free pages at to node: 2

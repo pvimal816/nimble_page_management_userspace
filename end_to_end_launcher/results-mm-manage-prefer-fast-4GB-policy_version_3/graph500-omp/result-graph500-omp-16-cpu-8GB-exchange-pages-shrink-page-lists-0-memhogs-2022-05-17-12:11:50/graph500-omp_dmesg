@@ -1,0 +1,51 @@
+[49910.474361] divide error: 0000 [#2] SMP NOPTI
+[49910.474369] CPU: 16 PID: 187669 Comm: launcher Tainted: G      D           5.6.0-rc6+ #119
+[49910.474371] Hardware name: Supermicro SYS-2049U-TR4/X11QPH+, BIOS 3.3 02/25/2020
+[49910.474380] RIP: 0010:copy_page_lists_mt+0x2ea/0x510
+[49910.474384] Code: 02 48 8b 00 a9 00 00 01 00 0f 84 26 ff ff ff 48 8b 07 48 8b 00 a9 00 00 01 00 0f 85 26 ff ff ff 0f 0b 31 d2 44 89 f0 45 31 ff <f7> f3 85 d2 41 0f 95 c7 44 01 f8 89 04 24 e9 a2 fd ff ff 8d 43 ff
+[49910.474389] RSP: 0018:ffffa826c40cfa68 EFLAGS: 00010246
+[49910.474393] RAX: 0000000000000001 RBX: 0000000000000000 RCX: 0000000000000008
+[49910.474398] RDX: 0000000000000000 RSI: 0000000000000200 RDI: 0000000000000000
+[49910.474401] RBP: ffffffffa5b6eaa0 R08: 0000000000000000 R09: ffffffffa5b6eae0
+[49910.474403] R10: ffffffffa5b6eaa0 R11: 0000000000000008 R12: ffffa826c40cfb38
+[49910.474405] R13: 0000000000000001 R14: 0000000000000001 R15: 0000000000000000
+[49910.474408] FS:  00007f70ab957740(0000) GS:ffff903d7f600000(0000) knlGS:0000000000000000
+[49910.474410] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+[49910.474412] CR2: 000000c000719010 CR3: 0000002f08ed6006 CR4: 00000000007606e0
+[49910.474414] DR0: 0000000000000000 DR1: 0000000000000000 DR2: 0000000000000000
+[49910.474416] DR3: 0000000000000000 DR6: 00000000fffe0ff0 DR7: 0000000000000400
+[49910.474418] PKRU: 55555554
+[49910.474419] Call Trace:
+[49910.474428]  ? flush_tlb_mm_range+0xb3/0xe0
+[49910.474438]  migrate_pages_concur+0xf78/0x12b0
+[49910.474443]  ? alloc_pages_current+0xd0/0xd0
+[49910.474448]  migrate_to_node+0x12e/0x3e0
+[49910.474453]  do_mm_manage.isra.0+0x92e/0xb70
+[49910.474458]  __x64_sys_mm_manage+0x23d/0x2c5
+[49910.474465]  do_syscall_64+0x52/0x1c0
+[49910.474471]  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+[49910.474475] RIP: 0033:0x7f70aba7276d
+[49910.474479] Code: 00 c3 66 2e 0f 1f 84 00 00 00 00 00 90 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 8b 0d f3 36 0d 00 f7 d8 64 89 01 48
+[49910.474481] RSP: 002b:00007ffe45764a88 EFLAGS: 00000212 ORIG_RAX: 00000000000001b8
+[49910.474484] RAX: ffffffffffffffda RBX: ffffffffffffff01 RCX: 00007f70aba7276d
+[49910.474486] RDX: 0000000000000041 RSI: ffffffffffffffff RDI: 000000000002dd16
+[49910.474488] RBP: 00007ffe45764ad0 R08: 000055bfaedde130 R09: 00000000000003c2
+[49910.474490] R10: 000055bfaedde170 R11: 0000000000000212 R12: 00007ffe45765850
+[49910.474492] R13: 00007ffe45765850 R14: 0000000000000000 R15: 0000000000000000
+[49910.474495] Modules linked in: kmem device_dax intel_rapl_msr intel_rapl_common nd_pmem dax_pmem nd_btt dax_pmem_core skx_edac xt_conntrack xt_MASQUERADE nf_conntrack_netlink nfnetlink xfrm_user xfrm_algo xt_addrtype iptable_nat nf_nat nf_conntrack nf_defrag_ipv6 nf_defrag_ipv4 overlay binfmt_misc ipmi_ssif x86_pkg_temp_thermal intel_powerclamp coretemp joydev input_leds snd_hda_codec_hdmi snd_hda_intel snd_intel_dspcfg snd_hda_codec snd_hda_core snd_hwdep snd_pcm snd_seq_midi snd_seq_midi_event snd_rawmidi snd_seq snd_seq_device snd_timer snd soundcore mei_me mei ioatdma ipmi_si ipmi_devintf ipmi_msghandler acpi_pad acpi_power_meter nfit mac_hid sch_fq_codel kvm_intel kvm irqbypass iptable_filter ip6table_filter ip6_tables br_netfilter bridge stp llc arp_tables msr nfsd parport_pc ppdev lp auth_rpcgss parport nfs_acl lockd grace sunrpc ip_tables x_tables autofs4 btrfs blake2b_generic zstd_decompress zstd_compress raid10 raid456 async_raid6_recov async_memcpy async_pq async_xor async_tx
+[49910.474555]  xor raid6_pq libcrc32c raid1 raid0 multipath linear hid_generic usbhid hid crct10dif_pclmul crc32_pclmul ghash_clmulni_intel ast aesni_intel drm_vram_helper drm_ttm_helper crypto_simd ttm cryptd glue_helper nvme drm_kms_helper nvme_core syscopyarea sysfillrect sysimgblt ixgbe fb_sys_fops igb drm dca ptp pps_core i2c_algo_bit mdio ahci i2c_i801 lpc_ich libahci wmi
+[49910.474589] ---[ end trace 8840d9fd2cec9e50 ]---
+[49911.020084] RIP: 0010:copy_page_lists_mt+0x2ea/0x510
+[49911.020094] Code: 02 48 8b 00 a9 00 00 01 00 0f 84 26 ff ff ff 48 8b 07 48 8b 00 a9 00 00 01 00 0f 85 26 ff ff ff 0f 0b 31 d2 44 89 f0 45 31 ff <f7> f3 85 d2 41 0f 95 c7 44 01 f8 89 04 24 e9 a2 fd ff ff 8d 43 ff
+[49911.020107] RSP: 0018:ffffa826b537fa68 EFLAGS: 00010246
+[49911.020116] RAX: 0000000000000002 RBX: 0000000000000000 RCX: 0000000000000008
+[49911.020123] RDX: 0000000000000000 RSI: 0000000000000200 RDI: 0000000000000000
+[49911.020147] RBP: ffffffffa5b6eaa0 R08: 0000000000000000 R09: ffffffffa5b6eae0
+[49911.020155] R10: ffffffffa5b6eaa0 R11: 0000000000000008 R12: ffffa826b537fb38
+[49911.020185] R13: 0000000000000002 R14: 0000000000000002 R15: 0000000000000000
+[49911.020203] FS:  00007f70ab957740(0000) GS:ffff903d7f600000(0000) knlGS:0000000000000000
+[49911.020206] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+[49911.020208] CR2: 000000c000719010 CR3: 0000002f08ed6006 CR4: 00000000007606e0
+[49911.020211] DR0: 0000000000000000 DR1: 0000000000000000 DR2: 0000000000000000
+[49911.020213] DR3: 0000000000000000 DR6: 00000000fffe0ff0 DR7: 0000000000000400
+[49911.020215] PKRU: 55555554

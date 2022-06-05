@@ -1,0 +1,58 @@
+
+Per-node system memory usage (in MBs):
+Token Node not in hash table.
+Token Node not in hash table.
+Token Node not in hash table.
+Token Node not in hash table.
+Token Node not in hash table.
+Token Node not in hash table.
+Token Node not in hash table.
+Token Node not in hash table.
+Token Node not in hash table.
+Token Node not in hash table.
+Token Node not in hash table.
+Token Node not in hash table.
+Token Node not in hash table.
+Token Node not in hash table.
+Token Node not in hash table.
+Token Node not in hash table.
+Token Node not in hash table.
+Token Node not in hash table.
+Token Node not in hash table.
+Token Node not in hash table.
+Token Node not in hash table.
+Token Node not in hash table.
+Token Node not in hash table.
+Token Node not in hash table.
+Token Node not in hash table.
+                          Node 0          Node 1          Node 2          Node 3          Node 9           Total
+                 --------------- --------------- --------------- --------------- --------------- ---------------
+MemTotal               192085.80       193529.00       193529.00       193527.52       128000.00       900671.34
+MemFree                190571.72       192589.98       188863.02       188979.52       127993.60       888997.84
+MemUsed                  1514.08          939.02         4665.98         4548.00            6.40        11673.49
+Active                    471.52          296.16           29.27           35.60            0.00          832.54
+Inactive                  171.99           71.30           16.90           32.18            0.01          292.39
+Active(anon)              325.34          283.25           25.70           29.99            0.00          664.29
+Inactive(anon)              0.77            4.28            1.71            0.96            0.00            7.72
+Active(file)              146.18           12.90            3.57            5.61            0.00          168.25
+Inactive(file)            171.22           67.02           15.18           31.23            0.01          284.66
+Unevictable                 0.00            0.00            0.00            0.00            0.00            0.00
+Mlocked                     0.00            0.00            0.00            0.00            0.00            0.00
+Dirty                       0.00            0.02            0.00            0.00            0.00            0.02
+Writeback                   0.00            0.00            0.00            0.00            0.00            0.00
+FilePages                 313.08           82.67           13.65           34.44            0.01          443.85
+Mapped                    300.36           79.87           11.41           28.89            0.00          420.54
+AnonPages                 330.54          284.83           32.51           33.34            0.00          681.22
+Shmem                       0.77            4.28            1.72            0.96            0.00            7.74
+KernelStack                10.08           10.00            4.52            4.47            0.00           29.08
+PageTables                  8.54            6.75            0.61            0.90            0.00           16.80
+NFS_Unstable                0.00            0.00            0.00            0.00            0.00            0.00
+Bounce                      0.00            0.00            0.00            0.00            0.00            0.00
+WritebackTmp                0.00            0.00            0.00            0.00            0.00            0.00
+Slab                      446.79          240.21          141.72          173.06            2.28         1004.06
+SReclaimable              125.59           64.27           29.99           48.06            0.00          267.91
+SUnreclaim                321.20          175.94          111.73          125.00            2.28          736.15
+AnonHugePages              26.00           22.00            2.00            2.00            0.00           52.00
+HugePages_Total             0.00            0.00            0.00            0.00            0.00            0.00
+HugePages_Free              0.00            0.00            0.00            0.00            0.00            0.00
+HugePages_Surp              0.00            0.00            0.00            0.00            0.00            0.00

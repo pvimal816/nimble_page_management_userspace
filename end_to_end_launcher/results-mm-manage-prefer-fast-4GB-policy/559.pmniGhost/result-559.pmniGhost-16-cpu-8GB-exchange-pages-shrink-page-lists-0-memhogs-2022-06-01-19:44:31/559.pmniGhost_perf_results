@@ -1,0 +1,32 @@
+# started on Wed Jun  1 19:44:32 2022
+
+
+ Performance counter stats for 'system wide':
+
+37,81,40,20,14,367      unc_m_pmm_rpq_occupancy_all_0                                     (25.00%)
+             3,749      unc_m_pmm_rpq_occupancy_all_1                                     (24.99%)
+                 0      unc_m_pmm_rpq_occupancy_all_2                                     (25.00%)
+                 0      unc_m_pmm_rpq_occupancy_all_3                                     (25.00%)
+                 0      unc_m_pmm_rpq_occupancy_all_4                                     (25.00%)
+                 0      unc_m_pmm_rpq_occupancy_all_5                                     (24.99%)
+56,68,23,45,68,152      unc_m_pmm_wpq_occupancy_all_0                                     (25.00%)
+               428      unc_m_pmm_wpq_occupancy_all_1                                     (24.99%)
+                 0      unc_m_pmm_wpq_occupancy_all_2                                     (25.00%)
+                 0      unc_m_pmm_wpq_occupancy_all_3                                     (25.00%)
+                 0      unc_m_pmm_wpq_occupancy_all_4                                     (25.01%)
+                 0      unc_m_pmm_wpq_occupancy_all_5                                     (25.01%)
+    1,42,54,35,788      unc_m_pmm_rpq_inserts_0                                       (25.00%)
+                27      unc_m_pmm_rpq_inserts_1                                       (25.00%)
+                 0      unc_m_pmm_rpq_inserts_2                                       (25.01%)
+                 0      unc_m_pmm_rpq_inserts_3                                       (25.00%)
+                 0      unc_m_pmm_rpq_inserts_4                                       (25.00%)
+                 0      unc_m_pmm_rpq_inserts_5                                       (25.00%)
+    1,68,93,44,747      unc_m_pmm_wpq_inserts_0                                       (25.00%)
+                 4      unc_m_pmm_wpq_inserts_1                                       (25.00%)
+                 0      unc_m_pmm_wpq_inserts_2                                       (25.00%)
+                 0      unc_m_pmm_wpq_inserts_3                                       (25.00%)
+                 0      unc_m_pmm_wpq_inserts_4                                       (25.00%)
+                 0      unc_m_pmm_wpq_inserts_5                                       (25.00%)
+
+     177.963778385 seconds time elapsed
+

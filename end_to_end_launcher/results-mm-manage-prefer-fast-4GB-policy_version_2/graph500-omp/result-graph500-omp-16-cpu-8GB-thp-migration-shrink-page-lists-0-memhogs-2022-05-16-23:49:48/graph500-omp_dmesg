@@ -1,0 +1,2 @@
+[ 5901.697368] audit: type=1400 audit(1652725813.418:51): apparmor="DENIED" operation="open" profile="/usr/sbin/cups-browsed" name="/usr/local/lib/libgnutls.so.30.28.1" pid=104408 comm="cups-browsed" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[ 5901.734802] audit: type=1400 audit(1652725813.458:52): apparmor="DENIED" operation="capable" profile="/usr/sbin/cups-browsed" pid=104408 comm="cups-browsed" capability=23  capname="sys_nice"

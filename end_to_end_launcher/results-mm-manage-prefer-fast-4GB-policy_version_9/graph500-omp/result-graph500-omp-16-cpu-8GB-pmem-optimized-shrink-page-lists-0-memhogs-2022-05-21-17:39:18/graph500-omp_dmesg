@@ -1,0 +1,126 @@
+[ 1000.712016] [exchange_page_lists_mthread-current_cpu_node=1] PMEM optimization enabled: nr_pages=574, limit_mt_num=2, from_node_cpu_count=0, to_node_cpu_count=32
+[ 1000.712026] [init_closest_cpu_node_for_pmem_list_kernel] node having CPUs are: 0, 1, 2, 3, 
+[ 1000.712029] [init_closest_cpu_node_for_pmem_list_kernel] CLOSEST_CPU_NODE_FOR_PMEM: [-1, -1, -1, -1, -1, -1, -1, -1, -1, 127, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1]
+[ 1000.712041] [exchange_page_lists_mthread] PMEM optimization enabled: get_nearest_cpu_node(9)=127, get_nearest_cpu_node(2)=-1
+[ 1000.712205] [exchange_page_lists_mthread-current_cpu_node=1] Scheduled the mt-2 exchange operation between node 9 and 2 on CPU close to node 3!
+[ 1010.806740] [exchange_page_lists_mthread-current_cpu_node=1] PMEM optimization enabled: nr_pages=242, limit_mt_num=2, from_node_cpu_count=0, to_node_cpu_count=32
+[ 1010.806744] [exchange_page_lists_mthread] PMEM optimization enabled: get_nearest_cpu_node(9)=127, get_nearest_cpu_node(2)=-1
+[ 1010.806777] [exchange_page_lists_mthread-current_cpu_node=1] Scheduled the mt-2 exchange operation between node 9 and 2 on CPU close to node 3!
+[ 1020.796050] [exchange_page_lists_mthread-current_cpu_node=1] PMEM optimization enabled: nr_pages=120, limit_mt_num=2, from_node_cpu_count=0, to_node_cpu_count=32
+[ 1020.796054] [exchange_page_lists_mthread] PMEM optimization enabled: get_nearest_cpu_node(9)=127, get_nearest_cpu_node(2)=-1
+[ 1020.796097] [exchange_page_lists_mthread-current_cpu_node=1] Scheduled the mt-2 exchange operation between node 9 and 2 on CPU close to node 3!
+[ 1030.785107] [exchange_page_lists_mthread-current_cpu_node=1] PMEM optimization enabled: nr_pages=164, limit_mt_num=2, from_node_cpu_count=0, to_node_cpu_count=32
+[ 1030.785111] [exchange_page_lists_mthread] PMEM optimization enabled: get_nearest_cpu_node(9)=127, get_nearest_cpu_node(2)=-1
+[ 1030.785191] [exchange_page_lists_mthread-current_cpu_node=1] Scheduled the mt-2 exchange operation between node 9 and 2 on CPU close to node 3!
+[ 1040.797996] [exchange_page_lists_mthread-current_cpu_node=1] PMEM optimization enabled: nr_pages=76, limit_mt_num=2, from_node_cpu_count=0, to_node_cpu_count=32
+[ 1040.798000] [exchange_page_lists_mthread] PMEM optimization enabled: get_nearest_cpu_node(9)=127, get_nearest_cpu_node(2)=-1
+[ 1040.798046] [exchange_page_lists_mthread-current_cpu_node=1] Scheduled the mt-2 exchange operation between node 9 and 2 on CPU close to node 3!
+[ 1051.446860] [exchange_page_lists_mthread-current_cpu_node=1] PMEM optimization enabled: nr_pages=224, limit_mt_num=2, from_node_cpu_count=0, to_node_cpu_count=32
+[ 1051.446868] [exchange_page_lists_mthread] PMEM optimization enabled: get_nearest_cpu_node(9)=127, get_nearest_cpu_node(2)=-1
+[ 1051.447118] [exchange_page_lists_mthread-current_cpu_node=1] Scheduled the mt-2 exchange operation between node 9 and 2 on CPU close to node 3!
+[ 1053.215099] -124 free pages at to node: 2
+[ 1061.101814] [exchange_page_lists_mthread-current_cpu_node=1] PMEM optimization enabled: nr_pages=65, limit_mt_num=2, from_node_cpu_count=0, to_node_cpu_count=32
+[ 1061.101820] [exchange_page_lists_mthread] PMEM optimization enabled: get_nearest_cpu_node(9)=127, get_nearest_cpu_node(2)=-1
+[ 1061.101986] [exchange_page_lists_mthread-current_cpu_node=1] Scheduled the mt-2 exchange operation between node 9 and 2 on CPU close to node 3!
+[ 1063.270528] -16 free pages at to node: 2
+[ 1070.923655] [exchange_page_lists_mthread-current_cpu_node=1] PMEM optimization enabled: nr_pages=110, limit_mt_num=2, from_node_cpu_count=0, to_node_cpu_count=32
+[ 1070.923661] [exchange_page_lists_mthread] PMEM optimization enabled: get_nearest_cpu_node(9)=127, get_nearest_cpu_node(2)=-1
+[ 1070.923695] [exchange_page_lists_mthread-current_cpu_node=1] Scheduled the mt-2 exchange operation between node 9 and 2 on CPU close to node 3!
+[ 1080.854976] [exchange_page_lists_mthread-current_cpu_node=1] PMEM optimization enabled: nr_pages=19, limit_mt_num=2, from_node_cpu_count=0, to_node_cpu_count=32
+[ 1080.854980] [exchange_page_lists_mthread] PMEM optimization enabled: get_nearest_cpu_node(9)=127, get_nearest_cpu_node(2)=-1
+[ 1080.855029] [exchange_page_lists_mthread-current_cpu_node=1] Scheduled the mt-2 exchange operation between node 9 and 2 on CPU close to node 3!
+[ 1090.894264] [exchange_page_lists_mthread-current_cpu_node=1] PMEM optimization enabled: nr_pages=13, limit_mt_num=2, from_node_cpu_count=0, to_node_cpu_count=32
+[ 1090.894268] [exchange_page_lists_mthread] PMEM optimization enabled: get_nearest_cpu_node(9)=127, get_nearest_cpu_node(2)=-1
+[ 1090.894387] [exchange_page_lists_mthread-current_cpu_node=1] Scheduled the mt-2 exchange operation between node 9 and 2 on CPU close to node 3!
+[ 1100.747803] [exchange_page_lists_mthread-current_cpu_node=1] PMEM optimization enabled: nr_pages=122, limit_mt_num=2, from_node_cpu_count=0, to_node_cpu_count=32
+[ 1100.747808] [exchange_page_lists_mthread] PMEM optimization enabled: get_nearest_cpu_node(9)=127, get_nearest_cpu_node(2)=-1
+[ 1100.747828] [exchange_page_lists_mthread-current_cpu_node=1] Scheduled the mt-2 exchange operation between node 9 and 2 on CPU close to node 3!
+[ 1110.742777] [exchange_page_lists_mthread-current_cpu_node=1] PMEM optimization enabled: nr_pages=219, limit_mt_num=2, from_node_cpu_count=0, to_node_cpu_count=32
+[ 1110.742785] [exchange_page_lists_mthread] PMEM optimization enabled: get_nearest_cpu_node(9)=127, get_nearest_cpu_node(2)=-1
+[ 1110.742827] [exchange_page_lists_mthread-current_cpu_node=1] Scheduled the mt-2 exchange operation between node 9 and 2 on CPU close to node 3!
+[ 1120.750751] [exchange_page_lists_mthread-current_cpu_node=1] PMEM optimization enabled: nr_pages=253, limit_mt_num=2, from_node_cpu_count=0, to_node_cpu_count=32
+[ 1120.750756] [exchange_page_lists_mthread] PMEM optimization enabled: get_nearest_cpu_node(9)=127, get_nearest_cpu_node(2)=-1
+[ 1120.750796] [exchange_page_lists_mthread-current_cpu_node=1] Scheduled the mt-2 exchange operation between node 9 and 2 on CPU close to node 3!
+[ 1122.210156] -9 free pages at to node: 2
+[ 1130.760935] [exchange_page_lists_mthread-current_cpu_node=1] PMEM optimization enabled: nr_pages=382, limit_mt_num=2, from_node_cpu_count=0, to_node_cpu_count=32
+[ 1130.760941] [exchange_page_lists_mthread] PMEM optimization enabled: get_nearest_cpu_node(9)=127, get_nearest_cpu_node(2)=-1
+[ 1130.761099] [exchange_page_lists_mthread-current_cpu_node=1] Scheduled the mt-2 exchange operation between node 9 and 2 on CPU close to node 3!
+[ 1140.712150] [exchange_page_lists_mthread-current_cpu_node=1] PMEM optimization enabled: nr_pages=156, limit_mt_num=2, from_node_cpu_count=0, to_node_cpu_count=32
+[ 1140.712154] [exchange_page_lists_mthread] PMEM optimization enabled: get_nearest_cpu_node(9)=127, get_nearest_cpu_node(2)=-1
+[ 1140.712183] [exchange_page_lists_mthread-current_cpu_node=1] Scheduled the mt-2 exchange operation between node 9 and 2 on CPU close to node 3!
+[ 1145.749203] perf: interrupt took too long (106768 > 104957), lowering kernel.perf_event_max_sample_rate to 1750
+[ 1150.715065] [exchange_page_lists_mthread-current_cpu_node=1] PMEM optimization enabled: nr_pages=280, limit_mt_num=2, from_node_cpu_count=0, to_node_cpu_count=32
+[ 1150.715071] [exchange_page_lists_mthread] PMEM optimization enabled: get_nearest_cpu_node(9)=127, get_nearest_cpu_node(2)=-1
+[ 1150.715128] [exchange_page_lists_mthread-current_cpu_node=1] Scheduled the mt-2 exchange operation between node 9 and 2 on CPU close to node 3!
+[ 1152.969580] -335 free pages at to node: 2
+[ 1161.233203] [exchange_page_lists_mthread-current_cpu_node=1] PMEM optimization enabled: nr_pages=155, limit_mt_num=2, from_node_cpu_count=0, to_node_cpu_count=32
+[ 1161.233207] [exchange_page_lists_mthread] PMEM optimization enabled: get_nearest_cpu_node(9)=127, get_nearest_cpu_node(2)=-1
+[ 1161.233314] [exchange_page_lists_mthread-current_cpu_node=1] Scheduled the mt-2 exchange operation between node 9 and 2 on CPU close to node 3!
+[ 1171.768972] [exchange_page_lists_mthread-current_cpu_node=1] PMEM optimization enabled: nr_pages=274, limit_mt_num=2, from_node_cpu_count=0, to_node_cpu_count=32
+[ 1171.768976] [exchange_page_lists_mthread] PMEM optimization enabled: get_nearest_cpu_node(9)=127, get_nearest_cpu_node(2)=-1
+[ 1171.769011] [exchange_page_lists_mthread-current_cpu_node=1] Scheduled the mt-2 exchange operation between node 9 and 2 on CPU close to node 3!
+[ 1173.342820] -10 free pages at to node: 2
+[ 1180.965824] [exchange_page_lists_mthread-current_cpu_node=1] PMEM optimization enabled: nr_pages=85, limit_mt_num=2, from_node_cpu_count=0, to_node_cpu_count=32
+[ 1180.965831] [exchange_page_lists_mthread] PMEM optimization enabled: get_nearest_cpu_node(9)=127, get_nearest_cpu_node(2)=-1
+[ 1180.965867] [exchange_page_lists_mthread-current_cpu_node=1] Scheduled the mt-2 exchange operation between node 9 and 2 on CPU close to node 3!
+[ 1181.476279] perf: interrupt took too long (134147 > 133460), lowering kernel.perf_event_max_sample_rate to 1250
+[ 1183.471407] -9777 free pages at to node: 2
+[ 1191.157712] [exchange_page_lists_mthread-current_cpu_node=1] PMEM optimization enabled: nr_pages=113, limit_mt_num=2, from_node_cpu_count=0, to_node_cpu_count=32
+[ 1191.157716] [exchange_page_lists_mthread] PMEM optimization enabled: get_nearest_cpu_node(9)=127, get_nearest_cpu_node(2)=-1
+[ 1191.157754] [exchange_page_lists_mthread-current_cpu_node=1] Scheduled the mt-2 exchange operation between node 9 and 2 on CPU close to node 3!
+[ 1194.192981] -166 free pages at to node: 2
+[ 1201.936804] [exchange_page_lists_mthread-current_cpu_node=1] PMEM optimization enabled: nr_pages=394, limit_mt_num=2, from_node_cpu_count=0, to_node_cpu_count=32
+[ 1201.936808] [exchange_page_lists_mthread] PMEM optimization enabled: get_nearest_cpu_node(9)=127, get_nearest_cpu_node(2)=-1
+[ 1201.936891] [exchange_page_lists_mthread-current_cpu_node=1] Scheduled the mt-2 exchange operation between node 9 and 2 on CPU close to node 3!
+[ 1203.692857] -16 free pages at to node: 2
+[ 1211.597623] [exchange_page_lists_mthread-current_cpu_node=1] PMEM optimization enabled: nr_pages=410, limit_mt_num=2, from_node_cpu_count=0, to_node_cpu_count=32
+[ 1211.597627] [exchange_page_lists_mthread] PMEM optimization enabled: get_nearest_cpu_node(9)=127, get_nearest_cpu_node(2)=-1
+[ 1211.597714] [exchange_page_lists_mthread-current_cpu_node=1] Scheduled the mt-2 exchange operation between node 9 and 2 on CPU close to node 3!
+[ 1216.489527] INFO: NMI handler (ghes_notify_nmi) took too long to run: 6.930 msecs
+[ 1220.736180] [exchange_page_lists_mthread-current_cpu_node=1] PMEM optimization enabled: nr_pages=448, limit_mt_num=2, from_node_cpu_count=0, to_node_cpu_count=32
+[ 1220.736185] [exchange_page_lists_mthread] PMEM optimization enabled: get_nearest_cpu_node(9)=127, get_nearest_cpu_node(2)=-1
+[ 1220.736314] [exchange_page_lists_mthread-current_cpu_node=1] Scheduled the mt-2 exchange operation between node 9 and 2 on CPU close to node 3!
+[ 1231.572235] [exchange_page_lists_mthread-current_cpu_node=1] PMEM optimization enabled: nr_pages=443, limit_mt_num=2, from_node_cpu_count=0, to_node_cpu_count=32
+[ 1231.572239] [exchange_page_lists_mthread] PMEM optimization enabled: get_nearest_cpu_node(9)=127, get_nearest_cpu_node(2)=-1
+[ 1231.572338] [exchange_page_lists_mthread-current_cpu_node=1] Scheduled the mt-2 exchange operation between node 9 and 2 on CPU close to node 3!
+[ 1233.554198] -1254 free pages at to node: 2
+[ 1241.412649] [exchange_page_lists_mthread-current_cpu_node=1] PMEM optimization enabled: nr_pages=335, limit_mt_num=2, from_node_cpu_count=0, to_node_cpu_count=32
+[ 1241.412653] [exchange_page_lists_mthread] PMEM optimization enabled: get_nearest_cpu_node(9)=127, get_nearest_cpu_node(2)=-1
+[ 1241.412714] [exchange_page_lists_mthread-current_cpu_node=1] Scheduled the mt-2 exchange operation between node 9 and 2 on CPU close to node 3!
+[ 1250.725899] [exchange_page_lists_mthread-current_cpu_node=1] PMEM optimization enabled: nr_pages=433, limit_mt_num=2, from_node_cpu_count=0, to_node_cpu_count=32
+[ 1250.725903] [exchange_page_lists_mthread] PMEM optimization enabled: get_nearest_cpu_node(9)=127, get_nearest_cpu_node(2)=-1
+[ 1250.726015] [exchange_page_lists_mthread-current_cpu_node=1] Scheduled the mt-2 exchange operation between node 9 and 2 on CPU close to node 3!
+[ 1261.602052] [exchange_page_lists_mthread-current_cpu_node=1] PMEM optimization enabled: nr_pages=303, limit_mt_num=2, from_node_cpu_count=0, to_node_cpu_count=32
+[ 1261.602064] [exchange_page_lists_mthread] PMEM optimization enabled: get_nearest_cpu_node(9)=127, get_nearest_cpu_node(2)=-1
+[ 1261.602593] [exchange_page_lists_mthread-current_cpu_node=1] Scheduled the mt-2 exchange operation between node 9 and 2 on CPU close to node 3!
+[ 1264.596960] -15693 free pages at to node: 2
+[ 1270.873709] [exchange_page_lists_mthread-current_cpu_node=1] PMEM optimization enabled: nr_pages=431, limit_mt_num=2, from_node_cpu_count=0, to_node_cpu_count=32
+[ 1270.873714] [exchange_page_lists_mthread] PMEM optimization enabled: get_nearest_cpu_node(9)=127, get_nearest_cpu_node(2)=-1
+[ 1270.873950] [exchange_page_lists_mthread-current_cpu_node=1] Scheduled the mt-2 exchange operation between node 9 and 2 on CPU close to node 3!
+[ 1273.350597] -19 free pages at to node: 2
+[ 1280.910590] [exchange_page_lists_mthread-current_cpu_node=1] PMEM optimization enabled: nr_pages=443, limit_mt_num=2, from_node_cpu_count=0, to_node_cpu_count=32
+[ 1280.910595] [exchange_page_lists_mthread] PMEM optimization enabled: get_nearest_cpu_node(9)=127, get_nearest_cpu_node(2)=-1
+[ 1280.910815] [exchange_page_lists_mthread-current_cpu_node=1] Scheduled the mt-2 exchange operation between node 9 and 2 on CPU close to node 3!
+[ 1290.965481] [exchange_page_lists_mthread-current_cpu_node=1] PMEM optimization enabled: nr_pages=424, limit_mt_num=2, from_node_cpu_count=0, to_node_cpu_count=32
+[ 1290.965486] [exchange_page_lists_mthread] PMEM optimization enabled: get_nearest_cpu_node(9)=127, get_nearest_cpu_node(2)=-1
+[ 1290.965721] [exchange_page_lists_mthread-current_cpu_node=1] Scheduled the mt-2 exchange operation between node 9 and 2 on CPU close to node 3!
+[ 1300.716382] [exchange_page_lists_mthread-current_cpu_node=1] PMEM optimization enabled: nr_pages=427, limit_mt_num=2, from_node_cpu_count=0, to_node_cpu_count=32
+[ 1300.716387] [exchange_page_lists_mthread] PMEM optimization enabled: get_nearest_cpu_node(9)=127, get_nearest_cpu_node(2)=-1
+[ 1300.716496] [exchange_page_lists_mthread-current_cpu_node=1] Scheduled the mt-2 exchange operation between node 9 and 2 on CPU close to node 3!
+[ 1302.976691] -15308 free pages at to node: 2
+[ 1310.718857] [exchange_page_lists_mthread-current_cpu_node=1] PMEM optimization enabled: nr_pages=424, limit_mt_num=2, from_node_cpu_count=0, to_node_cpu_count=32
+[ 1310.718862] [exchange_page_lists_mthread] PMEM optimization enabled: get_nearest_cpu_node(9)=127, get_nearest_cpu_node(2)=-1
+[ 1310.718970] [exchange_page_lists_mthread-current_cpu_node=1] Scheduled the mt-2 exchange operation between node 9 and 2 on CPU close to node 3!
+[ 1320.715377] [exchange_page_lists_mthread-current_cpu_node=1] PMEM optimization enabled: nr_pages=435, limit_mt_num=2, from_node_cpu_count=0, to_node_cpu_count=32
+[ 1320.715382] [exchange_page_lists_mthread] PMEM optimization enabled: get_nearest_cpu_node(9)=127, get_nearest_cpu_node(2)=-1
+[ 1320.715489] [exchange_page_lists_mthread-current_cpu_node=1] Scheduled the mt-2 exchange operation between node 9 and 2 on CPU close to node 3!
+[ 1331.536654] [exchange_page_lists_mthread-current_cpu_node=1] PMEM optimization enabled: nr_pages=395, limit_mt_num=2, from_node_cpu_count=0, to_node_cpu_count=32
+[ 1331.536658] [exchange_page_lists_mthread] PMEM optimization enabled: get_nearest_cpu_node(9)=127, get_nearest_cpu_node(2)=-1
+[ 1331.536741] [exchange_page_lists_mthread-current_cpu_node=1] Scheduled the mt-2 exchange operation between node 9 and 2 on CPU close to node 3!
+[ 1340.731930] [exchange_page_lists_mthread-current_cpu_node=1] PMEM optimization enabled: nr_pages=396, limit_mt_num=2, from_node_cpu_count=0, to_node_cpu_count=32
+[ 1340.731935] [exchange_page_lists_mthread] PMEM optimization enabled: get_nearest_cpu_node(9)=127, get_nearest_cpu_node(2)=-1
+[ 1340.732032] [exchange_page_lists_mthread-current_cpu_node=1] Scheduled the mt-2 exchange operation between node 9 and 2 on CPU close to node 3!
+[ 1350.937379] [exchange_page_lists_mthread-current_cpu_node=1] PMEM optimization enabled: nr_pages=426, limit_mt_num=2, from_node_cpu_count=0, to_node_cpu_count=32
+[ 1350.937383] [exchange_page_lists_mthread] PMEM optimization enabled: get_nearest_cpu_node(9)=127, get_nearest_cpu_node(2)=-1
+[ 1350.937743] [exchange_page_lists_mthread-current_cpu_node=1] Scheduled the mt-2 exchange operation between node 9 and 2 on CPU close to node 3!
+[ 1353.889697] -15836 free pages at to node: 2

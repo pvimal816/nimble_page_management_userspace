@@ -1,0 +1,99 @@
+[  170.032395] [init_closest_cpu_node_for_pmem_list_kernel] node having CPUs are: 0, 1, 2, 3, 
+[  170.032399] [init_closest_cpu_node_for_pmem_list_kernel] CLOSEST_CPU_NODE_FOR_PMEM: [-1, -1, -1, -1, -1, -1, -1, -1, -1, 127, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1]
+[  170.032466] page_migration_to_remote_pmm_worker called!
+[  175.085639] page_migration_to_remote_pmm_worker called!
+[  180.265562] page_migration_to_remote_pmm_worker called!
+[  214.002152] page_migration_to_remote_pmm_worker called!
+[  214.694652] perf: interrupt took too long (3379 > 2500), lowering kernel.perf_event_max_sample_rate to 59000
+[  222.177656] page_migration_to_remote_pmm_worker called!
+[  242.640542] perf: interrupt took too long (7768 > 4223), lowering kernel.perf_event_max_sample_rate to 25500
+[  242.693126] INFO: NMI handler (perf_event_nmi_handler) took too long to run: 0.000 msecs
+[  242.693245] perf: interrupt took too long (12983 > 9710), lowering kernel.perf_event_max_sample_rate to 15250
+[  243.146268] INFO: NMI handler (perf_event_nmi_handler) took too long to run: 1.641 msecs
+[  243.146268] INFO: NMI handler (ghes_notify_nmi) took too long to run: 0.000 msecs
+[  243.335986] INFO: NMI handler (ghes_notify_nmi) took too long to run: 1.142 msecs
+[  250.659393] INFO: NMI handler (ghes_notify_nmi) took too long to run: 1.686 msecs
+[  251.234219] perf: interrupt took too long (17476 > 16228), lowering kernel.perf_event_max_sample_rate to 11250
+[  251.444322] INFO: NMI handler (perf_event_nmi_handler) took too long to run: 1.743 msecs
+[  255.417701] page_migration_to_remote_pmm_worker called!
+[  267.618789] perf: interrupt took too long (26294 > 21845), lowering kernel.perf_event_max_sample_rate to 7500
+[  290.961223] page_migration_to_remote_pmm_worker called!
+[  294.013901] INFO: NMI handler (perf_event_nmi_handler) took too long to run: 1.793 msecs
+[  309.314076] page_migration_to_remote_pmm_worker called!
+[  313.889363] perf: interrupt took too long (35421 > 32867), lowering kernel.perf_event_max_sample_rate to 5500
+[  321.851388] page_migration_to_remote_pmm_worker called!
+[  334.619432] page_migration_to_remote_pmm_worker called!
+[  343.940921] page_migration_to_remote_pmm_worker called!
+[  348.929337] page_migration_to_remote_pmm_worker called!
+[  357.075597] page_migration_to_remote_pmm_worker called!
+[  362.094623] page_migration_to_remote_pmm_worker called!
+[  373.076197] page_migration_to_remote_pmm_worker called!
+[  378.067306] page_migration_to_remote_pmm_worker called!
+[  383.248064] page_migration_to_remote_pmm_worker called!
+[  451.072212] page_migration_to_remote_pmm_worker called!
+[  464.831309] page_migration_to_remote_pmm_worker called!
+[  473.583736] page_migration_to_remote_pmm_worker called!
+[  484.842100] page_migration_to_remote_pmm_worker called!
+[  496.049447] page_migration_to_remote_pmm_worker called!
+[  500.017005] INFO: NMI handler (ghes_notify_nmi) took too long to run: 1.889 msecs
+[  501.219086] page_migration_to_remote_pmm_worker called!
+[  506.313289] page_migration_to_remote_pmm_worker called!
+[  535.229995] perf: interrupt took too long (45148 > 44276), lowering kernel.perf_event_max_sample_rate to 4250
+[  572.665210] page_migration_to_remote_pmm_worker called!
+[  580.610132] page_migration_to_remote_pmm_worker called!
+[  586.457492] page_migration_to_remote_pmm_worker called!
+[  588.312171] INFO: NMI handler (ghes_notify_nmi) took too long to run: 1.989 msecs
+[  591.513986] page_migration_to_remote_pmm_worker called!
+[  599.782586] page_migration_to_remote_pmm_worker called!
+[  604.701719] page_migration_to_remote_pmm_worker called!
+[  609.876573] page_migration_to_remote_pmm_worker called!
+[  614.878810] page_migration_to_remote_pmm_worker called!
+[  648.709050] INFO: NMI handler (perf_event_nmi_handler) took too long to run: 2.141 msecs
+[  656.891338] INFO: NMI handler (perf_event_nmi_handler) took too long to run: 2.710 msecs
+[  669.147741] page_migration_to_remote_pmm_worker called!
+[  677.308455] page_migration_to_remote_pmm_worker called!
+[  686.758038] page_migration_to_remote_pmm_worker called!
+[  698.847340] page_migration_to_remote_pmm_worker called!
+[  709.605346] page_migration_to_remote_pmm_worker called!
+[  716.284903] page_migration_to_remote_pmm_worker called!
+[  728.480323] page_migration_to_remote_pmm_worker called!
+[  737.416400] page_migration_to_remote_pmm_worker called!
+[  748.161884] page_migration_to_remote_pmm_worker called!
+[  756.093112] page_migration_to_remote_pmm_worker called!
+[  768.718678] page_migration_to_remote_pmm_worker called!
+[  776.425662] page_migration_to_remote_pmm_worker called!
+[  782.911289] page_migration_to_remote_pmm_worker called!
+[  789.694021] page_migration_to_remote_pmm_worker called!
+[  795.694750] page_migration_to_remote_pmm_worker called!
+[  799.914213] page_migration_to_remote_pmm_worker called!
+[  871.725786] page_migration_to_remote_pmm_worker called!
+[  878.191076] page_migration_to_remote_pmm_worker called!
+[  886.690751] page_migration_to_remote_pmm_worker called!
+[  895.822674] page_migration_to_remote_pmm_worker called!
+[  901.291401] page_migration_to_remote_pmm_worker called!
+[  906.128813] page_migration_to_remote_pmm_worker called!
+[  918.982683] perf: interrupt took too long (60040 > 56435), lowering kernel.perf_event_max_sample_rate to 3250
+[  960.454242] page_migration_to_remote_pmm_worker called!
+[  971.412847] page_migration_to_remote_pmm_worker called!
+[  983.964471] page_migration_to_remote_pmm_worker called!
+[  997.076785] page_migration_to_remote_pmm_worker called!
+[ 1006.496776] page_migration_to_remote_pmm_worker called!
+[ 1015.300023] page_migration_to_remote_pmm_worker called!
+[ 1021.658592] page_migration_to_remote_pmm_worker called!
+[ 1027.422353] page_migration_to_remote_pmm_worker called!
+[ 1036.741323] page_migration_to_remote_pmm_worker called!
+[ 1043.395267] page_migration_to_remote_pmm_worker called!
+[ 1048.293434] page_migration_to_remote_pmm_worker called!
+[ 1053.157387] page_migration_to_remote_pmm_worker called!
+[ 1058.892169] page_migration_to_remote_pmm_worker called!
+[ 1063.149708] page_migration_to_remote_pmm_worker called!
+[ 1069.684794] page_migration_to_remote_pmm_worker called!
+[ 1080.354841] page_migration_to_remote_pmm_worker called!
+[ 1085.716316] page_migration_to_remote_pmm_worker called!
+[ 1095.196254] page_migration_to_remote_pmm_worker called!
+[ 1148.081202] page_migration_to_remote_pmm_worker called!
+[ 1159.007621] page_migration_to_remote_pmm_worker called!
+[ 1171.525681] page_migration_to_remote_pmm_worker called!
+[ 1179.879022] page_migration_to_remote_pmm_worker called!
+[ 1192.826603] page_migration_to_remote_pmm_worker called!
+[ 1201.162303] page_migration_to_remote_pmm_worker called!

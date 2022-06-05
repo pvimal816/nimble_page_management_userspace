@@ -1,0 +1,268 @@
+[15231.622540] INFO: task launcher:72749 blocked for more than 120 seconds.
+[15231.622548]       Tainted: G           OE     5.6.0-rc6+ #114
+[15231.622554] "echo 0 > /proc/sys/kernel/hung_task_timeout_secs" disables this message.
+[15231.622558] launcher        D    0 72749  72661 0x00004000
+[15231.622562] Call Trace:
+[15231.622577]  ? __schedule+0x2d8/0x760
+[15231.622582]  ? __switch_to_asm+0x34/0x70
+[15231.622585]  ? __switch_to_asm+0x34/0x70
+[15231.622589]  schedule+0x4a/0xb0
+[15231.622593]  schedule_timeout+0x20f/0x300
+[15231.622602]  ? sched_clock+0x5/0x10
+[15231.622609]  ? sched_clock_cpu+0xc/0xa0
+[15231.622612]  ? try_to_wake_up+0x213/0x5e0
+[15231.622616]  __down+0x82/0xd0
+[15231.622621]  ? __queue_work+0xe0/0x3e0
+[15231.622627]  down+0x3b/0x50
+[15231.622635]  migrate_to_node+0x2fe/0x570
+[15231.622640]  do_mm_manage.isra.0+0x630/0xa60
+[15231.622646]  __x64_sys_mm_manage+0x23d/0x2c5
+[15231.622655]  do_syscall_64+0x52/0x1c0
+[15231.622660]  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+[15231.622665] RIP: 0033:0x7faf9468576d
+[15231.622670] Code: Bad RIP value.
+[15231.622673] RSP: 002b:00007fff52f14e88 EFLAGS: 00000212 ORIG_RAX: 00000000000001b8
+[15231.622676] RAX: ffffffffffffffda RBX: ffffffffffffff01 RCX: 00007faf9468576d
+[15231.622678] RDX: 0000000000000041 RSI: ffffffffffffffff RDI: 0000000000011c2e
+[15231.622681] RBP: 00007fff52f14ed0 R08: 0000555fc5569130 R09: 0000000000000202
+[15231.622683] R10: 0000555fc5569170 R11: 0000000000000212 R12: 00007fff52f15c60
+[15231.622685] R13: 00007fff52f15c60 R14: 0000000000000000 R15: 0000000000000000
+[15260.514643] perf: interrupt took too long (140731 > 135750), lowering kernel.perf_event_max_sample_rate to 1250
+[15352.454375] INFO: task launcher:72749 blocked for more than 241 seconds.
+[15352.454387]       Tainted: G           OE     5.6.0-rc6+ #114
+[15352.454400] "echo 0 > /proc/sys/kernel/hung_task_timeout_secs" disables this message.
+[15352.454402] launcher        D    0 72749  72661 0x00004000
+[15352.454408] Call Trace:
+[15352.454418]  ? __schedule+0x2d8/0x760
+[15352.454423]  ? __switch_to_asm+0x34/0x70
+[15352.454427]  ? __switch_to_asm+0x34/0x70
+[15352.454430]  schedule+0x4a/0xb0
+[15352.454434]  schedule_timeout+0x20f/0x300
+[15352.454442]  ? sched_clock+0x5/0x10
+[15352.454447]  ? sched_clock_cpu+0xc/0xa0
+[15352.454451]  ? try_to_wake_up+0x213/0x5e0
+[15352.454454]  __down+0x82/0xd0
+[15352.454458]  ? __queue_work+0xe0/0x3e0
+[15352.454463]  down+0x3b/0x50
+[15352.454470]  migrate_to_node+0x2fe/0x570
+[15352.454474]  do_mm_manage.isra.0+0x630/0xa60
+[15352.454480]  __x64_sys_mm_manage+0x23d/0x2c5
+[15352.454486]  do_syscall_64+0x52/0x1c0
+[15352.454490]  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+[15352.454499] RIP: 0033:0x7faf9468576d
+[15352.454504] Code: Bad RIP value.
+[15352.454507] RSP: 002b:00007fff52f14e88 EFLAGS: 00000212 ORIG_RAX: 00000000000001b8
+[15352.454510] RAX: ffffffffffffffda RBX: ffffffffffffff01 RCX: 00007faf9468576d
+[15352.454513] RDX: 0000000000000041 RSI: ffffffffffffffff RDI: 0000000000011c2e
+[15352.454515] RBP: 00007fff52f14ed0 R08: 0000555fc5569130 R09: 0000000000000202
+[15352.454517] R10: 0000555fc5569170 R11: 0000000000000212 R12: 00007fff52f15c60
+[15352.454524] R13: 00007fff52f15c60 R14: 0000000000000000 R15: 0000000000000000
+[15388.832242] perf: interrupt took too long (177032 > 175913), lowering kernel.perf_event_max_sample_rate to 1000
+[15473.286012] INFO: task launcher:72749 blocked for more than 362 seconds.
+[15473.286017]       Tainted: G           OE     5.6.0-rc6+ #114
+[15473.286019] "echo 0 > /proc/sys/kernel/hung_task_timeout_secs" disables this message.
+[15473.286021] launcher        D    0 72749  72661 0x00004000
+[15473.286025] Call Trace:
+[15473.286033]  ? __schedule+0x2d8/0x760
+[15473.286037]  ? __switch_to_asm+0x34/0x70
+[15473.286041]  ? __switch_to_asm+0x34/0x70
+[15473.286044]  schedule+0x4a/0xb0
+[15473.286048]  schedule_timeout+0x20f/0x300
+[15473.286054]  ? sched_clock+0x5/0x10
+[15473.286059]  ? sched_clock_cpu+0xc/0xa0
+[15473.286062]  ? try_to_wake_up+0x213/0x5e0
+[15473.286066]  __down+0x82/0xd0
+[15473.286069]  ? __queue_work+0xe0/0x3e0
+[15473.286074]  down+0x3b/0x50
+[15473.286079]  migrate_to_node+0x2fe/0x570
+[15473.286083]  do_mm_manage.isra.0+0x630/0xa60
+[15473.286089]  __x64_sys_mm_manage+0x23d/0x2c5
+[15473.286095]  do_syscall_64+0x52/0x1c0
+[15473.286099]  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+[15473.286103] RIP: 0033:0x7faf9468576d
+[15473.286108] Code: Bad RIP value.
+[15473.286110] RSP: 002b:00007fff52f14e88 EFLAGS: 00000212 ORIG_RAX: 00000000000001b8
+[15473.286114] RAX: ffffffffffffffda RBX: ffffffffffffff01 RCX: 00007faf9468576d
+[15473.286116] RDX: 0000000000000041 RSI: ffffffffffffffff RDI: 0000000000011c2e
+[15473.286118] RBP: 00007fff52f14ed0 R08: 0000555fc5569130 R09: 0000000000000202
+[15473.286124] R10: 0000555fc5569170 R11: 0000000000000212 R12: 00007fff52f15c60
+[15473.286126] R13: 00007fff52f15c60 R14: 0000000000000000 R15: 0000000000000000
+[15501.108981] perf: interrupt took too long (225823 > 221290), lowering kernel.perf_event_max_sample_rate to 750
+[15594.117928] INFO: task launcher:72749 blocked for more than 483 seconds.
+[15594.117934]       Tainted: G           OE     5.6.0-rc6+ #114
+[15594.117935] "echo 0 > /proc/sys/kernel/hung_task_timeout_secs" disables this message.
+[15594.117938] launcher        D    0 72749  72661 0x00004000
+[15594.117942] Call Trace:
+[15594.117950]  ? __schedule+0x2d8/0x760
+[15594.117955]  ? __switch_to_asm+0x34/0x70
+[15594.117958]  ? __switch_to_asm+0x34/0x70
+[15594.117962]  schedule+0x4a/0xb0
+[15594.117965]  schedule_timeout+0x20f/0x300
+[15594.117972]  ? sched_clock+0x5/0x10
+[15594.117977]  ? sched_clock_cpu+0xc/0xa0
+[15594.117980]  ? try_to_wake_up+0x213/0x5e0
+[15594.117984]  __down+0x82/0xd0
+[15594.117987]  ? __queue_work+0xe0/0x3e0
+[15594.117991]  down+0x3b/0x50
+[15594.117997]  migrate_to_node+0x2fe/0x570
+[15594.118002]  do_mm_manage.isra.0+0x630/0xa60
+[15594.118007]  __x64_sys_mm_manage+0x23d/0x2c5
+[15594.118013]  do_syscall_64+0x52/0x1c0
+[15594.118017]  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+[15594.118021] RIP: 0033:0x7faf9468576d
+[15594.118026] Code: Bad RIP value.
+[15594.118029] RSP: 002b:00007fff52f14e88 EFLAGS: 00000212 ORIG_RAX: 00000000000001b8
+[15594.118032] RAX: ffffffffffffffda RBX: ffffffffffffff01 RCX: 00007faf9468576d
+[15594.118034] RDX: 0000000000000041 RSI: ffffffffffffffff RDI: 0000000000011c2e
+[15594.118037] RBP: 00007fff52f14ed0 R08: 0000555fc5569130 R09: 0000000000000202
+[15594.118038] R10: 0000555fc5569170 R11: 0000000000000212 R12: 00007fff52f15c60
+[15594.118040] R13: 00007fff52f15c60 R14: 0000000000000000 R15: 0000000000000000
+[15645.262767] perf: interrupt took too long (283158 > 282278), lowering kernel.perf_event_max_sample_rate to 500
+[15956.613977] INFO: task launcher:72749 blocked for more than 120 seconds.
+[15956.613983]       Tainted: G           OE     5.6.0-rc6+ #114
+[15956.613986] "echo 0 > /proc/sys/kernel/hung_task_timeout_secs" disables this message.
+[15956.613989] launcher        D    0 72749  72661 0x00004000
+[15956.613998] Call Trace:
+[15956.614012]  ? __schedule+0x2d8/0x760
+[15956.614017]  ? __switch_to_asm+0x34/0x70
+[15956.614021]  ? __switch_to_asm+0x34/0x70
+[15956.614024]  schedule+0x4a/0xb0
+[15956.614028]  schedule_timeout+0x20f/0x300
+[15956.614037]  ? sched_clock+0x5/0x10
+[15956.614044]  ? sched_clock_cpu+0xc/0xa0
+[15956.614047]  ? try_to_wake_up+0x213/0x5e0
+[15956.614057]  __down+0x82/0xd0
+[15956.614062]  ? __queue_work+0xe0/0x3e0
+[15956.614068]  down+0x3b/0x50
+[15956.614076]  migrate_to_node+0x2fe/0x570
+[15956.614081]  do_mm_manage.isra.0+0x886/0xa60
+[15956.614089]  __x64_sys_mm_manage+0x23d/0x2c5
+[15956.614097]  do_syscall_64+0x52/0x1c0
+[15956.614103]  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+[15956.614108] RIP: 0033:0x7faf9468576d
+[15956.614132] Code: Bad RIP value.
+[15956.614134] RSP: 002b:00007fff52f14e88 EFLAGS: 00000212 ORIG_RAX: 00000000000001b8
+[15956.614138] RAX: ffffffffffffffda RBX: ffffffffffffff01 RCX: 00007faf9468576d
+[15956.614140] RDX: 0000000000000041 RSI: ffffffffffffffff RDI: 0000000000011c2e
+[15956.614142] RBP: 00007fff52f14ed0 R08: 0000555fc5569130 R09: 0000000000000202
+[15956.614144] R10: 0000555fc5569170 R11: 0000000000000212 R12: 00007fff52f15c60
+[15956.614146] R13: 00007fff52f15c60 R14: 0000000000000000 R15: 0000000000000000
+[16077.446078] INFO: task launcher:72749 blocked for more than 241 seconds.
+[16077.446083]       Tainted: G           OE     5.6.0-rc6+ #114
+[16077.446085] "echo 0 > /proc/sys/kernel/hung_task_timeout_secs" disables this message.
+[16077.446087] launcher        D    0 72749  72661 0x00004000
+[16077.446091] Call Trace:
+[16077.446099]  ? __schedule+0x2d8/0x760
+[16077.446103]  ? __switch_to_asm+0x34/0x70
+[16077.446107]  ? __switch_to_asm+0x34/0x70
+[16077.446110]  schedule+0x4a/0xb0
+[16077.446114]  schedule_timeout+0x20f/0x300
+[16077.446121]  ? sched_clock+0x5/0x10
+[16077.446125]  ? sched_clock_cpu+0xc/0xa0
+[16077.446128]  ? try_to_wake_up+0x213/0x5e0
+[16077.446132]  __down+0x82/0xd0
+[16077.446135]  ? __queue_work+0xe0/0x3e0
+[16077.446139]  down+0x3b/0x50
+[16077.446144]  migrate_to_node+0x2fe/0x570
+[16077.446149]  do_mm_manage.isra.0+0x886/0xa60
+[16077.446154]  __x64_sys_mm_manage+0x23d/0x2c5
+[16077.446159]  do_syscall_64+0x52/0x1c0
+[16077.446164]  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+[16077.446167] RIP: 0033:0x7faf9468576d
+[16077.446173] Code: Bad RIP value.
+[16077.446175] RSP: 002b:00007fff52f14e88 EFLAGS: 00000212 ORIG_RAX: 00000000000001b8
+[16077.446178] RAX: ffffffffffffffda RBX: ffffffffffffff01 RCX: 00007faf9468576d
+[16077.446180] RDX: 0000000000000041 RSI: ffffffffffffffff RDI: 0000000000011c2e
+[16077.446189] RBP: 00007fff52f14ed0 R08: 0000555fc5569130 R09: 0000000000000202
+[16077.446191] R10: 0000555fc5569170 R11: 0000000000000212 R12: 00007fff52f15c60
+[16077.446193] R13: 00007fff52f15c60 R14: 0000000000000000 R15: 0000000000000000
+[16198.278018] INFO: task launcher:72749 blocked for more than 362 seconds.
+[16198.278024]       Tainted: G           OE     5.6.0-rc6+ #114
+[16198.278027] "echo 0 > /proc/sys/kernel/hung_task_timeout_secs" disables this message.
+[16198.278029] launcher        D    0 72749  72661 0x00004000
+[16198.278034] Call Trace:
+[16198.278045]  ? __schedule+0x2d8/0x760
+[16198.278051]  ? __switch_to_asm+0x34/0x70
+[16198.278054]  ? __switch_to_asm+0x34/0x70
+[16198.278058]  schedule+0x4a/0xb0
+[16198.278061]  schedule_timeout+0x20f/0x300
+[16198.278070]  ? sched_clock+0x5/0x10
+[16198.278076]  ? sched_clock_cpu+0xc/0xa0
+[16198.278080]  ? try_to_wake_up+0x213/0x5e0
+[16198.278083]  __down+0x82/0xd0
+[16198.278088]  ? __queue_work+0xe0/0x3e0
+[16198.278113]  down+0x3b/0x50
+[16198.278120]  migrate_to_node+0x2fe/0x570
+[16198.278125]  do_mm_manage.isra.0+0x886/0xa60
+[16198.278135]  __x64_sys_mm_manage+0x23d/0x2c5
+[16198.278142]  do_syscall_64+0x52/0x1c0
+[16198.278147]  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+[16198.278151] RIP: 0033:0x7faf9468576d
+[16198.278157] Code: Bad RIP value.
+[16198.278160] RSP: 002b:00007fff52f14e88 EFLAGS: 00000212 ORIG_RAX: 00000000000001b8
+[16198.278163] RAX: ffffffffffffffda RBX: ffffffffffffff01 RCX: 00007faf9468576d
+[16198.278168] RDX: 0000000000000041 RSI: ffffffffffffffff RDI: 0000000000011c2e
+[16198.278170] RBP: 00007fff52f14ed0 R08: 0000555fc5569130 R09: 0000000000000202
+[16198.278172] R10: 0000555fc5569170 R11: 0000000000000212 R12: 00007fff52f15c60
+[16198.278174] R13: 00007fff52f15c60 R14: 0000000000000000 R15: 0000000000000000
+[16221.283627] INFO: NMI handler (perf_event_nmi_handler) took too long to run: 6.191 msecs
+[16221.283628] INFO: NMI handler (nmi_cpu_backtrace_handler) took too long to run: 0.000 msecs
+[16319.109929] INFO: task launcher:72749 blocked for more than 483 seconds.
+[16319.109936]       Tainted: G           OE     5.6.0-rc6+ #114
+[16319.109938] "echo 0 > /proc/sys/kernel/hung_task_timeout_secs" disables this message.
+[16319.109940] launcher        D    0 72749  72661 0x00004000
+[16319.109945] Call Trace:
+[16319.109958]  ? __schedule+0x2d8/0x760
+[16319.109964]  ? __switch_to_asm+0x34/0x70
+[16319.109967]  ? __switch_to_asm+0x34/0x70
+[16319.109994]  schedule+0x4a/0xb0
+[16319.109998]  schedule_timeout+0x20f/0x300
+[16319.110035]  ? sched_clock+0x5/0x10
+[16319.110087]  ? sched_clock_cpu+0xc/0xa0
+[16319.110091]  ? try_to_wake_up+0x213/0x5e0
+[16319.110094]  __down+0x82/0xd0
+[16319.110102]  ? __queue_work+0xe0/0x3e0
+[16319.110108]  down+0x3b/0x50
+[16319.110115]  migrate_to_node+0x2fe/0x570
+[16319.110120]  do_mm_manage.isra.0+0x886/0xa60
+[16319.110126]  __x64_sys_mm_manage+0x23d/0x2c5
+[16319.110134]  do_syscall_64+0x52/0x1c0
+[16319.110139]  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+[16319.110144] RIP: 0033:0x7faf9468576d
+[16319.110150] Code: Bad RIP value.
+[16319.110153] RSP: 002b:00007fff52f14e88 EFLAGS: 00000212 ORIG_RAX: 00000000000001b8
+[16319.110157] RAX: ffffffffffffffda RBX: ffffffffffffff01 RCX: 00007faf9468576d
+[16319.110159] RDX: 0000000000000041 RSI: ffffffffffffffff RDI: 0000000000011c2e
+[16319.110161] RBP: 00007fff52f14ed0 R08: 0000555fc5569130 R09: 0000000000000202
+[16319.110163] R10: 0000555fc5569170 R11: 0000000000000212 R12: 00007fff52f15c60
+[16319.110165] R13: 00007fff52f15c60 R14: 0000000000000000 R15: 0000000000000000
+[16560.774118] INFO: task launcher:72749 blocked for more than 120 seconds.
+[16560.774125]       Tainted: G           OE     5.6.0-rc6+ #114
+[16560.774127] "echo 0 > /proc/sys/kernel/hung_task_timeout_secs" disables this message.
+[16560.774130] launcher        D    0 72749  72661 0x00004000
+[16560.774134] Call Trace:
+[16560.774147]  ? __schedule+0x2d8/0x760
+[16560.774158]  ? __switch_to_asm+0x34/0x70
+[16560.774161]  ? __switch_to_asm+0x34/0x70
+[16560.774169]  schedule+0x4a/0xb0
+[16560.774173]  schedule_timeout+0x20f/0x300
+[16560.774185]  ? sched_clock+0x5/0x10
+[16560.774199]  ? sched_clock_cpu+0xc/0xa0
+[16560.774202]  ? try_to_wake_up+0x213/0x5e0
+[16560.774206]  __down+0x82/0xd0
+[16560.774211]  ? __queue_work+0xe0/0x3e0
+[16560.774217]  down+0x3b/0x50
+[16560.774224]  migrate_to_node+0x2fe/0x570
+[16560.774229]  do_mm_manage.isra.0+0x630/0xa60
+[16560.774235]  __x64_sys_mm_manage+0x23d/0x2c5
+[16560.774243]  do_syscall_64+0x52/0x1c0
+[16560.774248]  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+[16560.774258] RIP: 0033:0x7faf9468576d
+[16560.774264] Code: Bad RIP value.
+[16560.774267] RSP: 002b:00007fff52f14e88 EFLAGS: 00000212 ORIG_RAX: 00000000000001b8
+[16560.774270] RAX: ffffffffffffffda RBX: ffffffffffffff01 RCX: 00007faf9468576d
+[16560.774272] RDX: 0000000000000041 RSI: ffffffffffffffff RDI: 0000000000011c2e
+[16560.774275] RBP: 00007fff52f14ed0 R08: 0000555fc5569130 R09: 0000000000000202
+[16560.774277] R10: 0000555fc5569170 R11: 0000000000000212 R12: 00007fff52f15c60
+[16560.774281] R13: 00007fff52f15c60 R14: 0000000000000000 R15: 0000000000000000
+[17203.293883] perf: interrupt took too long (355504 > 353947), lowering kernel.perf_event_max_sample_rate to 500

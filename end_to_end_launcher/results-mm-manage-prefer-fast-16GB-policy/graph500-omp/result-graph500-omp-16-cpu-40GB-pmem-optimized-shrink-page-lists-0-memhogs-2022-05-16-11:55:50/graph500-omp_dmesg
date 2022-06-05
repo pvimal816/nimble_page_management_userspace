@@ -1,0 +1,1343 @@
+[  601.187575] [init_closest_cpu_node_for_pmem_list_kernel] node having CPUs are: 0, 1, 2, 3, 
+[  601.187580] [init_closest_cpu_node_for_pmem_list_kernel] CLOSEST_CPU_NODE_FOR_PMEM: [-1, -1, -1, -1, -1, -1, -1, -1, -1, 127, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1]
+[  602.071596] perf: interrupt took too long (4683 > 2500), lowering kernel.perf_event_max_sample_rate to 42500
+[  602.743126] perf: interrupt took too long (6012 > 5853), lowering kernel.perf_event_max_sample_rate to 33250
+[  610.133589] perf: interrupt took too long (8309 > 7515), lowering kernel.perf_event_max_sample_rate to 24000
+[  618.824234] perf: interrupt took too long (12692 > 10386), lowering kernel.perf_event_max_sample_rate to 15750
+[  634.862656] perf: interrupt took too long (18102 > 15865), lowering kernel.perf_event_max_sample_rate to 11000
+[  666.939430] perf: interrupt took too long (22791 > 22627), lowering kernel.perf_event_max_sample_rate to 8750
+[  682.977867] perf: interrupt took too long (30188 > 28488), lowering kernel.perf_event_max_sample_rate to 6500
+[  697.876134] INFO: NMI handler (ghes_notify_nmi) took too long to run: 0.000 msecs
+[  707.213757] perf: interrupt took too long (37852 > 37735), lowering kernel.perf_event_max_sample_rate to 5250
+[  713.914917] INFO: NMI handler (ghes_notify_nmi) took too long to run: 1.574 msecs
+[  738.296830] INFO: NMI handler (ghes_notify_nmi) took too long to run: 1.838 msecs
+[  739.290658] perf: interrupt took too long (48406 > 47315), lowering kernel.perf_event_max_sample_rate to 4000
+[  754.010871] INFO: NMI handler (ghes_notify_nmi) took too long to run: 1.968 msecs
+[  770.190732] INFO: NMI handler (ghes_notify_nmi) took too long to run: 2.033 msecs
+[  770.808248] INFO: NMI handler (perf_event_nmi_handler) took too long to run: 0.000 msecs
+[  770.903876] INFO: NMI handler (perf_event_nmi_handler) took too long to run: 1.146 msecs
+[  794.961026] perf: interrupt took too long (67221 > 60507), lowering kernel.perf_event_max_sample_rate to 2750
+[  867.134726] perf: interrupt took too long (89652 > 84026), lowering kernel.perf_event_max_sample_rate to 2000
+[  932.795116] INFO: NMI handler (ghes_notify_nmi) took too long to run: 2.204 msecs
+[  947.326884] perf: interrupt took too long (112221 > 112065), lowering kernel.perf_event_max_sample_rate to 1750
+[  988.000709] perf: interrupt took too long (141453 > 140276), lowering kernel.perf_event_max_sample_rate to 1250
+[  988.385816] INFO: NMI handler (perf_event_nmi_handler) took too long to run: 2.026 msecs
+[ 1052.159071] INFO: NMI handler (ghes_notify_nmi) took too long to run: 2.243 msecs
+[ 1076.214888] perf: interrupt took too long (179437 > 176816), lowering kernel.perf_event_max_sample_rate to 1000
+[ 1076.368192] INFO: NMI handler (perf_event_nmi_handler) took too long to run: 2.042 msecs
+[ 1180.467633] perf: interrupt took too long (224905 > 224296), lowering kernel.perf_event_max_sample_rate to 750
+[ 1277.092199] INFO: NMI handler (ghes_notify_nmi) took too long to run: 2.760 msecs
+[ 1280.156487] INFO: NMI handler (ghes_notify_nmi) took too long to run: 2.863 msecs
+[ 1285.979698] INFO: NMI handler (perf_event_nmi_handler) took too long to run: 2.627 msecs
+[ 1286.398946] INFO: NMI handler (perf_event_nmi_handler) took too long to run: 2.848 msecs
+[ 1286.398962] INFO: NMI handler (ghes_notify_nmi) took too long to run: 3.507 msecs
+[ 1288.244899] INFO: NMI handler (ghes_notify_nmi) took too long to run: 3.714 msecs
+[ 1289.002545] INFO: NMI handler (ghes_notify_nmi) took too long to run: 3.974 msecs
+[ 1577.616121] INFO: task launcher:21626 blocked for more than 120 seconds.
+[ 1577.616140]       Tainted: G           OE     5.6.0-rc6+ #115
+[ 1577.616145] "echo 0 > /proc/sys/kernel/hung_task_timeout_secs" disables this message.
+[ 1577.616148] launcher        D    0 21626  21538 0x00004000
+[ 1577.616151] Call Trace:
+[ 1577.616165]  ? __schedule+0x2d8/0x760
+[ 1577.616170]  ? __switch_to_asm+0x40/0x70
+[ 1577.616173]  ? __switch_to_asm+0x40/0x70
+[ 1577.616176]  schedule+0x4a/0xb0
+[ 1577.616179]  schedule_timeout+0x20f/0x300
+[ 1577.616188]  ? sched_clock+0x5/0x10
+[ 1577.616196]  ? sched_clock_cpu+0xc/0xa0
+[ 1577.616199]  ? try_to_wake_up+0x213/0x5e0
+[ 1577.616202]  __down+0x82/0xd0
+[ 1577.616205]  ? _cond_resched+0x15/0x30
+[ 1577.616211]  down+0x3b/0x50
+[ 1577.616219]  migrate_to_node+0x371/0x3e0
+[ 1577.616224]  do_mm_manage.isra.0+0x886/0xa60
+[ 1577.616229]  __x64_sys_mm_manage+0x23d/0x2c5
+[ 1577.616236]  do_syscall_64+0x52/0x1c0
+[ 1577.616240]  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+[ 1577.616244] RIP: 0033:0x7fcec61e576d
+[ 1577.616250] Code: Bad RIP value.
+[ 1577.616252] RSP: 002b:00007ffdc9852288 EFLAGS: 00000212 ORIG_RAX: 00000000000001b8
+[ 1577.616255] RAX: ffffffffffffffda RBX: ffffffffffffff01 RCX: 00007fcec61e576d
+[ 1577.616257] RDX: 0000000000000041 RSI: ffffffffffffffff RDI: 000000000000547b
+[ 1577.616258] RBP: 00007ffdc98522d0 R08: 0000555d87d7a130 R09: 0000000000000202
+[ 1577.616262] R10: 0000555d87d7a170 R11: 0000000000000212 R12: 00007ffdc9853070
+[ 1577.616266] R13: 00007ffdc9853070 R14: 0000000000000000 R15: 0000000000000000
+[ 1698.448042] INFO: task launcher:21626 blocked for more than 241 seconds.
+[ 1698.448060]       Tainted: G           OE     5.6.0-rc6+ #115
+[ 1698.448063] "echo 0 > /proc/sys/kernel/hung_task_timeout_secs" disables this message.
+[ 1698.448072] launcher        D    0 21626  21538 0x00004000
+[ 1698.448075] Call Trace:
+[ 1698.448088]  ? __schedule+0x2d8/0x760
+[ 1698.448098]  ? __switch_to_asm+0x40/0x70
+[ 1698.448100]  ? __switch_to_asm+0x40/0x70
+[ 1698.448103]  schedule+0x4a/0xb0
+[ 1698.448207]  schedule_timeout+0x20f/0x300
+[ 1698.448216]  ? sched_clock+0x5/0x10
+[ 1698.448222]  ? sched_clock_cpu+0xc/0xa0
+[ 1698.448224]  ? try_to_wake_up+0x213/0x5e0
+[ 1698.448227]  __down+0x82/0xd0
+[ 1698.448231]  ? _cond_resched+0x15/0x30
+[ 1698.448235]  down+0x3b/0x50
+[ 1698.448242]  migrate_to_node+0x371/0x3e0
+[ 1698.448247]  do_mm_manage.isra.0+0x886/0xa60
+[ 1698.448252]  __x64_sys_mm_manage+0x23d/0x2c5
+[ 1698.448266]  do_syscall_64+0x52/0x1c0
+[ 1698.448270]  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+[ 1698.448274] RIP: 0033:0x7fcec61e576d
+[ 1698.448280] Code: Bad RIP value.
+[ 1698.448282] RSP: 002b:00007ffdc9852288 EFLAGS: 00000212 ORIG_RAX: 00000000000001b8
+[ 1698.448285] RAX: ffffffffffffffda RBX: ffffffffffffff01 RCX: 00007fcec61e576d
+[ 1698.448289] RDX: 0000000000000041 RSI: ffffffffffffffff RDI: 000000000000547b
+[ 1698.448295] RBP: 00007ffdc98522d0 R08: 0000555d87d7a130 R09: 0000000000000202
+[ 1698.448297] R10: 0000555d87d7a170 R11: 0000000000000212 R12: 00007ffdc9853070
+[ 1698.448299] R13: 00007ffdc9853070 R14: 0000000000000000 R15: 0000000000000000
+[ 1819.280378] INFO: task launcher:21626 blocked for more than 362 seconds.
+[ 1819.280384]       Tainted: G           OE     5.6.0-rc6+ #115
+[ 1819.280386] "echo 0 > /proc/sys/kernel/hung_task_timeout_secs" disables this message.
+[ 1819.280389] launcher        D    0 21626  21538 0x00004000
+[ 1819.280393] Call Trace:
+[ 1819.280405]  ? __schedule+0x2d8/0x760
+[ 1819.280410]  ? __switch_to_asm+0x40/0x70
+[ 1819.280413]  ? __switch_to_asm+0x40/0x70
+[ 1819.280416]  schedule+0x4a/0xb0
+[ 1819.280419]  schedule_timeout+0x20f/0x300
+[ 1819.280427]  ? sched_clock+0x5/0x10
+[ 1819.280433]  ? sched_clock_cpu+0xc/0xa0
+[ 1819.280436]  ? try_to_wake_up+0x213/0x5e0
+[ 1819.280439]  __down+0x82/0xd0
+[ 1819.280442]  ? _cond_resched+0x15/0x30
+[ 1819.280447]  down+0x3b/0x50
+[ 1819.280459]  migrate_to_node+0x371/0x3e0
+[ 1819.280464]  do_mm_manage.isra.0+0x886/0xa60
+[ 1819.280469]  __x64_sys_mm_manage+0x23d/0x2c5
+[ 1819.280476]  do_syscall_64+0x52/0x1c0
+[ 1819.280481]  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+[ 1819.280490] RIP: 0033:0x7fcec61e576d
+[ 1819.280495] Code: Bad RIP value.
+[ 1819.280497] RSP: 002b:00007ffdc9852288 EFLAGS: 00000212 ORIG_RAX: 00000000000001b8
+[ 1819.280499] RAX: ffffffffffffffda RBX: ffffffffffffff01 RCX: 00007fcec61e576d
+[ 1819.280501] RDX: 0000000000000041 RSI: ffffffffffffffff RDI: 000000000000547b
+[ 1819.280505] RBP: 00007ffdc98522d0 R08: 0000555d87d7a130 R09: 0000000000000202
+[ 1819.280513] R10: 0000555d87d7a170 R11: 0000000000000212 R12: 00007ffdc9853070
+[ 1819.280514] R13: 00007ffdc9853070 R14: 0000000000000000 R15: 0000000000000000
+[ 1940.111693] INFO: task launcher:21626 blocked for more than 483 seconds.
+[ 1940.111712]       Tainted: G           OE     5.6.0-rc6+ #115
+[ 1940.111714] "echo 0 > /proc/sys/kernel/hung_task_timeout_secs" disables this message.
+[ 1940.111717] launcher        D    0 21626  21538 0x00004000
+[ 1940.111721] Call Trace:
+[ 1940.111733]  ? __schedule+0x2d8/0x760
+[ 1940.111738]  ? __switch_to_asm+0x40/0x70
+[ 1940.111741]  ? __switch_to_asm+0x40/0x70
+[ 1940.111744]  schedule+0x4a/0xb0
+[ 1940.111747]  schedule_timeout+0x20f/0x300
+[ 1940.111755]  ? sched_clock+0x5/0x10
+[ 1940.111761]  ? sched_clock_cpu+0xc/0xa0
+[ 1940.111764]  ? try_to_wake_up+0x213/0x5e0
+[ 1940.111767]  __down+0x82/0xd0
+[ 1940.111770]  ? _cond_resched+0x15/0x30
+[ 1940.111775]  down+0x3b/0x50
+[ 1940.111782]  migrate_to_node+0x371/0x3e0
+[ 1940.111788]  do_mm_manage.isra.0+0x886/0xa60
+[ 1940.111793]  __x64_sys_mm_manage+0x23d/0x2c5
+[ 1940.111800]  do_syscall_64+0x52/0x1c0
+[ 1940.111804]  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+[ 1940.111808] RIP: 0033:0x7fcec61e576d
+[ 1940.111815] Code: Bad RIP value.
+[ 1940.111817] RSP: 002b:00007ffdc9852288 EFLAGS: 00000212 ORIG_RAX: 00000000000001b8
+[ 1940.111820] RAX: ffffffffffffffda RBX: ffffffffffffff01 RCX: 00007fcec61e576d
+[ 1940.111824] RDX: 0000000000000041 RSI: ffffffffffffffff RDI: 000000000000547b
+[ 1940.111827] RBP: 00007ffdc98522d0 R08: 0000555d87d7a130 R09: 0000000000000202
+[ 1940.111831] R10: 0000555d87d7a170 R11: 0000000000000212 R12: 00007ffdc9853070
+[ 1940.111832] R13: 00007ffdc9853070 R14: 0000000000000000 R15: 0000000000000000
+[ 2053.712588] 0 pages failed to migrate from 2 to 9
+[ 2056.501518] 4004160 pages to be migrated to node: 2
+[ 2710.103072] INFO: NMI handler (ghes_notify_nmi) took too long to run: 4.447 msecs
+[ 2710.730178] INFO: NMI handler (perf_event_nmi_handler) took too long to run: 3.414 msecs
+[ 2728.482936] INFO: NMI handler (perf_event_nmi_handler) took too long to run: 3.773 msecs
+[ 2822.240528] INFO: NMI handler (perf_event_nmi_handler) took too long to run: 4.518 msecs
+[ 2822.240556] INFO: NMI handler (ghes_notify_nmi) took too long to run: 5.690 msecs
+[ 2823.256828] perf: interrupt took too long (293130 > 281131), lowering kernel.perf_event_max_sample_rate to 500
+[ 3025.474630] perf: interrupt took too long (375346 > 366412), lowering kernel.perf_event_max_sample_rate to 500
+[ 3292.454669] perf: interrupt took too long (470576 > 469182), lowering kernel.perf_event_max_sample_rate to 250
+[ 3386.756832] 0 pages failed to migrate from 9 to 2
+[ 3391.776952] 88519 free pages at to node: 2
+[ 3391.776956] nr_active_pages_from_node: 250655, nr_free_pages_to_node: 88519
+[ 3391.776958] isolate 4194304 pages directly from lru lists
+[ 3392.026504] 250655 pages isolated at from node: 9
+[ 3392.026508] isolate 162136 pages directly from lru lists
+[ 3392.034474] 162136 pages isolated at to node: 2
+[ 3392.036584] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 3397.977925] 0 pages failed to migrate from 2 to 9
+[ 3398.259530] 206394 pages to be migrated to node: 2
+[ 3406.463612] 0 pages failed to migrate from 9 to 2
+[ 3409.707756] 44261 free pages at to node: 2
+[ 3409.707759] nr_active_pages_from_node: 177211, nr_free_pages_to_node: 44261
+[ 3409.707762] isolate 4194304 pages directly from lru lists
+[ 3409.774049] 177211 pages isolated at from node: 9
+[ 3409.774052] isolate 132950 pages directly from lru lists
+[ 3409.782857] 132954 pages isolated at to node: 2
+[ 3409.784276] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 3414.982728] 0 pages failed to migrate from 2 to 9
+[ 3415.066011] 155083 pages to be migrated to node: 2
+[ 3421.472884] 0 pages failed to migrate from 9 to 2
+[ 3427.429461] 22132 free pages at to node: 2
+[ 3427.429468] nr_active_pages_from_node: 302051, nr_free_pages_to_node: 22132
+[ 3427.429469] isolate 4194304 pages directly from lru lists
+[ 3427.532029] 302051 pages isolated at from node: 9
+[ 3427.532031] isolate 279919 pages directly from lru lists
+[ 3427.546488] 279922 pages isolated at to node: 2
+[ 3427.550736] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 3437.939873] 0 pages failed to migrate from 2 to 9
+[ 3438.066474] 290987 pages to be migrated to node: 2
+[ 3449.712232] 0 pages failed to migrate from 9 to 2
+[ 3453.699437] 11067 free pages at to node: 2
+[ 3453.699444] nr_active_pages_from_node: 199107, nr_free_pages_to_node: 11067
+[ 3453.699446] isolate 4194304 pages directly from lru lists
+[ 3453.748681] 199107 pages isolated at from node: 9
+[ 3453.748682] isolate 188040 pages directly from lru lists
+[ 3453.765922] 188042 pages isolated at to node: 2
+[ 3453.770194] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 3460.939977] 0 pages failed to migrate from 2 to 9
+[ 3460.989902] 193574 pages to be migrated to node: 2
+[ 3468.313480] 0 pages failed to migrate from 9 to 2
+[ 3474.236784] 5535 free pages at to node: 2
+[ 3474.236788] nr_active_pages_from_node: 100963, nr_free_pages_to_node: 5535
+[ 3474.236789] isolate 4194304 pages directly from lru lists
+[ 3474.324593] 100963 pages isolated at from node: 9
+[ 3474.324596] isolate 95428 pages directly from lru lists
+[ 3474.329258] 95429 pages isolated at to node: 2
+[ 3474.330256] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 3477.793610] 0 pages failed to migrate from 2 to 9
+[ 3477.889857] 98195 pages to be migrated to node: 2
+[ 3481.648901] 0 pages failed to migrate from 9 to 2
+[ 3484.736479] 2769 free pages at to node: 2
+[ 3484.736482] nr_active_pages_from_node: 1388, nr_free_pages_to_node: 2769
+[ 3484.736484] from node isolate 4194304 hot and cold pages
+[ 3484.736485] isolate 4194304 pages directly from lru lists
+[ 3486.607391] 4195692 pages isolated at from node: 9
+[ 3486.607400] isolate 4192923 pages directly from lru lists
+[ 3486.785029] 3939645 pages isolated at to node: 2
+[ 3486.857014] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 3631.759727] INFO: task launcher:21626 blocked for more than 120 seconds.
+[ 3631.759733]       Tainted: G           OE     5.6.0-rc6+ #115
+[ 3631.759738] "echo 0 > /proc/sys/kernel/hung_task_timeout_secs" disables this message.
+[ 3631.759747] launcher        D    0 21626  21538 0x00004000
+[ 3631.759751] Call Trace:
+[ 3631.759767]  ? __schedule+0x2d8/0x760
+[ 3631.759772]  ? __switch_to_asm+0x40/0x70
+[ 3631.759776]  ? __switch_to_asm+0x40/0x70
+[ 3631.759780]  schedule+0x4a/0xb0
+[ 3631.759784]  schedule_timeout+0x20f/0x300
+[ 3631.759792]  ? sched_clock+0x5/0x10
+[ 3631.759799]  ? sched_clock_cpu+0xc/0xa0
+[ 3631.759802]  ? try_to_wake_up+0x213/0x5e0
+[ 3631.759806]  __down+0x82/0xd0
+[ 3631.759810]  ? _cond_resched+0x15/0x30
+[ 3631.759832]  down+0x3b/0x50
+[ 3631.759840]  migrate_to_node+0x371/0x3e0
+[ 3631.759845]  do_mm_manage.isra.0+0x886/0xa60
+[ 3631.759851]  __x64_sys_mm_manage+0x23d/0x2c5
+[ 3631.759859]  do_syscall_64+0x52/0x1c0
+[ 3631.759864]  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+[ 3631.759868] RIP: 0033:0x7fcec61e576d
+[ 3631.759876] Code: Bad RIP value.
+[ 3631.759884] RSP: 002b:00007ffdc9852288 EFLAGS: 00000212 ORIG_RAX: 00000000000001b8
+[ 3631.759888] RAX: ffffffffffffffda RBX: ffffffffffffff01 RCX: 00007fcec61e576d
+[ 3631.759892] RDX: 0000000000000041 RSI: ffffffffffffffff RDI: 000000000000547b
+[ 3631.759897] RBP: 00007ffdc98522d0 R08: 0000555d87d7a130 R09: 0000000000000202
+[ 3631.759899] R10: 0000555d87d7a170 R11: 0000000000000212 R12: 00007ffdc9853070
+[ 3631.759901] R13: 00007ffdc9853070 R14: 0000000000000000 R15: 0000000000000000
+[ 3650.484892] 0 pages failed to migrate from 2 to 9
+[ 3654.120514] 3941028 pages to be migrated to node: 2
+[ 3830.449945] 0 pages failed to migrate from 9 to 2
+[ 3836.469863] 196385 free pages at to node: 2
+[ 3836.469868] nr_active_pages_from_node: 295328, nr_free_pages_to_node: 196385
+[ 3836.469869] isolate 4194304 pages directly from lru lists
+[ 3836.646808] 295328 pages isolated at from node: 9
+[ 3836.646810] isolate 98943 pages directly from lru lists
+[ 3836.651051] 98943 pages isolated at to node: 2
+[ 3836.652246] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 3840.281439] 0 pages failed to migrate from 2 to 9
+[ 3840.453714] 197134 pages to be migrated to node: 2
+[ 3848.194022] 0 pages failed to migrate from 9 to 2
+[ 3852.061793] 98194 free pages at to node: 2
+[ 3852.061796] nr_active_pages_from_node: 480206, nr_free_pages_to_node: 98194
+[ 3852.061798] isolate 4194304 pages directly from lru lists
+[ 3852.250488] 480206 pages isolated at from node: 9
+[ 3852.250490] isolate 382012 pages directly from lru lists
+[ 3852.276226] 382013 pages isolated at to node: 2
+[ 3852.280326] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 3866.595728] 0 pages failed to migrate from 2 to 9
+[ 3866.856460] 431109 pages to be migrated to node: 2
+[ 3883.409269] 0 pages failed to migrate from 9 to 2
+[ 3889.042619] 49098 free pages at to node: 2
+[ 3889.042622] nr_active_pages_from_node: 212534, nr_free_pages_to_node: 49098
+[ 3889.042623] isolate 4194304 pages directly from lru lists
+[ 3889.125417] 212534 pages isolated at from node: 9
+[ 3889.125420] isolate 163436 pages directly from lru lists
+[ 3889.133343] 163437 pages isolated at to node: 2
+[ 3889.135132] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 3895.113827] 0 pages failed to migrate from 2 to 9
+[ 3895.208823] 187985 pages to be migrated to node: 2
+[ 3901.522262] 0 pages failed to migrate from 9 to 2
+[ 3904.230866] 24736 free pages at to node: 2
+[ 3904.230870] nr_active_pages_from_node: 219598, nr_free_pages_to_node: 24736
+[ 3904.230871] isolate 4194304 pages directly from lru lists
+[ 3904.258769] 219598 pages isolated at from node: 9
+[ 3904.258773] isolate 194862 pages directly from lru lists
+[ 3904.269701] 194862 pages isolated at to node: 2
+[ 3904.273467] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 3920.861506] 0 pages failed to migrate from 2 to 9
+[ 3920.972014] 207229 pages to be migrated to node: 2
+[ 3929.108449] 0 pages failed to migrate from 9 to 2
+[ 3934.510234] 12369 free pages at to node: 2
+[ 3934.510237] nr_active_pages_from_node: 88168, nr_free_pages_to_node: 12369
+[ 3934.510239] isolate 4194304 pages directly from lru lists
+[ 3934.596735] 88168 pages isolated at from node: 9
+[ 3934.596736] isolate 75799 pages directly from lru lists
+[ 3934.605153] 75799 pages isolated at to node: 2
+[ 3934.607490] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 3937.317914] 0 pages failed to migrate from 2 to 9
+[ 3937.386591] 81982 pages to be migrated to node: 2
+[ 3940.478077] 0 pages failed to migrate from 9 to 2
+[ 3944.405151] 6186 free pages at to node: 2
+[ 3944.405156] nr_active_pages_from_node: 3097, nr_free_pages_to_node: 6186
+[ 3944.405157] from node isolate 4194304 hot and cold pages
+[ 3944.405157] isolate 4194304 pages directly from lru lists
+[ 3946.778328] 4197400 pages isolated at from node: 9
+[ 3946.778331] isolate 4191214 pages directly from lru lists
+[ 3946.972264] 4003884 pages isolated at to node: 2
+[ 3947.018855] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 4108.627405] 0 pages failed to migrate from 2 to 9
+[ 4112.538278] 4006976 pages to be migrated to node: 2
+[ 4259.158325] 0 pages failed to migrate from 9 to 2
+[ 4263.012536] 196614 free pages at to node: 2
+[ 4263.012542] nr_active_pages_from_node: 729731, nr_free_pages_to_node: 196614
+[ 4263.012545] isolate 4194304 pages directly from lru lists
+[ 4263.114292] 729731 pages isolated at from node: 9
+[ 4263.114300] isolate 533117 pages directly from lru lists
+[ 4263.144389] 533117 pages isolated at to node: 2
+[ 4263.154597] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 4284.444505] 0 pages failed to migrate from 2 to 9
+[ 4284.689086] 631423 pages to be migrated to node: 2
+[ 4301.557594] 0 pages failed to migrate from 9 to 2
+[ 4303.620534] 98308 free pages at to node: 2
+[ 4303.620537] nr_active_pages_from_node: 478950, nr_free_pages_to_node: 98308
+[ 4303.620549] isolate 4194304 pages directly from lru lists
+[ 4303.849777] 478950 pages isolated at from node: 9
+[ 4303.849788] isolate 380642 pages directly from lru lists
+[ 4303.875644] 380642 pages isolated at to node: 2
+[ 4303.879731] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 4339.205770] 0 pages failed to migrate from 2 to 9
+[ 4339.455160] 429795 pages to be migrated to node: 2
+[ 4355.662057] 0 pages failed to migrate from 9 to 2
+[ 4365.468918] 124925 free pages at to node: 2
+[ 4365.468922] nr_active_pages_from_node: 1013106, nr_free_pages_to_node: 124925
+[ 4365.468924] isolate 4194304 pages directly from lru lists
+[ 4366.073970] 1013106 pages isolated at from node: 9
+[ 4366.073975] isolate 888181 pages directly from lru lists
+[ 4366.117175] 888181 pages isolated at to node: 2
+[ 4366.126710] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 4398.865937] 0 pages failed to migrate from 2 to 9
+[ 4399.711239] 950642 pages to be migrated to node: 2
+[ 4436.772235] 0 pages failed to migrate from 9 to 2
+[ 4441.519238] 62464 free pages at to node: 2
+[ 4441.519242] nr_active_pages_from_node: 764896, nr_free_pages_to_node: 62464
+[ 4441.519243] isolate 4194304 pages directly from lru lists
+[ 4441.719577] 764896 pages isolated at from node: 9
+[ 4441.719578] isolate 702432 pages directly from lru lists
+[ 4441.752694] 702433 pages isolated at to node: 2
+[ 4441.761478] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 4474.814997] 0 pages failed to migrate from 2 to 9
+[ 4474.932811] 733664 pages to be migrated to node: 2
+[ 4493.308956] 0 pages failed to migrate from 9 to 2
+[ 4496.968479] 31447 free pages at to node: 2
+[ 4496.968483] nr_active_pages_from_node: 417826, nr_free_pages_to_node: 31447
+[ 4496.968484] isolate 4194304 pages directly from lru lists
+[ 4497.141757] 417826 pages isolated at from node: 9
+[ 4497.141759] isolate 386379 pages directly from lru lists
+[ 4497.160091] 386379 pages isolated at to node: 2
+[ 4497.164777] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 4507.753243] 0 pages failed to migrate from 2 to 9
+[ 4508.031549] 402101 pages to be migrated to node: 2
+[ 4532.026358] 0 pages failed to migrate from 9 to 2
+[ 4539.239749] 16007 free pages at to node: 2
+[ 4539.239753] nr_active_pages_from_node: 869740, nr_free_pages_to_node: 16007
+[ 4539.239754] isolate 4194304 pages directly from lru lists
+[ 4539.318676] 869740 pages isolated at from node: 9
+[ 4539.318747] isolate 853733 pages directly from lru lists
+[ 4539.360704] 853733 pages isolated at to node: 2
+[ 4539.375723] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 4577.242400] 0 pages failed to migrate from 2 to 9
+[ 4577.960778] 861735 pages to be migrated to node: 2
+[ 4611.262333] 0 pages failed to migrate from 9 to 2
+[ 4616.762364] 8005 free pages at to node: 2
+[ 4616.762368] nr_active_pages_from_node: 301592, nr_free_pages_to_node: 8005
+[ 4616.762370] isolate 4194304 pages directly from lru lists
+[ 4616.898955] 301592 pages isolated at from node: 9
+[ 4616.898960] isolate 293587 pages directly from lru lists
+[ 4616.911458] 293587 pages isolated at to node: 2
+[ 4616.915238] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 4627.331974] 0 pages failed to migrate from 2 to 9
+[ 4627.475648] 297588 pages to be migrated to node: 2
+[ 4637.718392] 0 pages failed to migrate from 9 to 2
+[ 4642.472253] 4004 free pages at to node: 2
+[ 4642.472259] nr_active_pages_from_node: 417893, nr_free_pages_to_node: 4004
+[ 4642.472260] isolate 4194304 pages directly from lru lists
+[ 4642.676556] 417893 pages isolated at from node: 9
+[ 4642.676558] isolate 413889 pages directly from lru lists
+[ 4642.697216] 413891 pages isolated at to node: 2
+[ 4642.703829] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 4656.718456] 0 pages failed to migrate from 2 to 9
+[ 4657.059729] 415892 pages to be migrated to node: 2
+[ 4678.624521] 0 pages failed to migrate from 9 to 2
+[ 4682.592404] 34491 free pages at to node: 2
+[ 4682.592408] nr_active_pages_from_node: 234156, nr_free_pages_to_node: 34491
+[ 4682.592410] isolate 4194304 pages directly from lru lists
+[ 4682.655772] 234156 pages isolated at from node: 9
+[ 4682.655773] isolate 199665 pages directly from lru lists
+[ 4682.665140] 199665 pages isolated at to node: 2
+[ 4682.667945] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 4688.005889] 0 pages failed to migrate from 2 to 9
+[ 4688.065793] 216909 pages to be migrated to node: 2
+[ 4693.776499] 0 pages failed to migrate from 9 to 2
+[ 4696.715268] 17247 free pages at to node: 2
+[ 4696.715271] nr_active_pages_from_node: 274473, nr_free_pages_to_node: 17247
+[ 4696.715272] isolate 4194304 pages directly from lru lists
+[ 4696.769457] 274473 pages isolated at from node: 9
+[ 4696.769459] isolate 257226 pages directly from lru lists
+[ 4696.782055] 257226 pages isolated at to node: 2
+[ 4696.785085] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 4704.181083] 0 pages failed to migrate from 2 to 9
+[ 4704.249973] 265848 pages to be migrated to node: 2
+[ 4711.101170] 0 pages failed to migrate from 9 to 2
+[ 4714.887045] 8625 free pages at to node: 2
+[ 4714.887048] nr_active_pages_from_node: 59330, nr_free_pages_to_node: 8625
+[ 4714.887049] isolate 4194304 pages directly from lru lists
+[ 4714.910341] 59330 pages isolated at from node: 9
+[ 4714.910346] isolate 50705 pages directly from lru lists
+[ 4714.912636] 50707 pages isolated at to node: 2
+[ 4714.913272] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 4716.523105] 0 pages failed to migrate from 2 to 9
+[ 4716.557383] 55018 pages to be migrated to node: 2
+[ 4718.338815] 0 pages failed to migrate from 9 to 2
+[ 4721.227018] 4597 free pages at to node: 2
+[ 4721.227027] nr_active_pages_from_node: 144078, nr_free_pages_to_node: 4597
+[ 4721.227061] isolate 4194304 pages directly from lru lists
+[ 4721.254712] 144078 pages isolated at from node: 9
+[ 4721.254776] isolate 139481 pages directly from lru lists
+[ 4721.262027] 139483 pages isolated at to node: 2
+[ 4721.263933] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 4732.246694] 0 pages failed to migrate from 2 to 9
+[ 4732.286051] 141780 pages to be migrated to node: 2
+[ 4736.348427] 0 pages failed to migrate from 9 to 2
+[ 4738.755188] 2301 free pages at to node: 2
+[ 4738.755191] nr_active_pages_from_node: 98788, nr_free_pages_to_node: 2301
+[ 4738.755193] isolate 4194304 pages directly from lru lists
+[ 4738.782446] 98788 pages isolated at from node: 9
+[ 4738.782447] isolate 96487 pages directly from lru lists
+[ 4738.787155] 96487 pages isolated at to node: 2
+[ 4738.788180] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 4741.550478] 0 pages failed to migrate from 2 to 9
+[ 4741.588101] 97636 pages to be migrated to node: 2
+[ 4744.168212] 0 pages failed to migrate from 9 to 2
+[ 4746.481797] 1152 free pages at to node: 2
+[ 4746.481800] nr_active_pages_from_node: 577, nr_free_pages_to_node: 1152
+[ 4746.481801] from node isolate 4194304 hot and cold pages
+[ 4746.481802] isolate 4194304 pages directly from lru lists
+[ 4747.811783] 4194880 pages isolated at from node: 9
+[ 4747.811786] isolate 4193728 pages directly from lru lists
+[ 4747.976797] 3796302 pages isolated at to node: 2
+[ 4748.032515] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 4878.480656] 0 pages failed to migrate from 2 to 9
+[ 4880.269962] 3796877 pages to be migrated to node: 2
+[ 5033.677194] 0 pages failed to migrate from 9 to 2
+[ 5039.235115] 186435 free pages at to node: 2
+[ 5039.235119] nr_active_pages_from_node: 417070, nr_free_pages_to_node: 186435
+[ 5039.235120] isolate 4194304 pages directly from lru lists
+[ 5039.400171] 417070 pages isolated at from node: 9
+[ 5039.400173] isolate 230635 pages directly from lru lists
+[ 5039.411017] 230635 pages isolated at to node: 2
+[ 5039.413822] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 5047.997405] 0 pages failed to migrate from 2 to 9
+[ 5048.232806] 323851 pages to be migrated to node: 2
+[ 5061.000455] 0 pages failed to migrate from 9 to 2
+[ 5064.605006] 93219 free pages at to node: 2
+[ 5064.605011] nr_active_pages_from_node: 565250, nr_free_pages_to_node: 93219
+[ 5064.605013] isolate 4194304 pages directly from lru lists
+[ 5064.734538] 565250 pages isolated at from node: 9
+[ 5064.734542] isolate 472031 pages directly from lru lists
+[ 5064.757560] 472031 pages isolated at to node: 2
+[ 5064.762608] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 5089.342212] 0 pages failed to migrate from 2 to 9
+[ 5089.649276] 518639 pages to be migrated to node: 2
+[ 5113.905822] 0 pages failed to migrate from 9 to 2
+[ 5120.630730] 46913 free pages at to node: 2
+[ 5120.630736] nr_active_pages_from_node: 643128, nr_free_pages_to_node: 46913
+[ 5120.630737] isolate 4194304 pages directly from lru lists
+[ 5121.094305] 643128 pages isolated at from node: 9
+[ 5121.094307] isolate 596215 pages directly from lru lists
+[ 5121.126857] 596215 pages isolated at to node: 2
+[ 5121.133141] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 5142.698413] 0 pages failed to migrate from 2 to 9
+[ 5143.362012] 619670 pages to be migrated to node: 2
+[ 5168.076211] 0 pages failed to migrate from 9 to 2
+[ 5173.134686] 23458 free pages at to node: 2
+[ 5173.134691] nr_active_pages_from_node: 673876, nr_free_pages_to_node: 23458
+[ 5173.134695] isolate 4194304 pages directly from lru lists
+[ 5173.356023] 673876 pages isolated at from node: 9
+[ 5173.356024] isolate 650418 pages directly from lru lists
+[ 5173.398341] 650419 pages isolated at to node: 2
+[ 5173.412000] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 5197.668241] 0 pages failed to migrate from 2 to 9
+[ 5198.105720] 662147 pages to be migrated to node: 2
+[ 5223.907072] 0 pages failed to migrate from 9 to 2
+[ 5231.098420] 11972 free pages at to node: 2
+[ 5231.098425] nr_active_pages_from_node: 110299, nr_free_pages_to_node: 11972
+[ 5231.098426] isolate 4194304 pages directly from lru lists
+[ 5231.129954] 110299 pages isolated at from node: 9
+[ 5231.129960] isolate 98327 pages directly from lru lists
+[ 5231.134416] 98329 pages isolated at to node: 2
+[ 5231.135810] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 5242.821346] 0 pages failed to migrate from 2 to 9
+[ 5242.865092] 104314 pages to be migrated to node: 2
+[ 5249.456732] 0 pages failed to migrate from 9 to 2
+[ 5255.389401] 5988 free pages at to node: 2
+[ 5255.389407] nr_active_pages_from_node: 258500, nr_free_pages_to_node: 5988
+[ 5255.389409] isolate 4194304 pages directly from lru lists
+[ 5255.472563] 258500 pages isolated at from node: 9
+[ 5255.472566] isolate 252512 pages directly from lru lists
+[ 5255.484683] 252512 pages isolated at to node: 2
+[ 5255.487504] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 5264.437390] 0 pages failed to migrate from 2 to 9
+[ 5264.515899] 255505 pages to be migrated to node: 2
+[ 5273.861664] 0 pages failed to migrate from 9 to 2
+[ 5279.623936] 2995 free pages at to node: 2
+[ 5279.623944] nr_active_pages_from_node: 98280, nr_free_pages_to_node: 2995
+[ 5279.623947] isolate 4194304 pages directly from lru lists
+[ 5279.660520] 98280 pages isolated at from node: 9
+[ 5279.660525] isolate 95285 pages directly from lru lists
+[ 5279.665282] 95285 pages isolated at to node: 2
+[ 5279.666660] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 5283.081960] 0 pages failed to migrate from 2 to 9
+[ 5283.120297] 96781 pages to be migrated to node: 2
+[ 5286.632454] 0 pages failed to migrate from 9 to 2
+[ 5292.746121] 1499 free pages at to node: 2
+[ 5292.746125] nr_active_pages_from_node: 758, nr_free_pages_to_node: 1499
+[ 5292.746126] from node isolate 4194304 hot and cold pages
+[ 5292.746127] isolate 4194304 pages directly from lru lists
+[ 5295.565887] 4195061 pages isolated at from node: 9
+[ 5295.565889] isolate 4193562 pages directly from lru lists
+[ 5295.787604] 3495032 pages isolated at to node: 2
+[ 5295.860895] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 5442.172743] 0 pages failed to migrate from 2 to 9
+[ 5446.700626] 3495780 pages to be migrated to node: 2
+[ 5597.628514] 0 pages failed to migrate from 9 to 2
+[ 5604.292890] 182429 free pages at to node: 2
+[ 5604.292894] nr_active_pages_from_node: 718726, nr_free_pages_to_node: 182429
+[ 5604.292895] isolate 4194304 pages directly from lru lists
+[ 5604.729082] 718726 pages isolated at from node: 9
+[ 5604.729085] isolate 536297 pages directly from lru lists
+[ 5604.754651] 536297 pages isolated at to node: 2
+[ 5604.761202] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 5624.948072] 0 pages failed to migrate from 2 to 9
+[ 5625.547631] 627510 pages to be migrated to node: 2
+[ 5650.378222] 0 pages failed to migrate from 9 to 2
+[ 5654.834048] 91216 free pages at to node: 2
+[ 5654.834052] nr_active_pages_from_node: 538708, nr_free_pages_to_node: 91216
+[ 5654.834053] isolate 4194304 pages directly from lru lists
+[ 5655.036652] 538708 pages isolated at from node: 9
+[ 5655.036654] isolate 447492 pages directly from lru lists
+[ 5655.058249] 447493 pages isolated at to node: 2
+[ 5655.062981] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 5672.162302] 0 pages failed to migrate from 2 to 9
+[ 5672.459660] 493100 pages to be migrated to node: 2
+[ 5697.672292] 0 pages failed to migrate from 9 to 2
+[ 5701.015850] 45818 free pages at to node: 2
+[ 5701.015854] nr_active_pages_from_node: 633426, nr_free_pages_to_node: 45818
+[ 5701.015855] isolate 4194304 pages directly from lru lists
+[ 5701.167274] 633426 pages isolated at from node: 9
+[ 5701.167277] isolate 587608 pages directly from lru lists
+[ 5701.206077] 587608 pages isolated at to node: 2
+[ 5701.212330] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 5718.723981] 0 pages failed to migrate from 2 to 9
+[ 5718.866693] 610516 pages to be migrated to node: 2
+[ 5736.036872] 0 pages failed to migrate from 9 to 2
+[ 5738.989560] 22910 free pages at to node: 2
+[ 5738.989564] nr_active_pages_from_node: 673165, nr_free_pages_to_node: 22910
+[ 5738.989565] isolate 4194304 pages directly from lru lists
+[ 5739.137562] 673165 pages isolated at from node: 9
+[ 5739.137563] isolate 650255 pages directly from lru lists
+[ 5739.180936] 650256 pages isolated at to node: 2
+[ 5739.194441] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 5765.324555] 0 pages failed to migrate from 2 to 9
+[ 5765.507493] 661710 pages to be migrated to node: 2
+[ 5783.520821] 0 pages failed to migrate from 9 to 2
+[ 5787.506448] 11738 free pages at to node: 2
+[ 5787.506453] nr_active_pages_from_node: 364087, nr_free_pages_to_node: 11738
+[ 5787.506454] isolate 4194304 pages directly from lru lists
+[ 5787.560995] 364087 pages isolated at from node: 9
+[ 5787.560996] isolate 352349 pages directly from lru lists
+[ 5787.578722] 352349 pages isolated at to node: 2
+[ 5787.583718] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 5797.428372] 0 pages failed to migrate from 2 to 9
+[ 5797.484910] 358217 pages to be migrated to node: 2
+[ 5806.332502] 0 pages failed to migrate from 9 to 2
+[ 5811.279630] 6152 free pages at to node: 2
+[ 5811.279633] nr_active_pages_from_node: 452553, nr_free_pages_to_node: 6152
+[ 5811.279634] isolate 4194304 pages directly from lru lists
+[ 5811.458446] 452553 pages isolated at from node: 9
+[ 5811.458466] isolate 446401 pages directly from lru lists
+[ 5811.480528] 446401 pages isolated at to node: 2
+[ 5811.486120] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 5841.361526] 0 pages failed to migrate from 2 to 9
+[ 5841.971484] 449476 pages to be migrated to node: 2
+[ 5859.818052] 0 pages failed to migrate from 9 to 2
+[ 5868.382673] 5253 free pages at to node: 2
+[ 5868.382677] nr_active_pages_from_node: 246583, nr_free_pages_to_node: 5253
+[ 5868.382678] isolate 4194304 pages directly from lru lists
+[ 5868.621150] 246583 pages isolated at from node: 9
+[ 5868.621156] isolate 241330 pages directly from lru lists
+[ 5868.632813] 241330 pages isolated at to node: 2
+[ 5868.635378] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 5877.329336] 0 pages failed to migrate from 2 to 9
+[ 5877.555383] 243955 pages to be migrated to node: 2
+[ 5886.800855] 0 pages failed to migrate from 9 to 2
+[ 5892.907742] 2628 free pages at to node: 2
+[ 5892.907748] nr_active_pages_from_node: 298508, nr_free_pages_to_node: 2628
+[ 5892.907751] isolate 4194304 pages directly from lru lists
+[ 5893.148620] 298508 pages isolated at from node: 9
+[ 5893.148624] isolate 295880 pages directly from lru lists
+[ 5893.168962] 295880 pages isolated at to node: 2
+[ 5893.173484] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 5903.895310] 0 pages failed to migrate from 2 to 9
+[ 5904.214415] 297193 pages to be migrated to node: 2
+[ 5915.523049] 0 pages failed to migrate from 9 to 2
+[ 5923.267351] 1315 free pages at to node: 2
+[ 5923.267355] nr_active_pages_from_node: 31239, nr_free_pages_to_node: 1315
+[ 5923.267359] isolate 4194304 pages directly from lru lists
+[ 5923.279221] 31239 pages isolated at from node: 9
+[ 5923.279222] isolate 29924 pages directly from lru lists
+[ 5923.280832] 29928 pages isolated at to node: 2
+[ 5923.281158] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 5924.335024] 0 pages failed to migrate from 2 to 9
+[ 5924.348311] 30584 pages to be migrated to node: 2
+[ 5925.444868] 0 pages failed to migrate from 9 to 2
+[ 5930.966712] 659 free pages at to node: 2
+[ 5930.966716] nr_active_pages_from_node: 35772, nr_free_pages_to_node: 659
+[ 5930.966717] isolate 4194304 pages directly from lru lists
+[ 5931.004065] 35772 pages isolated at from node: 9
+[ 5931.004066] isolate 35113 pages directly from lru lists
+[ 5931.006629] 35115 pages isolated at to node: 2
+[ 5931.007105] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 5932.256559] 0 pages failed to migrate from 2 to 9
+[ 5932.296054] 35443 pages to be migrated to node: 2
+[ 5933.560509] 0 pages failed to migrate from 9 to 2
+[ 5939.571918] 331 free pages at to node: 2
+[ 5939.571922] nr_active_pages_from_node: 65592, nr_free_pages_to_node: 331
+[ 5939.571923] isolate 4194304 pages directly from lru lists
+[ 5939.610812] 65592 pages isolated at from node: 9
+[ 5939.610813] isolate 65261 pages directly from lru lists
+[ 5939.614126] 65262 pages isolated at to node: 2
+[ 5939.614858] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 5941.682921] 0 pages failed to migrate from 2 to 9
+[ 5941.715888] 65426 pages to be migrated to node: 2
+[ 5943.360289] 105 pages failed to migrate from 9 to 2
+[ 5947.460522] 101292 free pages at to node: 2
+[ 5947.460526] nr_active_pages_from_node: 51597, nr_free_pages_to_node: 101292
+[ 5947.460527] from node isolate 4194304 hot and cold pages
+[ 5947.460543] isolate 4194304 pages directly from lru lists
+[ 5948.025847] 4246379 pages isolated at from node: 9
+[ 5948.025850] isolate 4145087 pages directly from lru lists
+[ 5948.231101] 3896925 pages isolated at to node: 2
+[ 5948.299564] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 6105.309519] 0 pages failed to migrate from 2 to 9
+[ 6110.046460] 3947570 pages to be migrated to node: 2
+[ 6285.355769] 0 pages failed to migrate from 9 to 2
+[ 6291.181517] 102722 free pages at to node: 2
+[ 6291.181521] nr_active_pages_from_node: 289227, nr_free_pages_to_node: 102722
+[ 6291.181523] isolate 4194304 pages directly from lru lists
+[ 6291.266029] 289227 pages isolated at from node: 9
+[ 6291.266031] isolate 186505 pages directly from lru lists
+[ 6291.274863] 186505 pages isolated at to node: 2
+[ 6291.277137] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 6298.323703] 0 pages failed to migrate from 2 to 9
+[ 6298.424884] 237865 pages to be migrated to node: 2
+[ 6308.193803] 0 pages failed to migrate from 9 to 2
+[ 6311.895355] 51362 free pages at to node: 2
+[ 6311.895363] nr_active_pages_from_node: 442133, nr_free_pages_to_node: 51362
+[ 6311.895365] isolate 4194304 pages directly from lru lists
+[ 6312.012821] 442133 pages isolated at from node: 9
+[ 6312.012822] isolate 390771 pages directly from lru lists
+[ 6312.031543] 390772 pages isolated at to node: 2
+[ 6312.035721] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 6327.113023] 0 pages failed to migrate from 2 to 9
+[ 6327.301586] 416452 pages to be migrated to node: 2
+[ 6343.614196] 0 pages failed to migrate from 9 to 2
+[ 6350.513738] 25901 free pages at to node: 2
+[ 6350.513744] nr_active_pages_from_node: 247204, nr_free_pages_to_node: 25901
+[ 6350.513747] isolate 4194304 pages directly from lru lists
+[ 6350.551041] 247204 pages isolated at from node: 9
+[ 6350.551062] isolate 221303 pages directly from lru lists
+[ 6350.561706] 221303 pages isolated at to node: 2
+[ 6350.564265] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 6363.222950] 0 pages failed to migrate from 2 to 9
+[ 6363.323379] 234252 pages to be migrated to node: 2
+[ 6368.825280] 0 pages failed to migrate from 9 to 2
+[ 6371.206197] 127719 free pages at to node: 2
+[ 6371.206201] nr_active_pages_from_node: 1007618, nr_free_pages_to_node: 127719
+[ 6371.206202] isolate 4194304 pages directly from lru lists
+[ 6371.254873] 1007618 pages isolated at from node: 9
+[ 6371.254884] isolate 879899 pages directly from lru lists
+[ 6371.302349] 879899 pages isolated at to node: 2
+[ 6371.318093] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 6418.733697] 0 pages failed to migrate from 2 to 9
+[ 6419.264692] 943757 pages to be migrated to node: 2
+[ 6455.115110] 0 pages failed to migrate from 9 to 2
+[ 6460.020414] 63862 free pages at to node: 2
+[ 6460.020418] nr_active_pages_from_node: 223938, nr_free_pages_to_node: 63862
+[ 6460.020420] isolate 4194304 pages directly from lru lists
+[ 6460.087636] 223938 pages isolated at from node: 9
+[ 6460.087637] isolate 160076 pages directly from lru lists
+[ 6460.094861] 160076 pages isolated at to node: 2
+[ 6460.096838] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 6465.152874] 0 pages failed to migrate from 2 to 9
+[ 6465.239364] 192006 pages to be migrated to node: 2
+[ 6471.229886] 0 pages failed to migrate from 9 to 2
+[ 6475.418219] 31932 free pages at to node: 2
+[ 6475.418223] nr_active_pages_from_node: 318223, nr_free_pages_to_node: 31932
+[ 6475.418226] isolate 4194304 pages directly from lru lists
+[ 6475.468185] 318223 pages isolated at from node: 9
+[ 6475.468187] isolate 286291 pages directly from lru lists
+[ 6475.481637] 286291 pages isolated at to node: 2
+[ 6475.484811] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 6484.356415] 0 pages failed to migrate from 2 to 9
+[ 6484.439684] 302256 pages to be migrated to node: 2
+[ 6493.714019] 0 pages failed to migrate from 9 to 2
+[ 6503.849972] 60313 free pages at to node: 2
+[ 6503.849977] nr_active_pages_from_node: 119340, nr_free_pages_to_node: 60313
+[ 6503.849978] isolate 4194304 pages directly from lru lists
+[ 6503.900022] 119340 pages isolated at from node: 9
+[ 6503.900023] isolate 59027 pages directly from lru lists
+[ 6503.902867] 59027 pages isolated at to node: 2
+[ 6503.903554] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 6505.573049] 0 pages failed to migrate from 2 to 9
+[ 6505.608719] 89182 pages to be migrated to node: 2
+[ 6508.127300] 0 pages failed to migrate from 9 to 2
+[ 6512.252533] 30158 free pages at to node: 2
+[ 6512.252537] nr_active_pages_from_node: 25401, nr_free_pages_to_node: 30158
+[ 6512.252538] from node isolate 4194304 hot and cold pages
+[ 6512.252539] isolate 4194304 pages directly from lru lists
+[ 6513.765439] 4219705 pages isolated at from node: 9
+[ 6513.765444] isolate 4189547 pages directly from lru lists
+[ 6513.936720] 3692724 pages isolated at to node: 2
+[ 6513.985402] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 6628.293866] 0 pages failed to migrate from 2 to 9
+[ 6630.511130] 3707802 pages to be migrated to node: 2
+[ 6805.658943] 0 pages failed to migrate from 9 to 2
+[ 6811.677774] 186290 free pages at to node: 2
+[ 6811.677777] nr_active_pages_from_node: 439041, nr_free_pages_to_node: 186290
+[ 6811.677779] isolate 4194304 pages directly from lru lists
+[ 6811.852207] 439041 pages isolated at from node: 9
+[ 6811.852213] isolate 252751 pages directly from lru lists
+[ 6811.864028] 252751 pages isolated at to node: 2
+[ 6811.867163] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 6821.217707] 0 pages failed to migrate from 2 to 9
+[ 6821.447500] 345895 pages to be migrated to node: 2
+[ 6834.608996] 0 pages failed to migrate from 9 to 2
+[ 6838.428462] 93146 free pages at to node: 2
+[ 6838.428465] nr_active_pages_from_node: 488244, nr_free_pages_to_node: 93146
+[ 6838.428467] isolate 4194304 pages directly from lru lists
+[ 6838.598262] 488244 pages isolated at from node: 9
+[ 6838.598268] isolate 395098 pages directly from lru lists
+[ 6838.617671] 395098 pages isolated at to node: 2
+[ 6838.622980] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 6853.149967] 0 pages failed to migrate from 2 to 9
+[ 6853.392224] 441670 pages to be migrated to node: 2
+[ 6870.409028] 0 pages failed to migrate from 9 to 2
+[ 6878.225552] 46574 free pages at to node: 2
+[ 6878.225555] nr_active_pages_from_node: 288961, nr_free_pages_to_node: 46574
+[ 6878.225557] isolate 4194304 pages directly from lru lists
+[ 6878.345888] 288961 pages isolated at from node: 9
+[ 6878.345889] isolate 242387 pages directly from lru lists
+[ 6878.357769] 242391 pages isolated at to node: 2
+[ 6878.360446] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 6887.578176] 0 pages failed to migrate from 2 to 9
+[ 6887.727864] 265677 pages to be migrated to node: 2
+[ 6897.905429] 0 pages failed to migrate from 9 to 2
+[ 6902.548405] 23288 free pages at to node: 2
+[ 6902.548409] nr_active_pages_from_node: 348715, nr_free_pages_to_node: 23288
+[ 6902.548410] isolate 4194304 pages directly from lru lists
+[ 6902.653913] 348715 pages isolated at from node: 9
+[ 6902.653919] isolate 325427 pages directly from lru lists
+[ 6902.675636] 325428 pages isolated at to node: 2
+[ 6902.681050] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 6914.495353] 0 pages failed to migrate from 2 to 9
+[ 6914.612130] 337071 pages to be migrated to node: 2
+[ 6928.456397] 0 pages failed to migrate from 9 to 2
+[ 6936.989154] 11830 free pages at to node: 2
+[ 6936.989158] nr_active_pages_from_node: 121373, nr_free_pages_to_node: 11830
+[ 6936.989159] isolate 4194304 pages directly from lru lists
+[ 6937.044259] 121373 pages isolated at from node: 9
+[ 6937.044261] isolate 109543 pages directly from lru lists
+[ 6937.049250] 109543 pages isolated at to node: 2
+[ 6937.050593] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 6940.905828] 0 pages failed to migrate from 2 to 9
+[ 6940.965701] 115457 pages to be migrated to node: 2
+[ 6944.854025] 0 pages failed to migrate from 9 to 2
+[ 6947.326575] 5916 free pages at to node: 2
+[ 6947.326582] nr_active_pages_from_node: 2960, nr_free_pages_to_node: 5916
+[ 6947.326583] from node isolate 4194304 hot and cold pages
+[ 6947.326584] isolate 4194304 pages directly from lru lists
+[ 6948.845535] 4197262 pages isolated at from node: 9
+[ 6948.845538] isolate 4191346 pages directly from lru lists
+[ 6949.094438] 3819973 pages isolated at to node: 2
+[ 6949.144588] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 7097.560143] 0 pages failed to migrate from 2 to 9
+[ 7102.478695] 3822930 pages to be migrated to node: 2
+[ 7274.880682] 0 pages failed to migrate from 9 to 2
+[ 7280.496516] 196611 free pages at to node: 2
+[ 7280.496522] nr_active_pages_from_node: 436498, nr_free_pages_to_node: 196611
+[ 7280.496525] isolate 4194304 pages directly from lru lists
+[ 7280.840696] 436498 pages isolated at from node: 9
+[ 7280.840698] isolate 239887 pages directly from lru lists
+[ 7280.851255] 239887 pages isolated at to node: 2
+[ 7280.854552] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 7290.075901] 0 pages failed to migrate from 2 to 9
+[ 7290.489195] 338191 pages to be migrated to node: 2
+[ 7303.666748] 0 pages failed to migrate from 9 to 2
+[ 7307.621198] 98307 free pages at to node: 2
+[ 7307.621202] nr_active_pages_from_node: 496529, nr_free_pages_to_node: 98307
+[ 7307.621204] isolate 4194304 pages directly from lru lists
+[ 7307.789216] 496529 pages isolated at from node: 9
+[ 7307.789217] isolate 398222 pages directly from lru lists
+[ 7307.808757] 398222 pages isolated at to node: 2
+[ 7307.813010] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 7326.769991] 0 pages failed to migrate from 2 to 9
+[ 7326.847832] 447374 pages to be migrated to node: 2
+[ 7339.400178] 0 pages failed to migrate from 9 to 2
+[ 7342.790437] 49407 free pages at to node: 2
+[ 7342.790440] nr_active_pages_from_node: 466215, nr_free_pages_to_node: 49407
+[ 7342.790442] isolate 4194304 pages directly from lru lists
+[ 7342.928909] 466215 pages isolated at from node: 9
+[ 7342.928910] isolate 416808 pages directly from lru lists
+[ 7342.948844] 416808 pages isolated at to node: 2
+[ 7342.953295] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 7354.477016] 0 pages failed to migrate from 2 to 9
+[ 7354.633819] 441510 pages to be migrated to node: 2
+[ 7366.275510] 0 pages failed to migrate from 9 to 2
+[ 7368.337343] 24988 free pages at to node: 2
+[ 7368.337353] nr_active_pages_from_node: 725970, nr_free_pages_to_node: 24988
+[ 7368.337358] isolate 4194304 pages directly from lru lists
+[ 7368.374901] 725970 pages isolated at from node: 9
+[ 7368.374936] isolate 700982 pages directly from lru lists
+[ 7368.408589] 700982 pages isolated at to node: 2
+[ 7368.426357] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 7395.964896] 0 pages failed to migrate from 2 to 9
+[ 7396.093995] 713475 pages to be migrated to node: 2
+[ 7414.935378] 0 pages failed to migrate from 9 to 2
+[ 7416.874060] 12496 free pages at to node: 2
+[ 7416.874064] nr_active_pages_from_node: 310441, nr_free_pages_to_node: 12496
+[ 7416.874065] isolate 4194304 pages directly from lru lists
+[ 7416.966613] 310441 pages isolated at from node: 9
+[ 7416.966615] isolate 297945 pages directly from lru lists
+[ 7416.980648] 297945 pages isolated at to node: 2
+[ 7416.984578] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 7424.036235] 0 pages failed to migrate from 2 to 9
+[ 7424.114779] 304192 pages to be migrated to node: 2
+[ 7453.879154] 0 pages failed to migrate from 9 to 2
+[ 7459.890762] 23911 free pages at to node: 2
+[ 7459.890769] nr_active_pages_from_node: 455820, nr_free_pages_to_node: 23911
+[ 7459.890770] isolate 4194304 pages directly from lru lists
+[ 7460.090187] 455820 pages isolated at from node: 9
+[ 7460.090188] isolate 431909 pages directly from lru lists
+[ 7460.117387] 431909 pages isolated at to node: 2
+[ 7460.122051] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 7476.133452] 0 pages failed to migrate from 2 to 9
+[ 7476.392438] 443863 pages to be migrated to node: 2
+[ 7493.224266] 0 pages failed to migrate from 9 to 2
+[ 7499.015143] 11957 free pages at to node: 2
+[ 7499.015147] nr_active_pages_from_node: 177699, nr_free_pages_to_node: 11957
+[ 7499.015148] isolate 4194304 pages directly from lru lists
+[ 7499.151467] 177699 pages isolated at from node: 9
+[ 7499.151468] isolate 165742 pages directly from lru lists
+[ 7499.159461] 165742 pages isolated at to node: 2
+[ 7499.161275] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 7505.038607] 0 pages failed to migrate from 2 to 9
+[ 7505.152059] 171719 pages to be migrated to node: 2
+[ 7511.726823] 0 pages failed to migrate from 9 to 2
+[ 7518.373758] 5980 free pages at to node: 2
+[ 7518.373761] nr_active_pages_from_node: 125803, nr_free_pages_to_node: 5980
+[ 7518.373765] isolate 4194304 pages directly from lru lists
+[ 7518.438301] 125803 pages isolated at from node: 9
+[ 7518.438305] isolate 119823 pages directly from lru lists
+[ 7518.444974] 119827 pages isolated at to node: 2
+[ 7518.446426] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 7522.794292] 0 pages failed to migrate from 2 to 9
+[ 7522.856503] 122816 pages to be migrated to node: 2
+[ 7527.633675] 0 pages failed to migrate from 9 to 2
+[ 7532.998470] 2991 free pages at to node: 2
+[ 7532.998474] nr_active_pages_from_node: 1495, nr_free_pages_to_node: 2991
+[ 7532.998477] from node isolate 4194304 hot and cold pages
+[ 7532.998478] isolate 4194304 pages directly from lru lists
+[ 7535.857615] 4195799 pages isolated at from node: 9
+[ 7535.857621] isolate 4192808 pages directly from lru lists
+[ 7536.029316] 3556143 pages isolated at to node: 2
+[ 7536.126338] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 7689.351476] 0 pages failed to migrate from 2 to 9
+[ 7693.616678] 3557637 pages to be migrated to node: 2
+[ 7832.755029] 0 pages failed to migrate from 9 to 2
+[ 7835.358707] 48624 free pages at to node: 2
+[ 7835.358711] nr_active_pages_from_node: 469194, nr_free_pages_to_node: 48624
+[ 7835.358713] isolate 4194304 pages directly from lru lists
+[ 7835.509625] 469194 pages isolated at from node: 9
+[ 7835.509627] isolate 420570 pages directly from lru lists
+[ 7835.528209] 420570 pages isolated at to node: 2
+[ 7835.533627] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 7847.964013] 0 pages failed to migrate from 2 to 9
+[ 7848.114792] 444881 pages to be migrated to node: 2
+[ 7860.566094] 0 pages failed to migrate from 9 to 2
+[ 7862.819641] 24313 free pages at to node: 2
+[ 7862.819645] nr_active_pages_from_node: 637071, nr_free_pages_to_node: 24313
+[ 7862.819646] isolate 4194304 pages directly from lru lists
+[ 7862.892505] 637071 pages isolated at from node: 9
+[ 7862.892508] isolate 612758 pages directly from lru lists
+[ 7862.921914] 612758 pages isolated at to node: 2
+[ 7862.928371] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 7896.219631] 0 pages failed to migrate from 2 to 9
+[ 7896.528221] 624913 pages to be migrated to node: 2
+[ 7920.846527] 0 pages failed to migrate from 9 to 2
+[ 7927.404537] 12508 free pages at to node: 2
+[ 7927.404541] nr_active_pages_from_node: 982632, nr_free_pages_to_node: 12508
+[ 7927.404543] isolate 4194304 pages directly from lru lists
+[ 7927.852179] 982632 pages isolated at from node: 9
+[ 7927.852183] isolate 970124 pages directly from lru lists
+[ 7927.915290] 970124 pages isolated at to node: 2
+[ 7927.925551] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 7962.994488] 0 pages failed to migrate from 2 to 9
+[ 7963.615214] 976377 pages to be migrated to node: 2
+[ 8001.725308] 0 pages failed to migrate from 9 to 2
+[ 8007.078007] 6255 free pages at to node: 2
+[ 8007.078011] nr_active_pages_from_node: 1008203, nr_free_pages_to_node: 6255
+[ 8007.078013] isolate 4194304 pages directly from lru lists
+[ 8007.411947] 1008203 pages isolated at from node: 9
+[ 8007.411949] isolate 1001948 pages directly from lru lists
+[ 8007.459437] 1001951 pages isolated at to node: 2
+[ 8007.471938] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 8046.058813] 0 pages failed to migrate from 2 to 9
+[ 8046.366669] 1005077 pages to be migrated to node: 2
+[ 8073.468094] 0 pages failed to migrate from 9 to 2
+[ 8075.727224] 3409 free pages at to node: 2
+[ 8075.727228] nr_active_pages_from_node: 399587, nr_free_pages_to_node: 3409
+[ 8075.727234] isolate 4194304 pages directly from lru lists
+[ 8075.789381] 399587 pages isolated at from node: 9
+[ 8075.789383] isolate 396178 pages directly from lru lists
+[ 8075.807873] 396178 pages isolated at to node: 2
+[ 8075.812955] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 8109.761757] 0 pages failed to migrate from 2 to 9
+[ 8110.094414] 397881 pages to be migrated to node: 2
+[ 8126.056961] 0 pages failed to migrate from 9 to 2
+[ 8132.404681] 1707 free pages at to node: 2
+[ 8132.404685] nr_active_pages_from_node: 942471, nr_free_pages_to_node: 1707
+[ 8132.404686] isolate 4194304 pages directly from lru lists
+[ 8132.795760] 942471 pages isolated at from node: 9
+[ 8132.795762] isolate 940764 pages directly from lru lists
+[ 8132.846022] 940764 pages isolated at to node: 2
+[ 8132.862531] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 8166.958215] 0 pages failed to migrate from 2 to 9
+[ 8167.624325] 941616 pages to be migrated to node: 2
+[ 8203.237952] 0 pages failed to migrate from 9 to 2
+[ 8208.892650] 855 free pages at to node: 2
+[ 8208.892654] nr_active_pages_from_node: 253290, nr_free_pages_to_node: 855
+[ 8208.892655] isolate 4194304 pages directly from lru lists
+[ 8209.009611] 253290 pages isolated at from node: 9
+[ 8209.009614] isolate 252435 pages directly from lru lists
+[ 8209.020615] 252435 pages isolated at to node: 2
+[ 8209.023849] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 8218.635047] 0 pages failed to migrate from 2 to 9
+[ 8218.770354] 252861 pages to be migrated to node: 2
+[ 8234.167624] 0 pages failed to migrate from 9 to 2
+[ 8243.520665] 13430 free pages at to node: 2
+[ 8243.520676] nr_active_pages_from_node: 770279, nr_free_pages_to_node: 13430
+[ 8243.520771] isolate 4194304 pages directly from lru lists
+[ 8243.591090] 770279 pages isolated at from node: 9
+[ 8243.591157] isolate 756849 pages directly from lru lists
+[ 8243.632741] 756849 pages isolated at to node: 2
+[ 8243.644793] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 8274.576369] 0 pages failed to migrate from 2 to 9
+[ 8275.140619] 763563 pages to be migrated to node: 2
+[ 8305.247858] 0 pages failed to migrate from 9 to 2
+[ 8312.052010] 6716 free pages at to node: 2
+[ 8312.052014] nr_active_pages_from_node: 573769, nr_free_pages_to_node: 6716
+[ 8312.052015] isolate 4194304 pages directly from lru lists
+[ 8312.452196] 573769 pages isolated at from node: 9
+[ 8312.452200] isolate 567053 pages directly from lru lists
+[ 8312.479136] 567053 pages isolated at to node: 2
+[ 8312.485914] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 8332.912095] 0 pages failed to migrate from 2 to 9
+[ 8333.499337] 570410 pages to be migrated to node: 2
+[ 8356.560526] 0 pages failed to migrate from 9 to 2
+[ 8361.806622] 3359 free pages at to node: 2
+[ 8361.806627] nr_active_pages_from_node: 311914, nr_free_pages_to_node: 3359
+[ 8361.806632] isolate 4194304 pages directly from lru lists
+[ 8361.884618] 311914 pages isolated at from node: 9
+[ 8361.884619] isolate 308555 pages directly from lru lists
+[ 8361.902380] 308558 pages isolated at to node: 2
+[ 8361.907234] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 8374.220758] 0 pages failed to migrate from 2 to 9
+[ 8374.329924] 310236 pages to be migrated to node: 2
+[ 8388.440401] 0 pages failed to migrate from 9 to 2
+[ 8391.615150] 28294 free pages at to node: 2
+[ 8391.615154] nr_active_pages_from_node: 189815, nr_free_pages_to_node: 28294
+[ 8391.615155] isolate 4194304 pages directly from lru lists
+[ 8391.676837] 189815 pages isolated at from node: 9
+[ 8391.676838] isolate 161521 pages directly from lru lists
+[ 8391.684946] 161521 pages isolated at to node: 2
+[ 8391.687226] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 8397.148223] 0 pages failed to migrate from 2 to 9
+[ 8397.219203] 175667 pages to be migrated to node: 2
+[ 8402.134126] 0 pages failed to migrate from 9 to 2
+[ 8405.132742] 14148 free pages at to node: 2
+[ 8405.132746] nr_active_pages_from_node: 191796, nr_free_pages_to_node: 14148
+[ 8405.132747] isolate 4194304 pages directly from lru lists
+[ 8405.170687] 191796 pages isolated at from node: 9
+[ 8405.170689] isolate 177648 pages directly from lru lists
+[ 8405.184584] 177648 pages isolated at to node: 2
+[ 8405.187503] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 8411.053605] 0 pages failed to migrate from 2 to 9
+[ 8411.092031] 184721 pages to be migrated to node: 2
+[ 8416.058134] 0 pages failed to migrate from 9 to 2
+[ 8418.971363] 7075 free pages at to node: 2
+[ 8418.971366] nr_active_pages_from_node: 8571, nr_free_pages_to_node: 7075
+[ 8418.971368] isolate 4194304 pages directly from lru lists
+[ 8418.972535] 8571 pages isolated at from node: 9
+[ 8418.972539] isolate 1496 pages directly from lru lists
+[ 8418.972619] 1496 pages isolated at to node: 2
+[ 8418.972694] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 8419.016733] 0 pages failed to migrate from 2 to 9
+[ 8419.017496] 5032 pages to be migrated to node: 2
+[ 8419.148195] 0 pages failed to migrate from 9 to 2
+[ 8424.140872] 3539 free pages at to node: 2
+[ 8424.140877] nr_active_pages_from_node: 2551, nr_free_pages_to_node: 3539
+[ 8424.140878] from node isolate 4194304 hot and cold pages
+[ 8424.140878] isolate 4194304 pages directly from lru lists
+[ 8425.072163] 4196855 pages isolated at from node: 9
+[ 8425.072165] isolate 4193316 pages directly from lru lists
+[ 8425.227940] 3770530 pages isolated at to node: 2
+[ 8425.292093] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 8578.111420] 0 pages failed to migrate from 2 to 9
+[ 8581.512067] 3772298 pages to be migrated to node: 2
+[ 8752.486887] 0 pages failed to migrate from 9 to 2
+[ 8758.231157] 10241 free pages at to node: 2
+[ 8758.231165] nr_active_pages_from_node: 392661, nr_free_pages_to_node: 10241
+[ 8758.231166] isolate 4194304 pages directly from lru lists
+[ 8758.537354] 392661 pages isolated at from node: 9
+[ 8758.537356] isolate 382420 pages directly from lru lists
+[ 8758.555295] 382420 pages isolated at to node: 2
+[ 8758.559930] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 8772.954315] 0 pages failed to migrate from 2 to 9
+[ 8773.379065] 387539 pages to be migrated to node: 2
+[ 8788.752595] 0 pages failed to migrate from 9 to 2
+[ 8791.975378] 5122 free pages at to node: 2
+[ 8791.975381] nr_active_pages_from_node: 625568, nr_free_pages_to_node: 5122
+[ 8791.975383] isolate 4194304 pages directly from lru lists
+[ 8792.177434] 625568 pages isolated at from node: 9
+[ 8792.177436] isolate 620446 pages directly from lru lists
+[ 8792.218134] 620446 pages isolated at to node: 2
+[ 8792.224711] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 8815.159760] 0 pages failed to migrate from 2 to 9
+[ 8815.448283] 623006 pages to be migrated to node: 2
+[ 8848.574206] 0 pages failed to migrate from 9 to 2
+[ 8855.737741] 2756 free pages at to node: 2
+[ 8855.737746] nr_active_pages_from_node: 713236, nr_free_pages_to_node: 2756
+[ 8855.737748] isolate 4194304 pages directly from lru lists
+[ 8855.952055] 713236 pages isolated at from node: 9
+[ 8855.952059] isolate 710480 pages directly from lru lists
+[ 8855.998902] 710480 pages isolated at to node: 2
+[ 8856.008184] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 8882.168947] 0 pages failed to migrate from 2 to 9
+[ 8882.484946] 711857 pages to be migrated to node: 2
+[ 8910.788565] 0 pages failed to migrate from 9 to 2
+[ 8915.693650] 1379 free pages at to node: 2
+[ 8915.693655] nr_active_pages_from_node: 866084, nr_free_pages_to_node: 1379
+[ 8915.693656] isolate 4194304 pages directly from lru lists
+[ 8915.911151] 866084 pages isolated at from node: 9
+[ 8915.911155] isolate 864705 pages directly from lru lists
+[ 8915.955758] 864705 pages isolated at to node: 2
+[ 8915.969676] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 8946.983858] 0 pages failed to migrate from 2 to 9
+[ 8947.426441] 865393 pages to be migrated to node: 2
+[ 8991.042957] 0 pages failed to migrate from 9 to 2
+[ 8999.024683] 988 free pages at to node: 2
+[ 8999.024688] nr_active_pages_from_node: 391638, nr_free_pages_to_node: 988
+[ 8999.024691] isolate 4194304 pages directly from lru lists
+[ 8999.341462] 391638 pages isolated at from node: 9
+[ 8999.341464] isolate 390650 pages directly from lru lists
+[ 8999.359608] 390650 pages isolated at to node: 2
+[ 8999.365308] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 9014.093428] 0 pages failed to migrate from 2 to 9
+[ 9014.525889] 391143 pages to be migrated to node: 2
+[ 9029.949025] 0 pages failed to migrate from 9 to 2
+[ 9034.897098] 495 free pages at to node: 2
+[ 9034.897102] nr_active_pages_from_node: 350578, nr_free_pages_to_node: 495
+[ 9034.897103] isolate 4194304 pages directly from lru lists
+[ 9035.013112] 350578 pages isolated at from node: 9
+[ 9035.013113] isolate 350083 pages directly from lru lists
+[ 9035.029595] 350083 pages isolated at to node: 2
+[ 9035.033871] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 9047.736721] 0 pages failed to migrate from 2 to 9
+[ 9047.893568] 350329 pages to be migrated to node: 2
+[ 9061.391645] 0 pages failed to migrate from 9 to 2
+[ 9068.813283] 249 free pages at to node: 2
+[ 9068.813287] nr_active_pages_from_node: 269327, nr_free_pages_to_node: 249
+[ 9068.813288] isolate 4194304 pages directly from lru lists
+[ 9068.908077] 269327 pages isolated at from node: 9
+[ 9068.908079] isolate 269078 pages directly from lru lists
+[ 9068.924847] 269081 pages isolated at to node: 2
+[ 9068.928234] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 9078.764661] 0 pages failed to migrate from 2 to 9
+[ 9078.866601] 269204 pages to be migrated to node: 2
+[ 9089.177620] 0 pages failed to migrate from 9 to 2
+[ 9094.564565] 126 free pages at to node: 2
+[ 9094.564569] nr_active_pages_from_node: 107715, nr_free_pages_to_node: 126
+[ 9094.564570] isolate 4194304 pages directly from lru lists
+[ 9094.591042] 107715 pages isolated at from node: 9
+[ 9094.591044] isolate 107589 pages directly from lru lists
+[ 9094.597498] 107591 pages isolated at to node: 2
+[ 9094.598902] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 9098.460578] 0 pages failed to migrate from 2 to 9
+[ 9098.490937] 107653 pages to be migrated to node: 2
+[ 9102.635463] 0 pages failed to migrate from 9 to 2
+[ 9109.672915] 64 free pages at to node: 2
+[ 9109.672925] nr_active_pages_from_node: 98237, nr_free_pages_to_node: 64
+[ 9109.672926] isolate 4194304 pages directly from lru lists
+[ 9109.790653] 98237 pages isolated at from node: 9
+[ 9109.790656] isolate 98173 pages directly from lru lists
+[ 9109.795502] 98174 pages isolated at to node: 2
+[ 9109.796568] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 9113.728222] 0 pages failed to migrate from 2 to 9
+[ 9113.823929] 98205 pages to be migrated to node: 2
+[ 9117.641509] 0 pages failed to migrate from 9 to 2
+[ 9121.116427] 98469 free pages at to node: 2
+[ 9121.116466] nr_active_pages_from_node: 35950, nr_free_pages_to_node: 98469
+[ 9121.116470] from node isolate 4194304 hot and cold pages
+[ 9121.116470] isolate 4194304 pages directly from lru lists
+[ 9121.718258] 4230297 pages isolated at from node: 9
+[ 9121.718263] isolate 4131828 pages directly from lru lists
+[ 9121.859198] 3754875 pages isolated at to node: 2
+[ 9121.911558] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 9275.634209] 0 pages failed to migrate from 2 to 9
+[ 9279.221071] 3804108 pages to be migrated to node: 2
+[ 9406.906342] 0 pages failed to migrate from 9 to 2
+[ 9409.440588] 85229 free pages at to node: 2
+[ 9409.440592] nr_active_pages_from_node: 423586, nr_free_pages_to_node: 85229
+[ 9409.440593] isolate 4194304 pages directly from lru lists
+[ 9409.480411] 423586 pages isolated at from node: 9
+[ 9409.480412] isolate 338357 pages directly from lru lists
+[ 9409.496328] 338357 pages isolated at to node: 2
+[ 9409.500530] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 9443.405115] 0 pages failed to migrate from 2 to 9
+[ 9443.576014] 380970 pages to be migrated to node: 2
+[ 9458.421589] 0 pages failed to migrate from 9 to 2
+[ 9462.164478] 42799 free pages at to node: 2
+[ 9462.164482] nr_active_pages_from_node: 529975, nr_free_pages_to_node: 42799
+[ 9462.164483] isolate 4194304 pages directly from lru lists
+[ 9462.309156] 529975 pages isolated at from node: 9
+[ 9462.309159] isolate 487176 pages directly from lru lists
+[ 9462.333012] 487177 pages isolated at to node: 2
+[ 9462.338267] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 9480.224393] 0 pages failed to migrate from 2 to 9
+[ 9480.454192] 508575 pages to be migrated to node: 2
+[ 9499.702022] 0 pages failed to migrate from 9 to 2
+[ 9505.933861] 21401 free pages at to node: 2
+[ 9505.933865] nr_active_pages_from_node: 393332, nr_free_pages_to_node: 21401
+[ 9505.933867] isolate 4194304 pages directly from lru lists
+[ 9506.235499] 393332 pages isolated at from node: 9
+[ 9506.235504] isolate 371931 pages directly from lru lists
+[ 9506.253343] 371933 pages isolated at to node: 2
+[ 9506.257337] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 9519.977092] 0 pages failed to migrate from 2 to 9
+[ 9520.333553] 382632 pages to be migrated to node: 2
+[ 9535.307408] 0 pages failed to migrate from 9 to 2
+[ 9539.946651] 10702 free pages at to node: 2
+[ 9539.946655] nr_active_pages_from_node: 480577, nr_free_pages_to_node: 10702
+[ 9539.946659] isolate 4194304 pages directly from lru lists
+[ 9540.130620] 480577 pages isolated at from node: 9
+[ 9540.130621] isolate 469875 pages directly from lru lists
+[ 9540.158826] 469876 pages isolated at to node: 2
+[ 9540.167440] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 9557.178279] 0 pages failed to migrate from 2 to 9
+[ 9557.455367] 475226 pages to be migrated to node: 2
+[ 9595.399463] 0 pages failed to migrate from 9 to 2
+[ 9601.734786] 5576 free pages at to node: 2
+[ 9601.734795] nr_active_pages_from_node: 537872, nr_free_pages_to_node: 5576
+[ 9601.734796] isolate 4194304 pages directly from lru lists
+[ 9601.931922] 537872 pages isolated at from node: 9
+[ 9601.931923] isolate 532296 pages directly from lru lists
+[ 9601.955372] 532296 pages isolated at to node: 2
+[ 9601.962279] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 9621.344467] 0 pages failed to migrate from 2 to 9
+[ 9621.689140] 535083 pages to be migrated to node: 2
+[ 9642.853148] 0 pages failed to migrate from 9 to 2
+[ 9647.787751] 2789 free pages at to node: 2
+[ 9647.787755] nr_active_pages_from_node: 200549, nr_free_pages_to_node: 2789
+[ 9647.787756] isolate 4194304 pages directly from lru lists
+[ 9647.848686] 200549 pages isolated at from node: 9
+[ 9647.848689] isolate 197760 pages directly from lru lists
+[ 9647.858448] 197760 pages isolated at to node: 2
+[ 9647.860600] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 9655.011425] 0 pages failed to migrate from 2 to 9
+[ 9655.073033] 199153 pages to be migrated to node: 2
+[ 9662.741860] 0 pages failed to migrate from 9 to 2
+[ 9669.090649] 1396 free pages at to node: 2
+[ 9669.090653] nr_active_pages_from_node: 106411, nr_free_pages_to_node: 1396
+[ 9669.090656] isolate 4194304 pages directly from lru lists
+[ 9669.138983] 106411 pages isolated at from node: 9
+[ 9669.138989] isolate 105015 pages directly from lru lists
+[ 9669.144228] 105017 pages isolated at to node: 2
+[ 9669.145383] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 9673.006249] 0 pages failed to migrate from 2 to 9
+[ 9673.055532] 105714 pages to be migrated to node: 2
+[ 9677.187864] 0 pages failed to migrate from 9 to 2
+[ 9682.418049] 699 free pages at to node: 2
+[ 9682.418055] nr_active_pages_from_node: 353, nr_free_pages_to_node: 699
+[ 9682.418056] from node isolate 4194304 hot and cold pages
+[ 9682.418058] isolate 4194304 pages directly from lru lists
+[ 9685.079654] 4194656 pages isolated at from node: 9
+[ 9685.079658] isolate 4193957 pages directly from lru lists
+[ 9685.264928] 3592722 pages isolated at to node: 2
+[ 9685.317402] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 9839.055391] 0 pages failed to migrate from 2 to 9
+[ 9842.850222] 3593070 pages to be migrated to node: 2
+[ 9968.276540] 0 pages failed to migrate from 9 to 2
+[ 9970.710860] 196673 free pages at to node: 2
+[ 9970.710864] nr_active_pages_from_node: 472815, nr_free_pages_to_node: 196673
+[ 9970.710865] isolate 4194304 pages directly from lru lists
+[ 9970.850783] 472815 pages isolated at from node: 9
+[ 9970.850784] isolate 276142 pages directly from lru lists
+[ 9970.862473] 276142 pages isolated at to node: 2
+[ 9970.865790] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[ 9979.419217] 0 pages failed to migrate from 2 to 9
+[ 9979.556478] 374477 pages to be migrated to node: 2
+[ 9989.528491] 0 pages failed to migrate from 9 to 2
+[ 9991.119700] 98338 free pages at to node: 2
+[ 9991.119703] nr_active_pages_from_node: 527687, nr_free_pages_to_node: 98338
+[ 9991.119705] isolate 4194304 pages directly from lru lists
+[ 9991.178248] 527687 pages isolated at from node: 9
+[ 9991.178250] isolate 429349 pages directly from lru lists
+[ 9991.199082] 429349 pages isolated at to node: 2
+[ 9991.203689] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[10003.458901] 0 pages failed to migrate from 2 to 9
+[10003.582146] 478517 pages to be migrated to node: 2
+[10040.411912] 0 pages failed to migrate from 9 to 2
+[10046.208983] 49384 free pages at to node: 2
+[10046.208987] nr_active_pages_from_node: 956932, nr_free_pages_to_node: 49384
+[10046.208988] isolate 4194304 pages directly from lru lists
+[10046.563787] 956932 pages isolated at from node: 9
+[10046.563794] isolate 907548 pages directly from lru lists
+[10046.612659] 907548 pages isolated at to node: 2
+[10046.622750] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[10079.751020] 0 pages failed to migrate from 2 to 9
+[10080.348719] 932239 pages to be migrated to node: 2
+[10116.420323] 0 pages failed to migrate from 9 to 2
+[10120.689502] 24693 free pages at to node: 2
+[10120.689505] nr_active_pages_from_node: 765328, nr_free_pages_to_node: 24693
+[10120.689506] isolate 4194304 pages directly from lru lists
+[10120.959949] 765328 pages isolated at from node: 9
+[10120.959952] isolate 740635 pages directly from lru lists
+[10120.995503] 740636 pages isolated at to node: 2
+[10121.005087] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[10147.962433] 0 pages failed to migrate from 2 to 9
+[10148.388705] 752981 pages to be migrated to node: 2
+[10189.441762] 0 pages failed to migrate from 9 to 2
+[10194.806264] 12639 free pages at to node: 2
+[10194.806269] nr_active_pages_from_node: 594969, nr_free_pages_to_node: 12639
+[10194.806271] isolate 4194304 pages directly from lru lists
+[10195.061086] 594969 pages isolated at from node: 9
+[10195.061087] isolate 582330 pages directly from lru lists
+[10195.089242] 582330 pages isolated at to node: 2
+[10195.096786] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[10216.276192] 0 pages failed to migrate from 2 to 9
+[10216.694575] 588648 pages to be migrated to node: 2
+[10239.999981] 0 pages failed to migrate from 9 to 2
+[10244.664786] 6321 free pages at to node: 2
+[10244.664790] nr_active_pages_from_node: 643004, nr_free_pages_to_node: 6321
+[10244.664791] isolate 4194304 pages directly from lru lists
+[10244.810959] 643004 pages isolated at from node: 9
+[10244.810960] isolate 636683 pages directly from lru lists
+[10244.845474] 636684 pages isolated at to node: 2
+[10244.855549] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[10268.659604] 0 pages failed to migrate from 2 to 9
+[10268.977001] 639843 pages to be migrated to node: 2
+[10294.214577] 0 pages failed to migrate from 9 to 2
+[10300.276237] 3162 free pages at to node: 2
+[10300.276241] nr_active_pages_from_node: 314735, nr_free_pages_to_node: 3162
+[10300.276242] isolate 4194304 pages directly from lru lists
+[10300.468877] 314735 pages isolated at from node: 9
+[10300.468880] isolate 311573 pages directly from lru lists
+[10300.483990] 311576 pages isolated at to node: 2
+[10300.487695] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[10316.335943] 0 pages failed to migrate from 2 to 9
+[10316.427805] 313156 pages to be migrated to node: 2
+[10325.004754] 0 pages failed to migrate from 9 to 2
+[10327.353865] 1814 free pages at to node: 2
+[10327.353869] nr_active_pages_from_node: 382157, nr_free_pages_to_node: 1814
+[10327.353872] isolate 4194304 pages directly from lru lists
+[10327.419603] 382157 pages isolated at from node: 9
+[10327.419605] isolate 380343 pages directly from lru lists
+[10327.444751] 380343 pages isolated at to node: 2
+[10327.450491] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[10338.265600] 0 pages failed to migrate from 2 to 9
+[10338.361302] 381249 pages to be migrated to node: 2
+[10349.222303] 0 pages failed to migrate from 9 to 2
+[10352.176541] 908 free pages at to node: 2
+[10352.176547] nr_active_pages_from_node: 268307, nr_free_pages_to_node: 908
+[10352.176548] isolate 4194304 pages directly from lru lists
+[10352.213883] 268307 pages isolated at from node: 9
+[10352.213885] isolate 267399 pages directly from lru lists
+[10352.228459] 267400 pages isolated at to node: 2
+[10352.231548] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[10359.421802] 0 pages failed to migrate from 2 to 9
+[10359.457941] 267853 pages to be migrated to node: 2
+[10367.893624] 0 pages failed to migrate from 9 to 2
+[10376.119086] 737 free pages at to node: 2
+[10376.119105] nr_active_pages_from_node: 280971, nr_free_pages_to_node: 737
+[10376.119110] isolate 4194304 pages directly from lru lists
+[10376.786632] 280971 pages isolated at from node: 9
+[10376.786634] isolate 280234 pages directly from lru lists
+[10376.800124] 280234 pages isolated at to node: 2
+[10376.803619] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[10394.067212] 0 pages failed to migrate from 2 to 9
+[10394.208394] 280601 pages to be migrated to node: 2
+[10405.202337] 0 pages failed to migrate from 9 to 2
+[10410.435578] 563 free pages at to node: 2
+[10410.435582] nr_active_pages_from_node: 222522, nr_free_pages_to_node: 563
+[10410.435583] isolate 4194304 pages directly from lru lists
+[10410.510212] 222522 pages isolated at from node: 9
+[10410.510213] isolate 221959 pages directly from lru lists
+[10410.520827] 221959 pages isolated at to node: 2
+[10410.523545] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[10418.550218] 0 pages failed to migrate from 2 to 9
+[10418.627329] 222239 pages to be migrated to node: 2
+[10427.063894] 0 pages failed to migrate from 9 to 2
+[10432.088659] 283 free pages at to node: 2
+[10432.088664] nr_active_pages_from_node: 43899, nr_free_pages_to_node: 283
+[10432.088665] isolate 4194304 pages directly from lru lists
+[10432.109728] 43899 pages isolated at from node: 9
+[10432.109736] isolate 43616 pages directly from lru lists
+[10432.111943] 43616 pages isolated at to node: 2
+[10432.112446] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[10433.744132] 0 pages failed to migrate from 2 to 9
+[10433.765786] 43756 pages to be migrated to node: 2
+[10435.419820] 0 pages failed to migrate from 9 to 2
+[10440.660997] 143 free pages at to node: 2
+[10440.661001] nr_active_pages_from_node: 77, nr_free_pages_to_node: 143
+[10440.661007] from node isolate 4194304 hot and cold pages
+[10440.661008] isolate 4194304 pages directly from lru lists
+[10442.956155] 4194380 pages isolated at from node: 9
+[10442.956158] isolate 4194237 pages directly from lru lists
+[10443.146773] 3800503 pages isolated at to node: 2
+[10443.197321] [page_migration_to_remote_pmm_worker] current node: 3, destination node: 9
+[10605.114744] 0 pages failed to migrate from 2 to 9
+[10608.355397] 3800573 pages to be migrated to node: 2
+[10693.080253] 0 pages failed to migrate from 9 to 2

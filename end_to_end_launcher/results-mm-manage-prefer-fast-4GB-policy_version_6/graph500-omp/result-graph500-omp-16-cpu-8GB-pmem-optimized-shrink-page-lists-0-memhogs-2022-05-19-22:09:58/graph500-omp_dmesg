@@ -1,0 +1,393 @@
+[26427.893645] -189 free pages at to node: 2
+[26430.395148] -31 free pages at to node: 2
+[26466.248444] -9244 free pages at to node: 2
+[26481.977740] -3125 free pages at to node: 2
+[26503.465230] -22 free pages at to node: 2
+[26518.703674] -15649 free pages at to node: 2
+[26542.106102] -1325 free pages at to node: 2
+[26557.811128] -15151 free pages at to node: 2
+[26564.596410] -37 free pages at to node: 2
+[26570.531497] -15 free pages at to node: 2
+[26580.358473] -15163 free pages at to node: 2
+[26634.896136] -10 free pages at to node: 2
+[26651.220065] -7 free pages at to node: 2
+[26684.294092] -11 free pages at to node: 2
+[26702.398447] -6383 free pages at to node: 2
+[26715.280897] -10840 free pages at to node: 2
+[26737.107480] -6 free pages at to node: 2
+[26754.679331] -15276 free pages at to node: 2
+[26778.187617] -8 free pages at to node: 2
+[26799.572244] In dev_dax_kmem_probe and dev_dax->target_node is 7.
+[26799.855753] Built 5 zonelists, mobility grouping on.  Total pages: 230071303
+[26799.855757] Policy zone: Normal
+[26799.888786] Built 6 zonelists, mobility grouping on.  Total pages: 230333447
+[26799.888789] Policy zone: Normal
+[26800.612646] omp-csr: page allocation failure: order:0, mode:0x300dca(GFP_HIGHUSER_MOVABLE|__GFP_ZERO|__GFP_THISNODE), nodemask=(null),cpuset=two-level-memory,mems_allowed=0-3,9
+[26800.612679] CPU: 46 PID: 86672 Comm: omp-csr Not tainted 5.6.0-rc6+ #137
+[26800.612697] Hardware name: Supermicro SYS-2049U-TR4/X11QPH+, BIOS 3.3 02/25/2020
+[26800.612699] Call Trace:
+[26800.612745]  dump_stack+0x66/0x90
+[26800.612752]  warn_alloc.cold+0x78/0xdc
+[26800.612756]  __alloc_pages_slowpath+0xd6e/0xda0
+[26800.612760]  __alloc_pages_nodemask+0x2cc/0x320
+[26800.612778]  __handle_mm_fault+0xa5a/0x1570
+[26800.612807]  ? call_function_interrupt+0xa/0x20
+[26800.612812]  handle_mm_fault+0xc4/0x1f0
+[26800.612818]  do_user_addr_fault+0x1f9/0x450
+[26800.612824]  page_fault+0x34/0x40
+[26800.612828] RIP: 0033:0x7f91c93b4a51
+[26800.612830] Code: 01 00 00 48 83 fa 40 77 77 c5 fe 7f 44 17 e0 c5 fe 7f 07 c5 f8 77 c3 66 90 f3 0f 1e fa c5 f8 77 48 89 d1 40 0f b6 c6 48 89 fa <f3> aa 48 89 d0 c3 66 0f 1f 84 00 00 00 00 00 f3 0f 1e fa 48 39 d1
+[26800.612831] RSP: 002b:00007f90dc9e2d98 EFLAGS: 00010202
+[26800.612834] RAX: 00000000000000ff RBX: 0000000000299ab6 RCX: 00000000000a66a8
+[26800.612835] RDX: 00007f8f6d0e5dd0 RSI: 00000000000000ff RDI: 00007f8f6d0e5dd0
+[26800.612840] RBP: 0000562649f33390 R08: 00000000000000ca R09: 00000000007fffff
+[26800.612841] R10: 0000000000000000 R11: 0000000000000246 R12: 00007fffdbe462a0
+[26800.612842] R13: 00007fffdbe462a0 R14: 0000000000000020 R15: 00007f8f67ffe010
+[26800.612860] Mem-Info:
+[26800.612963] active_anon:948738 inactive_anon:1299075 isolated_anon:386298093
+                active_file:142507 inactive_file:82266 isolated_file:0
+                unevictable:0 dirty:95 writeback:0 unstable:0
+                slab_reclaimable:98777 slab_unreclaimable:187270
+                mapped:103234 shmem:2009 pagetables:12364 bounce:0
+                free:250634619 free_pcp:33104 free_cma:0
+[26800.613011] Node 0 active_anon:1638232kB inactive_anon:1888kB active_file:144792kB inactive_file:217640kB unevictable:0kB isolated(anon):0kB isolated(file):0kB mapped:301672kB dirty:56kB writeback:0kB shmem:1904kB shmem_thp: 0kB shmem_pmdmapped: 0kB anon_thp: 638976kB writeback_tmp:0kB unstable:0kB all_unreclaimable? no
+[26800.613015] Node 1 active_anon:387192kB inactive_anon:3868kB active_file:379104kB inactive_file:93840kB unevictable:0kB isolated(anon):0kB isolated(file):0kB mapped:109688kB dirty:324kB writeback:0kB shmem:3872kB shmem_thp: 0kB shmem_pmdmapped: 0kB anon_thp: 114688kB writeback_tmp:0kB unstable:0kB all_unreclaimable? no
+[26800.613017] Node 2 active_anon:1761376kB inactive_anon:1932328kB active_file:80kB inactive_file:2564kB unevictable:0kB isolated(anon):771980156kB isolated(file):0kB mapped:408kB dirty:0kB writeback:0kB shmem:864kB shmem_thp: 0kB shmem_pmdmapped: 0kB anon_thp: 4216832kB writeback_tmp:0kB unstable:0kB all_unreclaimable? no
+[26800.613027] Node 3 active_anon:6096kB inactive_anon:1392kB active_file:46052kB inactive_file:15020kB unevictable:0kB isolated(anon):0kB isolated(file):0kB mapped:1168kB dirty:0kB writeback:0kB shmem:1396kB shmem_thp: 0kB shmem_pmdmapped: 0kB anon_thp: 0kB writeback_tmp:0kB unstable:0kB all_unreclaimable? no
+[26800.613030] Node 9 active_anon:2056kB inactive_anon:3256824kB active_file:0kB inactive_file:0kB unevictable:0kB isolated(anon):773212216kB isolated(file):0kB mapped:0kB dirty:0kB writeback:0kB shmem:0kB shmem_thp: 0kB shmem_pmdmapped: 0kB anon_thp: 3497984kB writeback_tmp:0kB unstable:0kB all_unreclaimable? no
+[26800.613033] Node 0 DMA free:15888kB min:0kB low:12kB high:24kB reserved_highatomic:0KB active_anon:0kB inactive_anon:0kB active_file:0kB inactive_file:0kB unevictable:0kB writepending:0kB present:15996kB managed:15888kB mlocked:0kB kernel_stack:0kB pagetables:0kB bounce:0kB free_pcp:0kB local_pcp:0kB free_cma:0kB
+[26800.613036] lowmem_reserve[]: 0 1618 192070 192070 192070
+[26800.613039] Node 0 DMA32 free:1654044kB min:104kB low:1760kB high:3416kB reserved_highatomic:0KB active_anon:0kB inactive_anon:0kB active_file:0kB inactive_file:0kB unevictable:0kB writepending:0kB present:1725500kB managed:1656996kB mlocked:0kB kernel_stack:0kB pagetables:0kB bounce:0kB free_pcp:2932kB local_pcp:0kB free_cma:0kB
+[26800.613043] lowmem_reserve[]: 0 0 190452 190452 190452
+[26800.613048] Node 0 Normal free:191969904kB min:12480kB low:207500kB high:402520kB reserved_highatomic:0KB active_anon:1638012kB inactive_anon:1888kB active_file:144792kB inactive_file:217640kB unevictable:0kB writepending:52kB present:198180864kB managed:195022980kB mlocked:0kB kernel_stack:28628kB pagetables:27208kB bounce:0kB free_pcp:36952kB local_pcp:0kB free_cma:0kB
+[26800.613052] lowmem_reserve[]: 0 0 0 0 0
+[26800.613063] Node 1 Normal free:196498228kB min:12680kB low:210852kB high:409024kB reserved_highatomic:0KB active_anon:387192kB inactive_anon:3868kB active_file:379104kB inactive_file:93840kB unevictable:0kB writepending:320kB present:201326592kB managed:198173700kB mlocked:0kB kernel_stack:7620kB pagetables:6076kB bounce:0kB free_pcp:34928kB local_pcp:0kB free_cma:0kB
+[26800.613066] lowmem_reserve[]: 0 0 0 0 0
+[26800.613071] Node 2 Normal free:189598116kB min:12680kB low:210852kB high:409024kB reserved_highatomic:0KB active_anon:1763424kB inactive_anon:1932328kB active_file:80kB inactive_file:2564kB unevictable:0kB writepending:0kB present:201326592kB managed:198173700kB mlocked:0kB kernel_stack:5092kB pagetables:16084kB bounce:0kB free_pcp:27892kB local_pcp:1364kB free_cma:0kB
+[26800.613074] lowmem_reserve[]: 0 0 0 0 0
+[26800.613082] Node 3 Normal free:193601120kB min:12680kB low:210852kB high:409024kB reserved_highatomic:0KB active_anon:6096kB inactive_anon:1392kB active_file:46052kB inactive_file:15020kB unevictable:0kB writepending:0kB present:201326592kB managed:198172184kB mlocked:0kB kernel_stack:4500kB pagetables:88kB bounce:0kB free_pcp:26664kB local_pcp:0kB free_cma:0kB
+[26800.613103] lowmem_reserve[]: 0 0 0 0 0
+[26800.613106] Node 9 Normal free:127493400kB min:8388kB low:139460kB high:270532kB reserved_highatomic:0KB active_anon:2056kB inactive_anon:3256824kB active_file:0kB inactive_file:0kB unevictable:0kB writepending:0kB present:131072000kB managed:131072000kB mlocked:0kB kernel_stack:0kB pagetables:0kB bounce:0kB free_pcp:3048kB local_pcp:1376kB free_cma:0kB
+[26800.613109] lowmem_reserve[]: 0 0 0 0 0
+[26800.613110] Node 0 DMA: 2*4kB (U) 1*8kB (U) 0*16kB 0*32kB 2*64kB (U) 1*128kB (U) 1*256kB (U) 0*512kB 1*1024kB (U) 1*2048kB (M) 3*4096kB (M) = 15888kB
+[26800.613117] Node 0 DMA32: 9*4kB (M) 9*8kB (UM) 7*16kB (M) 10*32kB (M) 8*64kB (M) 8*128kB (M) 9*256kB (UM) 10*512kB (UM) 14*1024kB (UM) 8*2048kB (M) 394*4096kB (M) = 1654044kB
+[26800.613123] Node 0 Normal: 9477*4kB (UME) 24380*8kB (UME) 13908*16kB (UME) 5234*32kB (ME) 5652*64kB (UME) 3668*128kB (ME) 1459*256kB (ME) 620*512kB (UME) 251*1024kB (UME) 111*2048kB (ME) 46225*4096kB (ME) = 191967092kB
+[26800.613131] Node 1 Normal: 1356*4kB (UME) 399*8kB (UME) 195*16kB (UME) 1313*32kB (UME) 523*64kB (UME) 171*128kB (UME) 58*256kB (ME) 31*512kB (E) 12*1024kB (ME) 8*2048kB (ME) 47932*4096kB (M) = 196497976kB
+[26800.613139] Node 2 Normal: 539*4kB (UME) 487*8kB (UME) 820*16kB (UME) 814*32kB (UME) 408*64kB (UME) 342*128kB (UME) 196*256kB (ME) 128*512kB (UME) 83*1024kB (ME) 53*2048kB (UME) 46186*4096kB (UM) = 189602212kB
+[26800.613144] Node 3 Normal: 198*4kB (UME) 497*8kB (UME) 228*16kB (UME) 14*32kB (ME) 317*64kB (UME) 197*128kB (UM) 52*256kB (UM) 11*512kB (UME) 4*1024kB (UME) 2*2048kB (UM) 47246*4096kB (M) = 193601120kB
+[26800.613162] omp-csr invoked oom-killer: gfp_mask=0x0(), order=0, oom_score_adj=0
+[26800.613170] CPU: 97 PID: 86657 Comm: omp-csr Not tainted 5.6.0-rc6+ #137
+[26800.613175] Hardware name: Supermicro SYS-2049U-TR4/X11QPH+, BIOS 3.3 02/25/2020
+[26800.613178] Call Trace:
+[26800.613187]  dump_stack+0x66/0x90
+[26800.613193] Node 9 Normal: 0*4kB 
+[26800.613205]  dump_header+0x4a/0x1df
+[26800.613207] 43*8kB (UM) 190*16kB (UM) 117*32kB 
+[26800.613220]  oom_kill_process.cold+0xb/0x10
+[26800.613221] (M) 47*64kB (M) 35*128kB (UM) 
+[26800.613237]  out_of_memory+0x198/0x460
+[26800.613238] 12*256kB (UM) 4*512kB (UM) 2*1024kB 
+[26800.613253]  pagefault_out_of_memory+0x64/0x77
+[26800.613254] (UM) 30*2048kB (M) 31106*4096kB (M) 
+[26800.613269]  page_fault+0x34/0x40
+[26800.613270] = 127493400kB
+[26800.613274] Node 0 hugepages_total=0 hugepages_free=0 hugepages_surp=0 hugepages_size=1048576kB
+[26800.613285] Node 0 hugepages_total=0 hugepages_free=0 hugepages_surp=0 hugepages_size=2048kB
+[26800.613288] Node 1 hugepages_total=0 hugepages_free=0 hugepages_surp=0 hugepages_size=1048576kB
+[26800.613291] Node 1 hugepages_total=0 hugepages_free=0 hugepages_surp=0 hugepages_size=2048kB
+[26800.613295] Node 2 hugepages_total=0 hugepages_free=0 hugepages_surp=0 hugepages_size=1048576kB
+[26800.613300] Node 2 hugepages_total=0 hugepages_free=0 hugepages_surp=0 hugepages_size=2048kB
+[26800.613303] Node 3 hugepages_total=0 hugepages_free=0 hugepages_surp=0 hugepages_size=1048576kB
+[26800.613305] Node 3 hugepages_total=0 hugepages_free=0 hugepages_surp=0 hugepages_size=2048kB
+[26800.613309] Node 7 hugepages_total=0 hugepages_free=0 hugepages_surp=0 hugepages_size=1048576kB
+[26800.613313] Node 7 hugepages_total=0 hugepages_free=0 hugepages_surp=0 hugepages_size=2048kB
+[26800.613316] Node 9 hugepages_total=0 hugepages_free=0 hugepages_surp=0 hugepages_size=1048576kB
+[26800.613319] Node 9 hugepages_total=0 hugepages_free=0 hugepages_surp=0 hugepages_size=2048kB
+[26800.613323] 222954 total pagecache pages
+[26800.613337] RIP: 0033:0x7f91c93b4a51
+[26800.613340] 0 pages in swap cache
+[26800.613344] Swap cache stats: add 0, delete 0, find 0/0
+[26800.613347] Free swap  = 32457720kB
+[26800.613350] Total swap = 32457720kB
+[26800.613372] 259171502 pages RAM
+[26800.613387] 0 pages HighMem/MovableOnly
+[26800.613394] 3171672 pages reserved
+[26800.613403] 0 pages cma reserved
+[26800.613408] 0 pages hwpoisoned
+[26800.613431] Code: 01 00 00 48 83 fa 40 77 77 c5 fe 7f 44 17 e0 c5 fe 7f 07 c5 f8 77 c3 66 90 f3 0f 1e fa c5 f8 77 48 89 d1 40 0f b6 c6 48 89 fa <f3> aa 48 89 d0 c3 66 0f 1f 84 00 00 00 00 00 f3 0f 1e fa 48 39 d1
+[26800.613433] RSP: 002b:00007f90e41f1d98 EFLAGS: 00010202
+[26800.613438] RAX: 00000000000000ff RBX: 0000000000299ab6 RCX: 00000000000a66b0
+[26800.613440] RDX: 00007f8f6c7259a0 RSI: 00000000000000ff RDI: 00007f8f6c7259a0
+[26800.613441] RBP: 0000562649f33390 R08: 00000000000000ca R09: 00000000007fffff
+[26800.613442] R10: 0000000000000000 R11: 0000000000000246 R12: 00007fffdbe462a0
+[26800.613443] R13: 00007fffdbe462a0 R14: 0000000000000020 R15: 00007f8f67ffe010
+[26800.613447] Mem-Info:
+[26800.613465] active_anon:949250 inactive_anon:1299075 isolated_anon:386298093
+                active_file:142507 inactive_file:82266 isolated_file:0
+                unevictable:0 dirty:95 writeback:0 unstable:0
+                slab_reclaimable:98777 slab_unreclaimable:187270
+                mapped:103234 shmem:2009 pagetables:12364 bounce:0
+                free:250636667 free_pcp:33106 free_cma:0
+[26800.613469] Node 0 active_anon:1638232kB inactive_anon:1888kB active_file:144792kB inactive_file:217640kB unevictable:0kB isolated(anon):0kB isolated(file):0kB mapped:301672kB dirty:56kB writeback:0kB shmem:1904kB shmem_thp: 0kB shmem_pmdmapped: 0kB anon_thp: 638976kB writeback_tmp:0kB unstable:0kB all_unreclaimable? no
+[26800.613472] Node 1 active_anon:387192kB inactive_anon:3868kB active_file:379104kB inactive_file:93840kB unevictable:0kB isolated(anon):0kB isolated(file):0kB mapped:109688kB dirty:324kB writeback:0kB shmem:3872kB shmem_thp: 0kB shmem_pmdmapped: 0kB anon_thp: 114688kB writeback_tmp:0kB unstable:0kB all_unreclaimable? no
+[26800.613477] Node 2 active_anon:1763424kB inactive_anon:1932328kB active_file:80kB inactive_file:2564kB unevictable:0kB isolated(anon):771980156kB isolated(file):0kB mapped:408kB dirty:0kB writeback:0kB shmem:864kB shmem_thp: 0kB shmem_pmdmapped: 0kB anon_thp: 4216832kB writeback_tmp:0kB unstable:0kB all_unreclaimable? no
+[26800.613479] Node 3 active_anon:6096kB inactive_anon:1392kB active_file:46052kB inactive_file:15020kB unevictable:0kB isolated(anon):0kB isolated(file):0kB mapped:1168kB dirty:0kB writeback:0kB shmem:1396kB shmem_thp: 0kB shmem_pmdmapped: 0kB anon_thp: 0kB writeback_tmp:0kB unstable:0kB all_unreclaimable? no
+[26800.613482] Node 9 active_anon:2056kB inactive_anon:3256824kB active_file:0kB inactive_file:0kB unevictable:0kB isolated(anon):773212216kB isolated(file):0kB mapped:0kB dirty:0kB writeback:0kB shmem:0kB shmem_thp: 0kB shmem_pmdmapped: 0kB anon_thp: 3497984kB writeback_tmp:0kB unstable:0kB all_unreclaimable? no
+[26800.613486] Node 0 DMA free:15888kB min:0kB low:12kB high:24kB reserved_highatomic:0KB active_anon:0kB inactive_anon:0kB active_file:0kB inactive_file:0kB unevictable:0kB writepending:0kB present:15996kB managed:15888kB mlocked:0kB kernel_stack:0kB pagetables:0kB bounce:0kB free_pcp:0kB local_pcp:0kB free_cma:0kB
+[26800.613490] lowmem_reserve[]: 0 1618 192070 192070 192070
+[26800.613493] Node 0 DMA32 free:1654044kB min:104kB low:1760kB high:3416kB reserved_highatomic:0KB active_anon:0kB inactive_anon:0kB active_file:0kB inactive_file:0kB unevictable:0kB writepending:0kB present:1725500kB managed:1656996kB mlocked:0kB kernel_stack:0kB pagetables:0kB bounce:0kB free_pcp:2932kB local_pcp:0kB free_cma:0kB
+[26800.613500] lowmem_reserve[]: 0 0 190452 190452 190452
+[26800.613505] Node 0 Normal free:191969904kB min:12480kB low:207500kB high:402520kB reserved_highatomic:0KB active_anon:1638012kB inactive_anon:1888kB active_file:144792kB inactive_file:217640kB unevictable:0kB writepending:52kB present:198180864kB managed:195022980kB mlocked:0kB kernel_stack:28628kB pagetables:27208kB bounce:0kB free_pcp:37004kB local_pcp:0kB free_cma:0kB
+[26800.613509] lowmem_reserve[]: 0 0 0 0 0
+[26800.613516] Node 1 Normal free:196498228kB min:12680kB low:210852kB high:409024kB reserved_highatomic:0KB active_anon:387192kB inactive_anon:3868kB active_file:379104kB inactive_file:93840kB unevictable:0kB writepending:320kB present:201326592kB managed:198173700kB mlocked:0kB kernel_stack:7620kB pagetables:6076kB bounce:0kB free_pcp:34884kB local_pcp:0kB free_cma:0kB
+[26800.613519] lowmem_reserve[]: 0 0 0 0 0
+[26800.613522] Node 2 Normal free:189602212kB min:12680kB low:210852kB high:409024kB reserved_highatomic:0KB active_anon:1763424kB inactive_anon:1932328kB active_file:80kB inactive_file:2564kB unevictable:0kB writepending:0kB present:201326592kB managed:198173700kB mlocked:0kB kernel_stack:5092kB pagetables:16084kB bounce:0kB free_pcp:27892kB local_pcp:248kB free_cma:0kB
+[26800.613528] lowmem_reserve[]: 0 0 0 0 0
+[26800.613531] Node 3 Normal free:193601120kB min:12680kB low:210852kB high:409024kB reserved_highatomic:0KB active_anon:6096kB inactive_anon:1392kB active_file:46052kB inactive_file:15020kB unevictable:0kB writepending:0kB present:201326592kB managed:198172184kB mlocked:0kB kernel_stack:4500kB pagetables:88kB bounce:0kB free_pcp:26664kB local_pcp:0kB free_cma:0kB
+[26800.613536] lowmem_reserve[]: 0 0 0 0 0
+[26800.613538] Node 9 Normal free:127493400kB min:8388kB low:139460kB high:270532kB reserved_highatomic:0KB active_anon:2056kB inactive_anon:3256824kB active_file:0kB inactive_file:0kB unevictable:0kB writepending:0kB present:131072000kB managed:131072000kB mlocked:0kB kernel_stack:0kB pagetables:0kB bounce:0kB free_pcp:3048kB local_pcp:0kB free_cma:0kB
+[26800.613541] lowmem_reserve[]: 0 0 0 0 0
+[26800.613547] Node 0 DMA: 2*4kB (U) 1*8kB (U) 0*16kB 0*32kB 2*64kB (U) 1*128kB (U) 1*256kB (U) 0*512kB 1*1024kB (U) 1*2048kB (M) 3*4096kB (M) = 15888kB
+[26800.613553] Node 0 DMA32: 9*4kB (M) 9*8kB (UM) 7*16kB (M) 10*32kB (M) 8*64kB (M) 8*128kB (M) 9*256kB (UM) 10*512kB (UM) 14*1024kB (UM) 8*2048kB (M) 394*4096kB (M) = 1654044kB
+[26800.613562] Node 0 Normal: 9477*4kB (UME) 24380*8kB (UME) 13908*16kB (UME) 5234*32kB (ME) 5652*64kB (UME) 3668*128kB (ME) 1459*256kB (ME) 620*512kB (UME) 251*1024kB (UME) 111*2048kB (ME) 46225*4096kB (ME) = 191967092kB
+[26800.613574] Node 1 Normal: 1356*4kB (UME) 399*8kB (UME) 195*16kB (UME) 1313*32kB (UME) 523*64kB (UME) 171*128kB (UME) 58*256kB (ME) 31*512kB (E) 12*1024kB (ME) 8*2048kB (ME) 47932*4096kB (M) = 196497976kB
+[26800.613582] Node 2 Normal: 539*4kB (UME) 487*8kB (UME) 820*16kB (UME) 814*32kB (UME) 408*64kB (UME) 342*128kB (UME) 196*256kB (ME) 128*512kB (UME) 83*1024kB (ME) 53*2048kB (UME) 46186*4096kB (UM) = 189602212kB
+[26800.613591] Node 3 Normal: 198*4kB (UME) 497*8kB (UME) 228*16kB (UME) 14*32kB (ME) 317*64kB (UME) 197*128kB (UM) 52*256kB (UM) 11*512kB (UME) 4*1024kB (UME) 2*2048kB (UM) 47246*4096kB (M) = 193601120kB
+[26800.613598] Node 9 Normal: 0*4kB 43*8kB (UM) 190*16kB (UM) 117*32kB (M) 47*64kB (M) 35*128kB (UM) 12*256kB (UM) 4*512kB (UM) 2*1024kB (UM) 30*2048kB (M) 31106*4096kB (M) = 127493400kB
+[26800.613604] Node 0 hugepages_total=0 hugepages_free=0 hugepages_surp=0 hugepages_size=1048576kB
+[26800.613606] Node 0 hugepages_total=0 hugepages_free=0 hugepages_surp=0 hugepages_size=2048kB
+[26800.613608] Node 1 hugepages_total=0 hugepages_free=0 hugepages_surp=0 hugepages_size=1048576kB
+[26800.613612] Node 1 hugepages_total=0 hugepages_free=0 hugepages_surp=0 hugepages_size=2048kB
+[26800.613615] Node 2 hugepages_total=0 hugepages_free=0 hugepages_surp=0 hugepages_size=1048576kB
+[26800.613616] Node 2 hugepages_total=0 hugepages_free=0 hugepages_surp=0 hugepages_size=2048kB
+[26800.613619] Node 3 hugepages_total=0 hugepages_free=0 hugepages_surp=0 hugepages_size=1048576kB
+[26800.613624] Node 3 hugepages_total=0 hugepages_free=0 hugepages_surp=0 hugepages_size=2048kB
+[26800.613625] Node 7 hugepages_total=0 hugepages_free=0 hugepages_surp=0 hugepages_size=1048576kB
+[26800.613626] Node 7 hugepages_total=0 hugepages_free=0 hugepages_surp=0 hugepages_size=2048kB
+[26800.613629] Node 9 hugepages_total=0 hugepages_free=0 hugepages_surp=0 hugepages_size=1048576kB
+[26800.613630] Node 9 hugepages_total=0 hugepages_free=0 hugepages_surp=0 hugepages_size=2048kB
+[26800.613631] 222954 total pagecache pages
+[26800.613635] 0 pages in swap cache
+[26800.613636] Swap cache stats: add 0, delete 0, find 0/0
+[26800.613637] Free swap  = 32457720kB
+[26800.613639] Total swap = 32457720kB
+[26800.613640] 259171502 pages RAM
+[26800.613641] 0 pages HighMem/MovableOnly
+[26800.613642] 3171672 pages reserved
+[26800.613642] 0 pages cma reserved
+[26800.613643] 0 pages hwpoisoned
+[26800.613644] Tasks state (memory values in pages):
+[26800.613645] [  pid  ]   uid  tgid total_vm      rss pgtables_bytes swapents oom_score_adj name
+[26800.613726] [   1392]     0  1392    44127    22656   339968        0          -250 systemd-journal
+[26800.613729] [   1419]     0  1419     1347       42    53248        0             0 blkmapd
+[26800.613733] [   1424]     0  1424     6220     2204    73728        0         -1000 systemd-udevd
+[26800.613746] [   2221]     0  2221      851       50    49152        0             0 rpc.idmapd
+[26800.613748] [   2222]   129  2222     1777      975    49152        0             0 rpcbind
+[26800.613752] [   2223]   101  2223     5702     3220    81920        0             0 systemd-resolve
+[26800.613753] [   2225]   123  2225    22662     1579    81920        0             0 systemd-timesyn
+[26800.613757] [   2312]     0  2312      637      194    53248        0             0 acpid
+[26800.613761] [   2315]   116  2315     2525     1405    57344        0             0 avahi-daemon
+[26800.613763] [   2317]   103  2317     2512     1664    61440        0          -900 dbus-daemon
+[26800.613765] [   2319]     0  2319    84050     5164   147456        0             0 NetworkManager
+[26800.613767] [   2324]     0  2324    20609     1059    65536        0             0 irqbalance
+[26800.613771] [   2333]     0  2333     1633      910    53248        0             0 ndctl
+[26800.613773] [   2337]     0  2337    10032     5251   114688        0             0 networkd-dispat
+[26800.613775] [   2345]     0  2345    58867     2583    94208        0             0 polkitd
+[26800.613776] [   2347]   102  2347    56149     1383    86016        0             0 rsyslogd
+[26800.613778] [   2350]     0  2350   698688    10824   491520        0          -900 snapd
+[26800.613783] [   2351]     0  2351    59716     2055   106496        0             0 accounts-daemon
+[26800.613785] [   2352]     0  2352     2410      803    53248        0             0 cron
+[26800.613787] [   2354]     0  2354     6966     2682    77824        0             0 cupsd
+[26800.613791] [   2355]     0  2355    58900     1105    81920        0             0 switcheroo-cont
+[26800.613792] [   2362]     0  2362     4242     2103    73728        0             0 systemd-logind
+[26800.613794] [   2364]     0  2364     4075     1443    69632        0             0 systemd-machine
+[26800.613796] [   2367]     0  2367    98333     3430   135168        0             0 udisksd
+[26800.613798] [   2369]     0  2369     3421     1211    65536        0             0 wpa_supplicant
+[26800.613802] [   2386]   116  2386     2154       91    57344        0             0 avahi-daemon
+[26800.613804] [   2399]     0  2399    78609     2732   114688        0             0 ModemManager
+[26800.613806] [   2404]     0  2404    49658     8686   159744        0             0 cups-browsed
+[26800.613808] [   2425]     0  2425     5747     2281    86016        0             0 certmonger
+[26800.613811] [   2429]   117  2429    61668     3746   110592        0             0 colord
+[26800.613813] [   2439]     0  2439    10220     1297    69632        0             0 oddjobd
+[26800.613815] [   2448]     0  2448   818465    11695   528384        0          -999 containerd
+[26800.613817] [   2462]     0  2462     7996     6282   106496        0             0 rpc.mountd
+[26800.613819] [   2481]     0  2481     3071     1877    57344        0         -1000 sshd
+[26800.613827] [   2527]     0  2527    59896     2146    98304        0             0 gdm3
+[26800.613831] [   2648]     0  2648    42310     2498    90112        0             0 gdm-session-wor
+[26800.613840] [   2650]     0  2650    29596     5806   131072        0             0 unattended-upgr
+[26800.613850] [   2665]   121  2665     4714     2532    73728        0             0 systemd
+[26800.613860] [   2667]   121  2667    43012     1117   102400        0             0 (sd-pam)
+[26800.613875] [   2674]   121  2674   201896     4246   159744        0             0 pulseaudio
+[26800.613886] [   2676]   121  2676   127939     6598   180224        0             0 tracker-miner-f
+[26800.613896] [   2677]   121  2677    41004     1638    86016        0             0 gdm-x-session
+[26800.613906] [   2679]   121  2679   604311    18870   602112        0             0 Xorg
+[26800.613919] [   2682]   121  2682     1915     1232    49152        0             0 dbus-daemon
+[26800.613932] [   2685]   109  2685    38289      800    61440        0             0 rtkit-daemon
+[26800.613942] [   2690]   121  2690    59926     1910    90112        0             0 gvfsd
+[26800.613953] [   2705]   121  2705    78202     1389    86016        0             0 gvfsd-fuse
+[26800.613963] [   2710]   121  2710    78576     2416   114688        0             0 gvfs-udisks2-vo
+[26800.613965] [   2717]   121  2717    58969     1552    90112        0             0 gvfs-goa-volume
+[26800.613967] [   2722]   121  2722   139982     8636   282624        0             0 goa-daemon
+[26800.613972] [   2732]   121  2732    78689     2246   114688        0             0 goa-identity-se
+[26800.613980] [   2776]   121  2776     1324      274    53248        0             0 dbus-run-sessio
+[26800.613982] [   2777]   121  2777     1960     1235    49152        0             0 dbus-daemon
+[26800.613984] [   2778]   121  2778   120969     3780   159744        0             0 gnome-session-b
+[26800.613986] [   2797]   121  2797    76389     1665    90112        0             0 at-spi-bus-laun
+[26800.613987] [   2807]   121  2807     1878     1054    53248        0             0 dbus-daemon
+[26800.613992] [   2893]   121  2893    59527     1838    98304        0             0 gvfs-gphoto2-vo
+[26800.613995] [   2922]   121  2922    58925     1552    81920        0             0 gvfs-mtp-volume
+[26800.613996] [   2926]   121  2926    78503     1812   102400        0             0 gvfs-afc-volume
+[26800.614000] [   2938]   121  2938  1597129    53797  1282048        0             0 gnome-shell
+[26800.614002] [   2951]     0  2951    62384     2254   110592        0             0 upowerd
+[26800.614005] [   3199]   121  3199    77787     2088   106496        0             0 ibus-daemon
+[26800.614006] [   3203]   121  3203    59098     1750    94208        0             0 ibus-dconf
+[26800.614009] [   3206]   121  3206    46992     4107   135168        0             0 ibus-x11
+[26800.614011] [   3208]   121  3208    59093     1815    90112        0             0 ibus-portal
+[26800.614013] [   3219]   121  3219    40727     1633    86016        0             0 at-spi2-registr
+[26800.614015] [   3224]   121  3224    58899     1169    94208        0             0 xdg-permission-
+[26800.614018] [   3239]   121  3239   732544     6718   270336        0             0 gjs
+[26800.614022] [   3251]   121  3251   115500     2339   131072        0             0 gsd-sharing
+[26800.614024] [   3253]   121  3253    65331     3940   131072        0             0 gsd-wacom
+[26800.614027] [   3254]   121  3254   102833     4768   163840        0             0 gsd-color
+[26800.614029] [   3255]   121  3255    83921     4378   159744        0             0 gsd-keyboard
+[26800.614031] [   3256]   121  3256    61508     2825   114688        0             0 gsd-print-notif
+[26800.614032] [   3258]   121  3258   114275     1521   118784        0             0 gsd-rfkill
+[26800.614039] [   3260]   121  3260    78798     2079   114688        0             0 gsd-smartcard
+[26800.614041] [   3262]   121  3262    93413     4011   159744        0             0 gsd-datetime
+[26800.614042] [   3263]   121  3263   188030     4980   188416        0             0 gsd-media-keys
+[26800.614045] [   3265]   121  3265    58877     1526    90112        0             0 gsd-screensaver
+[26800.614049] [   3268]   121  3268    79846     2265   114688        0             0 gsd-sound
+[26800.614051] [   3270]   121  3270    40674     1761    69632        0             0 ibus-engine-sim
+[26800.614053] [   3272]   121  3272    77423     1634   102400        0             0 gsd-a11y-settin
+[26800.614055] [   3275]   121  3275    77939     1894   106496        0             0 gsd-housekeepin
+[26800.614057] [   3278]   121  3278   102609     4571   163840        0             0 gsd-power
+[26800.614059] [   3327]   121  3327    84842     3308   139264        0             0 gsd-printer
+[26800.614067] [   3487]  5017  3487     4707     2509    77824        0             0 systemd
+[26800.614069] [   3488]  5017  3488    43079     1141   102400        0             0 (sd-pam)
+[26800.614071] [   3494]  5017  3494    70109     3580   139264        0             0 pulseaudio
+[26800.614074] [   3496]  5017  3496   127936     6588   188416        0             0 tracker-miner-f
+[26800.614077] [   3509]  5017  3509     1915     1210    57344        0             0 dbus-daemon
+[26800.614079] [   3536]  5017  3536    59926     1930    90112        0             0 gvfsd
+[26800.614081] [   3541]  5017  3541    78202     1632    98304        0             0 gvfsd-fuse
+[26800.614083] [   3548]  5017  3548    78578     2425    98304        0             0 gvfs-udisks2-vo
+[26800.614089] [   3567]  5017  3567    58969     1513    90112        0             0 gvfs-goa-volume
+[26800.614091] [   3573]  5017  3573   139983     8634   270336        0             0 goa-daemon
+[26800.614093] [   3618]  5017  3618    78689     2265   102400        0             0 goa-identity-se
+[26800.614099] [   3624]  5017  3624    59527     1773    90112        0             0 gvfs-gphoto2-vo
+[26800.614105] [   3665]  5017  3665    58925     1494    90112        0             0 gvfs-mtp-volume
+[26800.614107] [   3673]  5017  3673    78503     1827    98304        0             0 gvfs-afc-volume
+[26800.614109] [   3864]  5017  3864      654      149    45056        0             0 sh
+[26800.614111] [   3874]  5017  3874   234769    22105  1900544        0             0 node
+[26800.614115] [   3930]  5017  3930   273931    14408  1359872        0             0 node
+[26800.614117] [   3957]     0  3957  1676640    25335  1097728        0          -500 dockerd
+[26800.614120] [   3963]   112  3963    63178     3882   118784        0             0 whoopsie
+[26800.614124] [   3967]   113  3967     2815      112    65536        0             0 kerneloops
+[26800.614125] [   3969]   113  3969     2815      112    65536        0             0 kerneloops
+[26800.614128] [   4563]  5017  4563     2776     1361    53248        0             0 bash
+[26800.614130] [   4731]     7  4731     3174     1553    65536        0             0 dbus
+[26800.614133] [   4732]     7  4732     3174     1535    61440        0             0 dbus
+[26800.614136] [   4739]   121  4739    39025     1347    86016        0             0 dconf-service
+[26800.614146] [  48241]     0 48241     4076     2488    69632        0             0 sshd
+[26800.614157] [  48296]  5017 48296     4140     1585    73728        0             0 sshd
+[26800.614169] [  48297]  5017 48297     2408      931    61440        0             0 bash
+[26800.614178] [  48349]     0 48349     4076     2514    69632        0             0 sshd
+[26800.614188] [  48351]  5017 48351   251893    36708  3825664        0             0 node
+[26800.614198] [  48398]  5017 48398   209322    25146   823296        0             0 node
+[26800.614208] [  48422]  5017 48422     4141     1576    69632        0             0 sshd
+[26800.614221] [  48429]  5017 48429     2408      927    49152        0             0 bash
+[26800.614235] [  48481]  5017 48481   257217    49856  4182016        0             0 node
+[26800.614246] [  48492]  5017 48492   208572    11860   704512        0             0 node
+[26800.614255] [  48505]     0 48505     4076     2491    69632        0             0 sshd
+[26800.614266] [  48561]  5017 48561     4141     1529    69632        0             0 sshd
+[26800.614277] [  48576]  5017 48576     2408      928    57344        0             0 bash
+[26800.614286] [  48628]     0 48628     4076     2507    77824        0             0 sshd
+[26800.614290] [  48685]  5017 48685  2634045    53091  1593344        0             0 cpptools
+[26800.614297] [  48848]  5017 48848     4140     1576    81920        0             0 sshd
+[26800.614300] [  48879]  5017 48879     2408      895    53248        0             0 bash
+[26800.614301] [  48995]  5017 48995   248401    32884  3465216        0             0 node
+[26800.614303] [  49011]  5017 49011   208508    11765   688128        0             0 node
+[26800.614308] [  49177]  5017 49177   175868    11600   692224        0             0 node
+[26800.614310] [  49256]  5017 49256   205703    21631  2555904        0             0 node
+[26800.614313] [  49347]  5017 49347  2650398    23418  1351680        0             0 cpptools
+[26800.614316] [  49843]     0 49843     4076     2491    69632        0             0 sshd
+[26800.614317] [  50030]  5017 50030     4141     1434    73728        0             0 sshd
+[26800.614319] [  50122]  5017 50122     2838     1410    61440        0             0 bash
+[26800.614321] [  50270]  5017 50270   161198    24317  1646592        0             0 node
+[26800.614326] [  50353]  5017 50353  2574617    14609  1294336        0             0 cpptools
+[26800.614329] [  50572]  5017 50572     2776     1307    73728        0             0 bash
+[26800.614333] [  50896]  5017 50896  3525173    27788  1331200        0             0 cpptools-srv
+[26800.614336] [  51173]  5017 51173  3524978    33381  1380352        0             0 cpptools-srv
+[26800.614337] [  51312]  5017 51312     2776     1286    65536        0             0 bash
+[26800.614341] [  52256]  5017 52256  3525011    32996  1380352        0             0 cpptools-srv
+[26800.614345] [  52482]  5017 52482  3525205    35891  1400832        0             0 cpptools-srv
+[26800.614347] [  52945]     0 52945     4077     2530    65536        0             0 sshd
+[26800.614350] [  53061]  5017 53061     4141     1415    65536        0             0 sshd
+[26800.614355] [  53063]  5017 53063     2805     1340    57344        0             0 bash
+[26800.614357] [  53081]  5017 53081     2090      216    53248        0             0 dmesg
+[26800.614359] [  53093]  5017 53093     3507     1426    69632        0             0 su
+[26800.614363] [  53094]  1000 53094     2840     1420    69632        0             0 bash
+[26800.614365] [  53279]     0 53279     4076     2498    69632        0             0 sshd
+[26800.614367] [  53334]  5017 53334     4140     1412    69632        0             0 sshd
+[26800.614369] [  53335]  5017 53335     2837     1431    61440        0             0 bash
+[26800.614375] [  53439]     0 53439     4076     2484    69632        0             0 sshd
+[26800.614383] [  53494]  5017 53494     4141     1419    69632        0             0 sshd
+[26800.614385] [  53495]  5017 53495     2805     1332    61440        0             0 bash
+[26800.614388] [  53506]  5017 53506     3507     1399    69632        0             0 su
+[26800.614391] [  53507]  1000 53507     2965     1552    61440        0             0 bash
+[26800.614393] [  53714]     0 53714     4076     2518    69632        0             0 sshd
+[26800.614395] [  53772]  5017 53772     4141     1426    69632        0             0 sshd
+[26800.614397] [  53773]  5017 53773     2805     1314    53248        0             0 bash
+[26800.614400] [  53801]  5017 53801     2172      715    53248        0             0 watch
+[26800.614403] [  64525]     0 64525     3619     1404    65536        0             0 sudo
+[26800.614409] [  64526]     0 64526     2408      961    53248        0             0 run_all.sh
+[26800.614411] [  64733]     0 64733     3661     1464    65536        0             0 sudo
+[26800.614413] [  64742]     0 64742     2173      713    61440        0             0 watch
+[26800.614417] [  86552]     0 86552     2408      934    61440        0             0 run_bench.sh
+[26800.614420] [  86645]     0 86645     4740     4519    77824        0             0 launcher
+[26800.614422] [  86646]     0 86646  2488149  1909557 15622144        0             0 omp-csr
+[26800.614426] [  87835]  5017 87835     2021      128    53248        0             0 sleep
+[26800.614432] [  87840]  5017 87840     2021      145    53248        0             0 sleep
+[26800.614434] [  87851]  5017 87851     2021      146    49152        0             0 sleep
+[26800.614436] [  87856]  5017 87856     2021      144    49152        0             0 sleep
+[26800.614441] [  88225]  5017 88225     3505     1417    61440        0             0 su
+[26800.614444] [  88234]  1000 88234     2807     1367    69632        0             0 bash
+[26800.614446] [  88508]     0 88508     3660     1485    69632        0             0 sudo
+[26800.614449] [  88516]     0 88516     2375      824    61440        0             0 run_all.sh
+[26800.614451] [  88517]     0 88517     3721     1433    69632        0             0 sudo
+[26800.614454] [  88518]     0 88518     2375      832    53248        0             0 bash
+[26800.614456] [  88520]     0 88520     1591      417    57344        0             0 daxctl
+[26800.614460] [  88524]     0 88524     6220     1617    69632        0             0 systemd-udevd
+[26800.614462] [  88529]     0 88529     6220     1617    69632        0             0 systemd-udevd
+[26800.614464] [  88530]     0 88530     6220     1617    69632        0             0 systemd-udevd
+[26800.614466] [  88531]     0 88531     6220     1617    69632        0             0 systemd-udevd
+[26800.614472] [  88532]     0 88532     6220     1617    69632        0             0 systemd-udevd
+[26800.614474] [  88533]     0 88533     6220     1617    69632        0             0 systemd-udevd
+[26800.614476] [  88534]     0 88534     6220     1617    69632        0             0 systemd-udevd
+[26800.614479] [  88535]     0 88535     6220     1617    69632        0             0 systemd-udevd
+[26800.614481] [  88536]     0 88536     6220     1617    69632        0             0 systemd-udevd
+[26800.614484] [  88537]     0 88537     6220     1617    69632        0             0 systemd-udevd
+[26800.614498] [  88538]     0 88538     6220     1617    69632        0             0 systemd-udevd
+[26800.614509] [  88539]     0 88539     6220     1617    69632        0             0 systemd-udevd
+[26800.614519] [  88540]     0 88540     6220     1617    69632        0             0 systemd-udevd
+[26800.614529] [  88541]     0 88541     6220     1617    69632        0             0 systemd-udevd
+[26800.614540] [  88542]     0 88542     6220     1617    69632        0             0 systemd-udevd
+[26800.614551] [  88543]     0 88543     6220     1617    69632        0             0 systemd-udevd
+[26800.614561] [  88544]     0 88544     6220     1617    69632        0             0 systemd-udevd
+[26800.614577] [  88545]     0 88545     6220     1617    69632        0             0 systemd-udevd
+[26800.614589] [  88546]     0 88546     6220     1617    69632        0             0 systemd-udevd
+[26800.614601] [  88547]     0 88547     6220     1617    69632        0             0 systemd-udevd
+[26800.614613] [  88548]     0 88548     6220     1617    69632        0             0 systemd-udevd
+[26800.614625] [  88549]     0 88549     6220     1617    69632        0             0 systemd-udevd
+[26800.614636] [  88550]     0 88550     6220     1617    69632        0             0 systemd-udevd
+[26800.614651] [  88551]     0 88551     6220     1617    69632        0             0 systemd-udevd
+[26800.614660] [  88552]     0 88552     6220     1617    69632        0             0 systemd-udevd
+[26800.614663] [  88553]     0 88553     6220     1617    69632        0             0 systemd-udevd
+[26800.614666] [  88554]     0 88554     6220     1617    69632        0             0 systemd-udevd
+[26800.614668] oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=two-level-memory,mems_allowed=0-3,9,global_oom,task_memcg=/two-level-memory,task=omp-csr,pid=86646,uid=0
+[26800.614699] Out of memory: Killed process 86646 (omp-csr) total-vm:9952596kB, anon-rss:7635912kB, file-rss:2380kB, shmem-rss:0kB, UID:0 pgtables:15256kB oom_score_adj:0
+[26800.616055] [init_closest_cpu_node_for_pmem_list_kernel] node having CPUs are: 0, 1, 2, 3, 
+[26800.616064] [init_closest_cpu_node_for_pmem_list_kernel] CLOSEST_CPU_NODE_FOR_PMEM: [-1, -1, -1, -1, -1, -1, -1, 111, -1, 127, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1]
+[26801.676348] -15135 free pages at to node: 2
+[26801.681896] In dev_dax_kmem_probe and dev_dax->target_node is 8.
+[26801.735684] Built 6 zonelists, mobility grouping on.  Total pages: 262796808
+[26801.735687] Policy zone: Normal

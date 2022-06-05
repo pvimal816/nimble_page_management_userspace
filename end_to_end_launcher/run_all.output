@@ -1,0 +1,443 @@
+kernel.numa_balancing = 0
+dax5.0 was already in system-ram mode
+dax5.0:
+  WARNING: detected a race while onlining memory
+  Some memory may not be in the expected zone. It is
+  recommended to disable any other onlining mechanisms,
+  and retry. If onlining is to be left to other agents,
+  use the --no-online option to suppress this warning
+dax5.0: all memory sections (125) already online
+reconfigured 1 device
+[
+  {
+    "chardev":"dax5.0",
+    "size":135289372672,
+    "target_node":9,
+    "mode":"system-ram",
+    "movable":false
+  }
+]
+kernel.enable_page_migration_optimization_avoid_remote_pmem_write = 0
+make: 'launcher' is up to date.
+vm.migration_batch_size = 8
+vm.limit_mt_num = 1
+./run_all.sh: line 104: test: -gt: unary operator expected
++memory
+4294967296
+Disabling memory allocation from NUMA node 0
+0
+Disabling memory allocation from NUMA node 1
+0
+Disabling memory allocation from NUMA node 3
+0
+Configuration: exchange-pages
+kernel.reset_bandwidth_counters = 1
+vm.sysctl_enable_thp_migration = 1
+3
+/home/vimal/nimble_experiment/nimble_page_management_userspace/end_to_end_launcher/launcher --dumpstats --dumpstats_period 5 --shrink_page_lists --memcg /sys/fs/cgroup/two-level-memory/cgroup.procs --exchange_pages --vm_stats --prefer_memnode --cpunode 2 --fast_mem 2 --slow_mem 9 --memory_manage
+begin benchmark
+Current directory: /home/vimal/nimble_experiment/nimble_page_management_userspace/end_to_end_launcher/559.pmniGhost
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+
+ =================================================
+           Mantevo miniapp MiniGhost experiment
+ =================================================
+
+ Computation: 5 pt difference stencil on a 2D grid (STENCIL_2D5PT)
+
+      Global Grid Dimension:     1000,     1000,      175
+      Local Grid Dimension :     1000,     1000,      175
+
+ Number of variables:  5
+
+ Error reported every  10 time steps. Tolerance is 1.00E-05
+ Number of variables reduced each time step:  5; requested  100%.
+
+      Time steps:      5
+
+  Serial version, strong scaling, 
+
+child arg: ./miniGhost_base.gnu
+child pid: 421419
+Wednesday 01 June 2022 09:31:33 AM IST
++memory
+4294967296
+Disabling memory allocation from NUMA node 0
+0
+Disabling memory allocation from NUMA node 1
+0
+Disabling memory allocation from NUMA node 3
+0
+Configuration: pmem-optimized
+kernel.reset_bandwidth_counters = 1
+kernel.enable_page_migration_optimization_avoid_remote_pmem_write = 1
+vm.limit_mt_num = 2
+vm.sysctl_enable_thp_migration = 1
+3
+/home/vimal/nimble_experiment/nimble_page_management_userspace/end_to_end_launcher/launcher --dumpstats --dumpstats_period 5 --shrink_page_lists --memcg /sys/fs/cgroup/two-level-memory/cgroup.procs --exchange_pages --vm_stats --prefer_memnode --cpunode 2 --fast_mem 2 --slow_mem 9 --memory_manage
+begin benchmark
+Current directory: /home/vimal/nimble_experiment/nimble_page_management_userspace/end_to_end_launcher/559.pmniGhost
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+
+ =================================================
+           Mantevo miniapp MiniGhost experiment
+ =================================================
+
+ Computation: 5 pt difference stencil on a 2D grid (STENCIL_2D5PT)
+
+      Global Grid Dimension:     1000,     1000,      175
+      Local Grid Dimension :     1000,     1000,      175
+
+ Number of variables:  5
+
+ Error reported every  10 time steps. Tolerance is 1.00E-05
+ Number of variables reduced each time step:  5; requested  100%.
+
+      Time steps:      5
+
+  Serial version, strong scaling, 
+
+child arg: ./miniGhost_base.gnu
+child pid: 423267
+Wednesday 01 June 2022 09:35:42 AM IST
+vm.limit_mt_num = 1
+kernel.enable_page_migration_optimization_avoid_remote_pmem_write = 0
++memory
+4294967296
+Disabling memory allocation from NUMA node 0
+0
+Disabling memory allocation from NUMA node 1
+0
+Disabling memory allocation from NUMA node 3
+0
+Configuration: exchange-pages
+kernel.reset_bandwidth_counters = 1
+vm.sysctl_enable_thp_migration = 1
+3
+/home/vimal/nimble_experiment/nimble_page_management_userspace/end_to_end_launcher/launcher --dumpstats --dumpstats_period 5 --shrink_page_lists --memcg /sys/fs/cgroup/two-level-memory/cgroup.procs --exchange_pages --vm_stats --prefer_memnode --cpunode 2 --fast_mem 2 --slow_mem 9 --memory_manage
+begin benchmark
+Current directory: /home/vimal/nimble_experiment/nimble_page_management_userspace/end_to_end_launcher/559.pmniGhost
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+
+ =================================================
+           Mantevo miniapp MiniGhost experiment
+ =================================================
+
+ Computation: 5 pt difference stencil on a 2D grid (STENCIL_2D5PT)
+
+      Global Grid Dimension:     1000,     1000,      175
+      Local Grid Dimension :     1000,     1000,      175
+
+ Number of variables:  5
+
+ Error reported every  10 time steps. Tolerance is 1.00E-05
+ Number of variables reduced each time step:  5; requested  100%.
+
+      Time steps:      5
+
+  Serial version, strong scaling, 
+
+child arg: ./miniGhost_base.gnu
+child pid: 425603
+Wednesday 01 June 2022 09:39:17 AM IST
++memory
+4294967296
+Disabling memory allocation from NUMA node 0
+0
+Disabling memory allocation from NUMA node 1
+0
+Disabling memory allocation from NUMA node 3
+0
+Configuration: pmem-optimized
+kernel.reset_bandwidth_counters = 1
+kernel.enable_page_migration_optimization_avoid_remote_pmem_write = 1
+vm.limit_mt_num = 2
+vm.sysctl_enable_thp_migration = 1
+3
+/home/vimal/nimble_experiment/nimble_page_management_userspace/end_to_end_launcher/launcher --dumpstats --dumpstats_period 5 --shrink_page_lists --memcg /sys/fs/cgroup/two-level-memory/cgroup.procs --exchange_pages --vm_stats --prefer_memnode --cpunode 2 --fast_mem 2 --slow_mem 9 --memory_manage
+begin benchmark
+Current directory: /home/vimal/nimble_experiment/nimble_page_management_userspace/end_to_end_launcher/559.pmniGhost
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+
+ =================================================
+           Mantevo miniapp MiniGhost experiment
+ =================================================
+
+ Computation: 5 pt difference stencil on a 2D grid (STENCIL_2D5PT)
+
+      Global Grid Dimension:     1000,     1000,      175
+      Local Grid Dimension :     1000,     1000,      175
+
+ Number of variables:  5
+
+ Error reported every  10 time steps. Tolerance is 1.00E-05
+ Number of variables reduced each time step:  5; requested  100%.
+
+      Time steps:      5
+
+  Serial version, strong scaling, 
+
+child arg: ./miniGhost_base.gnu
+child pid: 427621
+Wednesday 01 June 2022 09:43:04 AM IST
+vm.limit_mt_num = 1
+kernel.enable_page_migration_optimization_avoid_remote_pmem_write = 0
++memory
+4294967296
+Disabling memory allocation from NUMA node 0
+0
+Disabling memory allocation from NUMA node 1
+0
+Disabling memory allocation from NUMA node 3
+0
+Configuration: exchange-pages
+kernel.reset_bandwidth_counters = 1
+vm.sysctl_enable_thp_migration = 1
+3
+/home/vimal/nimble_experiment/nimble_page_management_userspace/end_to_end_launcher/launcher --dumpstats --dumpstats_period 5 --shrink_page_lists --memcg /sys/fs/cgroup/two-level-memory/cgroup.procs --exchange_pages --vm_stats --prefer_memnode --cpunode 2 --fast_mem 2 --slow_mem 9 --memory_manage
+begin benchmark
+Current directory: /home/vimal/nimble_experiment/nimble_page_management_userspace/end_to_end_launcher/559.pmniGhost
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+
+ =================================================
+           Mantevo miniapp MiniGhost experiment
+ =================================================
+
+ Computation: 5 pt difference stencil on a 2D grid (STENCIL_2D5PT)
+
+      Global Grid Dimension:     1000,     1000,      175
+      Local Grid Dimension :     1000,     1000,      175
+
+ Number of variables:  5
+
+ Error reported every  10 time steps. Tolerance is 1.00E-05
+ Number of variables reduced each time step:  5; requested  100%.
+
+      Time steps:      5
+
+  Serial version, strong scaling, 
+
+child arg: ./miniGhost_base.gnu
+child pid: 429735
+Wednesday 01 June 2022 09:46:46 AM IST
++memory
+4294967296
+Disabling memory allocation from NUMA node 0
+0
+Disabling memory allocation from NUMA node 1
+0
+Disabling memory allocation from NUMA node 3
+0
+Configuration: pmem-optimized
+kernel.reset_bandwidth_counters = 1
+kernel.enable_page_migration_optimization_avoid_remote_pmem_write = 1
+vm.limit_mt_num = 2
+vm.sysctl_enable_thp_migration = 1
+3
+/home/vimal/nimble_experiment/nimble_page_management_userspace/end_to_end_launcher/launcher --dumpstats --dumpstats_period 5 --shrink_page_lists --memcg /sys/fs/cgroup/two-level-memory/cgroup.procs --exchange_pages --vm_stats --prefer_memnode --cpunode 2 --fast_mem 2 --slow_mem 9 --memory_manage
+begin benchmark
+Current directory: /home/vimal/nimble_experiment/nimble_page_management_userspace/end_to_end_launcher/559.pmniGhost
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+
+ =================================================
+           Mantevo miniapp MiniGhost experiment
+ =================================================
+
+ Computation: 5 pt difference stencil on a 2D grid (STENCIL_2D5PT)
+
+      Global Grid Dimension:     1000,     1000,      175
+      Local Grid Dimension :     1000,     1000,      175
+
+ Number of variables:  5
+
+ Error reported every  10 time steps. Tolerance is 1.00E-05
+ Number of variables reduced each time step:  5; requested  100%.
+
+      Time steps:      5
+
+  Serial version, strong scaling, 
+
+child arg: ./miniGhost_base.gnu
+child pid: 431830
+Wednesday 01 June 2022 09:51:26 AM IST
+vm.limit_mt_num = 1
+kernel.enable_page_migration_optimization_avoid_remote_pmem_write = 0
++memory
+4294967296
+Disabling memory allocation from NUMA node 0
+0
+Disabling memory allocation from NUMA node 1
+0
+Disabling memory allocation from NUMA node 3
+0
+Configuration: exchange-pages
+kernel.reset_bandwidth_counters = 1
+vm.sysctl_enable_thp_migration = 1
+3
+/home/vimal/nimble_experiment/nimble_page_management_userspace/end_to_end_launcher/launcher --dumpstats --dumpstats_period 5 --shrink_page_lists --memcg /sys/fs/cgroup/two-level-memory/cgroup.procs --exchange_pages --vm_stats --prefer_memnode --cpunode 2 --fast_mem 2 --slow_mem 9 --memory_manage
+begin benchmark
+Current directory: /home/vimal/nimble_experiment/nimble_page_management_userspace/end_to_end_launcher/559.pmniGhost
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+
+ =================================================
+           Mantevo miniapp MiniGhost experiment
+ =================================================
+
+ Computation: 5 pt difference stencil on a 2D grid (STENCIL_2D5PT)
+
+      Global Grid Dimension:     1000,     1000,      175
+      Local Grid Dimension :     1000,     1000,      175
+
+ Number of variables:  5
+
+ Error reported every  10 time steps. Tolerance is 1.00E-05
+ Number of variables reduced each time step:  5; requested  100%.
+
+      Time steps:      5
+
+  Serial version, strong scaling, 
+
+child arg: ./miniGhost_base.gnu
+child pid: 434409
+Wednesday 01 June 2022 09:54:56 AM IST
++memory
+4294967296
+Disabling memory allocation from NUMA node 0
+0
+Disabling memory allocation from NUMA node 1
+0
+Disabling memory allocation from NUMA node 3
+0
+Configuration: pmem-optimized
+kernel.reset_bandwidth_counters = 1
+kernel.enable_page_migration_optimization_avoid_remote_pmem_write = 1
+vm.limit_mt_num = 2
+vm.sysctl_enable_thp_migration = 1
+3
+/home/vimal/nimble_experiment/nimble_page_management_userspace/end_to_end_launcher/launcher --dumpstats --dumpstats_period 5 --shrink_page_lists --memcg /sys/fs/cgroup/two-level-memory/cgroup.procs --exchange_pages --vm_stats --prefer_memnode --cpunode 2 --fast_mem 2 --slow_mem 9 --memory_manage
+begin benchmark
+Current directory: /home/vimal/nimble_experiment/nimble_page_management_userspace/end_to_end_launcher/559.pmniGhost
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+
+ =================================================
+           Mantevo miniapp MiniGhost experiment
+ =================================================
+
+ Computation: 5 pt difference stencil on a 2D grid (STENCIL_2D5PT)
+
+      Global Grid Dimension:     1000,     1000,      175
+      Local Grid Dimension :     1000,     1000,      175
+
+ Number of variables:  5
+
+ Error reported every  10 time steps. Tolerance is 1.00E-05
+ Number of variables reduced each time step:  5; requested  100%.
+
+      Time steps:      5
+
+  Serial version, strong scaling, 
+
+child arg: ./miniGhost_base.gnu
+child pid: 436717
+Wednesday 01 June 2022 09:59:15 AM IST
+vm.limit_mt_num = 1
+kernel.enable_page_migration_optimization_avoid_remote_pmem_write = 0
++memory
+4294967296
+Disabling memory allocation from NUMA node 0
+0
+Disabling memory allocation from NUMA node 1
+0
+Disabling memory allocation from NUMA node 3
+0
+Configuration: exchange-pages
+kernel.reset_bandwidth_counters = 1
+vm.sysctl_enable_thp_migration = 1
+3
+/home/vimal/nimble_experiment/nimble_page_management_userspace/end_to_end_launcher/launcher --dumpstats --dumpstats_period 5 --shrink_page_lists --memcg /sys/fs/cgroup/two-level-memory/cgroup.procs --exchange_pages --vm_stats --prefer_memnode --cpunode 2 --fast_mem 2 --slow_mem 9 --memory_manage
+begin benchmark
+Current directory: /home/vimal/nimble_experiment/nimble_page_management_userspace/end_to_end_launcher/559.pmniGhost
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+
+ =================================================
+           Mantevo miniapp MiniGhost experiment
+ =================================================
+
+ Computation: 5 pt difference stencil on a 2D grid (STENCIL_2D5PT)
+
+      Global Grid Dimension:     1000,     1000,      175
+      Local Grid Dimension :     1000,     1000,      175
+
+ Number of variables:  5
+
+ Error reported every  10 time steps. Tolerance is 1.00E-05
+ Number of variables reduced each time step:  5; requested  100%.
+
+      Time steps:      5
+
+  Serial version, strong scaling, 
+
+child arg: ./miniGhost_base.gnu
+child pid: 439482
+Wednesday 01 June 2022 10:02:36 AM IST
++memory
+4294967296
+Disabling memory allocation from NUMA node 0
+0
+Disabling memory allocation from NUMA node 1
+0
+Disabling memory allocation from NUMA node 3
+0
+Configuration: pmem-optimized
+kernel.reset_bandwidth_counters = 1
+kernel.enable_page_migration_optimization_avoid_remote_pmem_write = 1
+vm.limit_mt_num = 2
+vm.sysctl_enable_thp_migration = 1
+3
+/home/vimal/nimble_experiment/nimble_page_management_userspace/end_to_end_launcher/launcher --dumpstats --dumpstats_period 5 --shrink_page_lists --memcg /sys/fs/cgroup/two-level-memory/cgroup.procs --exchange_pages --vm_stats --prefer_memnode --cpunode 2 --fast_mem 2 --slow_mem 9 --memory_manage
+begin benchmark
+Current directory: /home/vimal/nimble_experiment/nimble_page_management_userspace/end_to_end_launcher/559.pmniGhost
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+
+ =================================================
+           Mantevo miniapp MiniGhost experiment
+ =================================================
+
+ Computation: 5 pt difference stencil on a 2D grid (STENCIL_2D5PT)
+
+      Global Grid Dimension:     1000,     1000,      175
+      Local Grid Dimension :     1000,     1000,      175
+
+ Number of variables:  5
+
+ Error reported every  10 time steps. Tolerance is 1.00E-05
+ Number of variables reduced each time step:  5; requested  100%.
+
+      Time steps:      5
+
+  Serial version, strong scaling, 
+
+child arg: ./miniGhost_base.gnu
+child pid: 441397
+Wednesday 01 June 2022 10:06:41 AM IST
+vm.limit_mt_num = 1
+kernel.enable_page_migration_optimization_avoid_remote_pmem_write = 0
+kernel.numa_balancing = 1

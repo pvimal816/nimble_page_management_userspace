@@ -1,0 +1,53 @@
+[  186.109991] perf: interrupt took too long (3148 > 2500), lowering kernel.perf_event_max_sample_rate to 63500
+[  186.121159] perf: interrupt took too long (4235 > 3935), lowering kernel.perf_event_max_sample_rate to 47000
+[  186.170915] perf: interrupt took too long (5910 > 5293), lowering kernel.perf_event_max_sample_rate to 33750
+[  186.218301] INFO: NMI handler (ghes_notify_nmi) took too long to run: 0.000 msecs
+[  186.240724] INFO: NMI handler (perf_event_nmi_handler) took too long to run: 0.000 msecs
+[  186.240793] perf: interrupt took too long (8177 > 7387), lowering kernel.perf_event_max_sample_rate to 24250
+[  196.700233] -7379 free pages at to node: 2
+[  212.157004] INFO: NMI handler (perf_event_nmi_handler) took too long to run: 1.044 msecs
+[  212.157770] INFO: NMI handler (ghes_notify_nmi) took too long to run: 1.098 msecs
+[  212.157772] perf: interrupt took too long (19949 > 10221), lowering kernel.perf_event_max_sample_rate to 10000
+[  213.062260] INFO: NMI handler (perf_event_nmi_handler) took too long to run: 2.417 msecs
+[  213.062527] INFO: NMI handler (ghes_notify_nmi) took too long to run: 3.693 msecs
+[  213.064429] perf: interrupt took too long (25096 > 24936), lowering kernel.perf_event_max_sample_rate to 7750
+[  238.659038] INFO: NMI handler (perf_event_nmi_handler) took too long to run: 3.090 msecs
+[  238.659287] perf: interrupt took too long (42257 > 31370), lowering kernel.perf_event_max_sample_rate to 4500
+[  253.312995] -9494 free pages at to node: 2
+[  257.664403] INFO: NMI handler (ghes_notify_nmi) took too long to run: 4.346 msecs
+[  257.674136] INFO: NMI handler (perf_event_nmi_handler) took too long to run: 3.935 msecs
+[  257.676379] perf: interrupt took too long (59448 > 52821), lowering kernel.perf_event_max_sample_rate to 3250
+[  264.532217] -8572 free pages at to node: 2
+[  274.116448] INFO: NMI handler (ghes_notify_nmi) took too long to run: 5.197 msecs
+[  274.132101] INFO: NMI handler (ghes_notify_nmi) took too long to run: 5.627 msecs
+[  341.606409] INFO: NMI handler (nmi_cpu_backtrace_handler) took too long to run: 0.000 msecs
+[  381.333581] -15353 free pages at to node: 2
+[  392.559122] perf: interrupt took too long (74866 > 74310), lowering kernel.perf_event_max_sample_rate to 2500
+[  403.268558] -14121 free pages at to node: 2
+[  420.434672] -10 free pages at to node: 2
+[  437.186258] INFO: NMI handler (ghes_notify_nmi) took too long to run: 6.464 msecs
+[  452.505722] INFO: NMI handler (ghes_notify_nmi) took too long to run: 6.550 msecs
+[  452.655967] perf: interrupt took too long (94157 > 93582), lowering kernel.perf_event_max_sample_rate to 2000
+[  462.186010] INFO: NMI handler (nmi_cpu_backtrace_handler) took too long to run: 1.124 msecs
+[  486.124856] perf: interrupt took too long (119710 > 117696), lowering kernel.perf_event_max_sample_rate to 1500
+[  556.992787] -2 free pages at to node: 2
+[  594.794361] -15723 free pages at to node: 2
+[  651.556117] -10733 free pages at to node: 2
+[  662.352868] -1033 free pages at to node: 2
+[  667.073670] -440 free pages at to node: 2
+[  678.739667] -18 free pages at to node: 2
+[  705.853276] -13981 free pages at to node: 2
+[  720.796415] -8862 free pages at to node: 2
+[  789.156617] INFO: NMI handler (nmi_cpu_backtrace_handler) took too long to run: 1.686 msecs
+[  830.526748] perf: interrupt took too long (152417 > 149637), lowering kernel.perf_event_max_sample_rate to 1250
+[  833.143848] -6 free pages at to node: 2
+[  840.938219] -3878 free pages at to node: 2
+[  873.939405] INFO: NMI handler (perf_event_nmi_handler) took too long to run: 5.841 msecs
+[  873.939474] perf: interrupt took too long (207553 > 190521), lowering kernel.perf_event_max_sample_rate to 750
+[  876.901246] -4 free pages at to node: 2
+[  883.813583] -798 free pages at to node: 2
+[  909.284253] -7 free pages at to node: 2
+[  970.307438] INFO: NMI handler (ghes_notify_nmi) took too long to run: 7.051 msecs
+[ 1010.674783] stencil_exe_bas[7620]: segfault at 0 ip 00005616f173c4dc sp 00007ffe4d0b5010 error 4 in stencil_exe_base.gnu[5616f173b000+2000]
+[ 1010.674799] Code: 70 4d 89 f5 31 db 45 89 fe 4d 89 ef eb 18 41 39 de 7e 6b 49 89 2f 49 83 c5 08 83 c3 01 49 83 c7 08 44 39 f3 74 48 49 8b 6d 00 <80> 7d 00 2d 75 de 0f b6 45 01 84 c0 74 d6 80 7d 02 00 74 70 3c 2d
+[ 1035.916099] -15799 free pages at to node: 2

@@ -1,0 +1,8 @@
+./run_all.sh: line 80: test: -gt: unary operator expected
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+./run_bench.sh: line 276:  7108 Killed                  ${NUMACTL_CMD} ${LAUNCHER_OPT} -- ${BENCH_RUN} 2> ${CUR_PWD}/${RES_FOLDER}/${BENCH}_cycles
+ls: cannot access 'page_migration_stats_*': No such file or directory
+rmdir: failed to remove '/sys/fs/cgroup/two-level-memory': Device or resource busy
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
