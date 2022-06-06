@@ -145,7 +145,7 @@ int main(int argc, char **argv)
       addr = (void**) malloc(sizeof(char *) * page_count);
       status = (int*) malloc(sizeof(int *) * page_count);
       nodes = (int*) malloc(sizeof(int *) * page_count);
-      src_nodes = (int*) malloc(sizeof(int *) * page_count);
+    //   src_nodes = (int*) malloc(sizeof(int *) * page_count);
 	  if (!page_base || !addr || !status || !nodes) {
             printf("Unable to allocate memory\n");
             exit(1);
@@ -160,7 +160,7 @@ int main(int argc, char **argv)
             pages[ i * pagesize] = (char) i;
             addr[i] = pages + i * pagesize;
             nodes[i] = DESTINATION_NUMA_NODE;
-			src_nodes[i] = SOURCE_NUMA_NODE;
+			// src_nodes[i] = SOURCE_NUMA_NODE;
             status[i] = -123;
       }
 
@@ -216,7 +216,7 @@ int main(int argc, char **argv)
 		move_page_flag |= (1<<7);
 	  
 	  rc = numa_move_pages(0, page_count, addr, nodes, status, move_page_flag);
-	  rc = numa_move_pages(0, page_count, addr, src_nodes, status, move_page_flag);
+	//   rc = numa_move_pages(0, page_count, addr, src_nodes, status, move_page_flag);
       
 	  if (rc < 0 && errno != ENOENT) {
             perror("move_pages");
@@ -258,7 +258,7 @@ int main(int argc, char **argv)
       numa_move_pages(0, page_count, addr, NULL, status, 0);
 	  for (i = 0; i < page_count; i++) {
 			/*printf("Page %d vaddr=%p node=%d\n", i, pages + i * pagesize, status[i]);*/
-			if (status[i] != SOURCE_NUMA_NODE) {
+			if (status[i] != DESTINATION_NUMA_NODE) {
 				  fprintf(stderr, "Bad page state before migrate_pages. Page %d status %d\n",i, status[i]);
 				  exit(1);
 			}
