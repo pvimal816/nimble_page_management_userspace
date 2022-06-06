@@ -1,171 +1,171 @@
 ,migration_mechanism,thread_cnt,page_cnt,pmem-optimized,bandwidth(MBps)
-0,native THP,1,1,pmem optimized,3588.918138571718
-1,native THP,1,1,baseline,1928.1211847302059
-2,native THP,1,2,pmem optimized,4452.676949381968
-3,native THP,1,2,baseline,2847.1757084662904
-4,native THP,1,4,pmem optimized,3482.0769230836195
-5,native THP,1,4,baseline,3004.1004469050035
-6,native THP,1,8,pmem optimized,890.1053860299161
-7,native THP,1,8,baseline,845.8880120190536
-8,native THP,1,16,pmem optimized,783.8841876958952
-9,native THP,1,16,baseline,760.8917106811612
-10,native THP,1,32,pmem optimized,1223.3537496801694
-11,native THP,1,32,baseline,1208.0832624575423
-12,native THP,1,64,pmem optimized,1625.4609438968398
-13,native THP,1,64,baseline,1667.2431550635415
-14,native THP,1,128,pmem optimized,1952.8638771643737
-15,native THP,1,128,baseline,1975.0182929511707
-16,native THP,1,256,pmem optimized,2145.9275712326867
-17,native THP,1,256,baseline,2150.9120148830207
-18,native THP,1,512,pmem optimized,2258.376632544519
-19,native THP,1,512,baseline,2241.7101077503403
-20,native THP,2,1,pmem optimized,4756.36699176435
-21,native THP,2,1,baseline,3021.7423426782725
-22,native THP,2,2,pmem optimized,6698.924219759549
-23,native THP,2,2,baseline,4607.354351162412
-24,native THP,2,4,pmem optimized,6647.630070022812
-25,native THP,2,4,baseline,4560.846885414766
-26,native THP,2,8,pmem optimized,902.2460196627377
-27,native THP,2,8,baseline,866.4151578985308
-28,native THP,2,16,pmem optimized,811.1796454260764
-29,native THP,2,16,baseline,792.1438264652104
-30,native THP,2,32,pmem optimized,1394.8565562427457
-31,native THP,2,32,baseline,1366.06328178014
-32,native THP,2,64,pmem optimized,2095.050866902096
-33,native THP,2,64,baseline,2127.4106221612365
-34,native THP,2,128,pmem optimized,2846.183392924149
-35,native THP,2,128,baseline,2824.972461704971
-36,native THP,2,256,pmem optimized,3454.912728944954
-37,native THP,2,256,baseline,3447.736113036097
-38,native THP,2,512,pmem optimized,3856.6806838931334
-39,native THP,2,512,baseline,3823.619540284744
-40,native THP,4,1,pmem optimized,5192.28592464747
-41,native THP,4,1,baseline,4161.336687925549
-42,native THP,4,2,pmem optimized,7955.250126985681
-43,native THP,4,2,baseline,6632.289300459286
-44,native THP,4,4,pmem optimized,8202.08628266686
-45,native THP,4,4,baseline,5844.274911769712
-46,native THP,4,8,pmem optimized,916.9608611417857
-47,native THP,4,8,baseline,868.3798128743538
-48,native THP,4,16,pmem optimized,798.7829343820288
-49,native THP,4,16,baseline,808.0766330182041
-50,native THP,4,32,pmem optimized,1379.3177170429703
-51,native THP,4,32,baseline,1397.600220841799
-52,native THP,4,64,pmem optimized,2266.221944216593
-53,native THP,4,64,baseline,2285.719306133476
-54,native THP,4,128,pmem optimized,3292.8852714291756
-55,native THP,4,128,baseline,3326.5063720269086
-56,native THP,4,256,pmem optimized,4244.03332184195
-57,native THP,4,256,baseline,4298.363890917142
-58,native THP,4,512,pmem optimized,4949.73890107962
-59,native THP,4,512,baseline,4997.588585420213
-60,split THP,1,1,pmem optimized,928.6938635902877
-61,split THP,1,1,baseline,705.9875866202644
-62,split THP,1,2,pmem optimized,976.053693884965
-63,split THP,1,2,baseline,821.0950484848415
-64,split THP,1,4,pmem optimized,905.1783169603171
-65,split THP,1,4,baseline,874.4295167181087
-66,split THP,1,8,pmem optimized,760.6675470062355
-67,split THP,1,8,baseline,695.7712233944585
-68,split THP,1,16,pmem optimized,725.3275734587173
-69,split THP,1,16,baseline,717.9667200437528
-70,split THP,1,32,pmem optimized,908.7799978976511
-71,split THP,1,32,baseline,948.0395098428351
-72,split THP,1,64,pmem optimized,1012.3807586305586
-73,split THP,1,64,baseline,1100.1522595256292
-74,split THP,1,128,pmem optimized,1167.5545024749072
-75,split THP,1,128,baseline,1198.3834874065178
-76,split THP,1,256,pmem optimized,1261.2453596984958
-77,split THP,1,256,baseline,1256.0510584794524
-78,split THP,1,512,pmem optimized,1311.2713855474365
-79,split THP,1,512,baseline,1284.7828846921311
-80,split THP,2,1,pmem optimized,372.17857932141567
-81,split THP,2,1,baseline,342.09105827681964
-82,split THP,2,2,pmem optimized,325.7956067179184
-83,split THP,2,2,baseline,383.08237000727075
-84,split THP,2,4,pmem optimized,400.2904106929577
-85,split THP,2,4,baseline,449.42203315336906
-86,split THP,2,8,pmem optimized,443.40746465049
-87,split THP,2,8,baseline,513.8660523603556
-88,split THP,2,16,pmem optimized,476.7828632891501
-89,split THP,2,16,baseline,506.99800955433307
-90,split THP,2,32,pmem optimized,578.5432671772361
-91,split THP,2,32,baseline,620.6533765111802
-92,split THP,2,64,pmem optimized,615.883219041671
-93,split THP,2,64,baseline,613.698138674066
-94,split THP,2,128,pmem optimized,645.0099636377196
-95,split THP,2,128,baseline,635.7693283166485
-96,split THP,2,256,pmem optimized,651.0904373501303
-97,split THP,2,256,baseline,621.0038681566821
-98,split THP,2,512,pmem optimized,646.8863619753921
-99,split THP,2,512,baseline,627.6206911037175
-100,split THP,4,1,pmem optimized,283.03871267653403
-101,split THP,4,1,baseline,299.93827570224323
-102,split THP,4,2,pmem optimized,255.4455890677462
-103,split THP,4,2,baseline,313.1578271606794
-104,split THP,4,4,pmem optimized,325.7432310251209
-105,split THP,4,4,baseline,341.89761793775426
-106,split THP,4,8,pmem optimized,358.5127841065367
-107,split THP,4,8,baseline,365.83269342335893
-108,split THP,4,16,pmem optimized,387.711031659751
-109,split THP,4,16,baseline,387.00592299261814
-110,split THP,4,32,pmem optimized,471.77662326338935
-111,split THP,4,32,baseline,416.50773100434424
-112,split THP,4,64,pmem optimized,511.80249869129096
-113,split THP,4,64,baseline,458.81951638566187
-114,split THP,4,128,pmem optimized,527.3158478820236
-115,split THP,4,128,baseline,471.8087274562105
-116,split THP,4,256,pmem optimized,550.3859337233974
-117,split THP,4,256,baseline,456.92603757863253
-118,split THP,4,512,pmem optimized,557.0979014064603
-119,split THP,4,512,baseline,496.7185252536185
-120,exchange THP,2,1,pmem optimized,2217.822063248737
-121,exchange THP,2,1,baseline,2114.309509329021
-122,exchange THP,2,2,pmem optimized,1760.3073144509567
-123,exchange THP,2,2,baseline,1682.5265828684303
-124,exchange THP,2,4,pmem optimized,2087.939523666873
-125,exchange THP,2,4,baseline,2288.695475048785
-126,exchange THP,2,8,pmem optimized,2620.8601466436776
-127,exchange THP,2,8,baseline,2587.0394883767226
-128,exchange THP,2,16,pmem optimized,2913.565722248906
-129,exchange THP,2,16,baseline,2903.6062608284096
-130,exchange THP,2,32,pmem optimized,3016.646136190072
-131,exchange THP,2,32,baseline,3016.0940711823555
-132,exchange THP,2,64,pmem optimized,3034.594574928679
-133,exchange THP,2,64,baseline,3038.0090726533317
-134,exchange THP,2,128,pmem optimized,3067.245339083175
-135,exchange THP,2,128,baseline,3061.721394681453
-136,exchange THP,2,256,pmem optimized,3069.7592973495557
-137,exchange THP,2,256,baseline,3071.240057274212
-138,exchange THP,2,512,pmem optimized,3076.880501698587
-139,exchange THP,2,512,baseline,3068.6358091466227
-140,exchange THP,4,1,pmem optimized,1981.5904304242297
-141,exchange THP,4,1,baseline,2061.5509006194343
-142,exchange THP,4,2,pmem optimized,2047.7443890779869
-143,exchange THP,4,2,baseline,2034.4178747209542
-144,exchange THP,4,4,pmem optimized,2121.1468638074703
-145,exchange THP,4,4,baseline,2151.383845387788
-146,exchange THP,4,8,pmem optimized,2649.75166775784
-147,exchange THP,4,8,baseline,2667.5598546246565
-148,exchange THP,4,16,pmem optimized,2870.5158472164712
-149,exchange THP,4,16,baseline,2878.43054725783
-150,exchange THP,4,32,pmem optimized,2943.198296329666
-151,exchange THP,4,32,baseline,2919.544364228341
-152,exchange THP,4,64,pmem optimized,2945.6743094948197
-153,exchange THP,4,64,baseline,2942.0362184793053
-154,exchange THP,4,128,pmem optimized,2954.3631639909718
-155,exchange THP,4,128,baseline,2955.4280478454666
-156,exchange THP,4,256,pmem optimized,2952.6784490147575
-157,exchange THP,4,256,baseline,2958.6725504624246
-158,exchange THP,4,512,pmem optimized,2954.028928137175
-159,exchange THP,4,512,baseline,2955.9529402373305
-160,exchange THP,1,1,baseline,4226.238134572298
-161,exchange THP,1,2,baseline,5020.704128650523
-162,exchange THP,1,4,baseline,3497.1527930535353
-163,exchange THP,1,8,baseline,1579.7188740190388
-164,exchange THP,1,16,baseline,1202.2308686165363
-165,exchange THP,1,32,baseline,1078.0415574779013
-166,exchange THP,1,64,baseline,1044.6351937789389
-167,exchange THP,1,128,baseline,1022.3189310550513
-168,exchange THP,1,256,baseline,1011.7244687958707
-169,exchange THP,1,512,baseline,1008.9978619971839
+0,native THP,1,1,pmem optimized,547.1975387492465
+1,native THP,1,1,baseline,953.8963757565709
+2,native THP,1,2,pmem optimized,647.8735187627249
+3,native THP,1,2,baseline,973.5695816751619
+4,native THP,1,4,pmem optimized,785.2177574718721
+5,native THP,1,4,baseline,934.7350464300423
+6,native THP,1,8,pmem optimized,1292.5632599039993
+7,native THP,1,8,baseline,622.4166887092944
+8,native THP,1,16,pmem optimized,867.818628640243
+9,native THP,1,16,baseline,533.9719139049851
+10,native THP,1,32,pmem optimized,706.1482291724459
+11,native THP,1,32,baseline,490.51782145363444
+12,native THP,1,64,pmem optimized,690.3820859785776
+13,native THP,1,64,baseline,431.6393942059803
+14,native THP,1,128,pmem optimized,675.6558635939787
+15,native THP,1,128,baseline,396.3672285778965
+16,native THP,1,256,pmem optimized,677.8035893092249
+17,native THP,1,256,baseline,399.8048541886888
+18,native THP,1,512,pmem optimized,679.6827790640077
+19,native THP,1,512,baseline,398.86895537986436
+20,native THP,2,1,pmem optimized,471.2576651237377
+21,native THP,2,1,baseline,1084.1221315619066
+22,native THP,2,2,pmem optimized,574.5452000741623
+23,native THP,2,2,baseline,972.4105727478826
+24,native THP,2,4,pmem optimized,551.7948209448567
+25,native THP,2,4,baseline,965.6090141918936
+26,native THP,2,8,pmem optimized,939.9739784653606
+27,native THP,2,8,baseline,528.6218047190703
+28,native THP,2,16,pmem optimized,783.0722067309059
+29,native THP,2,16,baseline,389.9471916209201
+30,native THP,2,32,pmem optimized,675.2002568529297
+31,native THP,2,32,baseline,288.60811001542015
+32,native THP,2,64,pmem optimized,649.7939405437794
+33,native THP,2,64,baseline,257.77201390962273
+34,native THP,2,128,pmem optimized,641.6297549767551
+35,native THP,2,128,baseline,232.75057673065388
+36,native THP,2,256,pmem optimized,632.2770855237633
+37,native THP,2,256,baseline,225.5606396950176
+38,native THP,2,512,pmem optimized,634.5543028815206
+39,native THP,2,512,baseline,220.21288053224836
+40,native THP,4,1,pmem optimized,389.3990470704399
+41,native THP,4,1,baseline,401.9845818009681
+42,native THP,4,2,pmem optimized,471.0522827523358
+43,native THP,4,2,baseline,432.36445071814865
+44,native THP,4,4,pmem optimized,524.235759935041
+45,native THP,4,4,baseline,285.91742596089625
+46,native THP,4,8,pmem optimized,1008.7416415825195
+47,native THP,4,8,baseline,244.14762353096873
+48,native THP,4,16,pmem optimized,415.5782186115505
+49,native THP,4,16,baseline,179.25398834718442
+50,native THP,4,32,pmem optimized,489.85477016924244
+51,native THP,4,32,baseline,152.848990255019
+52,native THP,4,64,pmem optimized,521.0836617039052
+53,native THP,4,64,baseline,144.08556602746884
+54,native THP,4,128,pmem optimized,508.991013502401
+55,native THP,4,128,baseline,132.9902851283484
+56,native THP,4,256,pmem optimized,510.60669301553844
+57,native THP,4,256,baseline,125.23965201200105
+58,native THP,4,512,pmem optimized,507.43978992647607
+59,native THP,4,512,baseline,123.91382588984528
+60,split THP,1,1,pmem optimized,675.3856705448437
+61,split THP,1,1,baseline,530.6110862166076
+62,split THP,1,2,pmem optimized,665.8227585143417
+63,split THP,1,2,baseline,650.860349515913
+64,split THP,1,4,pmem optimized,740.8795870633533
+65,split THP,1,4,baseline,662.9421581806838
+66,split THP,1,8,pmem optimized,805.3147876854001
+67,split THP,1,8,baseline,521.0504750127346
+68,split THP,1,16,pmem optimized,729.7182219994108
+69,split THP,1,16,baseline,513.7531856229562
+70,split THP,1,32,pmem optimized,640.4359485928228
+71,split THP,1,32,baseline,467.0363817152624
+72,split THP,1,64,pmem optimized,589.1581789977176
+73,split THP,1,64,baseline,437.7335390933576
+74,split THP,1,128,pmem optimized,579.8160272645695
+75,split THP,1,128,baseline,424.34403205464054
+76,split THP,1,256,pmem optimized,575.6121631588983
+77,split THP,1,256,baseline,417.2900988214073
+78,split THP,1,512,pmem optimized,578.6226084046853
+79,split THP,1,512,baseline,413.70915984246585
+80,split THP,2,1,pmem optimized,285.4361811653166
+81,split THP,2,1,baseline,317.7341336759609
+82,split THP,2,2,pmem optimized,280.6396788584027
+83,split THP,2,2,baseline,342.97068967341494
+84,split THP,2,4,pmem optimized,350.2581056358657
+85,split THP,2,4,baseline,366.42963341362633
+86,split THP,2,8,pmem optimized,419.09893132549047
+87,split THP,2,8,baseline,368.23614866378244
+88,split THP,2,16,pmem optimized,474.85741011367696
+89,split THP,2,16,baseline,348.67847773313855
+90,split THP,2,32,pmem optimized,513.5519663676101
+91,split THP,2,32,baseline,381.8113077611559
+92,split THP,2,64,pmem optimized,534.3172148116074
+93,split THP,2,64,baseline,373.68854559616955
+94,split THP,2,128,pmem optimized,544.0229849031093
+95,split THP,2,128,baseline,365.0984235068327
+96,split THP,2,256,pmem optimized,551.5880848069844
+97,split THP,2,256,baseline,358.84525814601557
+98,split THP,2,512,pmem optimized,552.0570720103156
+99,split THP,2,512,baseline,355.68882865216443
+100,split THP,4,1,pmem optimized,215.94631833661734
+101,split THP,4,1,baseline,276.64973846916973
+102,split THP,4,2,pmem optimized,232.8593810516151
+103,split THP,4,2,baseline,303.7989004393737
+104,split THP,4,4,pmem optimized,292.77285093931414
+105,split THP,4,4,baseline,323.71418258357164
+106,split THP,4,8,pmem optimized,344.0311466878498
+107,split THP,4,8,baseline,332.1771754493945
+108,split THP,4,16,pmem optimized,372.7386508075503
+109,split THP,4,16,baseline,320.9566015221387
+110,split THP,4,32,pmem optimized,409.1189886588828
+111,split THP,4,32,baseline,350.2886615563397
+112,split THP,4,64,pmem optimized,440.08765187254676
+113,split THP,4,64,baseline,360.8622645030905
+114,split THP,4,128,pmem optimized,451.86268831929124
+115,split THP,4,128,baseline,361.44029409827465
+116,split THP,4,256,pmem optimized,458.8547210356499
+117,split THP,4,256,baseline,363.80556252375453
+118,split THP,4,512,pmem optimized,462.88521283793466
+119,split THP,4,512,baseline,360.7072730428082
+120,exchange THP,2,1,pmem optimized,1713.7147045461597
+121,exchange THP,2,1,baseline,1859.9657803495727
+122,exchange THP,2,2,pmem optimized,1872.3795463130741
+123,exchange THP,2,2,baseline,1679.5015575277569
+124,exchange THP,2,4,pmem optimized,1820.7104125267792
+125,exchange THP,2,4,baseline,1924.527720897292
+126,exchange THP,2,8,pmem optimized,812.9488608218745
+127,exchange THP,2,8,baseline,2087.0835888325846
+128,exchange THP,2,16,pmem optimized,619.3009651193981
+129,exchange THP,2,16,baseline,1199.80184222749
+130,exchange THP,2,32,pmem optimized,543.3178612196633
+131,exchange THP,2,32,baseline,709.1544059705624
+132,exchange THP,2,64,pmem optimized,507.51532720970073
+133,exchange THP,2,64,baseline,610.488296435943
+134,exchange THP,2,128,pmem optimized,521.3095468255682
+135,exchange THP,2,128,baseline,560.4632668689192
+136,exchange THP,2,256,pmem optimized,517.0809945277712
+137,exchange THP,2,256,baseline,532.0350137758272
+138,exchange THP,2,512,pmem optimized,514.6102495149644
+139,exchange THP,2,512,baseline,521.7400633109779
+140,exchange THP,4,1,pmem optimized,1575.4809785879531
+141,exchange THP,4,1,baseline,1848.946437963086
+142,exchange THP,4,2,pmem optimized,1640.5660806072458
+143,exchange THP,4,2,baseline,1953.5614034873513
+144,exchange THP,4,4,pmem optimized,1534.9652124118438
+145,exchange THP,4,4,baseline,1915.9569323536916
+146,exchange THP,4,8,pmem optimized,340.79968936789913
+147,exchange THP,4,8,baseline,1969.8130580926677
+148,exchange THP,4,16,pmem optimized,215.5913740007533
+149,exchange THP,4,16,baseline,849.2472515194167
+150,exchange THP,4,32,pmem optimized,221.02120656931953
+151,exchange THP,4,32,baseline,374.3450828388878
+152,exchange THP,4,64,pmem optimized,219.726882777178
+153,exchange THP,4,64,baseline,269.0991631557798
+154,exchange THP,4,128,pmem optimized,216.2059088186409
+155,exchange THP,4,128,baseline,237.9576471858737
+156,exchange THP,4,256,pmem optimized,214.1564177996064
+157,exchange THP,4,256,baseline,222.49338390935895
+158,exchange THP,4,512,pmem optimized,215.01367620996785
+159,exchange THP,4,512,baseline,217.0660882699711
+160,exchange THP,1,1,baseline,4006.573986597209
+161,exchange THP,1,2,baseline,4230.313495842236
+162,exchange THP,1,4,baseline,3228.3043521053446
+163,exchange THP,1,8,baseline,1348.8511009002334
+164,exchange THP,1,16,baseline,736.856478569843
+165,exchange THP,1,32,baseline,586.0670093982263
+166,exchange THP,1,64,baseline,529.8441181881085
+167,exchange THP,1,128,baseline,500.5628617227453
+168,exchange THP,1,256,baseline,488.2369649717918
+169,exchange THP,1,512,baseline,484.9826455380157
