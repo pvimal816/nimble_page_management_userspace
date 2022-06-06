@@ -2,71 +2,75 @@ from stats import stats
 import matplotlib.pyplot as plt
 import seaborn as sns
 from matplotlib.pyplot import figure
+import matplotlib as mpl
 import math
 import csv
 import pandas as pd
+import os.path
 
-figure(figsize=(24, 18), dpi=80)
+# figure(figsize=(24, 18), dpi=80)
+
+# Generates three plots:
+# (i) Show the improvement in Native-THP migration when using PMEM-optimization
+# (ii) Show the improvement in Split-THP migration when using PMEM-optimization
+# (iii) Show the improvement in the Exchange-concurrent page migration when using PMEM-optimization
+# X-axis will be number of pages, Y-axis will be throughtput in MBps
+# In each of the plots there will be 6 lines representing the data for PMEM-optimized/non-pmem-optimized for each of the 1,2 and 4 threads.
 
 def main():
     # X-axis is the number of pages
     # Y-axis is the page migration bandwidth in MB/Sec
     # There will be a line for mt[1,2,4]-exchange, mt[1,2,4]-concurrent, mt[1,2,4]-native_thp, mt[1,2,4]-split_thp, pmem_optimization
-    thread_counts = [   [1, 2 ,4],
-                        [1, 2 ,4],
-                        [1, 2 ,4],
-                        [1, 2 ,4],
-                        [2]
-                    ]
-    page_orders = [i for i in range(0, 10)]
     base_dir = "/home/vimal/nimble_experiment/nimble_page_management_userspace/microbenchmarks/plot_generator"
-    file_name_templates = [ base_dir + "/" + "../concurrent_page_migration/stats_2mb/mt_{0}_page_order_{1}_no_batch",
-                            base_dir + "/" + "../exchange_page_migration/stats_2mb/mt_{0}_page_order_{1}_exchange_batch_not_pmem_optimized",
-                            base_dir + "/" + "../thp_page_migration_and_parallel/stats_thp/mt_{0}_2mb_page_order_{1}_not_pmem_optimized",
-                            base_dir + "/" + "../thp_page_migration_and_parallel/stats_split_thp/mt_{0}_split_thp_2mb_page_order_{1}_not_pmem_optimized",
-                            base_dir + "/" + "../exchange_page_migration/stats_2mb/mt_{0}_page_order_{1}_exchange_batch_pmem_optimized"
-                    ]
-    migration_type_name_templates = [   "mt-{0}-concurrent",
-                                        "mt-{0}-exchange",
-                                        "mt-{0}-native_thp",
-                                        "mt-{0}-split_thp",
-                                        "mt-{0}-pmem_optimization"
-                               ]
-    thp_data = {
-        "page_count": [],
-        "bandwidth": [],
-        "migration_type": []
-    }
+    file_name_templates = [
+            base_dir + "/" + "../thp_page_migration_and_parallel/stats_thp/mt_{0}_2mb_page_order_{1}_{2}",
+            base_dir + "/" + "../thp_page_migration_and_parallel/stats_split_thp/mt_{0}_split_thp_2mb_page_order_{1}_{2}",            
+            base_dir + "/" + "../exchange_page_migration/stats_2mb/mt_{0}_page_order_{1}_exchange_batch_{2}",
+            base_dir + "/" + "../exchange_page_migration/stats_2mb/seq_{0}_page_order_{1}_exchange_batch_{2}"
+    ]
+    migration_mechanism_name = [
+        "native THP",
+        "split THP",
+        "exchange THP",
+        "exchange THP",
+    ]
+    thread_counts=[1,2,4]
+    page_orders = [i for i in range(0, 10)]
 
-    for i in range(len(file_name_templates)):
-        for j in range(len(thread_counts[i])):
-            file_name_template = file_name_templates[i]
-            thread_count = thread_counts[i][j]
-            migration_type_name = migration_type_name_templates[i].format(thread_count)
+    df = pd.DataFrame(columns=["migration_mechanism", "thread_cnt", "page_cnt", "pmem-optimized", "bandwidth(MBps)"])
+    row_cnt = 0
+    # construct a data frame
+    for file_name_template_id in range(len(file_name_templates)):
+        for thread_cnt in thread_counts:
             for page_order in page_orders:
-                total_migrated_MBytes = (1<<page_order)*(1<<21)/(1<<20)*2; # 2MB pages
-                file_name = file_name_template.format(thread_count, page_order)
-                if i in [0, 1, 4]:
-                    file_name = file_name.replace("mt_1", "seq_1")
-                total_seconds = stats(file_name).average_stats["Total_nanoseconds"]/(1e9)
-                bandwidth = (total_migrated_MBytes/total_seconds)
-                thp_data["page_count"].append(1<<page_order)
-                thp_data["bandwidth"].append(bandwidth)
-                thp_data["migration_type"].append(migration_type_name)
+                for pmem_optimized in ["pmem_optimized", "not_pmem_optimized"]:
+                    file_name = file_name_templates[file_name_template_id].format(thread_cnt, page_order, pmem_optimized)
+                    if(not os.path.isfile(file_name)):
+                        continue
+                    stats_obj = stats(file_name)
+                    total_migrated_MBytes = (1<<page_order)*(1<<21)/(1<<20)
+                    if(migration_mechanism_name[file_name_template_id]=="exchange THP"):
+                        total_migrated_MBytes *= 2
+                    total_seconds = stats_obj.average_stats["Total_nanoseconds"]/(1e9)
+                    bandwidth = (total_migrated_MBytes/total_seconds)
+                    df.loc[row_cnt] = [migration_mechanism_name[file_name_template_id], thread_cnt, 1<<page_order, "pmem optimized" if pmem_optimized=="pmem_optimized" else "baseline", bandwidth]
+                    row_cnt+=1
 
-    df = pd.DataFrame.from_dict(thp_data)
-    print(df)
-    df.to_csv("microbenchmark_summary.csv")
+    df.to_csv("summarized_microbench_results.csv")
 
-    # print(thp_data)
-    sns.set(rc={'figure.figsize':(11.7,8.27)})
-    sns.color_palette("cubehelix", as_cmap=True)
-    fig, axs = plt.subplots(nrows=2)
-    axs[0].grid(True)
-    axs[1].grid(True)
-    sns.lineplot(data=thp_data, x="page_count", y="bandwidth", hue="migration_type", style="migration_type", ax=axs[0]).set(title="Figure 10: Throughput comparison", xlabel="Number of Pages", ylabel="Throughput(MB/Sec)")
-    sns.lineplot(data=thp_data, x="page_count", y="bandwidth", hue="migration_type", style="migration_type", ax=axs[1]).set(title="Figure 10: Throughput comparison", xlabel="Number of Pages", ylabel="Throughput(MB/Sec)")
-    plt.tight_layout()
-    plt.savefig('thp_migration_bw_comparison.png')
+    # generate plot-1
+    for plot_id in range(3):
+        df_native_thp = df[df["migration_mechanism"]==migration_mechanism_name[plot_id]]
+        sns.set(rc={'figure.figsize':(12,8)})
+        # sns.color_palette("cubehelix", as_cmap=True)
+        ax=sns.lineplot(data=df_native_thp, x='page_cnt', y='bandwidth(MBps)', hue='thread_cnt', style='pmem-optimized', palette=['r', 'g', 'b'], linewidth=2.5)
+        ax.get_xaxis().set_minor_locator(mpl.ticker.AutoMinorLocator())
+        ax.get_yaxis().set_minor_locator(mpl.ticker.AutoMinorLocator())
+        ax.grid(b=True, which='major', color='w', linewidth=1.25)
+        ax.grid(b=True, which='minor', color='w', linewidth=0.75)
+        ax.set_title("{0} comparison.png".format(migration_mechanism_name[plot_id]))
+        plt.tight_layout()
+        plt.savefig('plots_output/{0} comparison.png'.format(migration_mechanism_name[plot_id]))
+        plt.close()
 
 main()

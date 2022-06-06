@@ -7,7 +7,7 @@ else
 	export CPUS=1
 fi
 
-PROJECT_LOC="/home/yanzi/projects/thp_migration/two-level-memory"
+PROJECT_LOC="/home/vimal/nimble_experiment/nimble_page_management_userspace/end_to_end_launcher"
 
 if [[ "x${BENCH}" == "xdata-caching" || "x${BENCH}" == "xmemcached-user"  ]]; then
 LAUNCHER="${PROJECT_LOC}/launcher --dumpstats_signal --dumpstats_period ${STATS_PERIOD}"
@@ -80,6 +80,9 @@ else # pages will be migrated
 			LAUNCHER="${LAUNCHER} --exchange_pages"
 		;;
 		non-thp-exchange-pages)
+			LAUNCHER="${LAUNCHER} --exchange_pages"
+		;;
+		pmem-optimized)
 			LAUNCHER="${LAUNCHER} --exchange_pages"
 		;;
 		*)

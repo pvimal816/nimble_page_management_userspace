@@ -1,20 +1,34 @@
 #!/bin/bash
 
-export FAST_NODE=1
-export SLOW_NODE=0
+# Turn-off AutoNUMA
+sudo sysctl kernel.numa_balancing=0
+daxctl reconfigure-device dax5.0 --mode=system-ram
+
+# enable printing debugging info
+echo 8 > /proc/sys/kernel/printk
+echo 'file mm/exchange_page.c +p' > /sys/kernel/debug/dynamic_debug/control
+# echo 'file mm/exchange.c +p' > /sys/kernel/debug/dynamic_debug/control
+# echo 'file mm/migrate.c +p' > /sys/kernel/debug/dynamic_debug/control
+
+echo always > /sys/kernel/mm/transparent_hugepage/enabled
+sudo sysctl kernel.enable_page_migration_optimization_avoid_remote_pmem_write=0
+sudo sysctl kernel.reset_bandwidth_counters=1
+
+export FAST_NODE=2
+export SLOW_NODE=9
 export STATS_PERIOD=5
 export MOVE_HOT_AND_COLD_PAGES=no
 export SHRINK_PAGE_LISTS=yes
 export FORCE_NO_MIGRATION=no
-export NR_RUNS=2
+export NR_RUNS=5
 export MIGRATION_BATCH_SIZE=8
 export MIGRATION_MT=4
 export PREFER_FAST_NODE=yes
 
-export BENCH_SIZE="30GB"
+export BENCH_SIZE="8GB"
 
 #MEM_SIZE="16GB"
-MEM_SIZE="3GB"
+MEM_SIZE="4GB"
 #MEM_SIZE="unlimited"
 
 RES_FOLDER="results-mm-manage-fast-${MEM_SIZE}-${MIGRATION_MT}-threads"
@@ -28,7 +42,8 @@ RES_FOLDER="results-mm-manage-fast-${MEM_SIZE}-${MIGRATION_MT}-threads"
 #BENCHMARK_LIST="503.postencil 551.ppalm 553.pclvrleaf 555.pseismic 559.pmniGhost 560.pilbdc 563.pswim 570.pbt graph500-omp"
 #BENCHMARK_LIST="556.psp 559.pmniGhost 560.pilbdc 563.pswim 570.pbt graph500-omp"
 #BENCHMARK_LIST="570.pbt graph500-omp"
-BENCHMARK_LIST="graph500-omp"
+#BENCHMARK_LIST="graph500-omp"
+BENCHMARK_LIST="503.postencil"
 #BENCHMARK_LIST="551.ppalm"
 #BENCHMARK_LIST="570.pbt"
 #BENCHMARK_LIST="556.psp"
@@ -51,14 +66,16 @@ BENCHMARK_LIST="graph500-omp"
 #PAGE_REPLACEMENT_SCHEMES="exchange-pages"
 #PAGE_REPLACEMENT_SCHEMES="opt-migration"
 
+PAGE_REPLACEMENT_SCHEMES="all-local-access pmem-optimized exchange-pages basic-exchange-pages thp-migration opt-migration all-remote-access"
+
 #MEM_SIZE_LIST="unlimited"
-MEM_SIZE_LIST=$(seq 4 4 28)
+MEM_SIZE_LIST=(4)
 
 #export NO_MIGRATE=""
 
 #THREAD_LIST="20"
 THREAD_LIST="16"
-MEMHOG_THREAD_LIST=$(seq 6 6)
+MEMHOG_THREAD_LIST=$(seq 0 0)
 
 read -a BENCH_ARRAY <<< "${BENCHMARK_LIST}"
 
@@ -68,7 +85,7 @@ read -a BENCH_ARRAY <<< "${BENCHMARK_LIST}"
 
 #sudo sysctl vm/times_kmigrationd_threshold=${THRESHOLD}
 
-trap "./create_die_stacked_mem.sh remove;  exit" INT
+trap "./create_die_stacked_mem.sh remove; ./cleanup.sh; exit" INT
 
 
 sudo sysctl vm/migration_batch_size=${MIGRATION_BATCH_SIZE}
@@ -158,9 +175,18 @@ do
 						fi
 						if [ "${SCHEME}" == "exchange-pages" ] || [ "${SCHEME}" == "basic-exchange-pages" ] || [ "${SCHEME}" == "concur-only-exchange-pages" ]; then
 							export NO_MIGRATION=no
+							sudo sysctl kernel.reset_bandwidth_counters=1
 							sudo sysctl vm.sysctl_enable_thp_migration=1
 
 							./run_bench.sh ${THREAD};
+						fi
+						if [ "${SCHEME}" == "pmem-optimized" ]; then
+							export NO_MIGRATION=no
+							sudo sysctl vm.sysctl_enable_thp_migration=1
+							sudo sysctl kernel.reset_bandwidth_counters=1
+							sudo sysctl kernel.enable_page_migration_optimization_avoid_remote_pmem_write=1
+							./run_bench.sh ${THREAD};
+							sudo sysctl kernel.enable_page_migration_optimization_avoid_remote_pmem_write=0
 						fi
 						if [ "${SCHEME}" == "non-thp-exchange-pages" ]; then
 							export NO_MIGRATION=no
@@ -183,3 +209,4 @@ do
 	done # MEM_SIZE
 done # i
 
+./cleanup.sh
