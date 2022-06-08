@@ -1,8 +1,850 @@
-./run_all.sh: line 80: test: -gt: unary operator expected
+dax5.0 was already in system-ram mode
+dax5.0:
+  WARNING: detected a race while onlining memory
+  Some memory may not be in the expected zone. It is
+  recommended to disable any other onlining mechanisms,
+  and retry. If onlining is to be left to other agents,
+  use the --no-online option to suppress this warning
+dax5.0: all memory sections (125) already online
+reconfigured 1 device
+./run_all.sh: line 94: test: -gt: unary operator expected
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
 rm: cannot remove 'page_migration_stats_*': No such file or directory
-./run_bench.sh: line 276:  7108 Killed                  ${NUMACTL_CMD} ${LAUNCHER_OPT} -- ${BENCH_RUN} 2> ${CUR_PWD}/${RES_FOLDER}/${BENCH}_cycles
-ls: cannot access 'page_migration_stats_*': No such file or directory
-rmdir: failed to remove '/sys/fs/cgroup/two-level-memory': Device or resource busy
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
+rm: cannot remove 'vm_stats_*': No such file or directory
+rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
+rm: cannot remove 'page_migration_stats_*': No such file or directory
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:7': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:8': Permission denied
+tee: '//sys/fs/cgroup/two-level-memory/memory.max_at_node:10': Permission denied
 rm: cannot remove 'vm_stats_*': No such file or directory
 rm: cannot remove 'page_migration_periodic_stats_*': No such file or directory
 rm: cannot remove 'page_migration_stats_*': No such file or directory
