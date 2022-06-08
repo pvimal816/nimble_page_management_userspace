@@ -14,6 +14,7 @@ dax4.0:
   use the --no-online option to suppress this warning
 dax4.0: all memory sections (125) already online
 reconfigured 1 device
+dax5.0 was already in system-ram mode
 dax5.0:
   WARNING: detected a race while onlining memory
   Some memory may not be in the expected zone. It is
@@ -30,74 +31,6 @@ dax6.0:
   use the --no-online option to suppress this warning
 dax6.0: all memory sections (125) already online
 reconfigured 1 device
-thp_migration_bw_cmp.py:69: MatplotlibDeprecationWarning: The 'b' parameter of grid() has been renamed 'visible' since Matplotlib 3.5; support for the old name will be dropped two minor releases later.
-  ax.grid(b=True, which='major', color='w', linewidth=1.25)
-thp_migration_bw_cmp.py:70: MatplotlibDeprecationWarning: The 'b' parameter of grid() has been renamed 'visible' since Matplotlib 3.5; support for the old name will be dropped two minor releases later.
-  ax.grid(b=True, which='minor', color='w', linewidth=0.75)
-thp_migration_bw_cmp.py:69: MatplotlibDeprecationWarning: The 'b' parameter of grid() has been renamed 'visible' since Matplotlib 3.5; support for the old name will be dropped two minor releases later.
-  ax.grid(b=True, which='major', color='w', linewidth=1.25)
-thp_migration_bw_cmp.py:70: MatplotlibDeprecationWarning: The 'b' parameter of grid() has been renamed 'visible' since Matplotlib 3.5; support for the old name will be dropped two minor releases later.
-  ax.grid(b=True, which='minor', color='w', linewidth=0.75)
-thp_migration_bw_cmp.py:69: MatplotlibDeprecationWarning: The 'b' parameter of grid() has been renamed 'visible' since Matplotlib 3.5; support for the old name will be dropped two minor releases later.
-  ax.grid(b=True, which='major', color='w', linewidth=1.25)
-thp_migration_bw_cmp.py:70: MatplotlibDeprecationWarning: The 'b' parameter of grid() has been renamed 'visible' since Matplotlib 3.5; support for the old name will be dropped two minor releases later.
-  ax.grid(b=True, which='minor', color='w', linewidth=0.75)
-thp_migration_bw_cmp.py:69: MatplotlibDeprecationWarning: The 'b' parameter of grid() has been renamed 'visible' since Matplotlib 3.5; support for the old name will be dropped two minor releases later.
-  ax.grid(b=True, which='major', color='w', linewidth=1.25)
-thp_migration_bw_cmp.py:70: MatplotlibDeprecationWarning: The 'b' parameter of grid() has been renamed 'visible' since Matplotlib 3.5; support for the old name will be dropped two minor releases later.
-  ax.grid(b=True, which='minor', color='w', linewidth=0.75)
-thp_migration_bw_cmp.py:69: MatplotlibDeprecationWarning: The 'b' parameter of grid() has been renamed 'visible' since Matplotlib 3.5; support for the old name will be dropped two minor releases later.
-  ax.grid(b=True, which='major', color='w', linewidth=1.25)
-thp_migration_bw_cmp.py:70: MatplotlibDeprecationWarning: The 'b' parameter of grid() has been renamed 'visible' since Matplotlib 3.5; support for the old name will be dropped two minor releases later.
-  ax.grid(b=True, which='minor', color='w', linewidth=0.75)
-thp_migration_bw_cmp.py:69: MatplotlibDeprecationWarning: The 'b' parameter of grid() has been renamed 'visible' since Matplotlib 3.5; support for the old name will be dropped two minor releases later.
-  ax.grid(b=True, which='major', color='w', linewidth=1.25)
-thp_migration_bw_cmp.py:70: MatplotlibDeprecationWarning: The 'b' parameter of grid() has been renamed 'visible' since Matplotlib 3.5; support for the old name will be dropped two minor releases later.
-  ax.grid(b=True, which='minor', color='w', linewidth=0.75)
-non_thp_move_page_breakdown.cpp: In function ‘int main(int, char**)’:
-non_thp_move_page_breakdown.cpp:248:10: warning: format ‘%llu’ expects argument of type ‘long long unsigned int’, but argument 2 has type ‘std::chrono::duration<long int, std::ratio<1, 1000000000> >::rep’ {aka ‘long int’} [-Wformat=]
-  248 |      "%llu\t%llu\t%llu\t%llu\n",
-      |       ~~~^
-      |          |
-      |          long long unsigned int
-      |       %lu
-  249 |      std::chrono::duration_cast<std::chrono::nanoseconds>(end_time-start_time).count(),
-      |      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                                                                                     |
-      |                                                                                     std::chrono::duration<long int, std::ratio<1, 1000000000> >::rep {aka long int}
-non_thp_move_page_breakdown.cpp:248:16: warning: format ‘%llu’ expects argument of type ‘long long unsigned int’, but argument 3 has type ‘long unsigned int’ [-Wformat=]
-  248 |      "%llu\t%llu\t%llu\t%llu\n",
-      |             ~~~^
-      |                |
-      |                long long unsigned int
-      |             %lu
-  249 |      std::chrono::duration_cast<std::chrono::nanoseconds>(end_time-start_time).count(),
-  250 |      (end-begin), begin, end);
-      |      ~~~~~~~~~~~
-      |          |
-      |          long unsigned int
-non_thp_move_page_breakdown.cpp:248:22: warning: format ‘%llu’ expects argument of type ‘long long unsigned int’, but argument 4 has type ‘long unsigned int’ [-Wformat=]
-  248 |      "%llu\t%llu\t%llu\t%llu\n",
-      |                   ~~~^
-      |                      |
-      |                      long long unsigned int
-      |                   %lu
-  249 |      std::chrono::duration_cast<std::chrono::nanoseconds>(end_time-start_time).count(),
-  250 |      (end-begin), begin, end);
-      |                   ~~~~~
-      |                   |
-      |                   long unsigned int
-non_thp_move_page_breakdown.cpp:248:28: warning: format ‘%llu’ expects argument of type ‘long long unsigned int’, but argument 5 has type ‘long unsigned int’ [-Wformat=]
-  248 |      "%llu\t%llu\t%llu\t%llu\n",
-      |                         ~~~^
-      |                            |
-      |                            long long unsigned int
-      |                         %lu
-  249 |      std::chrono::duration_cast<std::chrono::nanoseconds>(end_time-start_time).count(),
-  250 |      (end-begin), begin, end);
-      |                          ~~~
-      |                          |
-      |                          long unsigned int
 thp_migration_bw_cmp.py:69: MatplotlibDeprecationWarning: The 'b' parameter of grid() has been renamed 'visible' since Matplotlib 3.5; support for the old name will be dropped two minor releases later.
   ax.grid(b=True, which='major', color='w', linewidth=1.25)
 thp_migration_bw_cmp.py:70: MatplotlibDeprecationWarning: The 'b' parameter of grid() has been renamed 'visible' since Matplotlib 3.5; support for the old name will be dropped two minor releases later.
