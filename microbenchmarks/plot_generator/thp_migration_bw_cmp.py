@@ -58,17 +58,24 @@ def main():
 
     df.to_csv("summarized_microbench_results.csv")
 
+    sns.set_context('paper')
     # generate plot-1
     for plot_id in range(3):
         df_native_thp = df[df["migration_mechanism"]==migration_mechanism_name[plot_id]]
-        sns.set(rc={'figure.figsize':(12,8)})
+        df_native_thp = df_native_thp.rename(columns={"thread_cnt": "Thread Count", "pmem-optimized": "Migration Mechanism"})
+        df_native_thp = df_native_thp.replace({"pmem optimized" : "NT+RPDAA"})
+        # print(df.head())
+        # sns.set(rc={'figure.figsize':(12,8)})
         # sns.color_palette("cubehelix", as_cmap=True)
-        ax=sns.lineplot(data=df_native_thp, x='page_cnt', y='bandwidth(MBps)', hue='thread_cnt', style='pmem-optimized', palette=['r', 'g', 'b'], linewidth=2.5)
+        ax=sns.lineplot(data=df_native_thp, x='page_cnt', y='bandwidth(MBps)', hue='Thread Count', style='Migration Mechanism', palette=['r', 'g', 'b'], linewidth=2.5)
         ax.get_xaxis().set_minor_locator(mpl.ticker.AutoMinorLocator())
         ax.get_yaxis().set_minor_locator(mpl.ticker.AutoMinorLocator())
         ax.grid(b=True, which='major', color='w', linewidth=1.25)
         ax.grid(b=True, which='minor', color='w', linewidth=0.75)
-        ax.set_title("{0} comparison.png".format(migration_mechanism_name[plot_id]))
+        ax.set_xlabel("Number of Pages")
+        ax.set_ylabel("Bandwidth(MBps)")
+        # ax.set_title("{0} comparison.png".format(migration_mechanism_name[plot_id]))
+        sns.move_legend(ax, "lower center", bbox_to_anchor=(0.5, 1), ncol=2, title=None, frameon=False)
         plt.tight_layout()
         plt.savefig('plots_output/{0} comparison.png'.format(migration_mechanism_name[plot_id]))
         plt.close()
