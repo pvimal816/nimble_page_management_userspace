@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue Jun  7 13:31:42 2022
+# Make data base, printed on Sun Jun  5 16:37:40 2022
 
 # Variables
 
@@ -57,7 +57,7 @@ LESSOPEN = | /usr/bin/lesspipe %s
 # environment
 VSCODE_CWD = /home/vimal
 # environment
-SSH_CONNECTION = 10.217.60.116 59206 10.192.34.27 22
+SSH_CONNECTION = 10.217.60.116 60343 10.192.34.27 22
 # environment
 PATH = /home/vimal/.vscode-server/bin/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5/bin/remote-cli:/home/vimal/bin:/home/vimal/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/cuda/bin
 # environment
@@ -65,7 +65,7 @@ XDG_RUNTIME_DIR = /run/user/5017
 # environment
 VSCODE_LOG_STACK = false
 # environment
-VSCODE_IPC_HOOK_CLI = /run/user/5017/vscode-ipc-4bbc0fb8-ada4-4ccf-b3f4-d4f08d5f2378.sock
+VSCODE_IPC_HOOK_CLI = /run/user/5017/vscode-ipc-b8f9d70a-d968-4257-bfc4-6418c7ee7170.sock
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -109,7 +109,7 @@ MAKECMDGOALS := all
 # environment
 SHLVL = 0
 # environment
-XDG_SESSION_ID = 46
+XDG_SESSION_ID = 23
 # environment
 USER = vimal
 # makefile
@@ -131,7 +131,7 @@ MAKEFLAGS = pqrR
 # environment
 MFLAGS = -pqrR
 # environment
-SSH_CLIENT = 10.217.60.116 59206 22
+SSH_CLIENT = 10.217.60.116 60343 22
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
 # environment
@@ -227,6 +227,6 @@ GNUmakefile:
 # strcache performance: lookups = 25 / hit rate = 12%
 # hash-table stats:
 # Load=22/8192=0%, Rehash=0, Collisions=1/25=4%
-# Finished Make data base on Tue Jun  7 13:31:42 2022
+# Finished Make data base on Sun Jun  5 16:37:40 2022
 
  
