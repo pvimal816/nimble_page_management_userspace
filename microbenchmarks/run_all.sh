@@ -14,7 +14,7 @@ sudo sysctl kernel.numa_balancing=0
 SOURCE_NODES=(2 2 7 7)
 SOURCE_CPU_NODES=(2 2 2 2)
 DESTINATION_NODES=(3 9 3 9)
-CONFIGURATION_NAMES=("dram to dram" "dram to pmem" "pmem to dram" "pmem to pmem")
+CONFIGURATION_NAMES=("dram_to_dram" "dram_to_pmem" "pmem_to_dram" "pmem_to_pmem")
 
 ACTIVE_CONFIGS=(1 2 3 0)
 

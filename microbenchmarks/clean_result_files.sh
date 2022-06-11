@@ -1,7 +1,10 @@
 #!/bin/bash
 
-dir_list=("stats_*" "thp_*")
+dir_list=("thp_verify" "stats_*")
 
 for dir in ${dir_list[@]}; do
-    rm -f */$dir/*;
+    echo "deleting dir $dir";
+    rm -f ./*/$dir/*;
 done
+
+# rm -f ./*/thp_*/*;
