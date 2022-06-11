@@ -1,3 +1,4 @@
+dax3.0 was already in system-ram mode
 dax3.0:
   WARNING: detected a race while onlining memory
   Some memory may not be in the expected zone. It is
@@ -6,6 +7,7 @@ dax3.0:
   use the --no-online option to suppress this warning
 dax3.0: all memory sections (125) already online
 reconfigured 1 device
+dax4.0 was already in system-ram mode
 dax4.0:
   WARNING: detected a race while onlining memory
   Some memory may not be in the expected zone. It is
@@ -23,6 +25,7 @@ dax5.0:
   use the --no-online option to suppress this warning
 dax5.0: all memory sections (125) already online
 reconfigured 1 device
+dax6.0 was already in system-ram mode
 dax6.0:
   WARNING: detected a race while onlining memory
   Some memory may not be in the expected zone. It is
@@ -31,15 +34,15 @@ dax6.0:
   use the --no-online option to suppress this warning
 dax6.0: all memory sections (125) already online
 reconfigured 1 device
-thp_migration_bw_cmp.py:69: MatplotlibDeprecationWarning: The 'b' parameter of grid() has been renamed 'visible' since Matplotlib 3.5; support for the old name will be dropped two minor releases later.
+thp_migration_bw_cmp.py:73: MatplotlibDeprecationWarning: The 'b' parameter of grid() has been renamed 'visible' since Matplotlib 3.5; support for the old name will be dropped two minor releases later.
   ax.grid(b=True, which='major', color='w', linewidth=1.25)
-thp_migration_bw_cmp.py:70: MatplotlibDeprecationWarning: The 'b' parameter of grid() has been renamed 'visible' since Matplotlib 3.5; support for the old name will be dropped two minor releases later.
+thp_migration_bw_cmp.py:74: MatplotlibDeprecationWarning: The 'b' parameter of grid() has been renamed 'visible' since Matplotlib 3.5; support for the old name will be dropped two minor releases later.
   ax.grid(b=True, which='minor', color='w', linewidth=0.75)
-thp_migration_bw_cmp.py:69: MatplotlibDeprecationWarning: The 'b' parameter of grid() has been renamed 'visible' since Matplotlib 3.5; support for the old name will be dropped two minor releases later.
-  ax.grid(b=True, which='major', color='w', linewidth=1.25)
-thp_migration_bw_cmp.py:70: MatplotlibDeprecationWarning: The 'b' parameter of grid() has been renamed 'visible' since Matplotlib 3.5; support for the old name will be dropped two minor releases later.
-  ax.grid(b=True, which='minor', color='w', linewidth=0.75)
-thp_migration_bw_cmp.py:69: MatplotlibDeprecationWarning: The 'b' parameter of grid() has been renamed 'visible' since Matplotlib 3.5; support for the old name will be dropped two minor releases later.
-  ax.grid(b=True, which='major', color='w', linewidth=1.25)
-thp_migration_bw_cmp.py:70: MatplotlibDeprecationWarning: The 'b' parameter of grid() has been renamed 'visible' since Matplotlib 3.5; support for the old name will be dropped two minor releases later.
-  ax.grid(b=True, which='minor', color='w', linewidth=0.75)
+Traceback (most recent call last):
+  File "thp_migration_bw_cmp.py", line 83, in <module>
+    main()
+  File "thp_migration_bw_cmp.py", line 78, in main
+    sns.move_legend(ax, "lower center", bbox_to_anchor=(0.5, 1), ncol=2, title=None, frameon=False)
+  File "/usr/local/lib/python3.8/dist-packages/seaborn/utils.py", line 384, in move_legend
+    raise ValueError(err)
+ValueError: AxesSubplot(0.125,0.11;0.775x0.77) has no legend attached.

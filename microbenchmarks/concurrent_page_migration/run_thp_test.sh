@@ -31,7 +31,7 @@ MULTI="1 2 4 8 16"
 PERF_EVENT_LIST=("bandwidth(GB/s)" unc_m_pmm_rpq_occupancy_all_0 unc_m_pmm_wpq_occupancy_all_0 unc_m_pmm_rpq_inserts_0 unc_m_pmm_wpq_inserts_0)
 PERF_EVENT_LIST_STR="bandwidth(GB/s),unc_m_pmm_rpq_occupancy_all_0,unc_m_pmm_wpq_occupancy_all_0,unc_m_pmm_rpq_inserts_0,unc_m_pmm_wpq_inserts_0"
 
-CONFIG_ID=("NT_OFF_RPDAA_OFF" "NT_OFF_RPDAA_ON" "NT_ON_RPDAA_OFF" "NT_ON_RPDAA_ON")
+CONFIG_ID=($CONFIGURATION_NAME"_NT_OFF_RPDAA_OFF" $CONFIGURATION_NAME"_NT_OFF_RPDAA_ON" $CONFIGURATION_NAME"_NT_ON_RPDAA_OFF" $CONFIGURATION_NAME"_NT_ON_RPDAA_ON")
 NT=(0 0 1 1)
 RPDAA=(0 1 0 1)
 OPTIMIZATION_CONFIG=(0 1 2 3)

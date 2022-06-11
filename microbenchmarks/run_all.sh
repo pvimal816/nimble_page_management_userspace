@@ -16,7 +16,7 @@ SOURCE_CPU_NODES=(2 2 2 2)
 DESTINATION_NODES=(3 9 3 9)
 CONFIGURATION_NAMES=("dram to dram" "dram to pmem" "pmem to dram" "pmem to pmem")
 
-ACTIVE_CONFIGS=(0)
+ACTIVE_CONFIGS=(1 2 3 0)
 
 for i in ${ACTIVE_CONFIGS[@]}; do
     echo "========================= >>> Executing Configuration: ${CONFIGURATION_NAMES[$i]} <<< ======================"
