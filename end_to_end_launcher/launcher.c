@@ -35,6 +35,8 @@
 #include <errno.h>
 #include <limits.h>
 
+#include <nvm_management.h>
+
 #include <time.h>
 #include <sys/time.h>
 #define TV_MSEC tv_usec / 1000
@@ -50,6 +52,18 @@
 #define MPOL_MF_SHRINK_LISTS	(1<<9)
 
 #define MPOL_F_MEMCG	(1<<13)
+
+NVM_UINT64 nvm_media_read_cnt=0, nvm_media_write_cnt=0;
+
+const char* device_uids[] = {
+    "8089-a2-2014-00001483", // uid for node 7
+    "8089-a2-2014-00001772", // uid for node 8
+    "8089-a2-2014-0000202e", // uid for node 9
+    "8089-a2-2014-00001a11", // uid for node 10
+};
+
+int get_nvm_dimm_cnt(const char* device_uid, NVM_UINT64* bytes_read, NVM_UINT64* bytes_written);
+
 
 typedef struct
 {
@@ -370,6 +384,13 @@ void child_exit(int sig, siginfo_t *siginfo, void *context)
 	fprintf(stderr, "min_flt: %lu, maj_flt: %lu, maxrss: %lu KB\n",
 			time_stats.ru.ru_minflt, time_stats.ru.ru_majflt, 
 			time_stats.ru.ru_maxrss);
+	
+	NVM_UINT64 current_nvm_media_read_cnt, current_nvm_media_write_cnt;
+	get_nvm_dimm_cnt(device_uids[2], &current_nvm_media_read_cnt, &current_nvm_media_write_cnt);
+	nvm_media_read_cnt = current_nvm_media_read_cnt - nvm_media_read_cnt;
+	nvm_media_write_cnt = current_nvm_media_write_cnt - nvm_media_write_cnt;
+	fprintf(stderr, "nvm_media_read_cnt: %llu, nvm_media_write_cnt: %llu\n", nvm_media_read_cnt, nvm_media_write_cnt);
+
 	fflush(stderr);
 
 	if (get_new_filename("./page_migration_stats", &stats_filename))
@@ -390,6 +411,7 @@ void child_exit(int sig, siginfo_t *siginfo, void *context)
 		fputs(buffer, childinfo);
 		memset(buffer, 0, 255);
 	}
+
 	fflush(childinfo);
 
 close_and_cleanup:
@@ -621,6 +643,9 @@ int main(int argc, char** argv)
         );
 	gettimeofday (&time_stats.start, (struct timezone *) 0);
 
+	// read current read/write counters for nvm media
+	get_nvm_dimm_cnt(device_uids[2], &nvm_media_read_cnt, &nvm_media_write_cnt);
+
 	child_pid = fork();
 
 	if (child_pid == 0) { // child
@@ -764,6 +789,85 @@ int main(int argc, char** argv)
 	if (parent_mask)
 		numa_bitmask_free(parent_mask);
 
+	
+
 	return 0;
 
+}
+
+
+/**
+  Get device discovery structure and dimm count
+
+  @param[out] p_dev_count The dimm count
+  @param[out] p_devices device discovery structure for each dimm
+
+  @retval -1 Failure
+  @retval 0  Success
+**/
+int get_devices(unsigned int *p_dev_count, struct device_discovery** p_devices)
+{
+  int nvm_return = 0;
+  if (NVM_SUCCESS != (nvm_return = nvm_get_number_of_devices(p_dev_count)))
+  {
+    printf("nvm_get_number_of_devices failed: %d.\n", nvm_return);
+    return -1;
+  }
+
+  if (NULL == (*p_devices = (struct device_discovery*)malloc(sizeof(struct device_discovery) * *p_dev_count)))
+  {
+    printf("failed to allocate device discovery structure.\n");
+    return -1;
+  }
+
+  if (NVM_SUCCESS != (nvm_return = nvm_get_devices(*p_devices, *p_dev_count)))
+  {
+    printf("nvm_get_number_of_devices failed: %d.\n", nvm_return);
+    free(*p_devices);
+    *p_devices = NULL;
+    return -1;
+  }
+
+  return 0;
+}
+
+int get_nvm_device_details(const char *device_uid, struct device_details *p_details){
+    int nvm_return = 0;
+    struct device_discovery* p_devices = NULL;
+    unsigned int Index = 0;
+    unsigned int p_dev_count;
+    nvm_return = get_devices(&p_dev_count, &p_devices);
+
+    if (nvm_return != 0)
+    {
+        printf("get_devices failed: %d.\n", nvm_return);
+        return -1;
+    }
+    
+    if (NVM_SUCCESS != (nvm_return = nvm_get_device_details(device_uid, p_details))) {
+        printf("failed to get device details.\n");
+        free(p_devices);
+        return -1;
+    }
+
+    free(p_devices);
+    return 0;
+}
+
+int get_nvm_dimm_cnt(const char* device_uid, unsigned long long int* bytes_read, unsigned long long int* bytes_written){
+    nvm_init();
+    struct device_details p_details;
+    int ret = 0;
+    
+    if(get_nvm_device_details(device_uid, &p_details)){
+        ret = -1;
+        goto out;
+    }
+
+    *bytes_read = p_details.performance.bytes_read;
+    *bytes_written = p_details.performance.bytes_written;
+
+    // printf("read_cnt=%llx, write_cnt=%llx\n", p_details.performance.bytes_read, p_details.performance.bytes_written);
+out:
+    return ret;
 }

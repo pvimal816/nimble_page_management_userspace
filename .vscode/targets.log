@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun Jun  5 16:37:40 2022
+# Make data base, printed on Mon Jul 18 17:16:17 2022
 
 # Variables
 
@@ -24,8 +24,6 @@ XDG_SESSION_CLASS = user
 VSCODE_AGENT_FOLDER = /home/vimal/.vscode-server
 # environment
 XDG_SESSION_TYPE = tty
-# environment
-VSCODE_LOG_NATIVE = false
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # automatic
@@ -41,7 +39,7 @@ SHELL = /bin/sh
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en","availableLanguages":{}}
 # environment
-_ = /home/vimal/.vscode-server/bin/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5/node
+_ = /home/vimal/.vscode-server/bin/b06ae3b2d2dbfe28bca3134cc6be65935cdfea6a/node
 # makefile
 MAKEFILE_LIST := 
 # 'override' directive
@@ -51,29 +49,25 @@ XDG_DATA_DIRS = /usr/local/share:/usr/share:/var/lib/snapd/desktop
 # environment
 DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/5017/bus
 # environment
-VSCODE_VERBOSE_LOGGING = true
-# environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # environment
 VSCODE_CWD = /home/vimal
 # environment
-SSH_CONNECTION = 10.217.60.116 60343 10.192.34.27 22
+SSH_CONNECTION = 10.221.23.229 60728 10.192.34.27 22
 # environment
-PATH = /home/vimal/.vscode-server/bin/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5/bin/remote-cli:/home/vimal/bin:/home/vimal/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/cuda/bin
+PATH = /home/vimal/.vscode-server/bin/b06ae3b2d2dbfe28bca3134cc6be65935cdfea6a/bin/remote-cli:/home/vimal/bin:/home/vimal/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/cuda/bin
 # environment
 XDG_RUNTIME_DIR = /run/user/5017
 # environment
-VSCODE_LOG_STACK = false
+ELECTRON_RUN_AS_NODE = 1
 # environment
-VSCODE_IPC_HOOK_CLI = /run/user/5017/vscode-ipc-b8f9d70a-d968-4257-bfc4-6418c7ee7170.sock
+VSCODE_IPC_HOOK_CLI = /run/user/5017/vscode-ipc-9e4986ce-6d04-470f-a9fc-11b60896c4a6.sock
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
 LS_COLORS = 
 # automatic
 %F = $(notdir $%)
-# environment
-VSCODE_PIPE_LOGGING = true
 # environment
 PWD = /home/vimal/nimble_experiment/nimble_page_management_userspace
 # default
@@ -93,7 +87,7 @@ LESSCLOSE = /usr/bin/lesspipe %s %s
 # environment
 LOGNAME = vimal
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # automatic
 +F = $(notdir $+)
 # environment
@@ -109,7 +103,7 @@ MAKECMDGOALS := all
 # environment
 SHLVL = 0
 # environment
-XDG_SESSION_ID = 23
+XDG_SESSION_ID = 1157
 # environment
 USER = vimal
 # makefile
@@ -120,6 +114,8 @@ LIBVIRT_DEFAULT_URI = qemu:///system
 %D = $(patsubst %/,%,$(dir $%))
 # default
 MAKE_COMMAND := make
+# environment
+OLDPWD = /home/vimal/.vscode-server/bin/b06ae3b2d2dbfe28bca3134cc6be65935cdfea6a
 # default
 .VARIABLES := 
 # automatic
@@ -131,11 +127,11 @@ MAKEFLAGS = pqrR
 # environment
 MFLAGS = -pqrR
 # environment
-SSH_CLIENT = 10.217.60.116 60343 22
+SSH_CLIENT = 10.221.23.229 60728 22
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
 # environment
-BROWSER = /home/vimal/.vscode-server/bin/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5/bin/helpers/browser.sh
+BROWSER = /home/vimal/.vscode-server/bin/b06ae3b2d2dbfe28bca3134cc6be65935cdfea6a/bin/helpers/browser.sh
 # environment
 VSCODE_HANDLES_SIGPIPE = true
 # default
@@ -157,11 +153,9 @@ MAKE_HOST := x86_64-pc-linux-gnu
 # environment
 LANG = C
 # environment
-VSCODE_EXTHOST_WILL_SEND_SOCKET = true
-# environment
 MOTD_SHOWN = pam
 # variable set hash-table stats:
-# Load=74/1024=7%, Rehash=0, Collisions=9/96=9%
+# Load=71/1024=7%, Rehash=0, Collisions=9/93=10%
 
 # Pattern-specific Variable Values
 
@@ -169,9 +163,9 @@ MOTD_SHOWN = pam
 
 # Directories
 
-# . (device 66308, inode 36704836): 14 files, no impossibilities.
+# . (device 66308, inode 36704836): 9 files, no impossibilities.
 
-# 14 files, no impossibilities in 1 directories.
+# 9 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -221,12 +215,12 @@ GNUmakefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 22 / storage = 296 B / avg = 13 B
-# current buf: size = 8162 B / used = 296 B / count = 22 / avg = 13 B
+# strcache buffers: 1 (0) / strings = 17 / storage = 169 B / avg = 9 B
+# current buf: size = 8162 B / used = 169 B / count = 17 / avg = 9 B
 
-# strcache performance: lookups = 25 / hit rate = 12%
+# strcache performance: lookups = 20 / hit rate = 15%
 # hash-table stats:
-# Load=22/8192=0%, Rehash=0, Collisions=1/25=4%
-# Finished Make data base on Sun Jun  5 16:37:40 2022
+# Load=17/8192=0%, Rehash=0, Collisions=1/20=5%
+# Finished Make data base on Mon Jul 18 17:16:17 2022
 
  

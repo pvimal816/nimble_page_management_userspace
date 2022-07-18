@@ -85,6 +85,24 @@ else # pages will be migrated
 		pmem-optimized)
 			LAUNCHER="${LAUNCHER} --exchange_pages"
 		;;
+		rpdaa-nt)
+			LAUNCHER="${LAUNCHER} --exchange_pages"
+		;;
+		rpdaa)
+			LAUNCHER="${LAUNCHER} --exchange_pages"
+		;;
+		nt)
+			LAUNCHER="${LAUNCHER} --exchange_pages"
+		;;
+		nimble-best)
+			LAUNCHER="${LAUNCHER} --exchange_pages"
+		;;
+		nimble-default)
+			LAUNCHER="${LAUNCHER} --exchange_pages"
+		;;
+		stock-linux)
+			LAUNCHER="${LAUNCHER} --non_thp_migration"
+		;;
 		*)
 	esac
 	if [[ "x${FORCE_NO_MIGRATION}" == "xyes" ]]; then

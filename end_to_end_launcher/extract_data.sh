@@ -11,7 +11,7 @@ BENCHS="503.postencil  551.ppalm  553.pclvrleaf  555.pseismic  556.psp  559.pmni
 CONFIGS="all-remote-access non-thp-migration thp-migration opt-migration exchange-pages all-local-access"
 #CONFIGS="concur-only-opt-migration concur-only-exchange-pages"
 
-BENCHS="503.postencil"
+BENCHS="503.postencil 504.polbm 503.postencil 504.polbm 553.pclvrleaf 555.pseismic"
 CONFIGS="all-local-access pmem-optimized exchange-pages basic-exchange-pages thp-migration opt-migration all-remote-access"
 
 echo "AVERAGE:"

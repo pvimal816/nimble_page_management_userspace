@@ -12,6 +12,8 @@ echo 'file mm/exchange_page.c +p' > /sys/kernel/debug/dynamic_debug/control
 
 echo always > /sys/kernel/mm/transparent_hugepage/enabled
 sudo sysctl kernel.enable_page_migration_optimization_avoid_remote_pmem_write=0
+sudo sysctl kernel.enable_nt_exchange_page=0
+sudo sysctl kernel.enable_nt_page_copy=0
 sudo sysctl kernel.reset_bandwidth_counters=1
 
 export FAST_NODE=2
@@ -55,7 +57,6 @@ RES_FOLDER="results-mm-manage-fast-${MEM_SIZE}-${MIGRATION_MT}-threads"
 #BENCHMARK_LIST="data-caching"
 #BENCHMARK_FOLDERS="data-caching"
 
-BENCHMARK_LIST="504.polbm 503.postencil 553.pclvrleaf 555.pseismic"
 
 #PAGE_REPLACEMENT_SCHEMES="all-remote-access non-thp-migration thp-migration opt-migration exchange-pages"
 #PAGE_REPLACEMENT_SCHEMES="all-remote-access all-local-access non-thp-migration thp-migration opt-migration"
@@ -67,7 +68,10 @@ BENCHMARK_LIST="504.polbm 503.postencil 553.pclvrleaf 555.pseismic"
 #PAGE_REPLACEMENT_SCHEMES="exchange-pages"
 #PAGE_REPLACEMENT_SCHEMES="opt-migration"
 
-PAGE_REPLACEMENT_SCHEMES="all-local-access pmem-optimized exchange-pages basic-exchange-pages thp-migration opt-migration all-remote-access"
+# PAGE_REPLACEMENT_SCHEMES="all-local-access pmem-optimized exchange-pages basic-exchange-pages thp-migration opt-migration all-remote-access"
+
+BENCHMARK_LIST="559.pmniGhost 504.polbm graph500-omp 503.postencil 553.pclvrleaf 555.pseismic"
+PAGE_REPLACEMENT_SCHEMES=(all-local-access rpdaa-nt rpdaa nt nimble-best nimble-default stock-linux all-remote-access)
 
 #MEM_SIZE_LIST="unlimited"
 MEM_SIZE_LIST=(4)
@@ -98,6 +102,13 @@ fi
 
 for i in $(seq 1 ${NR_RUNS});
 do
+	BENCH_ARRAY=( $(shuf -e "${BENCH_ARRAY[@]}") )
+	PAGE_REPLACEMENT_SCHEMES=( $(shuf -e "${PAGE_REPLACEMENT_SCHEMES[@]}") )
+	
+	# shuffle the arrays show as to avoid the impacts of nvm-wear leveling
+	printf "BENCH_ARRAY: [%s]" "${BENCH_ARRAY[@]}"
+	printf "PAGE_REPLACEMENT_SCHEMES: [%s]" "${PAGE_REPLACEMENT_SCHEMES[@]}"
+
 	for MEM_SIZE in ${MEM_SIZE_LIST};
 	do
 
@@ -120,7 +131,7 @@ do
 				mkdir -p ${RES_FOLDER}/${BENCH}
 			fi
 
-			for SCHEME in ${PAGE_REPLACEMENT_SCHEMES};
+			for SCHEME in ${PAGE_REPLACEMENT_SCHEMES[@]};
 			do
 
 				if [[ "x${MEM_SIZE}" != "xunlimited" ]]; then
@@ -195,6 +206,66 @@ do
 							sudo sysctl vm.sysctl_enable_thp_migration=0
 							./run_bench.sh ${THREAD};
 							sudo sysctl vm.sysctl_enable_thp_migration=1
+						fi
+
+						if [ "${SCHEME}" == "rpdaa-nt" ]; then
+							export NO_MIGRATION=no
+							sudo sysctl vm.sysctl_enable_thp_migration=1
+							sudo sysctl kernel.reset_bandwidth_counters=1
+							sudo sysctl kernel.enable_page_migration_optimization_avoid_remote_pmem_write=1
+							sudo sysctl kernel.enable_nt_exchange_page=1
+							sudo sysctl kernel.enable_nt_page_copy=1
+							./run_bench.sh ${THREAD};
+							sudo sysctl kernel.enable_page_migration_optimization_avoid_remote_pmem_write=0
+							sudo sysctl kernel.enable_nt_exchange_page=0
+							sudo sysctl kernel.enable_nt_page_copy=0
+						fi
+
+						if [ "${SCHEME}" == "nt" ]; then
+							export NO_MIGRATION=no
+							sudo sysctl vm.sysctl_enable_thp_migration=1
+							sudo sysctl kernel.reset_bandwidth_counters=1
+							sudo sysctl kernel.enable_nt_exchange_page=1
+							sudo sysctl kernel.enable_nt_page_copy=1
+							./run_bench.sh ${THREAD};
+							sudo sysctl kernel.enable_nt_exchange_page=0
+							sudo sysctl kernel.enable_nt_page_copy=0
+						fi
+
+						if [ "${SCHEME}" == "rpdaa" ]; then
+							export NO_MIGRATION=no
+							sudo sysctl vm.sysctl_enable_thp_migration=1
+							sudo sysctl kernel.reset_bandwidth_counters=1
+							sudo sysctl kernel.enable_page_migration_optimization_avoid_remote_pmem_write=1
+							./run_bench.sh ${THREAD};
+							sudo sysctl kernel.enable_page_migration_optimization_avoid_remote_pmem_write=0
+						fi
+
+						if [ "${SCHEME}" == "nimble-default" ]; then
+							export NO_MIGRATION=no
+							sudo sysctl vm/limit_mt_num=4
+							sudo sysctl kernel.reset_bandwidth_counters=1
+							sudo sysctl vm.sysctl_enable_thp_migration=1
+							./run_bench.sh ${THREAD};
+							sudo sysctl vm/limit_mt_num=${MIGRATION_MT}
+						fi
+
+						if [ "${SCHEME}" == "nimble-best" ]; then
+							export NO_MIGRATION=no
+							sudo sysctl vm/limit_mt_num=1
+							sudo sysctl kernel.reset_bandwidth_counters=1
+							sudo sysctl vm.sysctl_enable_thp_migration=1
+							./run_bench.sh ${THREAD};
+							sudo sysctl vm/limit_mt_num=${MIGRATION_MT}
+						fi
+
+						if [ "${SCHEME}" == "stock-linux" ]; then
+							export NO_MIGRATION=no
+							sudo sysctl vm/limit_mt_num=1
+							sudo sysctl vm.sysctl_enable_thp_migration=0
+							./run_bench.sh ${THREAD};
+							sudo sysctl vm.sysctl_enable_thp_migration=1
+							sudo sysctl vm/limit_mt_num=${MIGRATION_MT}
 						fi
 
 						sleep 5
